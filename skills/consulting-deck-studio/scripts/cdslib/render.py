@@ -119,14 +119,44 @@ def pdf(html_path, pdf_path, browser=None):
     return pdf_path
 
 
-def pptx_pngs(single_slide_pptx, out_dir, soffice=None):
-    """LibreOffice exports only the first slide to PNG, so callers pass one single-slide pptx per slide."""
+def scene_font_files(slides):
+    """Font files for every family/style used in the scenes, so LibreOffice renders the real fonts."""
+    from . import fonts
+    want = set()
+
+    def walk(els):
+        for e in els:
+            if e["t"] == "group":
+                walk(e["children"])
+            elif e["t"] == "text":
+                for p in e["paras"]:
+                    for line in p["lines"]:
+                        for r_ in line:
+                            want.add((r_["font"], fonts.style_key(r_["bold"], r_["italic"])))
+    for s in slides:
+        walk(s["els"])
+    files = set()
+    for fam, st in want:
+        hit = fonts.locate(fam, st) or fonts.locate(fam)
+        if hit:
+            files.add(hit[0])
+    return sorted(files)
+
+
+def pptx_pngs(single_slide_pptx, out_dir, soffice=None, font_files=()):
+    """LibreOffice exports only the first slide to PNG, so callers pass one single-slide pptx per slide.
+    LibreOffice on macOS does not see the system's Supplemental fonts, so the deck's font files are copied
+    into the throwaway profile's user/fonts folder first."""
     soffice = soffice or find_soffice()
     if not soffice:
         return None
     W, H = int(S.SLIDE_W) * SCALE, int(S.SLIDE_H) * SCALE
     flt = 'png:impress_png_Export:{"PixelWidth":{"type":"long","value":"%d"},"PixelHeight":{"type":"long","value":"%d"}}' % (W, H)
     prof = tempfile.mkdtemp(prefix="cds-lo-")
+    if font_files:
+        os.makedirs(os.path.join(prof, "user", "fonts"))
+        for f in font_files:
+            shutil.copy(f, os.path.join(prof, "user", "fonts"))
     try:
         subprocess.run([soffice, "-env:UserInstallation=file://" + prof, "--headless", "--convert-to", flt,
                         "--outdir", out_dir] + list(single_slide_pptx), stdout=subprocess.PIPE,

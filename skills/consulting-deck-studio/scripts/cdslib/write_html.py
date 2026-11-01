@@ -19,8 +19,12 @@ html,body{background:#E9E9E6}
 
 
 def _fam(f):
-    return {"Arial": "Arial,'Liberation Sans',Helvetica,sans-serif",
-            "Georgia": "Georgia,Gelasio,'Times New Roman',serif"}.get(f, "'%s'" % f)
+    known = {"Arial": "Arial,'Liberation Sans',Helvetica,sans-serif", "Georgia": "Georgia,Gelasio,'Times New Roman',serif"}
+    if f in known:
+        return known[f]
+    from .fonts import STAND_INS
+    alt = STAND_INS.get(f)
+    return "'%s'%s,sans-serif" % (f, ",'%s'" % alt if alt else "")
 
 
 def _dash(d, lw):
@@ -204,14 +208,17 @@ fit();
 """
 
 
-def viewer(slides, title="Deck"):
+def viewer(slides, title="Deck", page_in=(13.333, 7.5)):
     """Presentable single-file deck: scroll view, F = present, arrows, N = notes, ?reader = notes open, print = PDF."""
     parts = []
     for k, s in enumerate(slides, 1):
         parts.append('<div class="frame" id="s%d">%s</div>' % (k, slide_html(s)))
         if s.get("notes"):
             parts.append('<div class="note"><b>Slide %d.</b> %s</div>' % (k, html.escape(s["notes"])))
+    css = VIEWER_CSS.replace("13.333in 7.5in", "%.3fin %.3fin" % page_in).replace(
+        "width:13.333in!important;height:7.5in!important", "width:%.3fin!important;height:%.3fin!important" % page_in).replace(
+        "scale(1.33333)", "scale(%.5f)" % (page_in[0] * 96 / 960.0))
     return ('<!doctype html><html lang="en"><head><meta charset="utf-8"><title>%s</title>'
             '<meta name="viewport" content="width=device-width,initial-scale=1"><style>%s%s</style></head><body>'
             '<div class="wrap">%s</div><div class="hud">F present &middot; arrows &middot; N notes &middot; Ctrl/Cmd+P PDF</div>'
-            '<script>%s</script></body></html>') % (html.escape(title), CSS, VIEWER_CSS, "".join(parts), VIEWER_JS)
+            '<script>%s</script></body></html>') % (html.escape(title), CSS, css, "".join(parts), VIEWER_JS)

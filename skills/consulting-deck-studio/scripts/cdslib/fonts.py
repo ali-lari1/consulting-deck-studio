@@ -34,6 +34,55 @@ FONT_DIRS = ["/System/Library/Fonts/Supplemental", "/System/Library/Fonts", "/Li
              "/usr/share/fonts/liberation", "/usr/share/fonts/truetype/gelasio", os.path.expanduser("~/.fonts")]
 
 
+# Metric-compatible open stand-ins: same advance widths, so line breaks hold when the brand font is missing.
+STAND_INS = {"Calibri": "Carlito", "Cambria": "Caladea", "Arial": "Liberation Sans", "Helvetica": "Liberation Sans",
+             "Helvetica Neue": "Liberation Sans", "Times New Roman": "Liberation Serif", "Courier New": "Liberation Mono",
+             "Georgia": "Gelasio", "Segoe UI": "Selawik"}
+EXTRA_DIRS = []   # project font folders, added by build.py
+_INDEX = None
+
+
+def font_index():
+    """{(family_lower, style): (path, face_index)} for every font file in the known folders."""
+    global _INDEX
+    if _INDEX is not None:
+        return _INDEX
+    idx = {}
+    for d in EXTRA_DIRS + FONT_DIRS + ["/System/Library/Fonts/Supplemental", os.path.expanduser("~/AppData/Local/Microsoft/Windows/Fonts"),
+                                       "/usr/share/fonts", "/usr/local/share/fonts"]:
+        if not os.path.isdir(d):
+            continue
+        for root, _, files in os.walk(d):
+            for fn in files:
+                if not fn.lower().endswith((".ttf", ".otf", ".ttc")):
+                    continue
+                p = os.path.join(root, fn)
+                try:
+                    data = open(p, "rb").read()
+                    for k in range(len(ttc_offsets(data))):
+                        t = TTF(p, k, data)
+                        fam, sub = t.names()
+                        if not fam or "glyf" not in t.tables and "CFF " not in t.tables:
+                            continue
+                        key = (fam.lower(), style_key(t.bold, t.italic))
+                        idx.setdefault(key, (p, k))
+                except Exception:
+                    continue
+    _INDEX = idx
+    return idx
+
+
+def locate(family, style="regular"):
+    """Path, face index and the family actually used (the brand font or its stand-in), or None."""
+    for fam in [family, STAND_INS.get(family)]:
+        if not fam:
+            continue
+        hit = font_index().get((fam.lower(), style)) or (font_index().get((fam.lower(), "regular")) if style != "regular" else None)
+        if hit:
+            return hit[0], hit[1], fam
+    return None
+
+
 def style_key(bold=False, italic=False):
     return ("bold" if bold else "") + ("italic" if italic else "") or "regular"
 
@@ -47,16 +96,25 @@ def find_font_file(family, style="regular"):
     return None
 
 
-class TTF:
-    """Just enough of the TrueType format to read vertical metrics and advance widths."""
+def ttc_offsets(data):
+    if data[:4] == b"ttcf":
+        n = struct.unpack(">I", data[8:12])[0]
+        return list(struct.unpack(">%dI" % n, data[12:12 + 4 * n]))
+    return [0]
 
-    def __init__(self, path):
+
+class TTF:
+    """Just enough of the TrueType/OpenType format to read names, vertical metrics and advance widths.
+    `index` selects a face inside a .ttc collection."""
+
+    def __init__(self, path, index=0, data=None):
         self.path = path
-        d = self.data = open(path, "rb").read()
-        n = struct.unpack(">H", d[4:6])[0]
+        d = self.data = data if data is not None else open(path, "rb").read()
+        base = ttc_offsets(d)[index]
+        n = struct.unpack(">H", d[base + 4:base + 6])[0]
         self.tables = {}
         for i in range(n):
-            tag, _, off, ln = struct.unpack(">4sIII", d[12 + 16 * i:28 + 16 * i])
+            tag, _, off, ln = struct.unpack(">4sIII", d[base + 12 + 16 * i:base + 28 + 16 * i])
             self.tables[tag.decode("latin1")] = (off, ln)
         h = self.tables["head"][0]
         self.upm = struct.unpack(">H", d[h + 18:h + 20])[0]
@@ -71,6 +129,27 @@ class TTF:
         hm = self.tables["hmtx"][0]
         self.advances = [struct.unpack(">H", d[hm + 4 * i:hm + 4 * i + 2])[0] for i in range(n_hm)]
         self.cmap = self._cmap()
+        fs = struct.unpack(">H", d[o2 + 62:o2 + 64])[0]
+        self.italic, self.bold = bool(fs & 1), bool(fs & 32)
+
+    def names(self):
+        """(family, subfamily) preferring typographic names (16/17), Windows English."""
+        if "name" not in self.tables:
+            return None, None
+        d = self.data
+        off = self.tables["name"][0]
+        count, sto = struct.unpack(">HH", d[off + 2:off + 6])
+        got = {}
+        for i in range(count):
+            pid, eid, lid, nid, ln, so = struct.unpack(">HHHHHH", d[off + 6 + 12 * i:off + 18 + 12 * i])
+            if nid not in (1, 2, 16, 17):
+                continue
+            raw = d[off + sto + so:off + sto + so + ln]
+            if pid == 3 and lid in (0x409, 0):
+                got[nid] = raw.decode("utf-16-be", "ignore")
+            elif pid == 1 and nid not in got:
+                got[nid] = raw.decode("mac_roman", "ignore")
+        return got.get(16) or got.get(1), got.get(17) or got.get(2)
 
     def _cmap(self):
         d = self.data
@@ -124,8 +203,8 @@ RANGES = [(0x20, 0x7E), (0xA0, 0x24F), (0x2010, 0x2044), (0x20A0, 0x20BF), (0x21
           (0x2122, 0x2122), (0x2212, 0x2212), (0x2264, 0x2265), (0x25A0, 0x25CF), (0x2713, 0x2717)]
 
 
-def metrics_from_ttf(path):
-    f = TTF(path)
+def metrics_from_ttf(path, index=0):
+    f = TTF(path, index)
     widths = {}
     for a, b in RANGES:
         for cp in range(a, b + 1):
@@ -143,6 +222,14 @@ def metrics_from_ttf(path):
 _CACHE = {}
 
 
+class FontMissing(Exception):
+    def __init__(self, family, style):
+        Exception.__init__(self, "font '%s' (%s) is not installed and has no metric-compatible stand-in here. "
+                                 "Put its .ttf/.otf files in <project>/fonts/ or install %s." % (
+                                     family, style, STAND_INS.get(family, "it")))
+        self.family = family
+
+
 def metrics(family, bold=False, italic=False):
     key = (family, style_key(bold, italic))
     if key not in _CACHE:
@@ -150,10 +237,11 @@ def metrics(family, bold=False, italic=False):
         if os.path.exists(p):
             _CACHE[key] = json.load(open(p, encoding="utf-8"))
         else:
-            src = find_font_file(family, key[1])
-            if not src:
-                raise SystemExit("No metrics for %s %s; run tools/gen_metrics.py" % key)
-            _CACHE[key] = metrics_from_ttf(src)
+            hit = locate(family, key[1])
+            if not hit:
+                raise FontMissing(family, key[1])
+            _CACHE[key] = metrics_from_ttf(hit[0], hit[1])
+            _CACHE[key]["used_family"] = hit[2]
     return _CACHE[key]
 
 

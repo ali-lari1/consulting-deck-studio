@@ -4,9 +4,9 @@ import datetime
 
 from . import components as C
 from . import scene as S
-from .components import T, r
+from .components import G, T, r
 from .deckmd import md_runs
-from .layouts import MAIN_R, MAIN_X, SIDE_R, SIDE_X, TOP, chrome, default_side, layout, side_panels, table, trend_color
+from .layouts import chrome, default_side, layout, side_panels, table, trend_color
 
 LBL = dict(size=8.5, bold=True, color=T["grey"])
 MON = ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"]
@@ -21,9 +21,9 @@ def status_summary(slide, ctx):
     """Rows of area | RAG | trend | summary, a decisions panel, and an optional look-ahead table."""
     d = slide["data"]
     els, bottom = chrome(slide, ctx)
-    x0, xs, xt, xx = MAIN_X, MAIN_X + 114, MAIN_X + 176, MAIN_X + 210
-    xr = MAIN_R - 16
-    y = TOP
+    x0, xs, xt, xx = G.L, G.L + 114, G.L + 176, G.L + 210
+    xr = G.main_r - 16
+    y = G.top
     for xh, txt in [(x0, "Area"), (xs, "Status"), (xt - 4, "Trend"), (xx, "Summary")]:
         els.append(S.text(xh, y, 120, lbl(txt)))
     els.append(S.hline(x0, y + 14, xr, T["navy"], 0.75))
@@ -71,16 +71,16 @@ def status_summary(slide, ctx):
         y = ly
     if y > bottom:
         raise S.LayoutError("status rows need %.0f pt, %.0f available; shorten summaries or drop the look-ahead" % (
-            y - TOP, bottom - TOP))
+            y - G.top, bottom - G.top))
     dec = d.get("decisions")
     if dec:
-        hdr, iy = C.header_box(SIDE_X, TOP, SIDE_R - SIDE_X, 0, d.get("decisions_title", "Decisions needed"))
+        hdr, iy = C.header_box(G.side_x, G.top, G.R - G.side_x, 0, d.get("decisions_title", "Decisions needed"))
         els += hdr
         yy = iy
-        w = SIDE_R - SIDE_X
+        w = G.R - G.side_x
         for i, x in enumerate(dec, 1):
-            els += C.callout(SIDE_X + 7, yy + 7, i)
-            t = S.text(SIDE_X + 22, yy, w - 22, md_runs(x["what"], 10.5, bold=True), lh=1.3)
+            els += C.callout(G.side_x + 7, yy + 7, i)
+            t = S.text(G.side_x + 22, yy, w - 22, md_runs(x["what"], 10.5, bold=True), lh=1.3)
             els.append(t)
             yy += t["h"] + 3
             meta = []
@@ -89,11 +89,11 @@ def status_summary(slide, ctx):
             if x.get("due"):
                 meta += [r("Due: ", 9, True, T["grey"]), r(x["due"], 9, color=T["grey"])]
             if meta:
-                els.append(S.text(SIDE_X + 22, yy, w - 22, meta))
+                els.append(S.text(G.side_x + 22, yy, w - 22, meta))
                 yy += 14
             yy += 8
             if i < len(dec):
-                els.append(S.hline(SIDE_X, yy - 6, SIDE_R, T["rule"], 0.5))
+                els.append(S.hline(G.side_x, yy - 6, G.R, T["rule"], 0.5))
         if yy > bottom:
             raise S.LayoutError("decisions panel overflows by %.0f pt" % (yy - bottom))
     return els
@@ -105,13 +105,13 @@ def rag_dashboard(slide, ctx):
     d = slide["data"]
     els, bottom = chrome(slide, ctx)
     kp = d.get("kpis", [])
-    y = TOP
+    y = G.top
     if kp:
-        w = (SIDE_R - MAIN_X) / len(kp)
+        w = (G.R - G.L) / len(kp)
         for i, k in enumerate(kp):
-            els += C.kpi_card(MAIN_X + i * w + (14 if i else 0), y, w, 72, None, k["label"], k["value"], k.get("note"), k.get("rag"))
+            els += C.kpi_card(G.L + i * w + (14 if i else 0), y, w, 72, None, k["label"], k["value"], k.get("note"), k.get("rag"))
             if i:
-                els.append(S.line(MAIN_X + i * w, y + 2, MAIN_X + i * w, y + 64, T["rule"], 0.75))
+                els.append(S.line(G.L + i * w, y + 2, G.L + i * w, y + 64, T["rule"], 0.75))
         y += 86
     cols = d.get("columns") or [
         {"name": "Workstream", "width": 0.17, "kind": "bold"}, {"name": "Lead", "width": 0.10},
@@ -120,9 +120,9 @@ def rag_dashboard(slide, ctx):
         {"name": "Key issue and next step", "width": 0.48}]
     keys = d.get("keys") or ["workstream", "lead", "schedule", "cost", "risk", "trend", "comment"]
     rows = [[row.get(k, "") for k in keys] for row in d["rows"]]
-    t, yy = table(MAIN_X, y, SIDE_R - MAIN_X, cols, rows, bottom=bottom - 16, min_h=d.get("row_height", 26))
+    t, yy = table(G.L, y, G.R - G.L, cols, rows, bottom=bottom - 16, min_h=d.get("row_height", 26))
     els += t
-    els += C.legend(MAIN_X, yy + 8, [("dot", "G", "On track"), ("dot", "A", "At risk"), ("dot", "R", "Off track"),
+    els += C.legend(G.L, yy + 8, [("dot", "G", "On track"), ("dot", "A", "At risk"), ("dot", "R", "Off track"),
                                      ("up", T["G"], "Improving"), ("flat", T["grey"], "Stable"), ("down", T["R"], "Worsening")])
     return els
 
@@ -149,15 +149,15 @@ def gantt(slide, ctx):
     d = slide["data"]
     els, bottom = chrome(slide, ctx)
     side = default_side(slide)
-    right = MAIN_R if side else SIDE_R
-    hdr, y = C.exhibit_header(MAIN_X, TOP, right - MAIN_X, d.get("exhibit", "Schedule, baseline vs forecast"), d.get("unit"))
+    right = G.main_r if side else G.R
+    hdr, y = C.exhibit_header(G.L, G.top, right - G.L, d.get("exhibit", "Schedule, baseline vs forecast"), d.get("unit"))
     els += hdr
     start = _date(d["start"]).replace(day=1)
     end = _date(d["end"])
     nm = max(1, _months_between(start, end))
     nm_int = int(nm + 0.999)
     lab_w = d.get("label_width", 150)
-    x0, x1 = MAIN_X + lab_w, right
+    x0, x1 = G.L + lab_w, right
     mw = (x1 - x0) / nm_int
 
     def X(s):
@@ -179,13 +179,13 @@ def gantt(slide, ctx):
     for i, row in enumerate(rows):
         yy = gy0 + i * rh
         if row.get("rag"):
-            els.append(C.rag_dot(MAIN_X + 6, yy + rh / 2, row["rag"], 9))
-        els.append(S.text(MAIN_X + 16, yy, lab_w - 20, r(row["name"], 10, row.get("critical", False)), va="m", h=rh, lh=1.1, max_lines=2))
+            els.append(C.rag_dot(G.L + 6, yy + rh / 2, row["rag"], 9))
+        els.append(S.text(G.L + 16, yy, lab_w - 20, r(row["name"], 10, row.get("critical", False)), va="m", h=rh, lh=1.1, max_lines=2))
         if row.get("baseline"):
             b0, b1 = X(row["baseline"][0]), X(row["baseline"][1])
             els.append(S.rect(b0, yy + rh * 0.2, b1 - b0, rh * 0.2, fill=None, line=T["mid"], lw=0.75))
         f0, f1 = X(row["forecast"][0]), X(row["forecast"][1])
-        els.append(S.rect(f0, yy + rh * 0.46, f1 - f0, rh * 0.3, fill=T["navy"] if row.get("critical") else "#8FA6C4"))
+        els.append(S.rect(f0, yy + rh * 0.46, f1 - f0, rh * 0.3, fill=T["navy"] if row.get("critical") else T["navy_l"]))
         if row.get("float_to"):
             fx = X(row["float_to"])
             fy = yy + rh * 0.61
@@ -193,12 +193,12 @@ def gantt(slide, ctx):
             els.append(S.text(f1 + 2, yy + rh * 0.78, fx - f1, r(row.get("float_label", "float"), 7.5, True, T["G"]), align="c"))
         if row.get("callout"):
             els += C.callout(f1 + 10, yy + rh * 0.61, row["callout"])
-        els.append(S.hline(MAIN_X, yy + rh, x1, T["rule"], 0.4))
+        els.append(S.hline(G.L, yy + rh, x1, T["rule"], 0.4))
     my = gy0 + len(rows) * rh + 4
     for i in range(1, nm_int):
         els.append(S.line(x0 + i * mw, gy0, x0 + i * mw, my + len(ms) * 26, T["rule"], 0.4, dash="dot"))
     for m in ms:
-        els.append(S.text(MAIN_X + 16, my, lab_w - 20, r(m["name"], 10, True), va="m", h=24, max_lines=1))
+        els.append(S.text(G.L + 16, my, lab_w - 20, r(m["name"], 10, True), va="m", h=24, max_lines=1))
         fx = X(m["forecast"])
         if m.get("baseline") and m["baseline"] != m["forecast"]:
             bx = X(m["baseline"])
@@ -214,8 +214,8 @@ def gantt(slide, ctx):
     if d.get("today"):
         tx = X(d["today"])
         els.append(S.line(tx, gy0 - 4, tx, my + 4, T["R"], 1, dash="dash"))
-    els += C.legend(MAIN_X, my + 8, [("outline", T["mid"], "Baseline"), ("bar", T["navy"], "Forecast, critical path"),
-                                     ("bar", "#8FA6C4", "Forecast, other"), ("diamond", T["navy"], "Milestone")] +
+    els += C.legend(G.L, my + 8, [("outline", T["mid"], "Baseline"), ("bar", T["navy"], "Forecast, critical path"),
+                                     ("bar", T["navy_l"], "Forecast, other"), ("diamond", T["navy"], "Milestone")] +
                     ([("dash", T["R"], "Today")] if d.get("today") else []))
     if side:
         els += side_panels(bottom, side)
@@ -228,13 +228,13 @@ def risk_heatmap(slide, ctx):
     d = slide["data"]
     els, bottom = chrome(slide, ctx)
     red, amber = d.get("red_from", 15), d.get("amber_from", 8)
-    hdr, y = C.exhibit_header(MAIN_X, TOP, 286, d.get("exhibit", "Top risks, current position"),
+    hdr, y = C.exhibit_header(G.L, G.top, 286, d.get("exhibit", "Top risks, current position"),
                               d.get("unit", "Likelihood x impact"))
     els += hdr
-    gx = MAIN_X + 30
+    gx = G.L + 30
     c = min(47.0, (bottom - y - 60) / 5)
     gy = y + 16
-    els.append(S.text(MAIN_X, y, 120, r("Likelihood", 8.5, True, T["grey"])))
+    els.append(S.text(G.L, y, 120, r("Likelihood", 8.5, True, T["grey"])))
     for li in range(5):
         for ii in range(5):
             sc = (5 - li) * (ii + 1)
@@ -270,10 +270,10 @@ def risk_heatmap(slide, ctx):
         cx, cy = pos(rk["l"], rk["i"], (k - (n - 1) / 2.0) * 17)
         els.append(S.rect(cx - 14, cy - 8, 28, 16, fill=T["navy"]))
         els.append(S.text(cx - 14, cy - 8, 28, r(rk["id"], 8, True, T["white"]), align="c", va="m", h=16))
-    els += C.legend(MAIN_X, gy + 5 * c + 32, [("bar", T["navy"], "Now"), ("outline", T["grey"], "Last period")])
-    tx = MAIN_X + 306
-    cols = [{"name": "ID", "width": 34, "kind": "bold"}, {"name": "Risk", "width": 0.36},
-            {"name": "Owner", "width": 0.14}, {"name": "Score", "width": 0.10, "kind": "bold"},
+    els += C.legend(G.L, gy + 5 * c + 32, [("bar", T["navy"], "Now"), ("outline", T["grey"], "Last period")])
+    tx = G.L + 306
+    cols = [{"name": "ID", "width": 36, "kind": "bold"}, {"name": "Risk", "width": 0.37},
+            {"name": "Owner", "width": 0.13}, {"name": "Score", "width": 64, "kind": "bold"},
             {"name": "", "width": 20, "kind": "trend", "good": "down"}, {"name": "Mitigation and status", "width": 0.40}]
     rows = []
     for rk in risks:
@@ -283,7 +283,7 @@ def risk_heatmap(slide, ctx):
                                  "down" if rk.get("prev") and score < rk["prev"][0] * rk["prev"][1] else "flat")
         rows.append([rk["id"], rk["title"], rk.get("owner", ""), sc_txt, tr,
                      rk.get("mitigation", "")])
-    t, yy = table(tx, TOP, SIDE_R - tx, cols, rows, size=9.5, bottom=bottom - 16)
+    t, yy = table(tx, G.top, G.R - tx, cols, rows, size=9.5, bottom=bottom - 16)
     els += t
     els += C.legend(tx, yy + 6, [("up", T["R"], "Score rising"), ("flat", T["grey"], "Unchanged"), ("down", T["G"], "Score falling")])
     return els
@@ -294,15 +294,15 @@ def options_matrix(slide, ctx):
     """Weighted Harvey-ball evaluation of options, recommended option outlined, rationale panel."""
     d = slide["data"]
     els, bottom = chrome(slide, ctx)
-    y0 = TOP
+    y0 = G.top
     if d.get("stages"):
-        els += C.chevrons(MAIN_X, TOP - 2, MAIN_R - MAIN_X, 24, d["stages"], d.get("stage"))
-        y0 = TOP + 36
+        els += C.chevrons(G.L, G.top - 2, G.main_r - G.L, 24, d["stages"], d.get("stage"))
+        y0 = G.top + 36
     crit, opts = d["criteria"], d["options"]
     lab_w = 180.0
     wcol = 60.0 if any("weight" in c for c in crit) else 0
-    x0 = MAIN_X + lab_w + wcol
-    cw = (MAIN_R - x0) / len(opts)
+    x0 = G.L + lab_w + wcol
+    cw = (G.main_r - x0) / len(opts)
     rows_h = min(38.0, (bottom - y0 - 110) / len(crit))
     rec = d.get("recommended")
     for j, o in enumerate(opts):
@@ -310,23 +310,23 @@ def options_matrix(slide, ctx):
                                                   r(o["name"], 9, color=T["grey"])], align="c", lh=1.2, max_lines=3)
         els.append(hd)
     if wcol:
-        els.append(S.text(MAIN_X + lab_w, y0 + 12, wcol, r("Weight", 9, True, T["grey"]), align="c"))
+        els.append(S.text(G.L + lab_w, y0 + 12, wcol, r("Weight", 9, True, T["grey"]), align="c"))
     hy = y0 + 40
-    els.append(S.hline(MAIN_X, hy, MAIN_R, T["navy"], 0.75))
+    els.append(S.hline(G.L, hy, G.main_r, T["navy"], 0.75))
     weights = [float(str(c.get("weight", "0")).rstrip("%")) / 100 for c in crit]
     for i, c_ in enumerate(crit):
         y = hy + 6 + i * rows_h
-        els.append(S.text(MAIN_X, y, lab_w - 6, r(c_["name"], 10.5), va="m", h=rows_h - 8, lh=1.15, max_lines=2))
+        els.append(S.text(G.L, y, lab_w - 6, r(c_["name"], 10.5), va="m", h=rows_h - 8, lh=1.15, max_lines=2))
         if wcol:
-            els.append(S.text(MAIN_X + lab_w, y, wcol, r(str(c_["weight"]), 10.5, color=T["grey"]), align="c", va="m", h=rows_h - 8))
+            els.append(S.text(G.L + lab_w, y, wcol, r(str(c_["weight"]), 10.5, color=T["grey"]), align="c", va="m", h=rows_h - 8))
         for j, o in enumerate(opts):
             dd = min(20.0, rows_h - 14)
             els.append(S.pie(x0 + j * cw + cw / 2 - dd / 2, y + (rows_h - 8 - dd) / 2, dd, o["scores"][i] * 90,
                              fill=T["navy"], line=T["navy"], lw=1))
-        els.append(S.hline(MAIN_X, y + rows_h - 4, MAIN_R, T["rule"], 0.5))
+        els.append(S.hline(G.L, y + rows_h - 4, G.main_r, T["rule"], 0.5))
     y = hy + 6 + len(crit) * rows_h
     if wcol:
-        els.append(S.text(MAIN_X, y, lab_w, r("Weighted score", 10.5, True), va="m", h=26))
+        els.append(S.text(G.L, y, lab_w, r("Weighted score", 10.5, True), va="m", h=26))
         for j, o in enumerate(opts):
             tot = sum(a * b for a, b in zip(o["scores"], weights))
             els.append(S.text(x0 + j * cw, y, cw, r("%.1f" % tot, 13, True, T["navy"] if o["key"] == rec else T["ink"]),
@@ -337,7 +337,7 @@ def options_matrix(slide, ctx):
     if rec:
         j = [o["key"] for o in opts].index(rec)
         els.append(S.rect(x0 + j * cw + 2, y0 - 4, cw - 4, y - y0 + 2, fill=None, line=T["navy"], lw=1.5))
-    els += C.legend(MAIN_X, y + 6, [("harvey", 0, "Weak"), ("harvey", 1, ""), ("harvey", 2, ""), ("harvey", 3, ""),
+    els += C.legend(G.L, y + 6, [("harvey", 0, "Weak"), ("harvey", 1, ""), ("harvey", 2, ""), ("harvey", 3, ""),
                                     ("harvey", 4, "Strong")], size=8)
     if y + 20 > bottom:
         raise S.LayoutError("options matrix overflows by %.0f pt" % (y + 20 - bottom))

@@ -70,8 +70,9 @@ def _ln(color, lw, dash=None, head=None, tail=None):
 
 
 class Writer:
-    def __init__(self):
+    def __init__(self, tmode=False):
         self.next_id = 2
+        self.tmode = tmode
 
     def nid(self):
         self.next_id += 1
@@ -82,15 +83,18 @@ class Writer:
         return '<%s%s><a:off x="%d" y="%d"/><a:ext cx="%d" cy="%d"/></%s>' % (
             tag, fl, e(x), e(y), max(e(w), 0), max(e(h), 0), tag)
 
-    def sp(self, name, geom, x, y, w, h, fill, ln, body="", txbox=False):
+    def sp(self, name, geom, x, y, w, h, fill, ln, body="", txbox=False, ph=None):
         i = self.nid()
-        return ('<p:sp><p:nvSpPr><p:cNvPr id="%d" name="%s"/><p:cNvSpPr%s/><p:nvPr/></p:nvSpPr>'
+        nvpr = '<p:nvPr><p:ph type="%s"%s/></p:nvPr>' % (ph[0], ' idx="%s"' % ph[1] if ph[1] else "") if ph else "<p:nvPr/>"
+        cnv = '<p:cNvSpPr><a:spLocks noGrp="1"/></p:cNvSpPr>' if ph else "<p:cNvSpPr%s/>" % (' txBox="1"' if txbox else "")
+        return ('<p:sp><p:nvSpPr><p:cNvPr id="%d" name="%s"/>%s%s</p:nvSpPr>'
                 '<p:spPr>%s%s%s%s</p:spPr>%s</p:sp>') % (
-            i, escape(name or "Shape %d" % i), ' txBox="1"' if txbox else "", self.xfrm(x, y, w, h), geom,
-            fill, ln, body)
+            i, escape(name or "Shape %d" % i), cnv, nvpr, self.xfrm(x, y, w, h), geom, fill, ln, body)
 
     def el(self, el):
         t = el["t"]
+        if el.get("html_only"):
+            return ""
         if t == "group":
             kids = "".join(self.el(c) for c in el["children"])
             xs, ys, xe, ye = _bbox(el["children"])
@@ -191,6 +195,9 @@ class Writer:
                 ' spc="%d"' % int(round(el["tracking"] * 100)) if el["tracking"] else "",
                 _clr(r["color"]), r["font"], r["font"], tag)
 
+        ph = None
+        if self.tmode and el.get("name") in ("Title", "Subtitle", "Page"):
+            ph = {"Title": ("title", None), "Subtitle": ("subTitle", "1"), "Page": ("sldNum", "12")}[el["name"]]
         out = []
         for p in el["paras"]:
             st = p["lines"][0][0] if p["lines"] and p["lines"][0] else p["style"]
@@ -206,13 +213,17 @@ class Writer:
             for k, line in enumerate(p["lines"]):
                 if k:
                     body.append("<a:br>%s</a:br>" % rpr(st))
-                body += ['<a:r>%s<a:t>%s</a:t></a:r>' % (rpr(r), escape(r["text"])) for r in line]
+                if ph and ph[0] == "sldNum":
+                    body += ['<a:fld id="{B6F15528-21DE-4FAA-801E-634DDDAF4B2B}" type="slidenum">%s<a:t>%s</a:t></a:fld>' % (
+                        rpr(r), escape(r["text"])) for r in line]
+                else:
+                    body += ['<a:r>%s<a:t>%s</a:t></a:r>' % (rpr(r), escape(r["text"])) for r in line]
             out.append('<a:p>%s%s<a:endParaRPr lang="en-GB" sz="%d" dirty="0"/></a:p>' % (
                 ppr, "".join(body), int(round(st["size"] * 100))))
         bodyxml = ('<p:txBody><a:bodyPr wrap="none" lIns="0" tIns="0" rIns="0" bIns="0" anchor="t" rtlCol="0">'
                    '<a:noAutofit/></a:bodyPr><a:lstStyle/>%s</p:txBody>') % "".join(out)
         return self.sp(el.get("name") or "Text", '<a:prstGeom prst="rect"><a:avLst/></a:prstGeom>', el["x"], top,
-                       el["w"], el["need"], "<a:noFill/>", "<a:ln><a:noFill/></a:ln>", bodyxml, txbox=True)
+                       el["w"], el["need"], "<a:noFill/>", "<a:ln><a:noFill/></a:ln>", bodyxml, txbox=True, ph=ph)
 
 
 def _bbox(els):
@@ -229,16 +240,17 @@ def _bbox(els):
     return min(xs), min(ys), max(xe), max(ye)
 
 
-def slide_xml(slide):
-    w = Writer()
+def slide_xml(slide, tmode=False):
+    w = Writer(tmode)
     shapes = "".join(w.el(x) for x in slide["els"])
-    bg = slide.get("bg", "#FFFFFF")
+    bg = slide.get("bg", None if tmode else "#FFFFFF")
+    bgxml = '<p:bg><p:bgPr>%s<a:effectLst/></p:bgPr></p:bg>' % _clr(bg) if bg else ""
     return ('<?xml version="1.0" encoding="UTF-8" standalone="yes"?>'
-            '<p:sld %s %s %s><p:cSld><p:bg><p:bgPr>%s<a:effectLst/></p:bgPr></p:bg><p:spTree>'
+            '<p:sld %s %s %s><p:cSld>%s<p:spTree>'
             '<p:nvGrpSpPr><p:cNvPr id="1" name=""/><p:cNvGrpSpPr/><p:nvPr/></p:nvGrpSpPr>'
             '<p:grpSpPr><a:xfrm><a:off x="0" y="0"/><a:ext cx="0" cy="0"/><a:chOff x="0" y="0"/>'
             '<a:chExt cx="0" cy="0"/></a:xfrm></p:grpSpPr>%s</p:spTree></p:cSld>'
-            '<p:clrMapOvr><a:masterClrMapping/></p:clrMapOvr></p:sld>') % (A, R, P, _clr(bg), shapes)
+            '<p:clrMapOvr><a:masterClrMapping/></p:clrMapOvr></p:sld>') % (A, R, P, bgxml, shapes)
 
 
 def notes_xml(text, n):
@@ -368,5 +380,108 @@ def write(slides, path, title="Deck", font_major="Arial", font_minor="Arial"):
                                                                        ("rId2", "notesSlide", "../notesSlides/notesSlide%d.xml" % i)]))
             z.writestr("ppt/notesSlides/notesSlide%d.xml" % i, notes_xml(s.get("notes", ""), i))
             z.writestr("ppt/notesSlides/_rels/notesSlide%d.xml.rels" % i, rels([("rId1", "notesMaster", "../notesMasters/notesMaster1.xml"),
+                                                                                 ("rId2", "slide", "../slides/slide%d.xml" % i)]))
+    return path
+
+
+SCALE_KEYS = ("x", "y", "w", "h", "x1", "y1", "x2", "y2", "lw", "lh", "tracking", "need", "radius")
+
+
+def scale_els(els, f):
+    """Uniformly scale a scene (canvas pt -> template pt). Text sizes and spacing scale too, so line breaks hold."""
+    import copy
+    out = copy.deepcopy(els)
+
+    def go(e):
+        for k in SCALE_KEYS:
+            if k in e and isinstance(e[k], (int, float)):
+                e[k] = e[k] * f
+        if e["t"] == "poly":
+            e["points"] = [(a * f, b * f) for a, b in e["points"]]
+        if e["t"] == "text":
+            for p in e["paras"]:
+                p["indent"] *= f
+                p["space_before"] *= f
+                for line in p["lines"]:
+                    for r in line:
+                        r["size"] *= f
+        if e["t"] == "group":
+            for c in e["children"]:
+                go(c)
+    for e in out:
+        go(e)
+    return out
+
+
+def write_template(slides, path, tpl, title="Deck"):
+    """Write slides into a copy of the client's template: their masters, layouts, theme, media and fonts are
+    kept; any slides already in the template are dropped. tpl = {path, layouts: {kind: part}, scale}.
+    Each slide dict may carry kind = content | title | section | blank (default content)."""
+    import re as _re
+    src = zipfile.ZipFile(tpl["path"])
+    names = src.namelist()
+    drop = _re.compile(r"^ppt/(slides|notesSlides)/(_rels/)?[^/]+$|^ppt/presentation\.xml$|"
+                       r"^ppt/_rels/presentation\.xml\.rels$|^\[Content_Types\]\.xml$|^docProps/thumbnail\.")
+    pres = src.read("ppt/presentation.xml").decode("utf-8")
+    prels = src.read("ppt/_rels/presentation.xml.rels").decode("utf-8")
+    ct = src.read("[Content_Types].xml").decode("utf-8")
+    has_nm = any(n.startswith("ppt/notesMasters/notesMaster") for n in names)
+    # presentation rels: drop slide (and notesMaster if we add our own) relationships
+    prels = _re.sub(r'<Relationship [^>]*Type="[^"]*/slide"[^>]*/>', "", prels)
+    new_rels = "".join('<Relationship Id="rIdCds%d" Type="%s/slide" Target="slides/slide%d.xml"/>' % (i, RELS, i)
+                       for i in range(1, len(slides) + 1))
+    if not has_nm:
+        new_rels += '<Relationship Id="rIdCdsNM" Type="%s/notesMaster" Target="notesMasters/notesMaster1.xml"/>' % RELS
+    prels = prels.replace("</Relationships>", new_rels + "</Relationships>")
+    sld_ids = "".join('<p:sldId id="%d" r:id="rIdCds%d"/>' % (300 + i, i) for i in range(1, len(slides) + 1))
+    if "<p:sldIdLst" in pres:
+        pres = _re.sub(r"<p:sldIdLst>.*?</p:sldIdLst>|<p:sldIdLst/>", "<p:sldIdLst>%s</p:sldIdLst>" % sld_ids, pres, flags=_re.S)
+    else:
+        pres = pres.replace("</p:sldMasterIdLst>", "</p:sldMasterIdLst>" + (
+            "" if has_nm else '<p:notesMasterIdLst><p:notesMasterId r:id="rIdCdsNM"/></p:notesMasterIdLst>') +
+            "<p:sldIdLst>%s</p:sldIdLst>" % sld_ids, 1)
+    if not has_nm and "<p:notesMasterIdLst" not in pres:
+        pres = pres.replace("<p:sldIdLst>", '<p:notesMasterIdLst><p:notesMasterId r:id="rIdCdsNM"/></p:notesMasterIdLst><p:sldIdLst>', 1)
+    # content types
+    ct = _re.sub(r'<Override PartName="/ppt/(slides|notesSlides)/[^"]+"[^>]*/>', "", ct)
+    ct = ct.replace("application/vnd.openxmlformats-officedocument.presentationml.template.main+xml",
+                    "application/vnd.openxmlformats-officedocument.presentationml.presentation.main+xml")
+    add = "".join('<Override PartName="/ppt/slides/slide%d.xml" ContentType="application/vnd.openxmlformats-officedocument.presentationml.slide+xml"/>'
+                  '<Override PartName="/ppt/notesSlides/notesSlide%d.xml" ContentType="application/vnd.openxmlformats-officedocument.presentationml.notesSlide+xml"/>' % (i, i)
+                  for i in range(1, len(slides) + 1))
+    if not has_nm:
+        add += ('<Override PartName="/ppt/notesMasters/notesMaster1.xml" ContentType="application/vnd.openxmlformats-officedocument.presentationml.notesMaster+xml"/>'
+                '<Override PartName="/ppt/theme/themeCdsNotes.xml" ContentType="application/vnd.openxmlformats-officedocument.theme+xml"/>')
+    if 'Extension="png"' not in ct:
+        add += '<Default Extension="png" ContentType="image/png"/>'
+    ct = ct.replace("</Types>", add + "</Types>")
+    nm_target = "../notesMasters/notesMaster1.xml"
+    if has_nm:
+        nm_target = "../" + sorted(n for n in names if _re.match(r"ppt/notesMasters/notesMaster\d+\.xml$", n))[0][4:]
+
+    def rels(items):
+        return ('<?xml version="1.0" encoding="UTF-8" standalone="yes"?><Relationships xmlns="%s">%s</Relationships>' % (
+            PKG, "".join('<Relationship Id="%s" Type="%s/%s" Target="%s"/>' % (a, RELS, b, c) for a, b, c in items)))
+
+    f = tpl["scale"]
+    with zipfile.ZipFile(path, "w", zipfile.ZIP_DEFLATED) as z:
+        for n in names:
+            if not drop.match(n):
+                z.writestr(n, src.read(n))
+        z.writestr("ppt/presentation.xml", pres)
+        z.writestr("ppt/_rels/presentation.xml.rels", prels)
+        z.writestr("[Content_Types].xml", ct)
+        if not has_nm:
+            z.writestr("ppt/notesMasters/notesMaster1.xml", NOTES_MASTER % (A, R, P))
+            z.writestr("ppt/notesMasters/_rels/notesMaster1.xml.rels", rels([("rId1", "theme", "../theme/themeCdsNotes.xml")]))
+            z.writestr("ppt/theme/themeCdsNotes.xml", THEME % (A, "Arial", "Arial"))
+        for i, s_ in enumerate(slides, 1):
+            part = tpl["layouts"].get(s_.get("kind", "content")) or tpl["layouts"]["content"]
+            scaled = dict(s_, els=scale_els(s_["els"], f))
+            z.writestr("ppt/slides/slide%d.xml" % i, slide_xml(scaled, tmode=True))
+            z.writestr("ppt/slides/_rels/slide%d.xml.rels" % i, rels([("rId1", "slideLayout", "../" + part[4:]),
+                                                                       ("rId2", "notesSlide", "../notesSlides/notesSlide%d.xml" % i)]))
+            z.writestr("ppt/notesSlides/notesSlide%d.xml" % i, notes_xml(s_.get("notes", ""), i))
+            z.writestr("ppt/notesSlides/_rels/notesSlide%d.xml.rels" % i, rels([("rId1", "notesMaster", nm_target),
                                                                                  ("rId2", "slide", "../slides/slide%d.xml" % i)]))
     return path

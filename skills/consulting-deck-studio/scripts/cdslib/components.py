@@ -13,9 +13,65 @@ THEME = {
     "ink": "#1A1A1A", "navy": "#0B2545", "blue": "#2F5D9A", "sky": "#DCE6F2", "grey": "#5F6B7A",
     "mid": "#A3ADB8", "rule": "#C9CFD6", "tint": "#F2F4F7", "white": "#FFFFFF",
     "R": "#C62828", "A": "#E8A300", "G": "#2E7D32", "R_t": "#F6D3D1", "A_t": "#FBEBC2", "G_t": "#D5EAD6",
-    "L": 36.0, "Rm": 924.0, "title_y": 34.0, "body_y": 104.0, "sowhat_y": 446.0, "foot_y": 486.0,
+    "navy_l": "#8FA6C4",
 }
 T = THEME
+HOUSE = dict(THEME)
+
+
+class Grid:
+    """Where things go on the 960 x 540 canvas. House values below; template mode replaces them with
+    positions read from the client's slide layouts."""
+    def __init__(self, **kw):
+        self.L, self.R = 36.0, 924.0               # content left / right edge
+        self.main_r, self.side_x = 626.0, 650.0     # main exhibit right edge, side panel left edge
+        self.top = 104.0                           # body top
+        self.title = dict(x=36.0, y=34.0, w=888.0, h=52.0, size=20.0, bold=True, color=None, font=None, lines=2)
+        self.rule_y = 90.0                         # rule under the title (None = template draws its own)
+        self.context_y, self.tracker_y = 14.0, 13.0
+        self.sowhat_y, self.foot_y = 446.0, 486.0
+        self.page = dict(x=804.0, y=520.0, w=120.0, align="r")
+        self.foot_bottom = 532.0                   # footnotes end above this
+        self.chrome = True                         # draw context line, tracker, confidential mark
+        self.scale = 1.0                           # canvas pt -> output pt (template slide size / 960)
+        self.keepout = []                          # [x, y, w, h] boxes the template's own graphics occupy
+        self.__dict__.update(kw)
+
+
+G = Grid()
+
+
+def set_grid(g):
+    G.__dict__.clear()
+    G.__dict__.update(g.__dict__)
+
+
+def blend(a, b, t):
+    """Mix hex colour a toward b by t (0..1)."""
+    a, b = a.lstrip("#"), b.lstrip("#")
+    return "#%02X%02X%02X" % tuple(int(int(a[i:i + 2], 16) * (1 - t) + int(b[i:i + 2], 16) * t) for i in (0, 2, 4))
+
+
+def apply_brand(brand):
+    """brand: {colors: {primary, secondary, text, light, ...}, fonts: {heading, body}}. Unset keys keep house values."""
+    T.clear()
+    T.update(HOUSE)
+    c = brand.get("colors", {})
+    T["navy"] = c.get("primary", T["navy"])
+    T["blue"] = c.get("secondary", blend(T["navy"], "#FFFFFF", 0.35))
+    T["ink"] = c.get("text", T["ink"])
+    T["tint"] = c.get("light", T["tint"])
+    T["grey"] = c.get("muted", T["grey"])
+    for k in ("R", "A", "G", "R_t", "A_t", "G_t", "rule", "mid"):
+        if k in c:
+            T[k] = c[k]
+    T["sky"] = blend(T["navy"], "#FFFFFF", 0.85)
+    T["navy_l"] = blend(T["navy"], "#FFFFFF", 0.5)
+    f = brand.get("fonts", {})
+    T["font"] = f.get("body", T["font"])
+    T["title_font"] = f.get("heading", T["font"])
+
+
 RAG_WORD = {"R": "Red", "A": "Amber", "G": "Green"}
 
 
@@ -25,31 +81,31 @@ def r(text, size=11, bold=False, color=None, italic=False, font=None):
 
 def frame(title, page, tracker=None, active=None, context=None, sticker=None, sowhat=None, footnotes=None,
           source=None, confidential=True):
-    """Standard page furniture. Returns (elements, body_bottom_y)."""
-    L, R_ = T["L"], T["Rm"]
+    """Standard page furniture on the current grid. Returns (elements, body_bottom_y)."""
+    L, R_ = G.L, G.R
     els = []
-    x = L
-    if context:
-        els.append(S.text(x, 14, 520, r(context, 8, color=T["grey"])))
     sw = S.line_width([r(sticker, 8)]) + 14 if sticker else 0
-    if tracker:
+    if G.chrome and context:
+        els.append(S.text(L, G.context_y, 520, r(context, 8, color=T["grey"]), max_lines=1))
+    if G.chrome and tracker:
         widths = [S.line_width([r(t, 8, True)]) for t in tracker]
         x = R_ - sum(widths) - 14 * (len(tracker) - 1) - (sw + 16 if sticker else 0)
         for t, w in zip(tracker, widths):
             on = t == active
-            els.append(S.text(x, 13, w + 1, r(t, 8, on, T["navy"] if on else T["mid"])))
+            els.append(S.text(x, G.tracker_y, w + 1, r(t, 8, on, T["navy"] if on else T["mid"])))
             if on:
-                els.append(S.hline(x, 24, x + w, T["navy"], 1.25))
+                els.append(S.hline(x, G.tracker_y + 11, x + w, T["navy"], 1.25))
             x += w + 14
     if sticker:
-        els.append(S.rect(R_ - sw, 10, sw, 15, fill=None, line=T["ink"], lw=0.75))
-        els.append(S.text(R_ - sw, 14, sw, r(sticker, 8, False, T["ink"]), align="c", max_lines=1))
-    els.append(S.text(L, T["title_y"], R_ - L, r(title, 20, True, T["navy"], font=T["title_font"]), lh=1.15,
-                      max_lines=2, name="Title"))
-    els.append(S.hline(L, 90, R_, T["rule"], 0.75))
-    bottom = T["foot_y"] - 6
+        sx, sy = free_x(R_ - sw, G.tracker_y - 3, sw, 15)
+        els.append(S.rect(sx, sy, sw, 15, fill=None, line=T["ink"], lw=0.75))
+        els.append(S.text(sx, sy + 4, sw, r(sticker, 8, False, T["ink"]), align="c", max_lines=1))
+    els.append(title_text(title))
+    if G.rule_y is not None:
+        els.append(S.hline(L, G.rule_y, R_, T["rule"], 0.75))
+    bottom = G.foot_y - 6
     if sowhat:
-        y = T["sowhat_y"]
+        y = G.sowhat_y
         els.append(S.rect(L, y, R_ - L, 32, fill=None, line=T["navy"], lw=1.0))
         els.append(S.text(L + 12, y, R_ - L - 24, r(sowhat, 12, True, T["navy"]), va="m", h=32, max_lines=2))
         bottom = y - 8
@@ -58,13 +114,52 @@ def frame(title, page, tracker=None, active=None, context=None, sticker=None, so
         lines.append({"runs": [r("%d. %s" % (i, fn), 7.5, color=T["grey"])]})
     if source:
         lines.append({"runs": [r("Source: ", 7.5, True, T["grey"]), r(source, 7.5, color=T["grey"])]})
-    fy = 532 - 10.0 * max(1, len(lines))
+    fy = G.foot_bottom - 10.0 * max(1, len(lines))
     if lines:
-        els.append(S.paras(L, fy - 2, 760, lines, lh=1.25))
-    els.append(S.text(R_ - 120, 520, 120, r(str(page), 8, color=T["grey"]), align="r"))
-    if confidential:
+        els.append(S.paras(L, fy - 2, min(760, R_ - L - 140), lines, lh=1.25))
+    pg = G.page
+    if pg:
+        els.append(S.text(pg["x"], pg["y"], pg["w"], r(str(page), 8, color=T["grey"]), align=pg.get("align", "r"), name="Page"))
+    if G.chrome and confidential:
         els.append(S.text(R_ - 260, 520, 130, r("Confidential", 7.5, color=T["mid"]), align="r"))
     return els, min(bottom, fy - 8)
+
+
+def free_x(x, y, w, h, gap=8.0):
+    """Slide a box left until it clears the template's keep-out zones (logos, bars)."""
+    moved = True
+    while moved:
+        moved = False
+        for kx, ky, kw, kh in G.keepout:
+            if x < kx + kw and x + w > kx and y < ky + kh and y + h > ky:
+                x = kx - w - gap
+                moved = True
+    return x, y
+
+
+FIT_LOG = []   # (title, from_size, to_size) when a title had to step down to fit; build.py reports these
+
+
+def title_text(title):
+    """Action title in the grid's title box. Steps the size down 1pt at a time (to 80% of the house/template size,
+    never below 16pt) before failing, and logs any step-down so the build can warn."""
+    tt = G.title
+    size = tt["size"]
+    floor = max(16.0, tt["size"] * 0.8)
+    while True:
+        try:
+            el = S.text(tt["x"], tt["y"], tt["w"], r(title, size, tt["bold"], tt["color"] or T["navy"],
+                                                     font=tt["font"] or T["title_font"]),
+                        lh=1.15, max_lines=tt["lines"], name="Title", h=tt["h"], va=tt.get("va", "t"),
+                        align=tt.get("align", "l") if tt.get("align") in ("l", "c", "r") else "l")
+            if size < tt["size"]:
+                FIT_LOG.append((title, tt["size"], size))
+            return el
+        except S.LayoutError:
+            if size - 1 < floor:
+                raise S.LayoutError("title does not fit in %d lines even at %.0fpt; shorten it (%d words)" % (
+                    tt["lines"], (size) * G.scale, len(title.split())))
+            size -= 1
 
 
 def exhibit_header(x, y, w, title, unit=None):

@@ -1,0 +1,141 @@
+{
+ "mode": "template",
+ "template": "template/acme-template.pptx",
+ "colors": {
+  "primary": "#00594F",
+  "secondary": "#E87722",
+  "text": "#262626",
+  "light": "#EEF3F2"
+ },
+ "fonts": {
+  "heading": "Verdana",
+  "body": "Verdana"
+ },
+ "scheme": {
+  "dk1": "#262626",
+  "lt1": "#FFFFFF",
+  "dk2": "#003A33",
+  "lt2": "#EEF3F2",
+  "accent1": "#00594F",
+  "accent2": "#E87722",
+  "accent3": "#5B9A8B",
+  "accent4": "#A7C4BD",
+  "accent5": "#7F7F7F",
+  "accent6": "#BFBFBF",
+  "hlink": "#00594F",
+  "folHlink": "#7F7F7F"
+ },
+ "slide_size_pt": [
+  720.0,
+  405.0
+ ],
+ "scale": 0.75,
+ "layouts": {
+  "content": "ppt/slideLayouts/slideLayout2.xml",
+  "title": "ppt/slideLayouts/slideLayout1.xml",
+  "section": "ppt/slideLayouts/slideLayout3.xml",
+  "blank": "ppt/slideLayouts/slideLayout4.xml"
+ },
+ "layout_names": {
+  "content": "Title Only",
+  "title": "Title Slide",
+  "section": "Section Header",
+  "blank": "Blank"
+ },
+ "grid": {
+  "L": 40.0,
+  "R": 920.0,
+  "top": 109.33,
+  "main_r": 624.32,
+  "side_x": 648.32,
+  "title": {
+   "x": 40.0,
+   "y": 29.33,
+   "w": 746.67,
+   "h": 64.0,
+   "size": 26.67,
+   "bold": true,
+   "color": "#00594F",
+   "font": "Verdana",
+   "lines": 2,
+   "va": "b",
+   "align": "l"
+  },
+  "rule_y": null,
+  "chrome": false,
+  "keepout": [
+   [
+    824.0,
+    26.67,
+    96.0,
+    32.0
+   ],
+   [
+    0.0,
+    532.0,
+    960.0,
+    8.0
+   ],
+   [
+    40.0,
+    509.33,
+    400.0,
+    16.0
+   ]
+  ],
+  "context_y": 12.0,
+  "tracker_y": 11.0,
+  "sowhat_y": 425.33,
+  "foot_y": 465.33,
+  "foot_bottom": 499.33,
+  "page": {
+   "x": 853.33,
+   "y": 512.33,
+   "w": 66.67,
+   "align": "r"
+  }
+ },
+ "slots": {
+  "title": {
+   "title": {
+    "x": 53.33333333333333,
+    "y": 186.66666666666666,
+    "w": 800.0,
+    "h": 106.66666666666666,
+    "size": 26.666666666666664,
+    "bold": true,
+    "color": "#00594F",
+    "va": "b"
+   },
+   "subtitle": {
+    "x": 53.33333333333333,
+    "y": 306.66666666666663,
+    "w": 800.0,
+    "h": 53.33333333333333,
+    "size": 24.0,
+    "bold": false,
+    "color": "#262626",
+    "va": "t"
+   }
+  },
+  "section": {
+   "title": {
+    "x": 53.33333333333333,
+    "y": 213.33333333333331,
+    "w": 800.0,
+    "h": 80.0,
+    "size": 26.666666666666664,
+    "bold": true,
+    "color": "#00594F",
+    "va": "t"
+   },
+   "subtitle": null
+  }
+ },
+ "chrome": {
+  "content": "template/chrome-content.png",
+  "title": "template/chrome-title.png",
+  "section": "template/chrome-section.png",
+  "blank": "template/chrome-blank.png"
+ }
+}

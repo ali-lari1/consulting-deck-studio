@@ -12,13 +12,15 @@ Usage:
   --outline  print the ghost deck (slide | layout | title) and stop
 Exit code 1 if any slide failed to lay out or lint found errors. Standard library only.
 """
+import base64
+import json
 import os
 import sys
 
 HERE = os.path.dirname(os.path.abspath(__file__))
 sys.path.insert(0, HERE)
 from cdslib import components as C  # noqa: E402
-from cdslib import deckmd, lint, parity, render, write_html, write_pptx  # noqa: E402
+from cdslib import deckmd, fonts, lint, parity, render, write_html, write_pptx  # noqa: E402
 from cdslib import layouts_pmo  # noqa: E402,F401  (registers PMO layouts)
 from cdslib import scene as S  # noqa: E402
 from cdslib.components import T, r  # noqa: E402
@@ -26,15 +28,48 @@ from cdslib.layouts import LAYOUTS  # noqa: E402
 
 
 def error_slide(slide, ctx, msg):
-    els, _ = C.frame(slide["title"], ctx["page"], None, None, ctx["meta"].get("context"))
+    try:
+        els, _ = C.frame(slide["title"], ctx["page"], None, None, ctx["meta"].get("context"))
+    except S.LayoutError:
+        words = slide["title"].split()
+        els, _ = C.frame(" ".join(words[:8]) + " ...", ctx["page"], None, None, ctx["meta"].get("context"))
     els.append(S.rect(36, 120, 888, 120, fill="#FDECEA", line=T["R"]))
     els.append(S.text(52, 136, 856, [r("Layout error: ", 12, True, T["R"]), r(msg, 12)], lh=1.35))
     return els
 
 
+KIND = {"title": "title", "section": "section"}
+
+
+def load_brand(project):
+    """Apply brand.json (template, brand or house). Returns (brand dict or None, tpl for the PPTX writer or None)."""
+    fonts.EXTRA_DIRS[:] = [os.path.join(project, "fonts")]
+    C.apply_brand({})
+    C.set_grid(C.Grid())
+    p = os.path.join(project, "brand.json")
+    if not os.path.exists(p):
+        return None, None
+    b = json.load(open(p, encoding="utf-8"))
+    C.apply_brand(b)
+    tpl = None
+    if b.get("mode") == "template":
+        C.set_grid(C.Grid(scale=b["scale"], **b["grid"]))
+        tpl = {"path": os.path.join(project, b["template"]), "layouts": b["layouts"], "scale": b["scale"]}
+    return b, tpl
+
+
+def chrome_image(project, brand, kind):
+    rel = (brand or {}).get("chrome", {}).get(kind)
+    if not rel or not os.path.exists(os.path.join(project, rel)):
+        return None
+    data = base64.b64encode(open(os.path.join(project, rel), "rb").read()).decode("ascii")
+    return {"t": "image", "x": 0, "y": 0, "w": 960, "h": 540, "src": "data:image/png;base64," + data, "html_only": True}
+
+
 def build(project, pdf=False, do_parity=False, do_sheet=False, final=False, outline=False):
     src = os.path.join(project, "deck.md")
     meta, slides = deckmd.parse(open(src, encoding="utf-8").read())
+    brand, tpl = load_brand(project)
     if outline:
         print("%-3s %-16s %s" % ("#", "layout", "action title"))
         for n, s in enumerate(slides, 1):
@@ -43,20 +78,35 @@ def build(project, pdf=False, do_parity=False, do_sheet=False, final=False, outl
     findings = lint.lint(meta, slides, final)
     scenes = []
     for n, s in enumerate(slides, 1):
-        ctx = {"meta": meta, "page": n, "total": len(slides)}
+        ctx = {"meta": meta, "page": n, "total": len(slides), "slots": (brand or {}).get("slots") if tpl else None}
+        kind = KIND.get(s["layout"], "content")
         f = LAYOUTS.get(s["layout"])
+        C.FIT_LOG[:] = []
         try:
             if not f:
                 raise S.LayoutError("unknown layout '%s' (known: %s)" % (s["layout"], ", ".join(sorted(LAYOUTS))))
             els = f(s, ctx)
+        except fonts.FontMissing as e:
+            print("ERROR %s" % e)
+            return 1
         except (S.LayoutError, KeyError, IndexError, TypeError, ValueError) as e:
             msg = str(e) if isinstance(e, S.LayoutError) else "%s: %s (check the data block)" % (type(e).__name__, e)
             findings.append(("error", n, msg))
             els = error_slide(s, ctx, msg)
-        scenes.append({"els": els, "notes": s.get("notes", "")})
+        for _, a, b in C.FIT_LOG:
+            findings.append(("warn", n, "title stepped down from %.0f to %.0fpt to fit two lines; consider shortening it" % (
+                a * (tpl["scale"] if tpl else 1), b * (tpl["scale"] if tpl else 1))))
+        bgimg = chrome_image(project, brand, kind) if tpl else None
+        scenes.append({"els": ([bgimg] if bgimg else []) + els, "notes": s.get("notes", ""), "kind": kind})
     title = meta.get("deck", "Deck")
-    open(os.path.join(project, "deck.html"), "w", encoding="utf-8").write(write_html.viewer(scenes, title))
-    write_pptx.write(scenes, os.path.join(project, "deck.pptx"), title)
+    page_in = tuple(v / 72.0 for v in brand["slide_size_pt"]) if tpl else (13.333, 7.5)
+    open(os.path.join(project, "deck.html"), "w", encoding="utf-8").write(write_html.viewer(scenes, title, page_in))
+    if tpl:
+        write_pptx.write_template(scenes, os.path.join(project, "deck.pptx"), tpl, title)
+        print("template: %s (layouts: %s)" % (os.path.basename(tpl["path"]), ", ".join(
+            "%s='%s'" % kv for kv in brand.get("layout_names", {}).items())))
+    else:
+        write_pptx.write(scenes, os.path.join(project, "deck.pptx"), title, T["title_font"], T["font"])
     print("built %d slides -> deck.html, deck.pptx" % len(scenes))
     if pdf:
         render.pdf(os.path.join(project, "deck.html"), os.path.join(project, "deck.pdf"))
@@ -65,7 +115,7 @@ def build(project, pdf=False, do_parity=False, do_sheet=False, final=False, outl
         parity.sheet(scenes, os.path.join(project, "contact-sheet.png"))
         print("-> contact-sheet.png")
     if do_parity:
-        res = parity.check(scenes, project, title)
+        res = parity.check(scenes, project, title, tpl)
         if res is None:
             print("parity: LibreOffice not found; skipped (install it, or check deck.pptx by eye in PowerPoint)")
         else:

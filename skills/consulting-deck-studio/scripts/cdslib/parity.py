@@ -6,7 +6,7 @@ import tempfile
 from . import png, render, write_html, write_pptx
 
 
-def check(slides, out_dir, name="deck", threshold=0.02):
+def check(slides, out_dir, name="deck", tpl=None):
     """Returns list of (slide_no, ratio) and writes parity/cmp-NN.png. None if LibreOffice is missing."""
     pdir = os.path.join(out_dir, "parity")
     os.makedirs(pdir, exist_ok=True)
@@ -17,9 +17,12 @@ def check(slides, out_dir, name="deck", threshold=0.02):
         singles = []
         for i, s in enumerate(slides, 1):
             p = os.path.join(tmp, "slide-%02d.pptx" % i)
-            write_pptx.write([s], p, name)
+            if tpl:
+                write_pptx.write_template([s], p, tpl, name)
+            else:
+                write_pptx.write([s], p, name)
             singles.append(p)
-        pp = render.pptx_pngs(singles, tmp)
+        pp = render.pptx_pngs(singles, tmp, font_files=render.scene_font_files(slides))
         if not pp:
             return None
         hp = render.html_pngs(stacked, len(slides), tmp)

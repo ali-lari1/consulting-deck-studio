@@ -4,5 +4,4 @@ __pycache__/
 .DS_Store
 examples/*/parity/
 examples/*/contact-sheet.png
-.cds/
-**/.cds/
+**/.cds/calibration.json

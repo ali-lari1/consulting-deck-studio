@@ -1,0 +1,5 @@
+Type,Ref,Description,Owner,Due date,RAG,Next action
+Risk,R07,Signalling software maturity,S. Novak,2026-11-08,Red,Recovery plan due
+Issue,I04,Test windows not confirmed by operator,L. Chen,2026-11-14,Red,SteerCo decision
+Assumption,A02,Possessions available at Easter 2027,Interface lead,2027-01-31,Amber,Confirm with Network Rail
+Dependency,D01,Operator driver training complete,K. Ahmed,2027-03-31,Green,On plan

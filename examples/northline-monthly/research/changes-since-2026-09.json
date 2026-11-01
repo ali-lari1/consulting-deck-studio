@@ -1,0 +1,55 @@
+[
+ {
+  "kind": "milestone",
+  "id": "C200",
+  "name": "Main civils complete",
+  "moved_days": 23,
+  "from": "2026-10-20",
+  "to": "2026-11-12"
+ },
+ {
+  "kind": "milestone",
+  "id": "S200",
+  "name": "Signalling software drop 4 accepted",
+  "moved_days": 7,
+  "from": "2026-11-01",
+  "to": "2026-11-08"
+ },
+ {
+  "kind": "milestone",
+  "id": "I200",
+  "name": "Test windows confirmed by operator",
+  "moved_days": 9,
+  "from": "2026-11-05",
+  "to": "2026-11-14"
+ },
+ {
+  "kind": "milestone",
+  "id": "H200",
+  "name": "Handover to operator",
+  "moved_days": 21,
+  "from": "2027-04-24",
+  "to": "2027-05-15"
+ },
+ {
+  "kind": "risk_moved",
+  "id": "R07",
+  "title": "Signalling software maturity: supplier missed drops 3 and 4",
+  "from": 12,
+  "to": 20
+ },
+ {
+  "kind": "risk_moved",
+  "id": "R12",
+  "title": "Christmas possessions: 3 of 5 weekends unconfirmed",
+  "from": 9,
+  "to": 16
+ },
+ {
+  "kind": "risk_moved",
+  "id": "R21",
+  "title": "Late design changes at Station 3",
+  "from": 9,
+  "to": 6
+ }
+]

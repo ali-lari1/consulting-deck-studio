@@ -1,0 +1,45 @@
+{
+ "items": [
+  {
+   "type": "Risk",
+   "id": "R07",
+   "description": "Signalling software maturity",
+   "owner": "S. Novak",
+   "due": "2026-11-08",
+   "rag": "R",
+   "status": "Recovery plan due"
+  },
+  {
+   "type": "Issue",
+   "id": "I04",
+   "description": "Test windows not confirmed by operator",
+   "owner": "L. Chen",
+   "due": "2026-11-14",
+   "rag": "R",
+   "status": "SteerCo decision"
+  },
+  {
+   "type": "Assumption",
+   "id": "A02",
+   "description": "Possessions available at Easter 2027",
+   "owner": "Interface lead",
+   "due": "2027-01-31",
+   "rag": "A",
+   "status": "Confirm with Network Rail"
+  },
+  {
+   "type": "Dependency",
+   "id": "D01",
+   "description": "Operator driver training complete",
+   "owner": "K. Ahmed",
+   "due": "2027-03-31",
+   "rag": "G",
+   "status": "On plan"
+  }
+ ],
+ "_derivation": {
+  "source": "raid.csv",
+  "rows": 4,
+  "shown": 4
+ }
+}

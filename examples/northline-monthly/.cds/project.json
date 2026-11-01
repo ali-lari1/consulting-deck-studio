@@ -1,0 +1,48 @@
+{
+ "name": "Northline Rail Programme",
+ "practice": "pmo",
+ "deck_type": "status-report",
+ "created": "2026-11-01",
+ "sources": [
+  "inputs/current/schedule.xer",
+  "inputs/current/risk-register.xlsx",
+  "inputs/current/raid.csv",
+  "inputs/current/benefits.csv"
+ ],
+ "emits": [
+  {
+   "layout": "gantt",
+   "from": "schedule.schedule.json"
+  },
+  {
+   "layout": "lookahead",
+   "from": "schedule.schedule.json"
+  },
+  {
+   "layout": "timeline",
+   "from": "schedule.schedule.json"
+  },
+  {
+   "layout": "risk-heatmap",
+   "from": "risk-register.table.json",
+   "prev": true,
+   "top": 6
+  },
+  {
+   "layout": "raid-log",
+   "from": "raid.table.json"
+  },
+  {
+   "layout": "benefits",
+   "from": "benefits.table.json"
+  }
+ ],
+ "rag_policy": {
+  "schedule_amber_days": 10,
+  "definitions": {
+   "G": "On track",
+   "A": "At risk, recoverable within tolerance",
+   "R": "Outside tolerance, decision needed"
+  }
+ }
+}

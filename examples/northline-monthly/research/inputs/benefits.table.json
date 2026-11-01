@@ -1,0 +1,44 @@
+{
+ "source": "benefits.csv",
+ "sheets": [
+  {
+   "name": "benefits",
+   "kind": "benefits",
+   "columns": {
+    "title": "Benefit",
+    "owner": "Owner",
+    "unit": "Unit",
+    "baseline": "Baseline",
+    "target": "Target",
+    "actual": "Actual",
+    "status": "RAG",
+    "due": "Due"
+   },
+   "rows": [
+    {
+     "title": "Journey time saving (minutes)",
+     "owner": "Sponsor",
+     "unit": "min",
+     "baseline": "0",
+     "target": "6",
+     "actual": "0",
+     "status": "Amber",
+     "due": "May 27",
+     "rag": "A"
+    },
+    {
+     "title": "Peak capacity (trains per hour)",
+     "owner": "Operator",
+     "unit": "tph",
+     "baseline": "12",
+     "target": "18",
+     "actual": "12",
+     "status": "Amber",
+     "due": "May 27",
+     "rag": "A"
+    }
+   ],
+   "unmapped": []
+  }
+ ]
+}

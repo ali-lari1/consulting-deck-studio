@@ -1,0 +1,37 @@
+{
+ "title": "Look-ahead: key milestones in the next 90 days",
+ "rows": [
+  {
+   "milestone": "Signalling software drop 4 accepted",
+   "baseline": "30 Oct",
+   "forecast": "8 Nov",
+   "variance": "+9 days",
+   "rag": "A"
+  },
+  {
+   "milestone": "Main civils complete",
+   "baseline": "31 Oct",
+   "forecast": "12 Nov",
+   "variance": "+12 days",
+   "rag": "R"
+  },
+  {
+   "milestone": "Test windows confirmed by operator",
+   "baseline": "1 Nov",
+   "forecast": "14 Nov",
+   "variance": "+13 days",
+   "rag": "R"
+  },
+  {
+   "milestone": "Station 3 fit-out complete",
+   "baseline": "12 Dec",
+   "forecast": "19 Dec",
+   "variance": "+7 days",
+   "rag": "A"
+  }
+ ],
+ "_derivation": {
+  "source": "schedule.xer",
+  "window": "2026-10-31 to 2027-01-29"
+ }
+}

@@ -1,0 +1,44 @@
+ERMHDR	21.12	2026-10-31	Project	admin		dbxDatabaseNoName	Project Management	GBP
+%T	PROJECT
+%F	proj_id	proj_short_name	last_recalc_date
+%R	1	NORTHLINE	2026-10-31 08:00
+%T	CALENDAR
+%F	clndr_id	clndr_name	day_hr_cnt
+%R	1	Standard 5-day	8
+%T	PROJWBS
+%F	wbs_id	proj_id	parent_wbs_id	wbs_name	proj_node_flag
+%R	0	1		Northline	Y
+%R	10	1	0	Main civils	N
+%R	20	1	0	Track and OHLE	N
+%R	30	1	0	Signalling	N
+%R	40	1	0	Systems integration	N
+%R	50	1	0	Stations	N
+%R	60	1	0	Trial running and handover	N
+%T	TASK
+%F	task_id	proj_id	wbs_id	clndr_id	task_code	task_name	task_type	status_code	target_start_date	target_end_date	early_start_date	early_end_date	act_start_date	act_end_date	total_float_hr_cnt	driving_path_flag	phys_complete_pct
+%R	1	1	10	1	C100	Utilities diversion Kings Cross	TT_Task	TK_Complete	2026-08-03 08:00	2026-09-18 17:00	2026-08-03 08:00	2026-10-30 17:00	2026-08-03 08:00	2026-10-30 17:00	0	N	100
+%R	2	1	10	1	C200	Main civils complete	TT_FinMile	TK_NotStart		2026-10-31 17:00		2026-11-12 17:00			0	N	0
+%R	3	1	20	1	T100	Track installation	TT_Task	TK_Active	2026-10-15 08:00	2026-12-18 17:00	2026-10-18 08:00	2027-01-07 17:00	2026-10-18 08:00		80	N	40
+%R	4	1	30	1	S100	Signalling install	TT_Task	TK_NotStart	2026-11-06 08:00	2027-01-18 17:00	2026-11-15 08:00	2027-02-06 17:00			0	Y	0
+%R	5	1	30	1	S200	Signalling software drop 4 accepted	TT_FinMile	TK_NotStart		2026-10-30 17:00		2026-11-08 17:00			0	Y	0
+%R	6	1	40	1	I100	Systems integration testing	TT_Task	TK_NotStart	2027-01-01 08:00	2027-03-18 17:00	2027-01-12 08:00	2027-04-15 17:00			0	Y	0
+%R	7	1	40	1	I200	Test windows confirmed by operator	TT_FinMile	TK_NotStart		2026-11-01 17:00		2026-11-14 17:00			0	Y	0
+%R	8	1	50	1	F100	Station fit-out	TT_Task	TK_NotStart	2026-12-01 08:00	2027-03-01 17:00	2026-12-06 08:00	2027-03-12 17:00			200	N	0
+%R	9	1	50	1	F200	Station 3 fit-out complete	TT_FinMile	TK_NotStart		2026-12-12 17:00		2026-12-19 17:00			120	N	0
+%R	10	1	60	1	H100	Trial running	TT_Task	TK_NotStart	2027-02-18 08:00	2027-03-18 17:00	2027-04-15 08:00	2027-05-14 17:00			0	Y	0
+%R	11	1	60	1	H200	Handover to operator	TT_FinMile	TK_NotStart		2027-04-03 17:00		2027-05-15 17:00			0	Y	0
+%T	TASKPRED
+%F	task_pred_id	task_id	pred_task_id	pred_type
+%R	1	2	1	PR_FS
+%R	2	3	2	PR_FS
+%R	3	4	2	PR_FS
+%R	4	5	4	PR_FS
+%R	5	6	4	PR_FS
+%R	6	6	5	PR_FS
+%R	7	8	2	PR_FS
+%R	8	9	8	PR_FS
+%R	9	10	6	PR_FS
+%R	10	11	10	PR_FS
+%R	11	11	8	PR_FS
+%R	12	11	3	PR_FS
+%E

@@ -198,16 +198,20 @@ def gantt(slide, ctx):
     for i in range(1, nm_int):
         els.append(S.line(x0 + i * mw, gy0, x0 + i * mw, my + len(ms) * 26, T["rule"], 0.4, dash="dot"))
     for m in ms:
-        els.append(S.text(G.L + 16, my, lab_w - 20, r(m["name"], 10, True), va="m", h=24, max_lines=1))
+        els.append(S.text(G.L + 16, my, lab_w - 20, r(m["name"], 9, True), va="m", h=24, lh=1.1, max_lines=2))
         fx = X(m["forecast"])
         if m.get("baseline") and m["baseline"] != m["forecast"]:
             bx = X(m["baseline"])
             els.append(C.diamond(bx, my + 12, 10, T["mid"]))
             late = fx > bx
-            els.append(S.line(bx + (7 if late else -7), my + 12, fx + (-8 if late else 8), my + 12, T["R"] if late else T["G"], 1, head="arrow"))
-            els.append(S.text(bx - 40, my + 17, 80, r(_dm(m["baseline"]), 7.5, color=T["grey"]), align="c"))
+            if abs(fx - bx) > 20:
+                els.append(S.line(bx + (7 if late else -7), my + 12, fx + (-8 if late else 8), my + 12, T["R"] if late else T["G"], 1, head="arrow"))
+            if abs(fx - bx) >= 56:
+                els.append(S.text(bx - 40, my + 17, 80, r(_dm(m["baseline"]), 7.5, color=T["grey"]), align="c"))
         els.append(C.diamond(fx, my + 12, 11, T["navy"]))
-        els.append(S.text(fx - 40, my + 17, 80, r(_dm(m["forecast"]), 7.5, True, T["navy"]), align="c"))
+        close = m.get("baseline") and m["baseline"] != m["forecast"] and abs(fx - X(m["baseline"])) < 56
+        lab = [r(_dm(m["forecast"]), 7.5, True, T["navy"])] + ([r(" (plan %s)" % _dm(m["baseline"]), 7.5, color=T["grey"])] if close else [])
+        els.append(S.text(fx + 8, my + 4, 120, lab) if close else S.text(fx - 40, my + 17, 80, lab, align="c"))
         if m.get("callout"):
             els += C.callout(fx + 14, my + 12, m["callout"])
         my += 26

@@ -1,0 +1,35 @@
+{
+ "start": "2026-11-01",
+ "end": "2027-05-15",
+ "events": [
+  {
+   "date": "2026-11-08",
+   "label": "Signalling software drop 4 accepted",
+   "done": false
+  },
+  {
+   "date": "2026-11-12",
+   "label": "Main civils complete",
+   "done": false
+  },
+  {
+   "date": "2026-11-14",
+   "label": "Test windows confirmed by operator",
+   "done": false
+  },
+  {
+   "date": "2026-12-19",
+   "label": "Station 3 fit-out complete",
+   "done": false
+  },
+  {
+   "date": "2027-05-15",
+   "label": "Handover to operator",
+   "done": false
+  }
+ ],
+ "_derivation": {
+  "source": "schedule.xer",
+  "done": "actual finish recorded"
+ }
+}

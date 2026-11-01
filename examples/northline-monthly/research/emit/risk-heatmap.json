@@ -1,0 +1,70 @@
+{
+ "risks": [
+  {
+   "id": "R07",
+   "title": "Signalling software maturity: supplier missed drops 3 and 4",
+   "owner": "S. Novak",
+   "l": 5,
+   "i": 4,
+   "mitigation": "Recovery plan due 8 Nov; independent code review proposed (unfunded)",
+   "prev": [
+    3,
+    4
+   ]
+  },
+  {
+   "id": "R12",
+   "title": "Christmas possessions: 3 of 5 weekends unconfirmed",
+   "owner": "Interface lead",
+   "l": 4,
+   "i": 4,
+   "mitigation": "Escalated to Network Rail route director; decision 21 Nov",
+   "prev": [
+    3,
+    3
+   ]
+  },
+  {
+   "id": "R03",
+   "title": "Utilities diversion claims from main contractor",
+   "owner": "R. Dube",
+   "l": 3,
+   "i": 5,
+   "mitigation": "£6-9m exposure; valuation agreed, settlement talks under way",
+   "prev": [
+    3,
+    5
+   ]
+  },
+  {
+   "id": "R18",
+   "title": "Driver training capacity for trial running",
+   "owner": "K. Ahmed",
+   "l": 2,
+   "i": 3,
+   "mitigation": "Second simulator booked from January",
+   "prev": [
+    2,
+    3
+   ]
+  },
+  {
+   "id": "R21",
+   "title": "Late design changes at Station 3",
+   "owner": "A. Silva",
+   "l": 3,
+   "i": 2,
+   "mitigation": "Design freeze agreed 15 Oct",
+   "prev": [
+    3,
+    3
+   ]
+  }
+ ],
+ "_derivation": {
+  "source": "risk-register.xlsx",
+  "selection": "top 6 open risks by likelihood x impact",
+  "previous": "last snapshot",
+  "new_this_period": []
+ }
+}

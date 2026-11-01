@@ -121,7 +121,9 @@ def paras(x, y, w, items, lh=1.2, align="l", va="t", h=None, max_lines=None, tra
     pitch = round(lh * size, 2)
     need = pitch * total_lines + sum(p["space_before"] for p in out_paras)
     if max_lines and total_lines > max_lines:
-        raise LayoutError("%s: %d lines > max %d" % (name or "text", total_lines, max_lines))
+        snippet = "".join(r_["text"] for it in items for r_ in (it["runs"] if isinstance(it["runs"], list) else [it["runs"]]))
+        raise LayoutError("%s needs %d lines, max %d: '%s'" % (name or "text", total_lines, max_lines,
+                                                               snippet[:60] + ("..." if len(snippet) > 60 else "")))
     if h is None:
         h = need
     elif need > h + 0.01:

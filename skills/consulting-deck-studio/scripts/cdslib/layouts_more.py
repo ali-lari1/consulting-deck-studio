@@ -484,6 +484,7 @@ def benefits_tracker(slide, ctx):
     rows = []
     for b in d["benefits"]:
         u, dp = b.get("unit", ""), b.get("decimals")
+        u = (" " + u) if u and u[0].isalpha() and len(u) > 1 else u
         prog = (b["actual"] - b["baseline"]) / float(b["target"] - b["baseline"]) if b["target"] != b["baseline"] else 0
         rows.append([b["name"], b.get("owner", ""), fmt(b["baseline"], dp) + u, fmt(b["target"], dp) + u,
                      fmt(b["actual"], dp) + u, prog, b.get("rag", ""), b.get("due", "")])

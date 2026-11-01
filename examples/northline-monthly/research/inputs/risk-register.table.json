@@ -1,0 +1,89 @@
+{
+ "source": "risk-register.xlsx",
+ "sheets": [
+  {
+   "name": "Risk register",
+   "kind": "risk",
+   "columns": {
+    "id": "Risk ID",
+    "title": "Risk description",
+    "owner": "Risk owner",
+    "l": "Likelihood",
+    "i": "Impact",
+    "prev_score": "Prev score",
+    "mitigation": "Mitigating actions",
+    "status": "Status"
+   },
+   "rows": [
+    {
+     "id": "R07",
+     "title": "Signalling software maturity: supplier missed drops 3 and 4",
+     "owner": "S. Novak",
+     "l": 5,
+     "i": 4,
+     "prev_score": "12",
+     "mitigation": "Recovery plan due 8 Nov; independent code review proposed (unfunded)",
+     "status": "Open",
+     "score": 20
+    },
+    {
+     "id": "R12",
+     "title": "Christmas possessions: 3 of 5 weekends unconfirmed",
+     "owner": "Interface lead",
+     "l": 4,
+     "i": 4,
+     "prev_score": "9",
+     "mitigation": "Escalated to Network Rail route director; decision 21 Nov",
+     "status": "Open",
+     "score": 16
+    },
+    {
+     "id": "R03",
+     "title": "Utilities diversion claims from main contractor",
+     "owner": "R. Dube",
+     "l": 3,
+     "i": 5,
+     "prev_score": "15",
+     "mitigation": "£6-9m exposure; valuation agreed, settlement talks under way",
+     "status": "Open",
+     "score": 15
+    },
+    {
+     "id": "R18",
+     "title": "Driver training capacity for trial running",
+     "owner": "K. Ahmed",
+     "l": 2,
+     "i": 3,
+     "prev_score": "6",
+     "mitigation": "Second simulator booked from January",
+     "status": "Open",
+     "score": 6
+    },
+    {
+     "id": "R21",
+     "title": "Late design changes at Station 3",
+     "owner": "A. Silva",
+     "l": 3,
+     "i": 2,
+     "prev_score": "9",
+     "mitigation": "Design freeze agreed 15 Oct",
+     "status": "Open",
+     "score": 6
+    },
+    {
+     "id": "R02",
+     "title": "Ground contamination at depot",
+     "owner": "J. Patel",
+     "l": 2,
+     "i": 2,
+     "prev_score": "4",
+     "mitigation": "Survey clear",
+     "status": "Closed",
+     "score": 4,
+     "rag": "G"
+    }
+   ],
+   "unmapped": []
+  }
+ ]
+}

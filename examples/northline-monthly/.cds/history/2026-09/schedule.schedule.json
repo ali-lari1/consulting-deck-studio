@@ -1,0 +1,355 @@
+{
+ "source": "schedule.xer",
+ "format": "P6 XER",
+ "project": "NORTHLINE",
+ "data_date": "2026-09-30",
+ "activities": [
+  {
+   "id": "C100",
+   "name": "Utilities diversion Kings Cross",
+   "wbs": "Main civils",
+   "wbs_top": "Main civils",
+   "level": 1,
+   "summary": false,
+   "milestone": false,
+   "planned": [
+    "2026-08-03",
+    "2026-09-18"
+   ],
+   "baseline": null,
+   "forecast": [
+    "2026-08-03",
+    "2026-10-09"
+   ],
+   "actual": [
+    "2026-08-03",
+    null
+   ],
+   "pct": 40.0,
+   "float_days": 0.0,
+   "critical": true,
+   "status": "in progress",
+   "preds": []
+  },
+  {
+   "id": "C200",
+   "name": "Main civils complete",
+   "wbs": "Main civils",
+   "wbs_top": "Main civils",
+   "level": 1,
+   "summary": false,
+   "milestone": true,
+   "planned": [
+    null,
+    "2026-10-31"
+   ],
+   "baseline": null,
+   "forecast": [
+    null,
+    "2026-10-20"
+   ],
+   "actual": [
+    null,
+    null
+   ],
+   "pct": 0.0,
+   "float_days": 0.0,
+   "critical": true,
+   "status": "not started",
+   "preds": [
+    "C100"
+   ]
+  },
+  {
+   "id": "T100",
+   "name": "Track installation",
+   "wbs": "Track and OHLE",
+   "wbs_top": "Track and OHLE",
+   "level": 1,
+   "summary": false,
+   "milestone": false,
+   "planned": [
+    "2026-10-15",
+    "2026-12-18"
+   ],
+   "baseline": null,
+   "forecast": [
+    "2026-10-18",
+    "2027-01-07"
+   ],
+   "actual": [
+    "2026-10-18",
+    null
+   ],
+   "pct": 40.0,
+   "float_days": 10.0,
+   "critical": false,
+   "status": "in progress",
+   "preds": [
+    "C200"
+   ]
+  },
+  {
+   "id": "S100",
+   "name": "Signalling install",
+   "wbs": "Signalling",
+   "wbs_top": "Signalling",
+   "level": 1,
+   "summary": false,
+   "milestone": false,
+   "planned": [
+    "2026-11-06",
+    "2027-01-18"
+   ],
+   "baseline": null,
+   "forecast": [
+    "2026-11-15",
+    "2027-02-06"
+   ],
+   "actual": [
+    null,
+    null
+   ],
+   "pct": 0.0,
+   "float_days": 0.0,
+   "critical": true,
+   "status": "not started",
+   "preds": [
+    "C200"
+   ]
+  },
+  {
+   "id": "S200",
+   "name": "Signalling software drop 4 accepted",
+   "wbs": "Signalling",
+   "wbs_top": "Signalling",
+   "level": 1,
+   "summary": false,
+   "milestone": true,
+   "planned": [
+    null,
+    "2026-10-30"
+   ],
+   "baseline": null,
+   "forecast": [
+    null,
+    "2026-11-01"
+   ],
+   "actual": [
+    null,
+    null
+   ],
+   "pct": 0.0,
+   "float_days": 0.0,
+   "critical": true,
+   "status": "not started",
+   "preds": [
+    "S100"
+   ]
+  },
+  {
+   "id": "I100",
+   "name": "Systems integration testing",
+   "wbs": "Systems integration",
+   "wbs_top": "Systems integration",
+   "level": 1,
+   "summary": false,
+   "milestone": false,
+   "planned": [
+    "2027-01-01",
+    "2027-03-18"
+   ],
+   "baseline": null,
+   "forecast": [
+    "2027-01-12",
+    "2027-04-01"
+   ],
+   "actual": [
+    null,
+    null
+   ],
+   "pct": 0.0,
+   "float_days": 0.0,
+   "critical": true,
+   "status": "not started",
+   "preds": [
+    "S100",
+    "S200"
+   ]
+  },
+  {
+   "id": "I200",
+   "name": "Test windows confirmed by operator",
+   "wbs": "Systems integration",
+   "wbs_top": "Systems integration",
+   "level": 1,
+   "summary": false,
+   "milestone": true,
+   "planned": [
+    null,
+    "2026-11-01"
+   ],
+   "baseline": null,
+   "forecast": [
+    null,
+    "2026-11-05"
+   ],
+   "actual": [
+    null,
+    null
+   ],
+   "pct": 0.0,
+   "float_days": 0.0,
+   "critical": true,
+   "status": "not started",
+   "preds": []
+  },
+  {
+   "id": "F100",
+   "name": "Station fit-out",
+   "wbs": "Stations",
+   "wbs_top": "Stations",
+   "level": 1,
+   "summary": false,
+   "milestone": false,
+   "planned": [
+    "2026-12-01",
+    "2027-03-01"
+   ],
+   "baseline": null,
+   "forecast": [
+    "2026-12-06",
+    "2027-03-12"
+   ],
+   "actual": [
+    null,
+    null
+   ],
+   "pct": 0.0,
+   "float_days": 25.0,
+   "critical": false,
+   "status": "not started",
+   "preds": [
+    "C200"
+   ]
+  },
+  {
+   "id": "F200",
+   "name": "Station 3 fit-out complete",
+   "wbs": "Stations",
+   "wbs_top": "Stations",
+   "level": 1,
+   "summary": false,
+   "milestone": true,
+   "planned": [
+    null,
+    "2026-12-12"
+   ],
+   "baseline": null,
+   "forecast": [
+    null,
+    "2026-12-19"
+   ],
+   "actual": [
+    null,
+    null
+   ],
+   "pct": 0.0,
+   "float_days": 15.0,
+   "critical": false,
+   "status": "not started",
+   "preds": [
+    "F100"
+   ]
+  },
+  {
+   "id": "H100",
+   "name": "Trial running",
+   "wbs": "Trial running and handover",
+   "wbs_top": "Trial running and handover",
+   "level": 1,
+   "summary": false,
+   "milestone": false,
+   "planned": [
+    "2027-02-18",
+    "2027-03-18"
+   ],
+   "baseline": null,
+   "forecast": [
+    "2027-04-15",
+    "2027-04-20"
+   ],
+   "actual": [
+    null,
+    null
+   ],
+   "pct": 0.0,
+   "float_days": 0.0,
+   "critical": true,
+   "status": "not started",
+   "preds": [
+    "I100"
+   ]
+  },
+  {
+   "id": "H200",
+   "name": "Handover to operator",
+   "wbs": "Trial running and handover",
+   "wbs_top": "Trial running and handover",
+   "level": 1,
+   "summary": false,
+   "milestone": true,
+   "planned": [
+    null,
+    "2027-04-03"
+   ],
+   "baseline": null,
+   "forecast": [
+    null,
+    "2027-04-24"
+   ],
+   "actual": [
+    null,
+    null
+   ],
+   "pct": 0.0,
+   "float_days": 0.0,
+   "critical": true,
+   "status": "not started",
+   "preds": [
+    "H100",
+    "F100",
+    "T100"
+   ]
+  }
+ ],
+ "checks": {
+  "activities": 11,
+  "milestones": 5,
+  "critical": 8,
+  "missing_logic": {
+   "count": 4,
+   "pct": 36.4,
+   "ids": [
+    "C100",
+    "I200",
+    "F200",
+    "H200"
+   ],
+   "note": "start and finish activities are expected open ends"
+  },
+  "negative_float": {
+   "count": 0,
+   "ids": []
+  },
+  "high_float_over_44d": {
+   "count": 0,
+   "pct": 0.0
+  },
+  "forecast_in_past_not_actualised": {
+   "count": 0,
+   "ids": []
+  },
+  "unknown_preds": 0
+ }
+}

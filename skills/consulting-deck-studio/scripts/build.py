@@ -92,6 +92,20 @@ def build(project, pdf=False, do_parity=False, do_sheet=False, final=False, outl
         return 0
     findings = lint.lint(meta, slides, final)
     scenes = []
+    for s in slides:
+        if s.get("data_from"):
+            for spec in s["data_from"].split(","):
+                spec = spec.strip()
+                path, _, key = spec.partition(" as ")
+                fp = os.path.join(project, path.strip())
+                if not os.path.exists(fp):
+                    findings.append(("error", slides.index(s) + 1, "data_from file not found: %s (run ingest.py --refresh)" % path))
+                    continue
+                ext = {k: v for k, v in json.load(open(fp, encoding="utf-8")).items() if not k.startswith("_")}
+                if key.strip():
+                    s["data"].setdefault(key.strip(), ext)
+                else:
+                    s["data"] = dict(ext, **s["data"])
     for n, s in enumerate(slides, 1):
         ctx = {"meta": meta, "page": n, "total": len(slides), "slots": (brand or {}).get("slots") if tpl else None}
         kind = KIND.get(s["layout"], "content")

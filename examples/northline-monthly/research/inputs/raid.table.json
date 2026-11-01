@@ -1,0 +1,61 @@
+{
+ "source": "raid.csv",
+ "sheets": [
+  {
+   "name": "raid",
+   "kind": "raid",
+   "columns": {
+    "type": "Type",
+    "id": "Ref",
+    "title": "Description",
+    "owner": "Owner",
+    "due": "Due date",
+    "status": "RAG",
+    "mitigation": "Next action"
+   },
+   "rows": [
+    {
+     "type": "Risk",
+     "id": "R07",
+     "title": "Signalling software maturity",
+     "owner": "S. Novak",
+     "due": "2026-11-08",
+     "status": "Red",
+     "mitigation": "Recovery plan due",
+     "rag": "R"
+    },
+    {
+     "type": "Issue",
+     "id": "I04",
+     "title": "Test windows not confirmed by operator",
+     "owner": "L. Chen",
+     "due": "2026-11-14",
+     "status": "Red",
+     "mitigation": "SteerCo decision",
+     "rag": "R"
+    },
+    {
+     "type": "Assumption",
+     "id": "A02",
+     "title": "Possessions available at Easter 2027",
+     "owner": "Interface lead",
+     "due": "2027-01-31",
+     "status": "Amber",
+     "mitigation": "Confirm with Network Rail",
+     "rag": "A"
+    },
+    {
+     "type": "Dependency",
+     "id": "D01",
+     "title": "Operator driver training complete",
+     "owner": "K. Ahmed",
+     "due": "2027-03-31",
+     "status": "Green",
+     "mitigation": "On plan",
+     "rag": "G"
+    }
+   ],
+   "unmapped": []
+  }
+ ]
+}

@@ -1,0 +1,28 @@
+{
+ "benefits": [
+  {
+   "name": "Journey time saving (minutes)",
+   "owner": "Sponsor",
+   "unit": "min",
+   "baseline": 0.0,
+   "target": 6.0,
+   "actual": 0.0,
+   "rag": "A",
+   "due": "May 27"
+  },
+  {
+   "name": "Peak capacity (trains per hour)",
+   "owner": "Operator",
+   "unit": "tph",
+   "baseline": 12.0,
+   "target": 18.0,
+   "actual": 12.0,
+   "rag": "A",
+   "due": "May 27"
+  }
+ ],
+ "_derivation": {
+  "source": "benefits.csv",
+  "progress": "(actual - baseline) / (target - baseline)"
+ }
+}

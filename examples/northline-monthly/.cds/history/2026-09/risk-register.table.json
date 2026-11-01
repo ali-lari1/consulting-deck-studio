@@ -1,0 +1,88 @@
+{
+ "source": "risk-register.xlsx",
+ "sheets": [
+  {
+   "name": "Risk register",
+   "kind": "risk",
+   "columns": {
+    "id": "Risk ID",
+    "title": "Risk description",
+    "owner": "Risk owner",
+    "l": "Likelihood",
+    "i": "Impact",
+    "prev_score": "Prev score",
+    "mitigation": "Mitigating actions",
+    "status": "Status"
+   },
+   "rows": [
+    {
+     "id": "R07",
+     "title": "Signalling software maturity: supplier missed drop 3",
+     "owner": "S. Novak",
+     "l": 3,
+     "i": 4,
+     "prev_score": "",
+     "mitigation": "Supplier recovery plan",
+     "status": "Open",
+     "score": 12
+    },
+    {
+     "id": "R12",
+     "title": "Christmas possessions: 3 of 5 weekends unconfirmed",
+     "owner": "Interface lead",
+     "l": 3,
+     "i": 3,
+     "prev_score": "",
+     "mitigation": "Raised with Network Rail",
+     "status": "Open",
+     "score": 9
+    },
+    {
+     "id": "R03",
+     "title": "Utilities diversion claims from main contractor",
+     "owner": "R. Dube",
+     "l": 3,
+     "i": 5,
+     "prev_score": "",
+     "mitigation": "Valuation in progress",
+     "status": "Open",
+     "score": 15
+    },
+    {
+     "id": "R18",
+     "title": "Driver training capacity for trial running",
+     "owner": "K. Ahmed",
+     "l": 2,
+     "i": 3,
+     "prev_score": "",
+     "mitigation": "Options review",
+     "status": "Open",
+     "score": 6
+    },
+    {
+     "id": "R21",
+     "title": "Late design changes at Station 3",
+     "owner": "A. Silva",
+     "l": 3,
+     "i": 3,
+     "prev_score": "",
+     "mitigation": "Change board set up",
+     "status": "Open",
+     "score": 9
+    },
+    {
+     "id": "R02",
+     "title": "Ground contamination at depot",
+     "owner": "J. Patel",
+     "l": 2,
+     "i": 2,
+     "prev_score": "",
+     "mitigation": "Survey due",
+     "status": "Open",
+     "score": 4
+    }
+   ],
+   "unmapped": []
+  }
+ ]
+}

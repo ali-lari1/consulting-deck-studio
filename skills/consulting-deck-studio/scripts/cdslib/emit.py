@@ -60,7 +60,7 @@ def gantt(sch, max_rows=8, amber_days=10, milestones=3):
         "start": min(all_dates)[:7] + "-01", "end": max(all_dates), "today": sch.get("data_date"),
         "rows": [{k: v for k, v in r_.items() if not k.startswith("_") and v is not None} for r_ in rows],
         "milestones": [{"name": a["name"], "baseline": a["planned"][1] or a["forecast"][1], "forecast": a["forecast"][1]} for a in key_ms],
-        "_derivation": {"source": sch["source"], "rag": "finish slip vs planned: <=0 days G, <=%d A, else R" % amber_days,
+        "_derivation": {"source": sch["source"], "rag": "finish slip vs planned, calendar days: <=0 G, <=%d A, else R" % amber_days,
                         "slips_days": {r_["name"]: r_["_slip_days"] for r_ in rows}},
     }
     return data
@@ -80,8 +80,14 @@ def lookahead(sch, days=90, limit=6, amber_days=10):
     end = dd + datetime.timedelta(days=days)
     ms = [a for a in sch["activities"] if a["milestone"] and a["forecast"][1] and dd <= _dt(a["forecast"][1]) <= end]
     ms.sort(key=lambda a: a["forecast"][1])
+    ms = ms[:limit]
+    allm = [a for a in sch["activities"] if a["milestone"] and a["forecast"][1] and not a["actual"][1]]
+    if allm:
+        final = max(allm, key=lambda a: a["forecast"][1])
+        if final not in ms:
+            ms = ms[:limit - 1] + [final]          # always show the end milestone, even beyond the window
     rows = []
-    for a in ms[:limit]:
+    for a in ms:
         v = _days(a["planned"][1], a["forecast"][1]) if a["planned"][1] else None
         rows.append({"milestone": a["name"], "baseline": _fmt_d(a["planned"][1]), "forecast": _fmt_d(a["forecast"][1]),
                      "variance": "On plan" if not v else "%+d days" % v, "rag": _rag_from_slip(v, amber_days) or "G"})
@@ -117,7 +123,11 @@ def risk_heatmap(tbl, prev=None, top=6, sheet=None):
             rk["prev"] = pv
         risks.append(rk)
     new = [r_["id"] for r_ in risks if prev_map and r_["id"] not in prev_map]
-    return {"risks": risks, "_derivation": {"source": tbl["source"], "selection": "top %d open risks by likelihood x impact" % top,
+    open_scores = [r_["l"] * r_["i"] for r_ in rows]
+    return {"risks": risks, "_derivation": {"source": tbl["source"],
+                                            "selection": "up to %d open risks by likelihood x impact (%d open in register)" % (top, len(rows)),
+                                            "open_red_15plus": sum(1 for v in open_scores if v >= 15),
+                                            "open_amber_8_14": sum(1 for v in open_scores if 8 <= v < 15),
                                             "previous": "last snapshot" if prev else "previous-score columns" if any("prev" in x for x in risks) else "none",
                                             "new_this_period": new}}
 
@@ -144,6 +154,26 @@ def benefits(tbl, sheet=None):
         except (KeyError, TypeError, ValueError):
             continue
     return {"benefits": out, "_derivation": {"source": tbl["source"], "progress": "(actual - baseline) / (target - baseline)"}}
+
+
+def changes_table(changes):
+    """Diff output -> table layout data ('what changed since last period')."""
+    rows = []
+    for c in changes:
+        if c["kind"] == "milestone":
+            rows.append([c["name"], _fmt_d(c["from"]), _fmt_d(c["to"]), "%+d days" % c["moved_days"]])
+        elif c["kind"] == "milestone_achieved":
+            rows.append([c["name"], "", "Achieved " + _fmt_d(c["on"]), ""])
+        elif c["kind"] == "risk_moved":
+            rows.append(["Risk %s: %s" % (c["id"], c["title"]), "Score %s" % c["from"], "Score %s" % c["to"], "%+d" % (c["to"] - c["from"])])
+        elif c["kind"] == "risk_new":
+            rows.append(["Risk %s: %s" % (c["id"], c["title"]), "New", "Score %s" % c.get("score", ""), ""])
+        elif c["kind"] == "risk_removed":
+            rows.append(["Risk %s: %s" % (c["id"], c["title"]), "", "Closed or removed", ""])
+    return {"exhibit": "What changed since the last report",
+            "columns": [{"name": "Item", "width": 0.46, "kind": "bold"}, {"name": "Last report", "width": 0.18},
+                        {"name": "This report", "width": 0.18}, {"name": "Change", "width": 0.18, "kind": "number"}],
+            "rows": rows, "_derivation": {"source": "ingest.py --diff", "items": len(rows)}}
 
 
 def diff(cur_sched=None, prev_sched=None, cur_risk=None, prev_risk=None, amber_days=10):

@@ -24,7 +24,7 @@ from cdslib import fonts, render, template, write_pptx  # noqa: E402
 
 
 def main(argv):
-    if len(argv) < 2:
+    if len(argv) < 2 or argv[0].startswith("-"):
         print(__doc__)
         return 2
     src, project = argv[0], argv[1]

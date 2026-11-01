@@ -38,6 +38,13 @@ doc = open(os.path.join(SK, "references", "layouts.md"), encoding="utf-8").read(
 for lay in layouts.LAYOUTS:
     check("`%s`" % lay in doc, "layout '%s' is not documented in references/layouts.md" % lay)
 
+for shipped, src in [("status-report-from-files.md", "northline-monthly"), ("steerco-pack.md", "northline-rail-steerco"),
+                     ("diagnostic-and-capital.md", "meridian-cost-review")]:
+    a = os.path.join(SK, "assets", "examples", shipped)
+    b = os.path.join(ROOT, "examples", src, "deck.md")
+    check(os.path.exists(a) and open(a, encoding="utf-8").read() == open(b, encoding="utf-8").read(),
+          "assets/examples/%s is out of sync with examples/%s/deck.md (copy it over)" % (shipped, src))
+
 if "--no-build" not in sys.argv:
     for ex in sorted(os.listdir(os.path.join(ROOT, "examples"))):
         d = os.path.join(ROOT, "examples", ex)

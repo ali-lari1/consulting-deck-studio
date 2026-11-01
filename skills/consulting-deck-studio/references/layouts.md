@@ -1,8 +1,8 @@
 # deck.md format and layout reference
 
 A deck is one `deck.md` file. `build.py` turns it into `deck.html`, `deck.pptx` and (with `--pdf`) `deck.pdf`, all
-drawn from the same layout, so the three always match. A complete worked example is in
-`examples/northline-rail-steerco/deck.md`.
+drawn from the same layout, so the three always match. Complete worked examples are in
+`assets/examples/` (inside the skill folder).
 
 ## File structure
 
@@ -30,6 +30,16 @@ sticker: Overrides the deck sticker
 
 ??? Speaker notes. They go into the PPTX notes pane and appear under each slide in reader mode (deck.html?reader).
 ```
+
+**The json block is optional.** Leave it out when `data_from` supplies everything.
+
+**`data_from:`** pulls data from a JSON file in the project, usually `research/emit/<layout>.json` from
+`ingest.py --emit`:
+- `data_from: research/emit/gantt.json` merges the file's top-level keys into the slide data. **Keys in the slide's
+  own json block win**, which is where takeaways, panels and overrides go.
+- `data_from: research/emit/lookahead.json as lookahead` places the whole file under one key.
+- Several sources can be given, separated by commas.
+- Keys starting with `_` are ignored. `_derivation` documents how the values were computed, so cite it in `facts.md`.
 
 **Inline text:** `**bold**` is the only markup inside strings. **Sub-bullets:** where a field takes bullets, a
 two-item list `["text", 2]` is a level-2 bullet.
@@ -71,7 +81,7 @@ October 2026"). Number formatting is set with `prefix` ("£"), `suffix` ("%") an
 
 | layout | data fields |
 |---|---|
-| `status-summary` | `rows: [{area, icon?, rag: R, A or G, trend: up, flat or down, text}]`, `decisions: [{what, owner, due}]`, `decisions_title`, `lookahead: {title, rows: [{milestone, baseline, forecast, variance, rag}]}` |
+| `status-summary` | `rows: [{area, icon?, rag: R, A, G or N (not assessed), trend?: up, flat or down, text}]` (omit `trend` when there is no previous period to compare), `decisions: [{what, owner, due}]`, `decisions_title`, `lookahead: {title, rows: [{milestone, baseline, forecast, variance, rag}]}` |
 | `rag-dashboard` | `kpis: [{value, label, note, rag}]` (a number strip; 3-5 work best), `rows: [{workstream, lead, schedule, cost, risk, trend, comment}]`; `columns` and `keys` override the default table |
 | `gantt` | `start`, `end`, `today` (ISO dates), `rows: [{name, rag?, critical?, baseline: [s, e], forecast: [s, e], float_to?, float_label?, callout?}]`, `milestones: [{name, baseline, forecast, callout?}]`, plus side panels |
 | `risk-heatmap` | `risks: [{id, title, owner, l 1-5, i 1-5, prev?: [l, i], mitigation, trend?}]`, `red_from` (default 15), `amber_from` (default 8). Movement arrows come from `prev`. |

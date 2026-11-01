@@ -1,7 +1,15 @@
 # PMO and capital-project standards (what reviewers expect)
 
-Condensed from `research/craft-and-standards.md`, section 3, with sources. [V] = verified against the primary
-document. [S] = secondary or practitioner source. [P] = convention to confirm with the client's own policy.
+[V] = verified against the primary document (November 2026). [S] = secondary or practitioner source. [P] = a
+convention to confirm with the client's own policy.
+
+Primary sources:
+- GAO Schedule Assessment Guide (GAO-16-89G)
+- GAO Cost Estimating and Assessment Guide (GAO-20-195G)
+- AACE International RP 18R-97
+- GOV.UK Gateway review toolkit (NISTA)
+- NISTA and IPA annual reports
+- ANSI/EIA-748 and PMI PMBOK for earned value
 
 ## RAG (no universal standard: define it in every deck)
 
@@ -11,8 +19,9 @@ document. [S] = secondary or practitioner source. [P] = convention to confirm wi
 | **Amber** | Slip above tolerance but recoverable (e.g. 2-6 weeks), with a recovery plan | EAC 5-10% over budget, mitigation identified | At risk; needs management attention |
 | **Red** | Critical milestone or end date will be missed; no credible recovery | EAC more than 10% over, or contingency exhausted | Off track; escalation or a decision is needed |
 
-- The emitters default to schedule RAG from slip: on plan green, up to 10 working days amber, more red. Replace this
-  with the client's tolerances in `.cds/project.json`.
+- The emitters default to schedule RAG from slip: on plan green, up to 10 calendar days amber, more red. Replace
+  this with the client's tolerances in `.cds/project.json`.
+- **N, "Not assessed",** is for dimensions with no evidence this period. It is never a softer amber.
 - **UK Delivery Confidence Assessment** [V]: NISTA (formerly IPA) now reports Red, Amber and Green; older reports used
   five levels. Use the client's scale.
 - Every red or amber needs a cause, an impact, an action, an owner and a date. Show the trend against last period.

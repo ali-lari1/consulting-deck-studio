@@ -12,7 +12,7 @@ THEME = {
     "font": "Arial", "title_font": "Arial",
     "ink": "#1A1A1A", "navy": "#0B2545", "blue": "#2F5D9A", "sky": "#DCE6F2", "grey": "#5F6B7A",
     "mid": "#A3ADB8", "rule": "#C9CFD6", "tint": "#F2F4F7", "white": "#FFFFFF",
-    "R": "#C62828", "A": "#E8A300", "G": "#2E7D32", "R_t": "#F6D3D1", "A_t": "#FBEBC2", "G_t": "#D5EAD6",
+    "R": "#C62828", "A": "#E8A300", "G": "#2E7D32", "N": "#B8C0CA", "R_t": "#F6D3D1", "A_t": "#FBEBC2", "G_t": "#D5EAD6",
     "navy_l": "#8FA6C4",
 }
 T = THEME
@@ -73,7 +73,7 @@ def apply_brand(brand):
     T["title_font"] = f.get("heading", T["font"])
 
 
-RAG_WORD = {"R": "Red", "A": "Amber", "G": "Green"}
+RAG_WORD = {"R": "Red", "A": "Amber", "G": "Green", "N": "Not assessed"}
 
 
 def r(text, size=11, bold=False, color=None, italic=False, font=None):
@@ -226,7 +226,7 @@ def rag_dot(cx, cy, status, d=11):
     return S.rect(cx - d / 2, cy - d / 2, d, d, fill=T[status], shape="ellipse")
 
 
-def rag_pill(x, y, status, w=50, label=None):
+def rag_pill(x, y, status, w=70, label=None):
     """Plain status: filled dot and the word (no pill)."""
     return [S.rect(x, y + 3, 9, 9, fill=T[status], shape="ellipse"),
             S.text(x + 14, y + 2, w, r(label or RAG_WORD[status], 9.5))]

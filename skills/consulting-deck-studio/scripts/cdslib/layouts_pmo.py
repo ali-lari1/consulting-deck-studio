@@ -37,8 +37,11 @@ def status_summary(slide, ctx):
             lx = x0 + 22
         els.append(S.text(lx, y, xs - lx - 4, r(row["area"], 10.5, True, T["navy"]), va="m", h=h - 4, lh=1.15))
         els += C.rag_pill(xs, y + (h - 15) / 2 - 2, row["rag"])
-        tr = row.get("trend", "flat")
-        els.append(C.trend(xt + 6, y + h / 2 - 2, tr, trend_color(tr, "up")))
+        tr = row.get("trend")
+        if tr:
+            els.append(C.trend(xt + 6, y + h / 2 - 2, tr, trend_color(tr, "up")))
+        else:
+            els.append(S.text(xt, y + h / 2 - 8, 14, r("n/a", 7.5, color=T["mid"]), align="c"))
         els.append(t)
         y += h + 6
         els.append(S.hline(x0, y - 3, xr, T["rule"], 0.5))

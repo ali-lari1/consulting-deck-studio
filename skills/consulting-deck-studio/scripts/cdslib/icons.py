@@ -11,7 +11,11 @@ def get(name):
     if _data is None:
         _data = json.load(open(PATH, encoding="utf-8"))
     if name not in _data["icons"]:
-        raise KeyError("unknown icon %r (see assets/icons/lucide/)" % name)
+        import difflib
+        from .scene import LayoutError
+        near = difflib.get_close_matches(name, _data["icons"].keys(), n=4, cutoff=0.4)
+        raise LayoutError("unknown icon '%s'%s. Icon names are the files in assets/icons/lucide/" % (
+            name, " (did you mean %s?)" % ", ".join(near) if near else ""))
     return _data["icons"][name]
 
 

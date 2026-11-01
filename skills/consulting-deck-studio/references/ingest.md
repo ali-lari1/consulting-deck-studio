@@ -45,6 +45,20 @@ A file can also fill one key of another layout: `data_from: research/emit/lookah
 `status-summary` slide. The `_derivation` key in each emitted file records how values were computed: the RAG rule,
 the selection rule and the period compared. Cite it in `facts.md`.
 
+## First report with a previous period available
+If the user has last period's files but no snapshot exists yet:
+```
+python3 SKILL_DIR/scripts/ingest.py <project> --period 2026-09 old/schedule.xer old/risk-register.xlsx
+python3 SKILL_DIR/scripts/ingest.py <project> new/schedule.xer new/risk-register.xlsx ...
+python3 SKILL_DIR/scripts/ingest.py <project> --emit changes 2026-09       # table data: milestone moves, risk re-scores
+python3 SKILL_DIR/scripts/ingest.py <project> --emit risk-heatmap research/inputs/risk-register.table.json \
+        --prev .cds/history/2026-09/risk-register.table.json
+```
+`research/inputs/` always holds the **current** period. Earlier periods live in `.cds/history/<label>/`.
+
+**Counts in titles come from `_derivation`.** For example, the risk-heatmap emit gives `open_red_15plus`. Use those
+figures for "three risks are red", and say "two moved into red" only when the `prev` data shows it.
+
 ## Linking a project: monthly status reports
 
 ```
@@ -65,5 +79,7 @@ This records the sources and the emits in `<project>/.cds/project.json`. Each pe
 5. When the deck is final: `python3 SKILL_DIR/scripts/ingest.py <project> --snapshot <YYYY-MM>`.
 
 The RAG policy lives in `project.json` (`rag_policy`), and the default schedule rule is: on plan green, up to 10
-working days late amber, later red. **Ask the user for their programme's RAG definitions in the first status report**
+calendar days late amber, later red. The look-ahead always includes the final milestone, even beyond its window.
+**Source conflicts** (for example a workstream bar ending 30 Oct while its completion milestone says 12 Nov): report
+the milestone date, footnote the difference, and raise it with the user. It usually means the schedule needs updating. **Ask the user for their programme's RAG definitions in the first status report**
 and record them there. Never invent a tolerance.

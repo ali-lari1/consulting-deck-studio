@@ -1,8 +1,9 @@
 # Copy: consulting precision, human voice
 
 Readers are senior and short of time. They trust copy that is specific, plain and sourced, and they stop trusting it
-the moment it sounds generated. Built on the GOV.UK style guide, The Economist's style guidance and Wikipedia's "Signs
-of AI writing"; see `research/craft-and-standards.md`, section 4.
+the moment it sounds generated. Built on the GOV.UK style guide (gov.uk/guidance/style-guide), The Economist's style
+guide, and Wikipedia's "Signs of AI writing" (en.wikipedia.org/wiki/Wikipedia:Signs_of_AI_writing), accessed November
+2026.
 
 ## Rules
 1. **Lead with the point.** The first words of a title, bullet or note carry the message.

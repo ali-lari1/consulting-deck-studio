@@ -11,6 +11,10 @@ Usage:
     python3 ingest.py <project> --emit <gantt|timeline|lookahead|risk-heatmap|raid-log|benefits> <input.json>
                       [--prev <older input.json>] [--top N] [--sheet NAME]
         prints a JSON data block for deck.md (also saved under research/emit/)
+    python3 ingest.py <project> --period <label> <files...>
+                                                      ingest LAST period's files straight into snapshot <label>
+                                                      (first report with history: do this, then ingest this period)
+    python3 ingest.py <project> --emit changes <label> table data for "what changed since <label>"
     python3 ingest.py <project> --refresh              re-read every source in .cds/project.json and re-emit its data
                                                       blocks (vs the latest snapshot); then rebuild the deck
     python3 ingest.py <project> --snapshot <label>     save research/inputs as period <label> (e.g. 2026-10)
@@ -83,12 +87,25 @@ def summarise(kind, d):
 
 
 def main(argv):
-    if len(argv) < 2:
+    if len(argv) < 2 or argv[0].startswith("-"):
         print(__doc__)
         return 2
     project = argv[0]
     inputs = os.path.join(project, "research", "inputs")
     os.makedirs(inputs, exist_ok=True)
+    if argv[1] == "--period":
+        # ingest an earlier period's files straight into a snapshot, without touching research/inputs
+        label, files = argv[2], argv[3:]
+        dst = os.path.join(project, ".cds", "history", label)
+        os.makedirs(dst, exist_ok=True)
+        for path in files:
+            kind, reader = detect(path)
+            stem = os.path.splitext(os.path.basename(path))[0]
+            json.dump(reader(path), open(os.path.join(dst, "%s.%s.json" % (stem, kind)), "w", encoding="utf-8"), indent=1,
+                      ensure_ascii=False)
+            print("%s -> .cds/history/%s/%s.%s.json" % (os.path.basename(path), label, stem, kind))
+        print("period %s saved. Next: ingest this period's files, then --diff %s and --emit changes %s" % (label, label, label))
+        return 0
     if argv[1] == "--refresh":
         cfg_p = os.path.join(project, ".cds", "project.json")
         cfg = json.load(open(cfg_p, encoding="utf-8"))
@@ -139,6 +156,18 @@ def main(argv):
             if f in pt and any(s["kind"] == "risk" for s in d["sheets"]):
                 changes += emit.diff(cur_risk=d, prev_risk=pt[f])
         print(json.dumps(changes, indent=1, ensure_ascii=False))
+        return 0
+    if argv[1] == "--emit" and argv[2] == "changes":
+        import contextlib
+        import io
+        buf = io.StringIO()
+        with contextlib.redirect_stdout(buf):
+            main([project, "--diff", argv[3]])
+        out = emit.changes_table(json.loads(buf.getvalue()))
+        os.makedirs(os.path.join(project, "research", "emit"), exist_ok=True)
+        json.dump(out, open(os.path.join(project, "research", "emit", "changes.json"), "w", encoding="utf-8"), indent=1,
+                  ensure_ascii=False)
+        print(json.dumps(out, indent=1, ensure_ascii=False))
         return 0
     if argv[1] == "--emit":
         what, src = argv[2], argv[3]

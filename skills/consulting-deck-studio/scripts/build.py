@@ -125,6 +125,15 @@ def build(project, pdf=False, do_parity=False, do_sheet=False, final=False, outl
         for _, a, b in C.FIT_LOG:
             findings.append(("warn", n, "title stepped down from %.0f to %.0fpt to fit two lines; consider shortening it" % (
                 a * (tpl["scale"] if tpl else 1), b * (tpl["scale"] if tpl else 1))))
+        if s["layout"] not in ("title", "section", "agenda") and not any(f[0] == "error" and f[1] == n for f in findings):
+            body = [e for e in els if e.get("name") not in ("Title", "Page") and e.get("y", 0) > C.G.top - 1 and
+                    e.get("y", 0) < C.G.foot_y - 30 and e["t"] != "image"]
+            if body:
+                low = max(e["y"] + e.get("h", 0) for e in body if "h" in e)
+                avail = C.G.foot_y - 40 - C.G.top
+                if (low - C.G.top) < 0.5 * avail:
+                    findings.append(("info", n, "slide is more than half empty; consider a richer exhibit, merging it with "
+                                                "another slide, or moving it to the appendix"))
         bgimg = chrome_image(project, brand, kind) if tpl else None
         scenes.append({"els": ([bgimg] if bgimg else []) + els, "notes": s.get("notes", ""), "kind": kind})
     title = meta.get("deck", "Deck")
@@ -158,6 +167,13 @@ def build(project, pdf=False, do_parity=False, do_sheet=False, final=False, outl
     for lvl, n, msg in sorted(findings, key=lambda x: (order[x[0]], x[1])):
         if lvl != "info" or os.environ.get("CDS_VERBOSE"):
             print("%-5s %s %s" % (lvl.upper(), ("slide %-2d" % n) if n else "deck    ", msg))
+    import re as _re
+    ph = sorted({m for s_ in slides for m in _re.findall(r"\[\[[^\]]+\]\]", json.dumps(s_, ensure_ascii=False))})
+    if ph:
+        print("open placeholders (%d): %s%s" % (len(ph), ", ".join(ph[:12]), " ..." if len(ph) > 12 else ""))
+    empties = [f[1] for f in findings if f[0] == "info" and "half empty" in f[2]]
+    if empties:
+        print("note: slides %s are more than half empty" % ", ".join(str(x) for x in empties))
     errs = sum(1 for f in findings if f[0] == "error")
     warns = sum(1 for f in findings if f[0] == "warn")
     print("%d error(s), %d warning(s)" % (errs, warns))

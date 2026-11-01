@@ -41,7 +41,7 @@ EMITS_FOR = {".xer": [("gantt", None), ("lookahead", None), ("timeline", None)],
 
 
 def main(argv):
-    if not argv:
+    if not argv or argv[0].startswith("-"):
         print(__doc__)
         return 2
     p = argv[0]

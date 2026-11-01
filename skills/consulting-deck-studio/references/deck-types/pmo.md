@@ -37,7 +37,8 @@ decide. **Length:** 6-10 slides plus appendix. **Usually** a pre-read, presented
 - RAG definitions
 
 **Ask about:** the RAG policy and tolerances (once), the current baseline, escalations, and achievements not in the
-files.
+files. Include a status row only where the inputs give evidence. Otherwise use `rag: "N"` or drop the row
+(stakeholders and benefits often have no data).
 
 **Pitfalls:**
 - "Watermelon" greens that contradict the schedule data

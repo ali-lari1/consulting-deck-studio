@@ -50,7 +50,7 @@ def arg(argv, k):
 
 
 def main(argv):
-    if not argv:
+    if not argv or argv[0].startswith("-"):
         print(__doc__)
         return 2
     project = argv[0]

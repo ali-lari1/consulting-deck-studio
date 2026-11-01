@@ -4,7 +4,7 @@ description: Build consulting-grade slide decks for PMO, capital projects, strat
 license: MIT
 compatibility: Works in any agent that can read files and run shell commands (Claude Code, Codex, Gemini CLI, OpenCode, Hermes, Grok, Cursor, Copilot, Goose, Amp...). Needs Python 3.8+. Any Chromium-family browser enables PDF export; LibreOffice enables the automatic PPTX/HTML match check. Both optional.
 metadata:
-  version: "0.4.0"
+  version: "0.4.1"
   author: Ali Lari
   homepage: https://github.com/ali-lari1/consulting-deck-studio
 ---
@@ -55,6 +55,9 @@ Keep the user informed with one line between phases.
   Look in the working folder and in any connected drives or tools (SharePoint, Google Drive, Notion, Smartsheet,
   Jira, Asana, P6 or MS Project MCP servers) the agent has. Then run
   `python3 SKILL_DIR/scripts/ingest.py <project> <files...>` (see `references/ingest.md`).
+- **If last period's files exist** (and there's no snapshot yet), load them first with
+  `ingest.py <project> --period <YYYY-MM> <old files...>`. Then ingest this period's files, and run
+  `ingest.py <project> --emit changes <YYYY-MM>` to get the "what changed" table.
 - Read the outputs: the mapped columns, schedule checks, transcript turns and candidate decisions, actions and
   risks. Note the conflicts between sources.
 
@@ -65,8 +68,8 @@ Read `references/interview.md`. In one message:
 2. Ask only the unanswered questions that change the storyline. Start with the brand and template questions, and
    always cover the decision, the room, and pre-read or presented. Give 3-5 questions, each with a default.
    Use the harness's structured question tool if it has one.
-- **Delegation mode** ("just draft it"): skip the questions, list your assumptions at the top of `brief.md`, and use
-  placeholders for every unknown.
+- **Delegation mode** ("just draft it"): still read `interview.md` section 1 (what to infer), but skip the questions.
+  List your assumptions at the top of `brief.md` and use placeholders for every unknown.
 - **Recurring report** (the project has a `.cds/project.json` with snapshots): ask only what's new this period.
 
 ### 3. Brand
@@ -93,12 +96,18 @@ such as EAC in the cost report against the dashboard, or a transcript against a 
 about any conflict that changes a message.
 
 ### 6. Write the slides
-Read `references/slide-craft.md` and `references/layouts.md` (the fields for all 35 layouts).
+Read `references/slide-craft.md` and `references/layouts.md` (the fields for all 35 layouts). For complete
+worked decks, see `assets/examples/`:
+- `status-report-from-files.md` (data pulled in with `data_from`)
+- `steerco-pack.md`
+- `diagnostic-and-capital.md`
 - Fill each slide's data. Use `data_from:` with ingested data (`ingest.py --emit ...`) so the numbers trace to the
   files.
 - Pick the layout that *proves the title*: waterfall for a bridge, Gantt for slippage, heat map for risk movement.
 - Put the reasoning in speaker notes after `???`. Notes become reader-mode text and PPTX notes.
 - Add `source:` and footnotes, and define RAG and every scale used.
+- **No evidence means no RAG and no trend.** If the inputs say nothing about a dimension, use `"rag": "N"` (shown
+  as "Not assessed") and omit `trend`, or drop the row. Never assign a status just to fill the table.
 - Write the copy to `references/copy.md`. If a humanizer skill is installed, run the titles and takeaways through it.
 
 ### 7. Build, check, review
@@ -114,7 +123,9 @@ python3 SKILL_DIR/scripts/build.py <project> --sheet --parity     # deck.html + 
   normally enough.
 
 ### 8. Deliver
-`python3 SKILL_DIR/scripts/build.py <project> --pdf --final`. `--final` fails on any open `[[placeholder]]`. Hand over:
+`python3 SKILL_DIR/scripts/build.py <project> --pdf`. That gives a draft with any open `[[placeholders]]` listed at
+the end of the output. Add `--final` only when the user has supplied every open item, because it fails on any
+placeholder left. In delegation mode, deliver the draft and list the placeholders. Hand over:
 - `deck.pptx` (editable, on the client template if one was given)
 - `deck.pdf`
 - `deck.html`: present with F, arrows and N for notes; `?reader` gives the pre-read

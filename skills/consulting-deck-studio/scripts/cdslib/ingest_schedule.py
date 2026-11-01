@@ -63,6 +63,8 @@ def read_xer(path):
         a_s, a_f = _d(t.get("act_start_date")), _d(t.get("act_end_date"))
         fs = a_s or _d(t.get("restart_date")) or _d(t.get("early_start_date")) or _d(t.get("target_start_date"))
         ff = a_f or _d(t.get("reend_date")) or _d(t.get("early_end_date")) or _d(t.get("target_end_date"))
+        if t.get("task_type") in ("TT_Mile", "TT_FinMile"):
+            fs = fs or ff
         acts.append({
             "id": t.get("task_code"), "name": t.get("task_name"), "wbs": " / ".join(wpath), "wbs_top": wpath[0] if wpath else "",
             "level": len(wpath), "summary": False, "milestone": t.get("task_type") in ("TT_Mile", "TT_FinMile"),

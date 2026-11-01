@@ -16,11 +16,11 @@ from cdslib.components import T, r  # noqa: E402
 CTX = "Northline Rail Programme  |  Monthly SteerCo  |  October 2026"
 TRACK = ["Summary", "Schedule", "Risk", "Cost", "Workstreams", "Options"]
 SRC = "Programme controls period 7 report (Oct 2026); PMO analysis"
-LBL = dict(size=8, bold=True, color=T["grey"])
+LBL = dict(size=8.5, bold=True, color=T["grey"])
 
 
 def page(n, active, title, sowhat=None, footnotes=None, source=SRC):
-    return C.frame(title, n, TRACK, active, CTX, "Draft for discussion", sowhat, footnotes, source)
+    return C.frame(title, n, TRACK, active, CTX, "Preliminary", sowhat, footnotes, source)
 
 
 def s1_summary():
@@ -30,8 +30,8 @@ def s1_summary():
                        footnotes=["Re-baselined at Gate 3, March 2026. Trend compares with the September report."])
     x0, xs, xt, xx, xr = 36, 150, 210, 246, 610
     y = 104
-    for xh, txt in [(x0, "AREA"), (xs, "STATUS"), (xt - 4, "TREND"), (xx, "SUMMARY")]:
-        els.append(S.text(xh, y, 120, C.r(txt, **LBL), tracking=0.4))
+    for xh, txt in [(x0, "Area"), (xs, "Status"), (xt - 4, "Trend"), (xx, "Summary")]:
+        els.append(S.text(xh, y, 120, C.r(txt, **LBL)))
     els.append(S.hline(x0, y + 14, xr, T["navy"], 0.75))
     y += 22
     rows = [
@@ -51,7 +51,7 @@ def s1_summary():
         t = S.text(xx, y + 2, xr - xx, body, lh=1.3)
         h = max(30, t["h"] + 6)
         els += C.icon_tile(x0, y + (h - 26) / 2 - 1, ic)
-        els.append(S.text(x0 + 34, y, 80, r(label, 10.5, True, T["navy"]), va="m", h=h - 4))
+        els.append(S.text(x0 + 22, y, 90, r(label, 10.5, True, T["navy"]), va="m", h=h - 4))
         els += C.rag_pill(xs, y + (h - 15) / 2 - 2, rag)
         els.append(C.trend(xt + 6, y + h / 2 - 2, tr, T[{"down": "R", "up": "G", "flat": "grey"}[tr]] if tr != "flat" else T["grey"]))
         els.append(t)
@@ -66,7 +66,7 @@ def s1_summary():
     lc = [("Milestone", 250), ("Baseline", 80), ("Forecast", 80), ("Variance", 70), ("Status", 94)]
     cx = x0
     for name, w in lc:
-        els.append(S.text(cx, ly, w - 6, C.r(name.upper(), **LBL), tracking=0.4))
+        els.append(S.text(cx, ly, w - 6, C.r(name, **LBL)))
         cx += w
     ly += 14
     for ms, b, f, v, st in [("Signalling software drop 4 accepted", "30 Oct", "8 Nov", "+9 days", "R"),
@@ -85,22 +85,22 @@ def s1_summary():
         els.append(S.hline(x0, ly, xr, T["rule"], 0.5))
     # Decisions box
     bx, bw = 630, 294
-    box, iy = C.header_box(bx, 104, bw, bottom - 104 - 4, "Decisions required from SteerCo", icon="gavel")
+    box, iy = C.header_box(bx, 104, bw, bottom - 104 - 4, "Decisions needed from the SteerCo")
     els += box
     yy = iy
     for i, (what, owner, due) in enumerate([
             ("Approve £14m contingency drawdown for parallel systems integration", "SRO", "14 Nov"),
             ("Confirm the December possession plan with Network Rail", "Interface lead", "21 Nov"),
             ("Assign one owner for systems integration risk across client and contractor", "Commercial director", "30 Nov")], 1):
-        els += C.callout(bx + 16, yy + 7, i)
-        t = S.text(bx + 30, yy, bw - 40, r(what, 10.5, True), lh=1.3)
+        els += C.callout(bx + 7, yy + 7, i)
+        t = S.text(bx + 22, yy, bw - 22, r(what, 10.5, True), lh=1.3)
         els.append(t)
         yy += t["h"] + 3
-        els.append(S.text(bx + 30, yy, bw - 40, [r("Owner: ", 9, True, T["grey"]), r(owner + "   ", 9, color=T["grey"]),
+        els.append(S.text(bx + 22, yy, bw - 22, [r("Owner: ", 9, True, T["grey"]), r(owner + "   ", 9, color=T["grey"]),
                                                   r("Due: ", 9, True, T["grey"]), r(due, 9, color=T["grey"])]))
         yy += 22
         if i < 3:
-            els.append(S.hline(bx + 10, yy - 8, bx + bw - 10, T["rule"], 0.5))
+            els.append(S.hline(bx, yy - 8, bx + bw, T["rule"], 0.5))
     return {"els": els}
 
 
@@ -158,13 +158,13 @@ def s2_gantt():
                                   ("bar", "#8FA6C4", "Forecast, other"), ("diamond", T["navy"], "Milestone"),
                                   ("dash", T["R"], "Today")])
     tk, _ = C.takeaways(650, 104, 274, [
-        ("Critical path moved.", "Systems integration now drives handover; its finish slipped seven weeks to late March."),
-        ("Float exists.", "Station fit-out has five weeks of float, so it can be resequenced around testing."),
-        ("Handover at risk.", "15 May holds only if the operator confirms test windows by 14 November.")])
+        "Systems integration now drives handover. Its finish has slipped seven weeks, to late March.",
+        "Station fit-out has five weeks of float, so it can move to make room for testing.",
+        "The 15 May date holds only if the operator confirms test windows by 14 November."], title="What the schedule shows")
     els += tk
-    nb, iy = C.header_box(650, _ + 10, 274, bottom - _ - 14, "Next steps", icon="list-checks")
+    nb, iy = C.header_box(650, _ + 14, 274, bottom - _ - 14, "Next steps")
     els += nb
-    els.append(C.bullets(662, iy, 250, ["Operator to confirm test windows (14 Nov)",
+    els.append(C.bullets(650, iy, 274, ["Operator to confirm test windows (14 Nov)",
                                          "Delivery partner to issue resequenced fit-out plan (21 Nov)",
                                          "PMO to re-run schedule risk analysis on the new logic (28 Nov)"], size=10))
     return {"els": els}
@@ -172,7 +172,6 @@ def s2_gantt():
 
 def s3_risk():
     els, bottom = page(3, "Risk", "Two risks moved into the red zone this period, and neither has a funded mitigation yet",
-                       sowhat="Ask risk owners for funded mitigation plans for R07 and R12 at the November SteerCo",
                        footnotes=["Score = likelihood x impact on a 5 x 5 scale. Red is 15 or more; amber 8 to 14; green 7 or less."])
     hdr, y = C.exhibit_header(36, 104, 286, "Top risks, current position", "Likelihood x impact, October 2026")
     els += hdr
@@ -197,13 +196,13 @@ def s3_risk():
     for rid, (pl, pi), (cl, ci) in moves:
         px, py = pos(pl, pi)
         cx, cy = pos(cl, ci)
-        els.append(S.rect(px - 13, py - 8, 26, 16, fill=None, line=T["grey"], lw=0.75, shape="roundRect", radius=3))
+        els.append(S.rect(px - 13, py - 8, 26, 16, fill=None, line=T["grey"], lw=0.75))
         els.append(S.line(px, py - 9, cx, cy + 9, T["ink"], 1, head="arrow"))
     for rid, L, I in [("R07", 5, 4), ("R12", 4, 4), ("R03", 3, 5), ("R18", 2, 3), ("R21", 3, 2)]:
         cx, cy = pos(L, I)
         if rid in ("R07", "R12"):
             cx += 0
-        els.append(S.rect(cx - 14, cy - 8, 28, 16, fill=T["navy"], shape="roundRect", radius=3))
+        els.append(S.rect(cx - 14, cy - 8, 28, 16, fill=T["navy"]))
         els.append(S.text(cx - 14, cy - 8, 28, r(rid, 8, True, T["white"]), align="c", va="m", h=16))
     els += C.legend(36, gy + 5 * c + 32, [("bar", T["navy"], "Now"), ("outline", T["grey"], "Last period")])
     # table
@@ -293,14 +292,14 @@ def s4_cost():
     for n, k in [(1, 1), (2, 2), (3, 4)]:
         els += C.callout(centers[k][0] + bw / 2 + 9, centers[k][1] + 8, n)
     tk, _ = C.takeaways(650, 104, 274, [
-        ("Utilities, +£22m.", "Six-week overrun at Kings Cross and the contractor's prolongation claim."),
-        ("Signalling, +£15m.", "Two missed software drops add supplier and test costs."),
-        ("Scope removed, −£6m.", "Deferred Station 5 canopy works; not yet approved by the sponsor."),
-        ("Contingency.", "£41m remains, 3.0% of remaining work against a 5% floor.")])
+        [r("Utilities added ", 10.5), r("£22m", 10.5, True), r(": the six-week overrun at Kings Cross and the contractor's prolongation claim.", 10.5)],
+        [r("Signalling added ", 10.5), r("£15m", 10.5, True), r(" after two missed software drops.", 10.5)],
+        [r("Deferring the Station 5 canopy saves ", 10.5), r("£6m", 10.5, True), r(", but the sponsor has not approved it.", 10.5)],
+        [r("That leaves ", 10.5), r("£41m", 10.5, True), r(" of contingency, 3.0% of remaining work against a 5% floor.", 10.5)]], title="What drives the increase")
     els += tk
-    nb, iy = C.header_box(650, _ + 10, 274, bottom - _ - 14, "Open points", icon="circle-alert")
+    nb, iy = C.header_box(650, _ + 14, 274, bottom - _ - 14, "Open points")
     els += nb
-    els.append(C.bullets(662, iy, 250, ["£12m of unquantified claims sit outside the EAC",
+    els.append(C.bullets(650, iy, 274, ["£12m of unquantified claims sit outside the EAC",
                                          "Scope removal needs sponsor approval"], size=10))
     return {"els": els}
 
@@ -310,13 +309,15 @@ def s5_dashboard():
                        "need SteerCo decisions",
                        footnotes=["Green: on track. Amber: at risk but recoverable within tolerance. Red: outside "
                                   "tolerance, needs a decision. SPI and CPI are cumulative earned-value indices."])
-    kp = [("activity", "OVERALL STATUS", "Red", "6 weeks behind baseline", "R"),
-          ("calendar-check", "SCHEDULE INDEX (SPI)", "0.91", "Down from 0.94 in September", "A"),
-          ("coins", "COST INDEX (CPI)", "0.97", "Stable for three periods", "A"),
-          ("piggy-bank", "CONTINGENCY LEFT", "£41m", "3.0% of remaining work (floor 5%)", "R")]
-    w = (888 - 3 * 10) / 4
+    kp = [("activity", "Weeks behind baseline", "6", "Handover forecast 15 May 2027", "R"),
+          ("calendar-check", "Schedule performance (SPI)", "0.91", "Down from 0.94 in September", "A"),
+          ("coins", "Cost performance (CPI)", "0.97", "Stable for three periods", "A"),
+          ("piggy-bank", "Contingency remaining", "£41m", "3.0% of remaining work; floor is 5%", "R")]
+    w = 888 / 4
     for i, (ic, lab, val, sub, st) in enumerate(kp):
-        els += C.kpi_card(36 + i * (w + 10), 104, w, 72, ic, lab, val, sub, st)
+        els += C.kpi_card(36 + i * w + (14 if i else 0), 104, w, 72, ic, lab, val, sub, st)
+        if i:
+            els.append(S.line(36 + i * w, 106, 36 + i * w, 168, T["rule"], 0.75))
     cols = [("Workstream", 150), ("Lead", 90), ("Schedule", 62), ("Cost", 52), ("Risk", 52), ("Trend", 52),
             ("Key issue and next step", 430)]
     tx, yy = 36, 190
@@ -336,8 +337,6 @@ def s5_dashboard():
             ("Commercial", "R. Dube", "G", "A", "A", "flat", "Utilities claim valued at £6-9m")]
     rh = 30
     for i, row in enumerate(rows):
-        if i % 2:
-            els.append(S.rect(tx, yy, 888, rh, fill=T["tint"]))
         cx = tx
         for (name, cw), val in zip(cols, row):
             if name in ("Schedule", "Cost", "Risk"):
@@ -349,6 +348,7 @@ def s5_dashboard():
                 els.append(S.text(cx + 6, yy, cw - 12, r(val, 9.5, name == "Workstream"), va="m", h=rh))
             cx += cw
         yy += rh
+        els.append(S.hline(tx, yy, tx + 888, T["rule"], 0.5))
     els.append(S.hline(tx, yy, tx + 888, T["navy"], 0.75))
     els += C.legend(tx, yy + 8, [("dot", "G", "On track"), ("dot", "A", "At risk"), ("dot", "R", "Off track"),
                                  ("up", T["G"], "Improving"), ("flat", T["grey"], "Stable"),
@@ -391,9 +391,9 @@ def s6_options():
                           va="m", h=26))
     els += C.legend(36, y + 34, [("harvey", 0, "Poor"), ("harvey", 1, ""), ("harvey", 2, ""), ("harvey", 3, ""),
                                  ("harvey", 4, "Strong")], size=8)
-    box, iy = C.header_box(650, 104, 274, bottom - 104 - 4, "Why Option B", icon="circle-check")
+    box, iy = C.header_box(650, 104, 274, bottom - 104 - 4, "Rationale")
     els += box
-    els.append(C.bullets(662, iy, 250, [
+    els.append(C.bullets(650, iy, 274, [
         "Only option that keeps the 15 May 2027 handover",
         "£14m is within remaining contingency, though it takes the balance below the 5% floor",
         ("Floor breach needs sponsor sign-off", 2),

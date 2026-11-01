@@ -31,27 +31,27 @@ def frame(title, page, tracker=None, active=None, context=None, sticker=None, so
     x = L
     if context:
         els.append(S.text(x, 14, 520, r(context, 8, color=T["grey"])))
-    sw = S.line_width([r(sticker.upper(), 7, True)], 0.4) + 16 if sticker else 0
+    sw = S.line_width([r(sticker, 8)]) + 14 if sticker else 0
     if tracker:
-        widths = [max(54.0, S.line_width([r(t, 7.5, True)]) + 14) for t in tracker]
-        x = R_ - sum(widths) - 2 * (len(tracker) - 1) - (sw + 6 if sticker else 0)
+        widths = [S.line_width([r(t, 8, True)]) for t in tracker]
+        x = R_ - sum(widths) - 14 * (len(tracker) - 1) - (sw + 16 if sticker else 0)
         for t, w in zip(tracker, widths):
             on = t == active
-            els.append(S.rect(x, 11, w, 14, fill=T["navy"] if on else T["tint"]))
-            els.append(S.text(x, 14.5, w, r(t, 7.5, True, T["white"] if on else T["grey"]), align="c"))
-            x += w + 2
+            els.append(S.text(x, 13, w + 1, r(t, 8, on, T["navy"] if on else T["mid"])))
+            if on:
+                els.append(S.hline(x, 24, x + w, T["navy"], 1.25))
+            x += w + 14
     if sticker:
-        els.append(S.rect(R_ - sw, 11, sw, 14, fill=None, line=T["R"], lw=0.75))
-        els.append(S.text(R_ - sw, 14.5, sw, r(sticker.upper(), 7, True, T["R"]), align="c", tracking=0.4, max_lines=1))
+        els.append(S.rect(R_ - sw, 10, sw, 15, fill=None, line=T["ink"], lw=0.75))
+        els.append(S.text(R_ - sw, 14, sw, r(sticker, 8, False, T["ink"]), align="c", max_lines=1))
     els.append(S.text(L, T["title_y"], R_ - L, r(title, 20, True, T["navy"], font=T["title_font"]), lh=1.15,
                       max_lines=2, name="Title"))
     els.append(S.hline(L, 90, R_, T["rule"], 0.75))
     bottom = T["foot_y"] - 6
     if sowhat:
         y = T["sowhat_y"]
-        els.append(S.rect(L, y, R_ - L, 32, fill=T["navy"]))
-        els.append(S.icon("arrow-right", L + 10, y + 8, 16, T["white"], 2.25))
-        els.append(S.text(L + 34, y, R_ - L - 44, r(sowhat, 12, True, T["white"]), va="m", h=32, max_lines=2))
+        els.append(S.rect(L, y, R_ - L, 32, fill=None, line=T["navy"], lw=1.0))
+        els.append(S.text(L + 12, y, R_ - L - 24, r(sowhat, 12, True, T["navy"]), va="m", h=32, max_lines=2))
         bottom = y - 8
     lines = []
     for i, fn in enumerate(footnotes or [], 1):
@@ -79,18 +79,12 @@ def exhibit_header(x, y, w, title, unit=None):
 
 
 def header_box(x, y, w, h, title, icon=None, fill=None):
-    """Box with a dark header bar. Returns (els, inner_y)."""
-    els = [S.rect(x, y, w, h, fill=fill or T["white"], line=T["rule"], lw=0.75),
-           S.rect(x, y, w, 22, fill=T["navy"])]
-    tx = x + 8
-    if icon:
-        els.append(S.icon(icon, x + 7, y + 4, 14, T["white"], 2.25))
-        tx += 20
-    els.append(S.text(tx, y, w - (tx - x) - 8, r(title, 10, True, T["white"]), va="m", h=22))
-    return els, y + 30
+    """Side panel: bold navy header over a 1.5pt rule (no box, no icon). Returns (els, inner_y)."""
+    els = [S.text(x, y, w, r(title, 11, True, T["navy"])), S.hline(x, y + 18, x + w, T["navy"], 1.5)]
+    return els, y + 26
 
 
-def callout(cx, cy, n, d=14, fill=None):
+def callout(cx, cy, n, d=13, fill=None):
     """Numbered circle that ties an exhibit feature to a takeaway."""
     return [S.rect(cx - d / 2, cy - d / 2, d, d, fill=fill or T["navy"], shape="ellipse"),
             S.text(cx - d / 2, cy - d / 2, d, r(str(n), 8, True, T["white"]), align="c", va="m", h=d)]
@@ -100,13 +94,16 @@ def takeaways(x, y, w, items, title="Key takeaways", h=None, icon="lightbulb", s
     """Header box with numbered takeaways. items: [text] or [(bold lead, text)]."""
     paras = []
     for it in items:
+        if isinstance(it, list):  # pre-built runs
+            paras.append(it)
+            continue
         lead, body = (it if isinstance(it, tuple) else (None, it))
         paras.append([r(lead + " ", size, True)] + [r(body, size)] if lead else [r(body, size)])
     blocks = []
-    yy = y + 32
+    yy = y + 26
     for i, runs in enumerate(paras, 1):
-        t = S.text(x + 30, yy, w - 40, runs, lh=1.3)
-        blocks += callout(x + 16, yy + 7, i) + [t]
+        t = S.text(x + 22, yy, w - 22, runs, lh=1.3)
+        blocks += callout(x + 7, yy + 7, i) + [t]
         yy += t["h"] + 10
     hh = h or (yy - y + 2)
     els, _ = header_box(x, y, w, hh, title, icon)
@@ -129,9 +126,9 @@ def rag_dot(cx, cy, status, d=11):
 
 
 def rag_pill(x, y, status, w=50, label=None):
-    return [S.rect(x, y, w, 15, fill=T[status + "_t"], shape="roundRect", radius=7.5),
-            S.rect(x + 6, y + 4, 7, 7, fill=T[status], shape="ellipse"),
-            S.text(x + 16, y + 3, w - 18, r(label or RAG_WORD[status], 8, True, T[status] if status != "A" else "#8A6100"))]
+    """Plain status: filled dot and the word (no pill)."""
+    return [S.rect(x, y + 3, 9, 9, fill=T[status], shape="ellipse"),
+            S.text(x + 14, y + 2, w, r(label or RAG_WORD[status], 9.5))]
 
 
 def trend(cx, cy, direction, color=None, s=9):
@@ -182,17 +179,20 @@ def legend(x, y, items, size=8.5):
 
 
 def kpi_card(x, y, w, h, icon, label, value, sub=None, status=None):
-    els = [S.rect(x, y, w, h, fill=T["tint"]), S.rect(x, y, 3, h, fill=T[status] if status else T["navy"])]
-    els.append(S.icon(icon, x + 12, y + 10, 16, T["navy"], 2))
-    els.append(S.text(x + 34, y + 12, w - 44, r(label, 8.5, True, T["grey"])))
-    els.append(S.text(x + 12, y + 32, w - 20, r(value, 20, True, T["navy"])))
+    """One cell of a number strip: big figure, label, optional note; status as a dot. No card styling."""
+    els = [S.text(x, y, w - 12, r(value, 24, True, T["navy"]))]
+    if status:
+        els.append(S.rect(x + S.line_width([r(value, 24, True)]) + 6, y + 9, 9, 9, fill=T[status], shape="ellipse"))
+    els.append(S.text(x, y + 32, w - 12, r(label, 9.5, True)))
     if sub:
-        els.append(S.text(x + 12, y + h - 18, w - 20, r(sub, 8.5, color=T["grey"])))
+        els.append(S.text(x, y + 46, w - 12, r(sub, 9, color=T["grey"])))
     return els
 
 
 def icon_tile(x, y, name, s=26, fill=None, color=None):
-    return [S.rect(x, y, s, s, fill=fill or T["sky"]), S.icon(name, x + s * 0.2, y + s * 0.2, s * 0.6, color or T["navy"], 2)]
+    """Inline monochrome line icon (no tile), vertically centred in an s-high row."""
+    k = 15
+    return [S.icon(name, x, y + (s - k) / 2, k, color or T["navy"], 2)]
 
 
 def chevrons(x, y, w, h, labels, active=None, notch=10):

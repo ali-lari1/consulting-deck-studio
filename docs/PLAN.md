@@ -221,17 +221,50 @@ line, page number.
 
 ---
 
-## 7. Design and brand
+## 7. Brand and templates (core v1 feature)
 
-- **3-5 neutral house themes** following consulting conventions: white canvas, one accent, navy/grey, thin rules
-  and a small source line. They are **not** imitations of any firm's brand. No MBB names, logos or trade dress are
-  used anywhere in the output.
-- **Client brand** comes from a URL (colours, fonts, logo), a guidelines PDF, or a `.potx`/`.pptx` template. From
-  the template, v1 extracts the theme colours, fonts, logo and master background, and recreates them in both
-  HTML and PPTX so parity holds. Full inheritance of the client master and layouts is v1.1.
-- A density setting for SteerCo pre-reads (dense) versus presented decks (sparse).
+Decks are built in the brand of the user's company. The house style below is only the fallback.
 
----
+**Intake asks for this first, every time.** In round 1, before any content questions, the skill asks:
+- Whose brand the deck carries: your firm's, or the client's (co-branded is allowed).
+- Whether you can share a template deck (`.potx`, or any recent `.pptx` from the company). "Any deck you've
+  sent recently works."
+- Whether you have brand guidelines (PDF or a link) and the company website.
+- Whether there is a deck you like the look of.
+If files are already in the project folder or a connected drive, it finds them and confirms rather than asking.
+
+**Order of preference:** template deck, then brand guidelines, then website, then a neutral house theme.
+Any assumption it makes about the brand is shown in the playback before it builds anything.
+
+**Template mode (a `.potx` or `.pptx` is supplied).** `template_from_pptx.py` reads the file and writes `brand.json` plus a
+template pack:
+- **Real master.** The output PPTX reuses the company's own slide master, layouts and theme. A colleague who opens
+  it is in their normal template: same footer, logo, page numbers and layout menu.
+- **Placeholders.** Titles and footers go into the template's own placeholder positions and text styles, read
+  from each layout's geometry and the master `txStyles`.
+- **Theme colours.** Colours are written as theme references (`schemeClr`), not hard-coded hex, so later edits stay
+  on-brand. The RAG red, amber and green are mapped to the nearest on-brand equivalents, and the skill asks if
+  none fit.
+- **Theme fonts.** Metrics come from the installed font file. If the font isn't installed, the skill asks for the
+  font files or uses a metric-compatible stand-in (Carlito for Calibri, Caladea for Cambria, Liberation for
+  Arial/Times) and says so.
+- **The layout grid comes from the template.** Content margins, the title area and safe areas are read from the
+  layouts, so the consulting components reflow onto the company's grid rather than ours.
+- **HTML and PDF match the template too.** Master and layout shapes (logos, rules, coloured bars, footer text,
+  images) are parsed into the scene, so the HTML shows the same chrome. Anything the parser can't reproduce
+  exactly, such as gradients or effects, is flagged. It is then rendered once as a background image from the
+  template, so all three outputs still match.
+- **Brand lint.** Checks that only theme colours and fonts are used, that the logo isn't distorted, that nothing
+  sits on top of master elements, and that the template's own slide types are used where they exist (section
+  divider, agenda).
+
+**Guidelines or website only.** `brand_from_url.py` and the guidelines PDF supply the palette, fonts and logo. The
+skill builds a clean master in that identity and produces a one-page brand sheet for confirmation.
+
+**No brand at all.** It uses a neutral consulting house style: white, navy, grey, Arial, thin rules and plain RAG
+dots. No firm's names, logos or trade dress are imitated.
+
+**Density setting.** Choose between dense SteerCo pre-reads and sparse presented decks.
 
 ## 8. Deck library in the repo
 
@@ -295,7 +328,7 @@ check (optional).
 |---|---|---|
 | M0 ✅ | **Parity spike** (done 2026-11-01) | 6 test slides (dense text, Gantt, heat map, waterfall, table, chart) render identically in Chromium and PowerPoint/LibreOffice, with the diff under threshold. Go/no-go on the architecture. |
 | M1 | Engine and 15 core layouts | Scene model, font metrics, PPTX and HTML writers, PDF export, overflow lint |
-| M2 | Remaining ~25 layouts and themes | All archetypes in section 5, 3-5 themes, client brand from URL and `.potx` |
+| M2 | Remaining ~25 layouts + **brand/template mode** | All archetypes in section 5; template pack from `.potx`/`.pptx` (real master reuse, placeholders, theme colours/fonts, master chrome in HTML); brand from guidelines/URL; house fallback |
 | M3 | Ingest | XER, MSPDI, XLSX/CSV registers, DOCX, VTT/SRT, PPTX, tested on sample files |
 | M4 | Knowledge | `SKILL.md`, interview model, deck-type files (≈36), standards, copy rules, review panel |
 | M5 | Library | `decks.json` (50-70 per practice, tiered), `library.md` patterns, `find_decks.py` |
@@ -307,8 +340,6 @@ check (optional).
 
 ## 11. Decisions for you
 
-1. **Name.** `consulting-deck-studio`, or another name?
-2. **Default fonts.** Arial/Georgia gives the safest parity everywhere. Bundled Inter/Source Serif looks better but
-   has caveats in Keynote and Google Slides.
-3. **Native charts.** Shapes by default with native charts opt-in, as proposed, or the reverse?
-4. **Repo visibility.** Public, like pitch-deck-studio?
+Decided 2026-11-01: name `consulting-deck-studio`; Arial/Georgia (Arial throughout by default); charts as shapes
+by default with native charts opt-in; public repo. Design direction from review: plain consulting conventions,
+not "designed" slides. That means no icon tiles, cards, pills or banners. Icons are sparse, monochrome and inline.

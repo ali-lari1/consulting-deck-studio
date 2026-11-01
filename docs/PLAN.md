@@ -330,7 +330,7 @@ check (optional).
 | M1 ✅ | Engine and 16 core layouts (done 2026-11-01) | Scene model, font metrics, PPTX and HTML writers, PDF export, overflow lint |
 | M2 ✅ | Remaining layouts (35 total) + **brand/template mode** (done 2026-11-01) | All archetypes in section 5; template pack from `.potx`/`.pptx` (real master reuse, placeholders, theme colours/fonts, master chrome in HTML); brand from guidelines/URL; house fallback |
 | M3 ✅ | Ingest (done 2026-11-01) | XER, MSPDI, XLSX/CSV registers, DOCX, VTT/SRT, PPTX, tested on sample files |
-| M4 | Knowledge | `SKILL.md`, interview model, deck-type files (≈36), standards, copy rules, review panel |
+| M4 ✅ | Knowledge (done 2026-11-01; dry-run test pending) | `SKILL.md`, interview model, deck-type files (≈36), standards, copy rules, review panel |
 | M5 | Library | `decks.json` (50-70 per practice, tiered), `library.md` patterns, `find_decks.py` |
 | M6 | Examples | 3 fictional end-to-end engagements, built from raw inputs by the skill itself |
 | M7 | Packaging and CI | Installers, manifests, validate workflow, README with screenshots, tested in Claude Code, Codex and Gemini CLI |

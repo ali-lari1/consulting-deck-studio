@@ -13,6 +13,19 @@ sys.path.insert(0, os.path.join(ROOT, "skills", "consulting-deck-studio", "scrip
 from cdslib import fonts  # noqa: E402
 
 os.makedirs(fonts.METRICS_DIR, exist_ok=True)
+# Extra families (e.g. fonts used by bundled examples): python3 tools/gen_metrics.py Verdana "Avenir Next"
+for family in sys.argv[1:]:
+    for style in ("regular", "bold", "italic", "bolditalic"):
+        hit = fonts.locate(family, style)
+        if not hit or hit[2] != family:
+            print("skip %s %s (not installed)" % (family, style))
+            continue
+        m = fonts.metrics_from_ttf(hit[0], hit[1])
+        out = os.path.join(fonts.METRICS_DIR, "%s-%s.json" % (family.replace(" ", ""), style))
+        json.dump(m, open(out, "w", encoding="utf-8"), ensure_ascii=False, separators=(",", ":"), sort_keys=True)
+        print("%s %s <- %s" % (family, style, m["source"]))
+if sys.argv[1:]:
+    sys.exit(0)
 for family, styles in fonts.FONT_FILES.items():
     for style in styles:
         src = fonts.find_font_file(family, style)

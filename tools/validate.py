@@ -33,6 +33,14 @@ for ref in set(re.findall(r"references/([\w./-]+\.md)", s)):
 for ref in set(re.findall(r"scripts/([\w./-]+\.py)", s)):
     check(os.path.exists(os.path.join(SK, "scripts", ref)), "SKILL.md references missing script: " + ref)
 
+versions = set()
+for f in [".claude-plugin/marketplace.json", ".claude-plugin/plugin.json", "gemini-extension.json"]:
+    dd = __import__("json").load(open(os.path.join(ROOT, f), encoding="utf-8"))
+    versions.add(dd.get("version") or dd["plugins"][0].get("version"))
+mv = re.search(r'version:\s*"([^"]+)"', fm)
+versions.add(mv.group(1) if mv else None)
+check(len(versions) == 1, "version mismatch across SKILL.md and manifests: %s" % versions)
+
 from cdslib import layouts, layouts_more, layouts_pmo  # noqa: E402,F401
 doc = open(os.path.join(SK, "references", "layouts.md"), encoding="utf-8").read()
 for lay in layouts.LAYOUTS:

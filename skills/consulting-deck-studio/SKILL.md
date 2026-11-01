@@ -4,7 +4,7 @@ description: Build consulting-grade slide decks for PMO, capital projects, strat
 license: MIT
 compatibility: Works in any agent that can read files and run shell commands (Claude Code, Codex, Gemini CLI, OpenCode, Hermes, Grok, Cursor, Copilot, Goose, Amp...). Needs Python 3.8+. Any Chromium-family browser enables PDF export; LibreOffice enables the automatic PPTX/HTML match check. Both optional.
 metadata:
-  version: "0.4.1"
+  version: "1.0.0"
   author: Ali Lari
   homepage: https://github.com/ali-lari1/consulting-deck-studio
 ---

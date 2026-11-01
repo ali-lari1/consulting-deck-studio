@@ -5,3 +5,5 @@ __pycache__/
 examples/*/parity/
 examples/*/contact-sheet.png
 **/.cds/calibration.json
+.agents/
+.claude/skills/

@@ -1,0 +1,10 @@
+{
+  "name": "consulting-deck-studio",
+  "version": "1.0.0",
+  "description": "Consulting-grade decks for PMO, capital projects, strategy and management consulting: reads notes, transcripts, schedules and registers, asks only what it needs, applies your template, and writes action-titled, sourced slides as editable PPTX + matching HTML/PDF.",
+  "author": { "name": "Ali Lari", "url": "https://github.com/ali-lari1" },
+  "homepage": "https://github.com/ali-lari1/consulting-deck-studio",
+  "repository": "https://github.com/ali-lari1/consulting-deck-studio",
+  "license": "MIT",
+  "keywords": ["consulting", "pmo", "steerco", "status-report", "capital-projects", "strategy", "slides", "pptx"]
+}

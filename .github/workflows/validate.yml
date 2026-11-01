@@ -1,0 +1,22 @@
+name: validate
+on: [push, pull_request]
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    strategy:
+      matrix:
+        python: ["3.8", "3.13"]
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: ${{ matrix.python }}
+      - run: python tools/validate.py
+      - run: bash -n install.sh
+      - name: ingest fixtures end to end
+        run: |
+          S=skills/consulting-deck-studio/scripts; P=$RUNNER_TEMP/p; F=tests/fixtures/northline
+          python $S/ingest.py $P --period 2026-09 $F/2026-09/schedule.xer $F/2026-09/risk-register.xlsx
+          python $S/ingest.py $P $F/2026-10/schedule.xer $F/2026-10/risk-register.xlsx $F/2026-10/raid.csv $F/2026-10/benefits.csv $F/2026-10/steerco.vtt $F/2026-10/pmo-notes.docx $F/small-msp.xml
+          python $S/ingest.py $P --emit changes 2026-09
+          python $S/ingest.py $P --emit gantt $P/research/inputs/schedule.schedule.json

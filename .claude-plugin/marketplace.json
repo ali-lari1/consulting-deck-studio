@@ -1,0 +1,15 @@
+{
+  "name": "consulting-deck-studio",
+  "owner": { "name": "Ali Lari", "url": "https://github.com/ali-lari1" },
+  "metadata": { "description": "Consulting-grade decks (PMO, capital projects, strategy, management) in any agent." },
+  "plugins": [
+    {
+      "name": "consulting-deck-studio",
+      "source": "./",
+      "description": "Status reports, SteerCo packs, gate papers, diagnostics and strategy decks from your notes, schedules and registers, on your own template. Editable PPTX + matching HTML/PDF.",
+      "version": "1.0.0",
+      "license": "MIT",
+      "keywords": ["consulting", "pmo", "steerco", "status-report", "capital-projects", "strategy", "slides", "pptx", "presentation"]
+    }
+  ]
+}

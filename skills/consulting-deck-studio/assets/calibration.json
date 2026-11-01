@@ -12,5 +12,12 @@
   "max_resid_pt": 0.199,
   "html_model_err_pt": 0.455,
   "renderer": "LibreOffice"
+ },
+ "Verdana": {
+  "a": 1.00657,
+  "b": -0.18657,
+  "renderer": "LibreOffice",
+  "auto": true,
+  "max_resid_pt": 0.224
  }
 }

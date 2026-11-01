@@ -79,7 +79,7 @@ layout: section
 {"number": "02", "subtitle": "Critical path, float and the handover date"}
 ```
 
-# Systems integration is now the critical path; handover holds only if test windows are confirmed by 14 November
+# Handover holds only if the operator confirms test windows by 14 November
 layout: gantt
 section: Schedule
 footnote: Baseline is the Gate 3 re-baseline (March 2026). Float is total float on the Level 2 schedule.
@@ -155,7 +155,7 @@ footnote: Floor is the minimum contingency set at Gate 3: 5% of remaining work.
                "At this rate it runs out by February 2027, before trial running starts."]}
 ```
 
-# Four of seven workstreams are on track; signalling and systems integration need SteerCo decisions
+# Four of seven workstreams are on track; two need SteerCo decisions
 layout: rag-dashboard
 section: Workstreams
 footnote: Green: on track. Amber: at risk but recoverable within tolerance. Red: outside tolerance, needs a decision. SPI and CPI are cumulative earned-value indices.
@@ -175,7 +175,7 @@ footnote: Green: on track. Amber: at risk but recoverable within tolerance. Red:
   {"workstream": "Commercial", "lead": "R. Dube", "schedule": "G", "cost": "A", "risk": "A", "trend": "flat", "comment": "Utilities claim valued at £6-9m"}]}
 ```
 
-# Signalling and systems integration account for nearly three-quarters of the remaining schedule risk
+# Signalling and systems integration hold nearly three-quarters of schedule risk
 layout: bar
 section: Workstreams
 footnote: P80 minus P50 finish date from the October schedule risk analysis (1,000 iterations).
@@ -218,7 +218,7 @@ section: Options
   {"label": "Contingency after", "values": [{"text": "3.0%", "rag": "A"}, {"text": "2.0%", "rag": "R"}, {"text": "2.6%", "rag": "R"}]}]}
 ```
 
-# Option B scores highest overall; it costs £14m now but is the only option that protects the May handover
+# Option B scores highest: £14m now, and the only option that protects May
 layout: options-matrix
 section: Options
 sowhat: We recommend Option B: approve £14m to run systems integration in parallel with fit-out

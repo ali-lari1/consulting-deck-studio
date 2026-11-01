@@ -3,6 +3,7 @@ deck: Meridian Health: cost review and capital programme
 context: Meridian Health Group  |  Board strategy session  |  November 2026
 tracker: Diagnostic, Options, Plan, Capital
 sticker: Draft for discussion
+deck_type: diagnostic
 source: Meridian finance and activity data FY2025/26; PMO analysis. Fictional example.
 ---
 

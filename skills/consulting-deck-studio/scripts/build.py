@@ -153,10 +153,11 @@ def build(project, pdf=False, do_parity=False, do_sheet=False, final=False, outl
                 if lvl == "error":
                     findings.append(("error", n, "PPTX differs from HTML on %.1f%% of pixels; see parity/cmp-%02d.png" % (ratio * 100, n)))
             print("parity: worst %.2f%% of pixels differ (threshold 3%%)" % (max(x[1] for x in res) * 100))
+    findings += lint.deck_rules(meta, slides)
     order = {"error": 0, "warn": 1, "info": 2}
     for lvl, n, msg in sorted(findings, key=lambda x: (order[x[0]], x[1])):
         if lvl != "info" or os.environ.get("CDS_VERBOSE"):
-            print("%-5s slide %-2d %s" % (lvl.upper(), n, msg))
+            print("%-5s %s %s" % (lvl.upper(), ("slide %-2d" % n) if n else "deck    ", msg))
     errs = sum(1 for f in findings if f[0] == "error")
     warns = sum(1 for f in findings if f[0] == "warn")
     print("%d error(s), %d warning(s)" % (errs, warns))

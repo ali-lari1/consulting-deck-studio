@@ -3,6 +3,7 @@ deck: Northline Rail Programme: October status report
 context: Northline Rail Programme  |  Monthly status report  |  October 2026
 tracker: Summary, Schedule, Risk, Delivery
 sticker: Draft for discussion
+deck_type: status-report
 source: schedule.xer (P6, data date 31 Oct 2026); risk-register.xlsx; raid.csv; benefits.csv; SteerCo transcript 28 Oct. Fictional example.
 ---
 

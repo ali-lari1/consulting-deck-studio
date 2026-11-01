@@ -3,6 +3,7 @@ deck: Northline Rail Programme: October SteerCo
 context: Northline Rail Programme  |  Monthly SteerCo  |  October 2026
 tracker: Summary, Schedule, Risk, Cost, Workstreams, Options
 sticker: Preliminary
+deck_type: steerco
 source: Programme controls period 7 report (Oct 2026); PMO analysis. Fictional example.
 ---
 

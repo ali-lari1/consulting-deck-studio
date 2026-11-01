@@ -21,7 +21,7 @@ HERE = os.path.dirname(os.path.abspath(__file__))
 sys.path.insert(0, HERE)
 from cdslib import components as C  # noqa: E402
 from cdslib import calibrate, deckmd, fonts, lint, parity, render, write_html, write_pptx  # noqa: E402
-from cdslib import layouts_pmo  # noqa: E402,F401  (registers PMO layouts)
+from cdslib import layouts_more, layouts_pmo  # noqa: E402,F401  (register layouts)
 from cdslib import scene as S  # noqa: E402
 from cdslib.components import T, r  # noqa: E402
 from cdslib.layouts import LAYOUTS  # noqa: E402

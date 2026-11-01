@@ -77,6 +77,38 @@ October 2026"). Number formatting is set with `prefix` ("£"), `suffix` ("%") an
 | `risk-heatmap` | `risks: [{id, title, owner, l 1-5, i 1-5, prev?: [l, i], mitigation, trend?}]`, `red_from` (default 15), `amber_from` (default 8). Movement arrows come from `prev`. |
 | `options-matrix` | `criteria: [{name, weight: "30%"}]` (weights must total 100%), `options: [{key, name, scores 0-4}]`, `recommended`, `stages` + `stage` (chevron funnel), `rationale` (bullets) |
 
+## Logic, process and organisation layouts
+
+| layout | data fields |
+|---|---|
+| `issue-tree` | `root: {text, children: [{text, rag?, highlight?, children}]}` (up to 3 levels below the root; about 12 leaves). `rag` on leaves records the hypothesis status. `legend: [[kind, colour, label]]`. Plus side panels. |
+| `driver-tree` | `root: {label, value, delta?, delta_bad?, highlight?, children}`. **Check the children add up to the parent** before building; the build does not do arithmetic on display strings. |
+| `process-flow` | `steps: [{title, bullets or text, owner?, duration?}]`, `active` (the title of the current step) |
+| `roadmap` | `periods`, `phases: [{name, start, end}]`, `lanes: [{name, items: [{label, start, end, rag?, highlight?} or {type: "milestone", label, at, rag?}]}]`, `today` (period index, fractions allowed) |
+| `timeline` | `start`, `end`, `events: [{date, label, detail?, done?, rag?}]` |
+| `org-chart` | `nodes: [{id, title, name?, parent?, note?, highlight?}]` (top-down; about 6 boxes in the widest row) |
+| `raci` | `roles`, `activities: [{name, cells: [R/A/C/I/""]}]`. **Each row needs exactly one A.** |
+| `before-after` | `rows: [{dimension, before, after}]`, or `before`/`after` bullet lists; `before_title`, `after_title` |
+
+## Capital project controls layouts
+
+| layout | data fields |
+|---|---|
+| `s-curve` | `x`, `planned`, `earned`, `actual` (cumulative), `bac`. **SPI, CPI, the variances and EAC (BAC/CPI) are computed from the data**, never typed in. Plus `takeaways`. |
+| `p-curve` | `samples` (raw simulation outcomes) or `points: [[value, cumulative p]]`, `percentiles` (default [50, 80]), `budget`, `budget_label`. **P-values and the budget's confidence level are computed.** |
+| `benefits-tracker` | `benefits: [{name, owner, unit, baseline, target, actual, rag, due, decimals?}]`. Progress to target is computed. |
+| `stage-gate` | `gates: [{label, name, date, status: done, current or future, decision?, criteria?}]` |
+| `raid-log` | `items: [{type: Risk, Issue, Assumption, Dependency or Decision, id, description, owner, due, rag, status}]`, sorted by type |
+
+## Analysis layouts
+
+| layout | data fields |
+|---|---|
+| `marimekko` | `columns: [{label, width_value, width_label, segments: [{label, value}]}]`, `highlight` (segment label). Shares are computed. |
+| `benchmark` | `items: [{label, value, highlight?}]`, `better`: `high` or `low`. The median is computed. |
+| `key-numbers` | `numbers: [{value, label, note?, rag?}]` (2-6) |
+| `quotes` | `quotes: [{text, who (role, not name), theme?}]`. **Quotes must be real and attributed by role.** Never invent them. |
+
 ## Conventions the layouts enforce
 
 - **RAG** is a plain dot plus the word. Every slide that uses RAG or trend shows a legend, and the RAG definitions

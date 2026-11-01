@@ -550,6 +550,7 @@ def table(x, y, w, columns, rows, size=9.5, bottom=None, header=True, pad=6.0, m
         y += 22
     for row in rows:
         cells, h = [], min_h
+        cell_w = {}
         cx = x
         for c, cw, val in zip(columns, widths, row):
             k = c.get("kind", "text")
@@ -560,11 +561,18 @@ def table(x, y, w, columns, rows, size=9.5, bottom=None, header=True, pad=6.0, m
                 h = max(h, t["h"] + 10)
             else:
                 cells.append((k, val, cx + cw / 2, c.get("good", "up")))
+                cell_w[cx + cw / 2] = cw
             cx += cw
         for cell in cells:
             if isinstance(cell, tuple):
                 k, val, cx_, good = cell
-                if k == "rag" and val:
+                if k == "progress" and val != "":
+                    cw_ = cell_w[cx_]
+                    bx, bw_ = cx_ - cw_ / 2 + pad, cw_ - 2 * pad - 30
+                    els.append(S.rect(bx, y + 7, bw_, 9, fill=T["tint"]))
+                    els.append(S.rect(bx, y + 7, bw_ * max(0.0, min(1.0, val)), 9, fill=T["navy"] if val >= 0 else T["R"]))
+                    els.append(S.text(bx + bw_ + 4, y + 5, 30, r("%d%%" % round(val * 100), 9, True)))
+                elif k == "rag" and val:
                     els.append(C.rag_dot(cx_, y + 11.5, val, 10))
                 elif k == "trend" and val:
                     els.append(C.trend(cx_, y + 11.5, val, trend_color(val, good), 8))

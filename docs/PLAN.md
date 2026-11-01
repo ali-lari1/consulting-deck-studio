@@ -327,7 +327,7 @@ check (optional).
 | # | Milestone | Done when |
 |---|---|---|
 | M0 ✅ | **Parity spike** (done 2026-11-01) | 6 test slides (dense text, Gantt, heat map, waterfall, table, chart) render identically in Chromium and PowerPoint/LibreOffice, with the diff under threshold. Go/no-go on the architecture. |
-| M1 | Engine and 15 core layouts | Scene model, font metrics, PPTX and HTML writers, PDF export, overflow lint |
+| M1 ✅ | Engine and 16 core layouts (done 2026-11-01) | Scene model, font metrics, PPTX and HTML writers, PDF export, overflow lint |
 | M2 | Remaining ~25 layouts + **brand/template mode** | All archetypes in section 5; template pack from `.potx`/`.pptx` (real master reuse, placeholders, theme colours/fonts, master chrome in HTML); brand from guidelines/URL; house fallback |
 | M3 | Ingest | XER, MSPDI, XLSX/CSV registers, DOCX, VTT/SRT, PPTX, tested on sample files |
 | M4 | Knowledge | `SKILL.md`, interview model, deck-type files (≈36), standards, copy rules, review panel |

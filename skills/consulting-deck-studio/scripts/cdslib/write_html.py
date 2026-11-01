@@ -148,3 +148,70 @@ def document(slides, title="Deck", stacked=True):
     return ('<!doctype html><html lang="en"><head><meta charset="utf-8"><title>%s</title>'
             '<meta name="viewport" content="width=device-width,initial-scale=1"><style>%s%s</style></head>'
             '<body>%s</body></html>') % (html.escape(title), CSS, gap, body)
+
+
+VIEWER_CSS = """
+body{background:#E6E8EB;font-family:Arial,'Liberation Sans',sans-serif}
+.wrap{display:flex;flex-direction:column;align-items:center;gap:20px;padding:24px 16px 80px}
+.frame{position:relative;box-shadow:0 1px 6px rgba(0,0,0,.18)}
+.frame .slide{position:absolute;left:0;top:0;transform-origin:0 0}
+.note{display:none;max-width:960px;width:100%;font-size:14px;line-height:1.5;color:#2A2F36;background:#fff;
+  padding:12px 16px;border-left:3px solid #0B2545;white-space:pre-wrap;box-sizing:border-box}
+body.notes .note{display:block}
+.hud{position:fixed;right:12px;bottom:10px;font-size:11px;color:#5F6B7A;background:rgba(255,255,255,.85);padding:4px 8px}
+body.present{background:#000;overflow:hidden}
+body.present .wrap{padding:0;gap:0}
+body.present .frame{display:none;box-shadow:none}
+body.present .frame.on{display:block;position:fixed;top:50%;left:50%}
+body.present .note,body.present .hud{display:none}
+@media print{
+  @page{size:13.333in 7.5in;margin:0}
+  body{background:#fff}.wrap{padding:0;gap:0;display:block}.hud,.note{display:none!important}
+  .frame{box-shadow:none;width:13.333in!important;height:7.5in!important;page-break-after:always;break-after:page;overflow:hidden}
+  .frame .slide{transform:scale(1.33333)!important}
+}
+"""
+
+VIEWER_JS = """
+(function(){
+var F=[].slice.call(document.querySelectorAll('.frame')),i=0,b=document.body;
+if(/[?&]reader/.test(location.search))b.classList.add('notes');
+function fit(){
+  if(b.classList.contains('present')){
+    var s=Math.min(innerWidth/960,innerHeight/540);
+    F.forEach(function(f,k){f.classList.toggle('on',k===i);f.style.width=960*s+'px';f.style.height=540*s+'px';
+      f.style.marginLeft=-480*s+'px';f.style.marginTop=-270*s+'px';f.firstElementChild.style.transform='scale('+s+')';});
+  }else{
+    var s=Math.min(1,(document.documentElement.clientWidth-32)/960);
+    F.forEach(function(f){f.style.width=960*s+'px';f.style.height=540*s+'px';f.style.margin='';
+      f.firstElementChild.style.transform='scale('+s+')';});
+  }
+}
+addEventListener('resize',fit);
+addEventListener('keydown',function(e){
+  var k=e.key;
+  if(k==='f'||k==='F'){b.classList.toggle('present');fit();}
+  else if(k==='n'||k==='N'||k==='r'||k==='R'){b.classList.toggle('notes');}
+  else if(k==='Escape'){b.classList.remove('present');fit();}
+  else if(b.classList.contains('present')){
+    if(k==='ArrowRight'||k===' '||k==='PageDown'){i=Math.min(F.length-1,i+1);fit();}
+    if(k==='ArrowLeft'||k==='PageUp'){i=Math.max(0,i-1);fit();}
+  }
+});
+F.forEach(function(f,k){f.addEventListener('dblclick',function(){i=k;b.classList.add('present');fit();});});
+fit();
+})();
+"""
+
+
+def viewer(slides, title="Deck"):
+    """Presentable single-file deck: scroll view, F = present, arrows, N = notes, ?reader = notes open, print = PDF."""
+    parts = []
+    for k, s in enumerate(slides, 1):
+        parts.append('<div class="frame" id="s%d">%s</div>' % (k, slide_html(s)))
+        if s.get("notes"):
+            parts.append('<div class="note"><b>Slide %d.</b> %s</div>' % (k, html.escape(s["notes"])))
+    return ('<!doctype html><html lang="en"><head><meta charset="utf-8"><title>%s</title>'
+            '<meta name="viewport" content="width=device-width,initial-scale=1"><style>%s%s</style></head><body>'
+            '<div class="wrap">%s</div><div class="hud">F present &middot; arrows &middot; N notes &middot; Ctrl/Cmd+P PDF</div>'
+            '<script>%s</script></body></html>') % (html.escape(title), CSS, VIEWER_CSS, "".join(parts), VIEWER_JS)

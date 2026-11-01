@@ -2,3 +2,4 @@ spike/out/
 __pycache__/
 *.pyc
 .DS_Store
+examples/*/parity/

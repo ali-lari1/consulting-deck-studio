@@ -1,0 +1,16 @@
+{
+ "Arial": {
+  "a": 1.00114,
+  "b": -0.2017,
+  "max_resid_pt": 0.331,
+  "html_model_err_pt": 0.367,
+  "renderer": "LibreOffice"
+ },
+ "Georgia": {
+  "a": 0.9996,
+  "b": -0.20533,
+  "max_resid_pt": 0.199,
+  "html_model_err_pt": 0.455,
+  "renderer": "LibreOffice"
+ }
+}

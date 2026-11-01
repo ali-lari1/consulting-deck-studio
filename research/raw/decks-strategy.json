@@ -1,0 +1,3257 @@
+[
+ {
+  "title": "Building a Best-in-Class DOT (cash balance review)",
+  "firm": "McKinsey & Company",
+  "firm_group": "MBB",
+  "tier": 1,
+  "client": "North Carolina Dept of Transportation",
+  "client_type": "government",
+  "year": 2019,
+  "practice": "strategy",
+  "deck_types": [
+   "board-update",
+   "benchmarking",
+   "operating-model"
+  ],
+  "sector": "Public sector / transport",
+  "url": "https://www.ncdot.gov/about-us/how-we-operate/finance-budget/Documents/mckinsey-ncdot-review-presentation.pdf",
+  "source_url": "https://slideworks.io/resources/47-real-mckinsey-presentations",
+  "publication_route": "government-published",
+  "slide_count": 24,
+  "eligibility": "core",
+  "verified": "Downloaded and opened PDF (24 pages, page size 1008x612 pt); extracted title text from 17 sampled slides across the deck; rendered sample pages for visual check of selected decks.",
+  "slide_sequence": [
+   "p2: more than the forecast in FY19? with cash reserve levels over the past...",
+   "p3: The strategic objectives of NCDOT include the need to reduce and right-size cash...",
+   "p4: NCDOT today operates in a more complex environment, with a smaller staff, than...",
+   "p5: Reimbursement Disaster Relief repayments to Loan of $90M expenditures and $58M in accelerated...",
+   "p6: Maximum cash balance (FY19) balance (FY19) Minimum cash State Fiscal Year 2019 432",
+   "p7: FY19 negative cash variance was a shift versus a pattern of increasing cash...",
+   "p8: Disasters, preliminary engineering and a weak ‘culture of cash’ contributed to nearly 70%",
+   "p9: disaster expense large increases has grown at a CAGR of but forecasted allocations...",
+   "p10: Preliminary engineering has not used robust forecasting process, nor historically prioritized its contribution...",
+   "p11: Divisions have historically missed cash forecast; in FY19, all divisions overspent their",
+   "p12: Divisions have historically prioritized project delivery, and other goals, over meeting cash",
+   "p13: Revenue forecasting variance is typically less than 7%, and often much smaller",
+   "p14: NCDOT challenges will likely increase in the future given more complex work and...",
+   "p15: Improve communication embed predictive abilities, and central, across DOT (e.g. Increase coordination (e.g....",
+   "p16: There are a number of changes by outside parties that could help NCDOT...",
+   "p17: which will make meeting"
+  ],
+  "storyline_pattern": "Question-led contents slide, then one finding per slide (diagnosis then initiatives)",
+  "signature_slides": [
+   "waterfall with circled driver callouts",
+   "cash balance actual-vs-forecast bars",
+   "peer benchmark",
+   "initiative table"
+  ],
+  "design": {
+   "palette": "Measured dominant saturated hues (quantised): #204060, #c06040, #002060",
+   "typography": "Helvetica, Helvetica, TT2C16t00",
+   "density": "high",
+   "charts": [
+    "CAGR-labelled columns/lines",
+    "peer benchmark charts",
+    "roadmap/timeline",
+    "maps/frameworks",
+    "survey bars",
+    "share/composition charts"
+   ]
+  },
+  "standout_moves": [
+   "Numbered circles tie waterfall bars to takeaway bullets",
+   "Contents slide poses the board's questions verbatim"
+  ],
+  "weaknesses": [
+   "Cover is marked draft/confidential although published",
+   "Text-heavy right-hand panels"
+  ],
+  "design_quality": 4,
+  "caveat": "Cover says DRAFT AND CONFIDENTIAL - NOT FOR DISTRIBUTION; hosted publicly by NCDOT. Fetched from an Internet Archive copy because the live host returned 403/404 to scripted requests; the URL given is the original publisher URL. design_quality is a rubric-lite estimate from typography, colour, density and title scan, not a full visual review of every slide."
+ },
+ {
+  "title": "Modelling the potential of digitally-enabled processes, transparency and participation in the NHS",
+  "firm": "McKinsey & Company",
+  "firm_group": "MBB",
+  "tier": 1,
+  "client": "NHS England (Directorate for Patient and Information)",
+  "client_type": "government",
+  "year": 2014,
+  "practice": "strategy",
+  "deck_types": [
+   "economic-development",
+   "benchmarking"
+  ],
+  "sector": "Healthcare / public sector",
+  "url": "https://www.digitalhealth.net/includes/images/news0254/PDF/overview-evidence-review-of-data-and-information.pdf",
+  "source_url": "https://slideworks.io/resources/47-real-mckinsey-presentations",
+  "publication_route": "aggregator-only",
+  "slide_count": 26,
+  "eligibility": "core",
+  "verified": "Downloaded and opened PDF (26 pages, page size 705x529 pt); extracted title text from 17 sampled slides across the deck; rendered sample pages for visual check of selected decks.",
+  "slide_sequence": [
+   "p1: Modelling the potential of digitally-enabled processes,",
+   "p2: The aim of this work is to: Provide an evidence base to inform...",
+   "p3: In this project we are delivering four end products",
+   "p4: What this work is and what it is not",
+   "p5: The new digitally-enabled NHS could look different to the NHS today",
+   "p6: We have applied the following methodology to estimate the potential of digitally enabled...",
+   "p7: This work is set in the context of the NHS facing a serious...",
+   "p8: The IT expenditure in the NHS has been relatively high",
+   "p9: We are modelling the opportunity to use the NHS IT assets better in...",
+   "p10: Net benefit of technology interventions across settings",
+   "p11: The gap may be reduced by ~30% by applying the interventions",
+   "p12: We have analysed the net opportunity against the ease of implementation",
+   "p13: There are a number of enabling actions that could be pursued, we identify...",
+   "p15: We estimated the potential benefits in supply…",
+   "p16: … and demand"
+  ],
+  "storyline_pattern": "Aim and scope first, method, context, modelled benefit by intervention, gap-closure, next steps, backup",
+  "signature_slides": [
+   "net-benefit bridge by intervention",
+   "supply/demand gap scenario chart",
+   "methodology schematic"
+  ],
+  "design": {
+   "palette": "Measured dominant saturated hues (quantised): #406080, #e0e000, #204060",
+   "typography": "ArialMT, Arial, Wingdings",
+   "density": "high",
+   "charts": [
+    "scenario charts",
+    "share/composition charts"
+   ]
+  },
+  "standout_moves": [
+   "States explicitly what the work is and is not",
+   "Backup section separated after a divider"
+  ],
+  "weaknesses": [
+   "Pale blue/yellow theme feels dated",
+   "Footer print stamps clutter slides"
+  ],
+  "design_quality": 3,
+  "caveat": "Cover marked CONFIDENTIAL; copy hosted by trade-press site (Digital Health), original release route not verified. Fetched from an Internet Archive copy because the live host returned 403/404 to scripted requests; the URL given is the original publisher URL. design_quality is a rubric-lite estimate from typography, colour, density and title scan, not a full visual review of every slide."
+ },
+ {
+  "title": "Responding to COVID-19: addressing the economic impact of the crisis - information for US state leaders",
+  "firm": "McKinsey & Company",
+  "firm_group": "MBB",
+  "tier": 2,
+  "client": "US state and local government leaders (generic)",
+  "client_type": "government",
+  "year": 2020,
+  "practice": "strategy",
+  "deck_types": [
+   "economic-development",
+   "board-update"
+  ],
+  "sector": "Public sector",
+  "url": "https://www.mckinsey.com/~/media/mckinsey/about%20us/covid%20response%20center/pdfs/responding%20to%20the%20economic%20impact.pdf",
+  "source_url": "https://slideworks.io/resources/47-real-mckinsey-presentations",
+  "publication_route": "firm-published",
+  "slide_count": 34,
+  "eligibility": "extended",
+  "verified": "Downloaded and opened PDF (34 pages, page size 960x540 pt); extracted title text from 17 sampled slides across the deck; rendered sample pages for visual check of selected decks.",
+  "slide_sequence": [
+   "p1: Responding to COVID-19: Addressing the economic impact",
+   "p3: The imperative of our time",
+   "p4: Safeguard our livelihoods: Assessing and responding to the economic impact of the crisis",
+   "p6: COVID-19 US impact could exceed anything since the end of WWII",
+   "p8: There may be an estimated $57 million vulnerable jobs due to the crisis...",
+   "p10: Seventy-four percent of vulnerable jobs pay less than $40,000 a year",
+   "p12: States can focus on five areas to implement federal relief and fiscal recovery...",
+   "p14: States can consider several potential actions over 3 time horizons",
+   "p16: States may consider potential “Day 1” actions to prepare",
+   "p18: States can consider several potential trade-offs as they prepare for implementing the relief...",
+   "p20: Senior leaders may consider economic interventions for both the immediate and long term",
+   "p22: Relieve: State leaders may consider several examples of economic interventions others have taken...",
+   "p24: Recover: State leaders may consider several examples of economic interventions others have taken...",
+   "p28: Most small businesses hold less than one month of expenses in cash reserves,...",
+   "p30: States might consider targeted interventions for small and medium businesses to provide relief..."
+  ],
+  "storyline_pattern": "Recurring table-of-contents tracker, then option menus across time horizons (relieve, restart, recover, reimagine)",
+  "signature_slides": [
+   "4R framework",
+   "time-horizon action menu",
+   "sector impact bars",
+   "examples catalogue (1/4..4/4)"
+  ],
+  "design": {
+   "palette": "Measured dominant saturated hues (quantised): #00a0e0, #004080, #20a0e0",
+   "typography": "ArialMT, Arial, Georgia",
+   "density": "high",
+   "charts": [
+    "roadmap/timeline",
+    "scenario charts",
+    "maps/frameworks",
+    "survey bars",
+    "share/composition charts"
+   ]
+  },
+  "standout_moves": [
+   "Persistent chapter tracker slide",
+   "'Actions for consideration, not a prescription' disclaimers"
+  ],
+  "weaknesses": [
+   "Menu slides are text-dense",
+   "Generic not client-specific"
+  ],
+  "design_quality": 4,
+  "caveat": "Firm-published thought-leadership briefing in deck format, not a bespoke client deliverable. Fetched from an Internet Archive copy because the live host returned 403/404 to scripted requests; the URL given is the original publisher URL. design_quality is a rubric-lite estimate from typography, colour, density and title scan, not a full visual review of every slide."
+ },
+ {
+  "title": "Chilean Hydrogen Pathway - Final report",
+  "firm": "McKinsey & Company",
+  "firm_group": "MBB",
+  "tier": 1,
+  "client": "Government of Chile (Ministerio de Energia)",
+  "client_type": "government",
+  "year": 2020,
+  "practice": "strategy",
+  "deck_types": [
+   "economic-development",
+   "market-entry",
+   "benchmarking"
+  ],
+  "sector": "Energy / hydrogen",
+  "url": "https://energia.gob.cl/sites/default/files/estudio_base_para_la_elaboracion_de_la_estrategia_nacional_para_el_desarrollo_de_hidrogeno_verde_en_chile.pdf",
+  "source_url": "https://slideworks.io/resources/47-real-mckinsey-presentations",
+  "publication_route": "government-published",
+  "slide_count": 65,
+  "eligibility": "core",
+  "verified": "Downloaded and opened PDF (65 pages, page size 960x540 pt); extracted title text from 17 sampled slides across the deck; rendered sample pages for visual check of selected decks.",
+  "slide_sequence": [
+   "p3: Chapter 1: State of global Hydrogen industry",
+   "p4: 1.1/ Blue and Green hydrogen are two low-carbon production methods of H2 with...",
+   "p8: 1.1 / Since 2018, the hydrogen industry has been experiencing unprecedented momentum",
+   "p12: 1.2 / The EU Hydrogen Strategy For a Climate Neutral Europe",
+   "p20: 1.2 / Key actions in for the creation of the hydrogen industrial ecosystem...",
+   "p24: 1.2 / Dutch Hydrogen Strategy – Investments and incentives",
+   "p28: 1.2 / Key actions in for the creation of the hydrogen industrial ecosystem...",
+   "p36: 2.2-2.3 / Market size of the hydrogen industry in Chile",
+   "p40: Chapter 3: Business case for Hydrogen exportation",
+   "p44: 3.2 / Factor that will influence Chilean export competitiveness",
+   "p48: 4.1 / Optimal sequence and ramp up timeline of applications, corresponding infrastructure and...",
+   "p52: 5.1 & 5.2/",
+   "p56: Workshop 1: National Strategy for 5.4/ Hydrogen Breakout group discussion"
+  ],
+  "storyline_pattern": "Five numbered chapters (global industry, domestic business case, export, targets and roadmap, stakeholders); numbered action titles",
+  "signature_slides": [
+   "cost-curve line chart by region",
+   "production-cost comparison columns",
+   "country strategy one-pagers",
+   "roadmap",
+   "stakeholder map"
+  ],
+  "design": {
+   "palette": "Measured dominant saturated hues (quantised): #c00000, #e0a000, #e0c000",
+   "typography": "Georgia, ArialMT, Arial",
+   "density": "high",
+   "charts": [
+    "roadmap/timeline",
+    "maps/frameworks"
+   ]
+  },
+  "standout_moves": [
+   "Section-numbered action titles (e.g. 2.1/) aid navigation",
+   "Peer country strategy profiles in identical template"
+  ],
+  "weaknesses": [
+   "Dense country profile pages",
+   "Serif titles plus sans body slightly inconsistent"
+  ],
+  "design_quality": 4,
+  "caveat": "Study underpinning Chile's National Green Hydrogen Strategy; cover marked confidential and proprietary but published by the Ministry. Fetched from an Internet Archive copy because the live host returned 403/404 to scripted requests; the URL given is the original publisher URL. design_quality is a rubric-lite estimate from typography, colour, density and title scan, not a full visual review of every slide."
+ },
+ {
+  "title": "University of Arizona 2018 Strategic Plan",
+  "firm": "McKinsey & Company",
+  "firm_group": "MBB",
+  "tier": 1,
+  "client": "University of Arizona",
+  "client_type": "nonprofit",
+  "year": 2018,
+  "practice": "strategy",
+  "deck_types": [
+   "growth-strategy",
+   "portfolio-review"
+  ],
+  "sector": "Higher education",
+  "url": "https://ofr.azregents.edu/wp-content/uploads/2018/11/UA_Strategic_Plan_2018.pdf",
+  "source_url": "https://slideworks.io/resources/47-real-mckinsey-presentations",
+  "publication_route": "client-published",
+  "slide_count": 25,
+  "eligibility": "core",
+  "verified": "Downloaded and opened PDF (25 pages, page size 706x529 pt); extracted title text from 17 sampled slides across the deck; rendered sample pages for visual check of selected decks.",
+  "slide_sequence": [
+   "p4: Pillar 1: The Wildcat Journey CONTEXT",
+   "p5: Pillar 1: The Wildcat Journey GOALS (1 of 2)",
+   "p6: Pillar 1: The Wildcat Journey GOALS (2 of 2)",
+   "p7: Pillar 1 Initiatives (1 of 2)",
+   "p8: Pillar 1 Initiatives (2 of 2)",
+   "p9: Pillar 2: Grand Challenges CONTEXT",
+   "p10: Pillar 2: Grand Challenges GOALS (1 of 2)",
+   "p11: Pillar 2: Grand Challenges GOALS (2 of 2)",
+   "p12: Pillar 2 Initiatives (1 of 3)",
+   "p13: Pillar 2 Initiatives (2 of 3)",
+   "p14: Pillar 2 Initiatives (3 of 3)",
+   "p15: Pillar 3: The Arizona Advantage CONTEXT",
+   "p16: Pillar 3: The Arizona Advantage GOALS",
+   "p17: Pillar 3 Initiatives (1 of 2)"
+  ],
+  "storyline_pattern": "Vision, three pillars each with goals then initiatives, supporting data tied to targets",
+  "signature_slides": [
+   "pillar framework",
+   "target-vs-today goal slides",
+   "survey bar chart",
+   "initiative cards"
+  ],
+  "design": {
+   "palette": "Measured dominant saturated hues (quantised): #002040, #a00000, #c08080",
+   "typography": "Calibri, ArialMT, Calibri",
+   "density": "high",
+   "charts": [
+    "survey bars",
+    "share/composition charts"
+   ]
+  },
+  "standout_moves": [
+   "Each pillar opens with an external-context slide (4IR) before goals",
+   "Quantified 2025 targets on goals slides"
+  ],
+  "weaknesses": [
+   "Slide text reads like a plan document",
+   "Few visuals"
+  ],
+  "design_quality": 3,
+  "caveat": "Simplified PPT version of the plan posted by the Arizona Board of Regents. Fetched from an Internet Archive copy because the live host returned 403/404 to scripted requests; the URL given is the original publisher URL. design_quality is a rubric-lite estimate from typography, colour, density and title scan, not a full visual review of every slide."
+ },
+ {
+  "title": "Federal City Council - Transportation and Warehousing Sector Analysis",
+  "firm": "McKinsey & Company",
+  "firm_group": "MBB",
+  "tier": 1,
+  "client": "Federal City Council (Washington DC)",
+  "client_type": "nonprofit",
+  "year": 2020,
+  "practice": "strategy",
+  "deck_types": [
+   "economic-development",
+   "benchmarking",
+   "growth-strategy"
+  ],
+  "sector": "Transport / logistics",
+  "url": "https://www.federalcitycouncil.org/wp-content/uploads/2020/12/McKinsey_Transportation.pdf",
+  "source_url": "https://slideworks.io/resources/47-real-mckinsey-presentations",
+  "publication_route": "client-published",
+  "slide_count": 40,
+  "eligibility": "core",
+  "verified": "Downloaded and opened PDF (40 pages, page size 960x540 pt); extracted title text from 17 sampled slides across the deck; rendered sample pages for visual check of selected decks.",
+  "slide_sequence": [
+   "p3: The transportation sector in …but is a critical enabler of DC has modest...",
+   "p4: Transportation and warehousing is a relatively small sector in DC with low specialization...",
+   "p6: Top Transportation occupations employ a majority of Black workers, and are at highest...",
+   "p8: Mobility in DC: Five core challenges will shape the future of the sector...",
+   "p10: 1b: Employment in Trade, transportation, and utilities declined by 5%, which was not...",
+   "p12: 2a: Three-quarters of public transit riders and half of drivers face daily commutes...",
+   "p14: 2b: ~50% of white collar workers are teleworking, and many will continue to...",
+   "p16: 4a: Swathes of low income districts are under-served by high-frequency transit",
+   "p18: 5a: Among peers, Washington DC has the highest share of cyclist fatalities",
+   "p20: 5b: Walking and biking expected to increase 5% in the US post- COVID-19,...",
+   "p22: Mobility in DC: opportunities to enhance transportation and economic outcomes across DC",
+   "p24: 1b: View long-term transit health as integrated with land use solutions that increase...",
+   "p26: 2d: Invest in streetscape to support walking, cycling-, and micro-mobility",
+   "p28: 4h: Provide subsidies for low-income residents for transit usage"
+  ],
+  "storyline_pattern": "Baseline conditions, challenges and trends, opportunities/best practice, closing sector scorecard; numbered sub-titles (1a, 2b...)",
+  "signature_slides": [
+   "GDP/employment specialisation scatter",
+   "peer-city bar charts",
+   "initiative description cards"
+  ],
+  "design": {
+   "palette": "Measured dominant saturated hues (quantised): #e0a040, #e0c060, #e0c080",
+   "typography": "ArialMT, Georgia, Arial",
+   "density": "high",
+   "charts": [
+    "CAGR-labelled columns/lines",
+    "peer benchmark charts",
+    "maps/frameworks",
+    "survey bars",
+    "share/composition charts"
+   ]
+  },
+  "standout_moves": [
+   "Lettered sub-headings (4a/5a) link evidence to the opportunity list",
+   "Best-practice cards cite named cities"
+  ],
+  "weaknesses": [
+   "Text-heavy opportunity cards",
+   "Mixed font weights"
+  ],
+  "design_quality": 4,
+  "caveat": "Part of a 2020 DC sector-strategy series for the Federal City Council. Fetched from an Internet Archive copy because the live host returned 403/404 to scripted requests; the URL given is the original publisher URL. design_quality is a rubric-lite estimate from typography, colour, density and title scan, not a full visual review of every slide."
+ },
+ {
+  "title": "USPS Future Business Model",
+  "firm": "McKinsey & Company",
+  "firm_group": "MBB",
+  "tier": 1,
+  "client": "United States Postal Service",
+  "client_type": "government",
+  "year": 2010,
+  "practice": "strategy",
+  "deck_types": [
+   "portfolio-review",
+   "board-update",
+   "growth-strategy"
+  ],
+  "sector": "Postal / logistics",
+  "url": "https://about.usps.com/future-postal-service/mckinsey-usps-future-bus-model2.pdf",
+  "source_url": "https://slideworks.io/resources/47-real-mckinsey-presentations",
+  "publication_route": "government-published",
+  "slide_count": 39,
+  "eligibility": "core",
+  "verified": "Downloaded and opened PDF (39 pages, page size 792x612 pt); extracted title text from 17 sampled slides across the deck; rendered sample pages for visual check of selected decks.",
+  "slide_sequence": [
+   "p1: USPS Future Business Model",
+   "p2: McKinsey & Company",
+   "p4: Losses have been driven by volume declines, RHB pre-funding",
+   "p6: The recession has exacerbated volume declines, but mail has reached an inflection point,...",
+   "p8: Recent reductions in workforce usage have been significant, but pieces",
+   "p10: Base case – minimal management actions",
+   "p12: by a steady decline in First-Class Mail, the most profitable segment Volume will...",
+   "p14: the universal service obligation and other service requirements Costs, from a workforce standpoint,...",
+   "p16: Workforce costs continue to rise faster than inflation through 2020",
+   "p18: The combination of the trends will put extreme pressure on USPS given it",
+   "p20: The financial outlook for the Postal Service is highly dependent on trends Further...",
+   "p22: USPS can pursue two sets of actions to address the challenge",
+   "p24: USPS will continue to take aggressive action to drive revenue and control Net...",
+   "p26: Aggressive productivity improvements in the “Actions within Postal",
+   "p28: The “Actions within Postal Service control” case leads to a loss of $15",
+   "p30: increased access with partners and eventual franchising and/or closure Eliminating/reducing subsidies non- network..."
+  ],
+  "storyline_pattern": "Context, base case (no action), addressing the gap, short-term requirements; each slide a loss-driven assertion",
+  "signature_slides": [
+   "gap-closure waterfall by lever",
+   "base-case forecast bars",
+   "options menu"
+  ],
+  "design": {
+   "palette": "Measured dominant saturated hues (quantised): #2060a0, #6080c0, #e08000",
+   "typography": "ArialMT, Arial",
+   "density": "medium",
+   "charts": [
+    "text/table slides"
+   ]
+  },
+  "standout_moves": [
+   "Quantifies the 2020 gap ($238B cumulative loss) then closes it lever by lever",
+   "Clear base-case vs action-case framing"
+  ],
+  "weaknesses": [
+   "Dated Arial/blue look",
+   "Charts crowded"
+  ],
+  "design_quality": 3,
+  "caveat": "Posted by USPS on its Future Postal Service page. design_quality is a rubric-lite estimate from typography, colour, density and title scan, not a full visual review of every slide."
+ },
+ {
+  "title": "Envisioning America's Future Postal Service: Options for a Changing Environment",
+  "firm": "McKinsey & Company",
+  "firm_group": "MBB",
+  "tier": 1,
+  "client": "United States Postal Service",
+  "client_type": "government",
+  "year": 2010,
+  "practice": "strategy",
+  "deck_types": [
+   "portfolio-review",
+   "board-update"
+  ],
+  "sector": "Postal / logistics",
+  "url": "https://about.usps.com/future-postal-service/mckinsey-march-2nd-presentation2.pdf",
+  "source_url": "https://slideworks.io/resources/47-real-mckinsey-presentations",
+  "publication_route": "government-published",
+  "slide_count": 25,
+  "eligibility": "core",
+  "verified": "Downloaded and opened PDF (25 pages, page size 704x528 pt); extracted title text from 17 sampled slides across the deck; rendered sample pages for visual check of selected decks.",
+  "slide_sequence": [
+   "p1: Envisioning America’s Future Postal Service",
+   "p2: Additional options to ensure Review of economic trends",
+   "p3: McKinsey built an integrated forecast and set",
+   "p4: Large fixed cost base Rising cost per hour Four trends are increasing pressure...",
+   "p5: Price: Price increases combine with volume declines for flat revenue through 2020",
+   "p6: Revenue trends: Declines focused in higher",
+   "p7: Network was historically built to provide high service levels to customers, regardless of",
+   "p8: Customer service network costs are largely fixed",
+   "p9: processing processing Processing overhead costs are largely fixed for every for every facilities...",
+   "p10: Corresponding high fixed delivery cost Deliver to every address in America",
+   "p11: Continue to rise faster than inflation",
+   "p12: Workforce costs: Required Retiree Health Benefit funding is substantial from 2010-2016",
+   "p13: Recent losses are forecast to grow",
+   "p14: Four sets of actions could reduce the 2020 gap by $18 B Actions...",
+   "p15: will improve long-term sustainability, but a gap will remain Actions within Postal Service...",
+   "p16: McKinsey examined an extensive range of options"
+  ],
+  "storyline_pattern": "Discussion agenda, four trends, forecast, actions within control, 50+ options considered, privatisation assessment",
+  "signature_slides": [
+   "four-trends overview",
+   "options long-list",
+   "net-income gap chart"
+  ],
+  "design": {
+   "palette": "Measured dominant saturated hues (quantised): #002060, #204060, #204080",
+   "typography": "ArialMT, Arial, Arial",
+   "density": "low",
+   "charts": [
+    "scenario charts"
+   ]
+  },
+  "standout_moves": [
+   "Evaluates and dismisses privatisation explicitly",
+   "Shows 50+ options screened"
+  ],
+  "weaknesses": [
+   "Very light text (low density) with some repeated labels from PDF extraction",
+   "Little visual identity"
+  ],
+  "design_quality": 3,
+  "caveat": "Companion presentation to the Future Business Model deck. design_quality is a rubric-lite estimate from typography, colour, density and title scan, not a full visual review of every slide."
+ },
+ {
+  "title": "Helping Global Health Partnerships to Increase their Impact: Stop TB Partnership - McKinsey collaboration",
+  "firm": "McKinsey & Company",
+  "firm_group": "MBB",
+  "tier": 1,
+  "client": "Stop TB Partnership",
+  "client_type": "multilateral",
+  "year": 2009,
+  "practice": "strategy",
+  "deck_types": [
+   "operating-model",
+   "board-update",
+   "benchmarking"
+  ],
+  "sector": "Global health",
+  "url": "https://stoptb.org/assets/documents/about/cb/meetings/17/2.09-03%20Strengthening%20Performance%20Management%20in%20the%20Partnership/2.09-03.1%20Helping%20Global%20Health%20Partnerships%20to%20Increase%20their%20Impact.pdf",
+  "source_url": "https://slideworks.io/resources/47-real-mckinsey-presentations",
+  "publication_route": "client-published",
+  "slide_count": 54,
+  "eligibility": "core",
+  "verified": "Downloaded and opened PDF (54 pages, page size 842x595 pt); extracted title text from 17 sampled slides across the deck; rendered sample pages for visual check of selected decks.",
+  "slide_sequence": [
+   "p1: impact: Stop TB Partnership – Partnerships to increase their McKinsey collaboration",
+   "p2: McKinsey & Company",
+   "p3: Background to this work: The performance of Global Health Partnerships (GHPs) is increasingly...",
+   "p4: practical insights on improving the performance of GHPs based on piloted Project goals,...",
+   "p7: Framework: We think about performance in terms of both processes and",
+   "p10: Challenges (1): Many Global Health Partnerships find some performance processes challenging given their...",
+   "p13: Diagnostic phase findings (2): The Stop TB Partnership also displays a",
+   "p16: gather data and prepare reports for internal use Difficult to assess GDF's performance...",
+   "p19: 7 KPIs give a clear overview of GDF's performance against its 3 main",
+   "p25: Nov Dec Oct Sep Aug",
+   "p28: Setting advocacy objectives within Stop Advocacy improvement opportunities TB Partnership that stay current...",
+   "p31: sufficiently impactful the information can Determine whether Feasibility Filter realistically be translated into...",
+   "p34: Communication, Marketing and Branding",
+   "p37: The high-level objectives are related to 3 areas – raising awareness about",
+   "p40: The team will finalize execution plans and align with other teams to ensure",
+   "p43: The team conducted 4 workshops to revise the CFCS mission, objectives,"
+  ],
+  "storyline_pattern": "Pre-read: project overview, then team-by-team issues and opportunities against a performance-management framework, then plans",
+  "signature_slides": [
+   "process/enabler framework",
+   "KPI dashboard mock-ups",
+   "performance review calendar"
+  ],
+  "design": {
+   "palette": "Measured dominant saturated hues (quantised): #0060c0, #406080, #204060",
+   "typography": "Helvetica, Helvetica, TTE59D27A8t00",
+   "density": "medium",
+   "charts": [
+    "maps/frameworks",
+    "share/composition charts"
+   ]
+  },
+  "standout_moves": [
+   "Same issue/opportunity table repeated per team",
+   "Illustrative dashboards make the ask tangible"
+  ],
+  "weaknesses": [
+   "Long for a board pre-read",
+   "Older template"
+  ],
+  "design_quality": 3,
+  "caveat": "Pre-reading for a Coordinating Board meeting, published by the Partnership. design_quality is a rubric-lite estimate from typography, colour, density and title scan, not a full visual review of every slide."
+ },
+ {
+  "title": "Lebanon Economic Vision - Full Report",
+  "firm": "McKinsey & Company",
+  "firm_group": "MBB",
+  "tier": 1,
+  "client": "Government of Lebanon (Ministry of Economy and Trade)",
+  "client_type": "government",
+  "year": 2018,
+  "practice": "strategy",
+  "deck_types": [
+   "economic-development",
+   "growth-strategy",
+   "benchmarking"
+  ],
+  "sector": "National economic strategy (multi-sector)",
+  "url": "https://www.economy.gov.lb/media/11893/20181022-1228full-report-en.pdf",
+  "source_url": "https://slideworks.io/resources/47-real-mckinsey-presentations",
+  "publication_route": "government-published",
+  "slide_count": 1274,
+  "eligibility": "core",
+  "verified": "Downloaded and opened PDF (1274 pages, page size 705x529 pt); extracted title text from 17 sampled slides across the deck; rendered sample pages for visual check of selected decks.",
+  "slide_sequence": [
+   "p2: Economic Vision Outline",
+   "p3: The study has been launched following a Council of Ministers decree in October...",
+   "p4: Current efforts focus on syndication, to be followed by communication and implementation",
+   "p95: Knowledge Economy – sector aspirations",
+   "p186: The inflows also went into financing the governments’ increasing size and indebtedness leaving...",
+   "p277: Water usage in agriculture needs to be actively managed to ensure sustainability, as...",
+   "p368: Process outsourcing could take one of four formats",
+   "p459: Contents – Real Estate & Construction Key performance measures Key performance drivers",
+   "p550: Increasing generation capacity and improving cost efficiency could lead to significant savings for...",
+   "p641: CASE EXAMPLE: New Zealand Trade & Enterprise has a highly intensive program for...",
+   "p732: We considered 15 priority initiatives that underpin the vision of the agriculture sector...",
+   "p823: Efforts should be made to ensure higher occupancy rates, through targeted marketing &...",
+   "p914: At the same time, the cultural and creative ecosystem in Lebanon is facing...",
+   "p1096: In order to ensure a conducive business environment, several legislations need to be...",
+   "p1187: After losing 1/3 of its cement production capacity during the conflict, Syria’s domestic..."
+  ],
+  "storyline_pattern": "Mandate and approach, then sector-by-sector diagnostic, aspiration and priority initiatives, enablers",
+  "signature_slides": [
+   "sector aspiration pages",
+   "benchmark bars",
+   "export complexity chart",
+   "initiative lists"
+  ],
+  "design": {
+   "palette": "Measured dominant saturated hues (quantised): #008020, #40a060, #008040",
+   "typography": "Arial, Arial",
+   "density": "high",
+   "charts": [
+    "peer benchmark charts",
+    "scenario charts",
+    "survey bars",
+    "share/composition charts"
+   ]
+  },
+  "standout_moves": [
+   "Repeating sector chapter template at national scale",
+   "Quantified 2025 sector aspirations"
+  ],
+  "weaknesses": [
+   "1,274 pages is unwieldy",
+   "Uneven chart quality"
+  ],
+  "design_quality": 3,
+  "caveat": "Slide-format master report; slide_count is the PDF page count. Mandated by Council of Ministers decree Oct 2017. design_quality is a rubric-lite estimate from typography, colour, density and title scan, not a full visual review of every slide."
+ },
+ {
+  "title": "Reimagining infrastructure in the United States",
+  "firm": "McKinsey & Company",
+  "firm_group": "MBB",
+  "tier": 1,
+  "client": "Washington State Transportation Commission",
+  "client_type": "government",
+  "year": 2020,
+  "practice": "strategy",
+  "deck_types": [
+   "board-update",
+   "economic-development"
+  ],
+  "sector": "Infrastructure",
+  "url": "https://wstc.wa.gov/wp-content/uploads/2020/10/2020-1021-BP11A-McKinsey.pdf",
+  "source_url": "https://slideworks.io/resources/47-real-mckinsey-presentations",
+  "publication_route": "government-published",
+  "slide_count": 16,
+  "eligibility": "core",
+  "verified": "Downloaded and opened PDF (16 pages, page size 960x540 pt); extracted title text from 16 sampled slides across the deck; rendered sample pages for visual check of selected decks.",
+  "slide_sequence": [
+   "p1: Reimagining infrastructure in the United States:",
+   "p2: Public infrastructure spending has fallen, and there is a $2.1 trillion backlog",
+   "p3: Infrastructure investment can support economic",
+   "p4: Scenario 1: Portfolio optimization with stimulus funding",
+   "p5: Scenario 2: Portfolio optimization without stimulus funding",
+   "p6: Three factors that this year has magnified in evaluating investments in transportation",
+   "p7: 4 areas underpin a “reimagining”",
+   "p8: Refocusing on evolving",
+   "p9: Climate risk can take three forms",
+   "p10: Example heatmap for infrastructure assets - Transportation",
+   "p11: Example: Climate risk taxonomy for roads identifies flooding as the most critical risk...",
+   "p12: Addressing racial inequities in customer experience can increase the effectiveness of public services...",
+   "p13: Survey data for one State reveals differences in experience by race",
+   "p14: Capital planning best practices and innovative operating models / public private partnerships can..."
+  ],
+  "storyline_pattern": "Problem (spending backlog), economic case, scenarios, four themes for reimagining, climate and equity applications",
+  "signature_slides": [
+   "scenario charts with/without stimulus",
+   "climate-risk heatmap",
+   "taxonomy tables"
+  ],
+  "design": {
+   "palette": "Measured dominant saturated hues (quantised): #204040, #004060, #402000",
+   "typography": "Georgia, Arial, Arial",
+   "density": "high",
+   "charts": [
+    "scenario charts",
+    "heatmap",
+    "maps/frameworks",
+    "survey bars"
+   ]
+  },
+  "standout_moves": [
+   "Pairs national evidence with a Washington-relevant decision lens",
+   "Heatmap of climate risk by asset class"
+  ],
+  "weaknesses": [
+   "Generic national framing",
+   "Dense text boxes"
+  ],
+  "design_quality": 4,
+  "caveat": "Briefing paper to the Commission, Oct 2020. design_quality is a rubric-lite estimate from typography, colour, density and title scan, not a full visual review of every slide."
+ },
+ {
+  "title": "Blockchain Technology in the Insurance Sector",
+  "firm": "McKinsey & Company",
+  "firm_group": "MBB",
+  "tier": 1,
+  "client": "US Treasury Federal Advisory Committee on Insurance (FACI)",
+  "client_type": "government",
+  "year": 2017,
+  "practice": "strategy",
+  "deck_types": [
+   "market-entry",
+   "growth-strategy"
+  ],
+  "sector": "Insurance / fintech",
+  "url": "https://home.treasury.gov/system/files/311/McKinsey_FACI_Blockchain_in_Insurance.pdf",
+  "source_url": "https://slideworks.io/resources/47-real-mckinsey-presentations",
+  "publication_route": "government-published",
+  "slide_count": 17,
+  "eligibility": "core",
+  "verified": "Downloaded and opened PDF (17 pages, page size 705x529 pt); extracted title text from 17 sampled slides across the deck; rendered sample pages for visual check of selected decks.",
+  "slide_sequence": [
+   "p2: 10 things you should know about Blockchain",
+   "p3: Although institutions are at different stages of experimentation, most now believe it could...",
+   "p4: Blockchain could be one of the most disruptive innovations since the advent of...",
+   "p5: Core innovation and supporting elements in all blockchains",
+   "p6: Blockchain technology is applicable across multiple use case categories as a static store...",
+   "p7: Across at least 80 nascent but real opportunities to apply , nearly one...",
+   "p8: Investment in blockchain has already started to gain momentum and is expected to...",
+   "p9: Effective use case execution will depend highly on strong collaboration among players in...",
+   "p10: McKinsey has identified 7 genuine use cases and associated pain points; all of...",
+   "p11: In Insurance, blockchains have potential for impact across the entire value chain",
+   "p12: Applications of blockchains in P&C Insurance (including true P2P insurance contracts) will improve...",
+   "p13: And a growing number of companies is working on blockchain use cases for...",
+   "p14: Early successes have been achieved primarily by consortia working together, including in Insurance",
+   "p15: However, blockchain should be employed only under certain conditions and requirements",
+   "p16: Shaping the regulatory environment is the biggest challenge to unlocking the potential value...",
+   "p17: Based on the current rate of evolution, we believe blockchain solutions could reach..."
+  ],
+  "storyline_pattern": "'10 things you should know' primer, use-case sizing, insurance value-chain applications, implications",
+  "signature_slides": [
+   "use-case sizing bars",
+   "value-chain map",
+   "ecosystem collaboration diagram"
+  ],
+  "design": {
+   "palette": "Measured dominant saturated hues (quantised): #006080, #4080a0, #60a0a0",
+   "typography": "ArialMT, Arial",
+   "density": "high",
+   "charts": [
+    "survey bars",
+    "share/composition charts"
+   ]
+  },
+  "standout_moves": [
+   "Opens with an explainer list for non-experts",
+   "Sizes $80-110B impact"
+  ],
+  "weaknesses": [
+   "Thin on recommendations",
+   "Light density"
+  ],
+  "design_quality": 3,
+  "caveat": "Quarterly committee briefing, Jan 2017. design_quality is a rubric-lite estimate from typography, colour, density and title scan, not a full visual review of every slide."
+ },
+ {
+  "title": "Forsyningssektorens effektiviseringspotentiale (Utilities sector efficiency potential) - Danish",
+  "firm": "McKinsey & Company",
+  "firm_group": "MBB",
+  "tier": 1,
+  "client": "Danish Energy Agency (Energistyrelsen)",
+  "client_type": "government",
+  "year": 2016,
+  "practice": "strategy",
+  "deck_types": [
+   "benchmarking",
+   "operating-model"
+  ],
+  "sector": "Utilities",
+  "url": "https://ens.dk/media/1853/download",
+  "source_url": "https://slideworks.io/resources/47-real-mckinsey-presentations",
+  "publication_route": "government-published",
+  "slide_count": 234,
+  "eligibility": "core",
+  "verified": "Downloaded and opened PDF (234 pages, page size 705x529 pt); extracted title text from 17 sampled slides across the deck; rendered sample pages for visual check of selected decks.",
+  "slide_sequence": [
+   "p3: Analysen belyser effektiviserings- og konsolideringspotentialet i forsyningssektoren, udover de aftalte 3,3 DKK mia.",
+   "p4: Læsevejledning: Analysen er inddelt i fire primære kapitler, suppleret med et omfattende appendiks...",
+   "p20: Endvidere er der identificeret en række sektorspecifikke barrierer, som kan være en hindring...",
+   "p52: En øget konsolidering i fjernvarmesektoren vil kunne give et årligt effektiviseringspotentiale på op...",
+   "p68: Et yderligere samarbejde mellem de tre selskaber kan give et konsolideringspotentiale i størrelsesordenen...",
+   "p84: Konkurrenceudsættelse kan, i samspil med andre initiativer, medvirke til effektivisering af genanvendelse af...",
+   "p100: Overinvesteringer og investeringer udenfor kerneaktiviteten kan lede til højere priser for forbrugerne",
+   "p116: Kommunale selskabers bestyrelser er domineret af politikere",
+   "p132: Holding struktur er kompleks, men muliggør fx bibeholdelse af egen- bestemmelse og taksdifferentiering",
+   "p148: Forudsætningerne i business case for Amager Bakke har ikke kunnet realiseres",
+   "p180: Initiativer er identificeret og prioriteret baseret på en tretrins-tilgang",
+   "p196: Oversigt over modeller",
+   "p212: Statistiske test af grundmodel"
+  ],
+  "storyline_pattern": "Executive findings, four main chapters (benchmarking, consolidation, incentives, regulation) plus statistical appendix",
+  "signature_slides": [
+   "efficiency benchmarking",
+   "regulatory comparison charts",
+   "consolidation case studies"
+  ],
+  "design": {
+   "palette": "Measured dominant saturated hues (quantised): #4080c0, #002040, #406080",
+   "typography": "Arial, Arial, Arial",
+   "density": "high",
+   "charts": [
+    "peer benchmark charts",
+    "share/composition charts"
+   ]
+  },
+  "standout_moves": [
+   "Reading guide slide explains chapters and appendix",
+   "Cross-country regulatory evidence (UK tariff cuts)"
+  ],
+  "weaknesses": [
+   "Danish language",
+   "Very long"
+  ],
+  "design_quality": 3,
+  "caveat": "Danish-language; produced with Struensee (per slideworks). Titles are paraphrased translations in summaries. design_quality is a rubric-lite estimate from typography, colour, density and title scan, not a full visual review of every slide."
+ },
+ {
+  "title": "Refueling the innovation engine in vaccines",
+  "firm": "McKinsey & Company",
+  "firm_group": "MBB",
+  "tier": 1,
+  "client": "US HHS National Vaccine Advisory Committee",
+  "client_type": "government",
+  "year": 2016,
+  "practice": "strategy",
+  "deck_types": [
+   "market-entry",
+   "growth-strategy"
+  ],
+  "sector": "Life sciences",
+  "url": "https://www.hhs.gov/sites/default/files/Azimi_McKinsey_Vaccine_Innovation_Findings-remediated.pdf",
+  "source_url": "https://slideworks.io/resources/47-real-mckinsey-presentations",
+  "publication_route": "government-published",
+  "slide_count": 40,
+  "eligibility": "core",
+  "verified": "Downloaded and opened PDF (40 pages, page size 705x529 pt); extracted title text from 17 sampled slides across the deck; rendered sample pages for visual check of selected decks.",
+  "slide_sequence": [
+   "p1: Refueling the innovation engine in vaccines",
+   "p2: McKinsey is currently undertaking an effort to understand the challenges and solutions to...",
+   "p3: These perspectives informed by interactions across vaccine space",
+   "p4: There are persisting unmet needs in vaccine-preventable disease that call for improved and...",
+   "p6: These unmet needs call for innovations on both existing vaccines and new products...",
+   "p8: Increasing complexity in patient diversity and program delivery also raises the need for...",
+   "p10: At first glance, the industry looks to be thriving – pipelines are robust,...",
+   "p12: We have a higher proportion of late stage vaccine candidates now than we...",
+   "p14: Global industry growth has also kept pace, and is expected to continue to...",
+   "p16: However, looking closer, signals suggest that there are real challenges to innovation",
+   "p18: Biotechs are driving most early stage programs, but facing limitations in the absorptive...",
+   "p20: Three factors are challenging the underlying business model for vaccines innovation",
+   "p22: Relative vaccine economics have been changing, with lower returns on investment as success...",
+   "p24: Time to market for vaccines is increasing, implying increasing costs and creating potential...",
+   "p26: Commercial attractiveness and technical feasibility vary by vaccine 2-3 and vaccine archetype",
+   "p28: Five vaccine archetypes carry distinct profiles for commercial potential and technical feasibility"
+  ],
+  "storyline_pattern": "Context, unmet needs, pipeline signals, business-model challenges, vaccine archetypes, questions for discussion",
+  "signature_slides": [
+   "pipeline trend charts",
+   "2x2 archetypes (commercial potential vs feasibility)",
+   "discussion questions"
+  ],
+  "design": {
+   "palette": "Measured dominant saturated hues (quantised): #406080, #204060, #6080a0",
+   "typography": "ArialMT, Arial, Arial",
+   "density": "low",
+   "charts": [
+    "maps/frameworks",
+    "share/composition charts"
+   ]
+  },
+  "standout_moves": [
+   "Ends on explicit discussion questions for committee",
+   "Archetype segmentation"
+  ],
+  "weaknesses": [
+   "Low text-to-visual ratio on some slides",
+   "Discussion document, not a recommendation"
+  ],
+  "design_quality": 4,
+  "caveat": "Findings presentation to NVAC; fetched via Internet Archive copy. design_quality is a rubric-lite estimate from typography, colour, density and title scan, not a full visual review of every slide."
+ },
+ {
+  "title": "COVID-19 Business Recovery: Council Report",
+  "firm": "McKinsey & Company",
+  "firm_group": "MBB",
+  "tier": 1,
+  "client": "City of Vancouver",
+  "client_type": "government",
+  "year": 2020,
+  "practice": "strategy",
+  "deck_types": [
+   "economic-development",
+   "board-update"
+  ],
+  "sector": "Municipal economic recovery",
+  "url": "https://council.vancouver.ca/20201103/documents/p2presentation-consultant.pdf",
+  "source_url": "https://slideworks.io/resources/47-real-mckinsey-presentations",
+  "publication_route": "government-published",
+  "slide_count": 26,
+  "eligibility": "core",
+  "verified": "Downloaded and opened PDF (26 pages, page size 720x540 pt); extracted title text from 17 sampled slides across the deck; rendered sample pages for visual check of selected decks.",
+  "slide_sequence": [
+   "p2: COVID-19 is, first and foremost, a global humanitarian challenge.",
+   "p4: Scenarios for the Economic Impact of the COVID-19 Crisis",
+   "p5: A plurality of executives believe the public health & economic response will be...",
+   "p6: Canada’s economic recovery to pre-COVID-19 level is estimated to take ~1 to ~4...",
+   "p7: Public confidence likely to be tested during potential subsequent COVID-19 waves",
+   "p8: Factors influencing the timeline to a “return to normal” through herd immunity",
+   "p9: Probability of when COVID-19 might “functionally end” in the US currently seems to...",
+   "p11: Learnings can be pulled from past crises & other jurisdictions",
+   "p12: Past recessions and crises suggest lessons for economic recovery to be undertaken by...",
+   "p13: To be competitive post-COVID-19, economies will likely need to meet some basic requirements...",
+   "p14: To compete for companies and talent, regions will likely need to differentiate themselves...",
+   "p15: Some facets of the long-term economic impact of COVID-19 are still to be...",
+   "p16: COVID-19 recovery is a pivotal moment where governments could accelerate zero-carbon transition Government",
+   "p17: Across jurisdictions, municipal COVID-19 response has focused on 3 target areas"
+  ],
+  "storyline_pattern": "Three parts (global/local trends, learnings from other jurisdictions, relevant opportunities) with repeated tracker",
+  "signature_slides": [
+   "scenario recovery chart",
+   "historic-recession lessons",
+   "opportunity cards"
+  ],
+  "design": {
+   "palette": "Measured dominant saturated hues (quantised): #80c0e0, #40a0c0, #406080",
+   "typography": "ArialMT, Arial, Georgia",
+   "density": "high",
+   "charts": [
+    "scenario charts",
+    "survey bars",
+    "share/composition charts"
+   ]
+  },
+  "standout_moves": [
+   "Repeated three-part tracker keeps council oriented",
+   "Recovery timeline by scenario (1-4 years)"
+  ],
+  "weaknesses": [
+   "Limited Vancouver-specific numbers",
+   "Blue palette generic"
+  ],
+  "design_quality": 4,
+  "caveat": "Council meeting Nov 2020. design_quality is a rubric-lite estimate from typography, colour, density and title scan, not a full visual review of every slide."
+ },
+ {
+  "title": "Customs and Border Protection - project documents (strategy)",
+  "firm": "McKinsey & Company",
+  "firm_group": "MBB",
+  "tier": 1,
+  "client": "US Customs and Border Protection",
+  "client_type": "government",
+  "year": 2018,
+  "practice": "strategy",
+  "deck_types": [
+   "operating-model",
+   "growth-strategy"
+  ],
+  "sector": "Border security / government",
+  "url": "https://s3.documentcloud.org/documents/6560164/McK-CBP-Project-Documents.pdf",
+  "source_url": "https://slideworks.io/resources/47-real-mckinsey-presentations",
+  "publication_route": "FOI",
+  "slide_count": 200,
+  "eligibility": "core",
+  "verified": "Downloaded and opened PDF (200 pages, page size 792x612 pt); extracted title text from 17 sampled slides across the deck; rendered sample pages for visual check of selected decks.",
+  "slide_sequence": [
+   "p1: Customs and Border Protection",
+   "p3: Project Execution Plan (months 1-3)",
+   "p4: Project Execution Plan (months 4-12)",
+   "p32: <0.1% system downtime; bandwidth upgrades are done in Northern Triangle countries can communicate...",
+   "p46: OVERVIEW The purpose of this Monthly Project Report is to provide a summary...",
+   "p60: Consider strategic initiative outcomes and potential owners Recap Oct. 1 ALC feedback and...",
+   "p88: Awareness and enforcement: Increase situational awareness to",
+   "p102: Stakeholder expectations are increasing as companies like Amazon influence customer demands—and government lags...",
+   "p116: One CBP: Build a culture of trust, leadership, and common purpose at",
+   "p130: implementation and are the accountable ALC member for this aspect of the strategy...",
+   "p144: Each strategic initiative overview includes the external environment, CBP baseline and outcomes, actions...",
+   "p186: Resilience: Equip the workforce and their families maintain physical and emotional health"
+  ],
+  "storyline_pattern": "Project execution plan, portfolio-initiative approach, strategic pillars, benchmark of other agencies, CBP strategy, stakeholder experience",
+  "signature_slides": [
+   "execution plan Gantt",
+   "initiative portfolio",
+   "benchmark of USG agencies"
+  ],
+  "design": {
+   "palette": "Measured dominant saturated hues (quantised): #4060a0, #40a0a0, #6060a0",
+   "typography": "CIDFont+F1, CIDFont+F2, Helvetica",
+   "density": "high",
+   "charts": [
+    "roadmap/timeline",
+    "maps/frameworks",
+    "survey bars",
+    "share/composition charts"
+   ]
+  },
+  "standout_moves": [
+   "Portfolio approach for managing initiatives",
+   "FOIA (b)(4) markings show the release route"
+  ],
+  "weaknesses": [
+   "200 pages of mixed plan and strategy material",
+   "Redactions"
+  ],
+  "design_quality": 3,
+  "caveat": "Released via FOIA and posted on DocumentCloud; confirm usage rights before reuse. Fetched from an Internet Archive copy because the live host returned 403/404 to scripted requests; the URL given is the original publisher URL. design_quality is a rubric-lite estimate from typography, colour, density and title scan, not a full visual review of every slide."
+ },
+ {
+  "title": "Loose dogs in Dallas: Strategic Recommendations to Improve Public Safety and Animal Welfare",
+  "firm": "Boston Consulting Group",
+  "firm_group": "MBB",
+  "tier": 1,
+  "client": "City of Dallas",
+  "client_type": "government",
+  "year": 2016,
+  "practice": "strategy",
+  "deck_types": [
+   "operating-model",
+   "board-update",
+   "benchmarking"
+  ],
+  "sector": "Public safety / animal services",
+  "url": "https://dallascityhall.com/government/Council%20Meeting%20Documents/loose-dogs-in-dallas-strategic-recommendations-to-improve-public-safety-and-animal-welfare_combined_083016.pdf",
+  "source_url": "https://slideworks.io/resources/54-real-bcg-presentations",
+  "publication_route": "government-published",
+  "slide_count": 57,
+  "eligibility": "core",
+  "verified": "Downloaded and opened PDF (406 pages, page size 612x792 pt); extracted title text from 17 sampled slides across the deck; rendered sample pages for visual check of selected decks.",
+  "slide_sequence": [
+   "p2: Loose dogs in Dallas: Strategic Recommendations to Improve",
+   "p33: Dallas' issues are solvable, but require community action",
+   "p62: BCG Strategic Recommendations to Improve Public Safety and Animal Welfare in Dallas 2016...",
+   "p91: BCG Strategic Recommendations to Improve Public Safety and Animal Welfare in Dallas 2016",
+   "p149: BCG Strategic Recommendations to Improve Public Safety and Animal Welfare in Dallas 2016...",
+   "p178: Overview: DAS should enhance its digital marketing for both adoptions and transfers",
+   "p207: Personal relationships, easier processes, and access to info most common causes for increase...",
+   "p236: Potential pillars of Dallas \"Animal Education\" program",
+   "p265: Productivity metrics within DAS's control should be established and tracked",
+   "p294: National research helps to quantify link between loose dogs, public safety and animal...",
+   "p323: Based on national research (not DAS-specific), owner surrenders often driven by housing issues,...",
+   "p352: Dogs adopted through EAC have similar length of stay as other dogs, but...",
+   "p381: Rescue and Animal Organization Survey findings"
+  ],
+  "storyline_pattern": "Executive findings, seven recommendations, 28 initiatives, then supporting detail and working materials",
+  "signature_slides": [
+   "initiative tree 7 recs to 28 initiatives",
+   "peer benchmark",
+   "dog-supply estimate",
+   "funding comparison"
+  ],
+  "design": {
+   "palette": "Measured dominant saturated hues (quantised): #006040, #208060, #408060",
+   "typography": "Arial, Henderson BCG Serif, Arial",
+   "density": "high",
+   "charts": [
+    "peer benchmark charts",
+    "maps/frameworks",
+    "survey bars",
+    "share/composition charts"
+   ]
+  },
+  "standout_moves": [
+   "'Cherry-picking will not work' framing for recommendations",
+   "Four deliverables bundled in one public file"
+  ],
+  "weaknesses": [
+   "Bundle is 406 pages",
+   "Dense backup"
+  ],
+  "design_quality": 4,
+  "caveat": "Council deck is ~57 slides of a 406-page bundle (council deck + white paper + initiative detail + working materials). Page size in PDF properties is portrait because memo is first. design_quality is a rubric-lite estimate from typography, colour, density and title scan, not a full visual review of every slide."
+ },
+ {
+  "title": "Victoria's Creative and Cultural Economy - Fact Pack",
+  "firm": "Boston Consulting Group",
+  "firm_group": "MBB",
+  "tier": 1,
+  "client": "State Government of Victoria (Australia)",
+  "client_type": "government",
+  "year": 2015,
+  "practice": "strategy",
+  "deck_types": [
+   "economic-development",
+   "benchmarking"
+  ],
+  "sector": "Creative economy",
+  "url": "https://wecreate.org.nz/wp-content/uploads/BCG-Victoria-Creative-Cultural-Economy-2015.pdf",
+  "source_url": "https://slideworks.io/resources/54-real-bcg-presentations",
+  "publication_route": "aggregator-only",
+  "slide_count": 65,
+  "eligibility": "core",
+  "verified": "Downloaded and opened PDF (65 pages, page size 780x540 pt); extracted title text from 17 sampled slides across the deck; rendered sample pages for visual check of selected decks.",
+  "slide_sequence": [
+   "p1: Victoria's Creative and Cultural Economy",
+   "p2: Note to the reader: Context",
+   "p4: Executive Summary Creative & cultural economy",
+   "p8: BCG isolated parts of C/C economy for greater analysis",
+   "p12: C/C economy employs around 222k in Victoria",
+   "p16: Most C/C businesses are small and concentrated in few sectors",
+   "p20: C/C industries' employees are highly qualified",
+   "p24: Greater Melbourne over-represented in cultural employment",
+   "p28: Social & Cultural value Spillover",
+   "p32: Melbourne's level of 'buzz' in line with expectations of asset quality and economic...",
+   "p40: Corrections: Key studies indicate strength of evidence",
+   "p44: Mental health: Key studies indicate strength of evidence",
+   "p48: Disability: Arts an effective tool for social inclusion of PwD",
+   "p52: C/C economy generates cultural value for Victorians",
+   "p56: C/C economy could add $21.9b GVA and 90k jobs for Victoria"
+  ],
+  "storyline_pattern": "Context note, industry snapshot, executive summary, value generated, spillovers, case studies, competitiveness",
+  "signature_slides": [
+   "GVA and employment bars with CAGR",
+   "spillover evidence tables",
+   "case-study pages"
+  ],
+  "design": {
+   "palette": "Measured dominant saturated hues (quantised): #006040, #208060, #40a080",
+   "typography": "Arial, Arial, Arial",
+   "density": "high",
+   "charts": [
+    "CAGR-labelled columns/lines",
+    "survey bars",
+    "share/composition charts"
+   ]
+  },
+  "standout_moves": [
+   "Fact-pack form designed as a base for further work",
+   "Explicit evidence-strength labels"
+  ],
+  "weaknesses": [
+   "Fact pack, not a recommendation",
+   "Hosted on third-party NZ site"
+  ],
+  "design_quality": 4,
+  "caveat": "Commissioned by the State Government of Victoria per slideworks; third-party host (wecreate.org.nz). design_quality is a rubric-lite estimate from typography, colour, density and title scan, not a full visual review of every slide."
+ },
+ {
+  "title": "Evaluating NYC media sector development and setting the stage for future growth - Final Report",
+  "firm": "Boston Consulting Group",
+  "firm_group": "MBB",
+  "tier": 1,
+  "client": "NYC Mayor's Office of Media and Entertainment / NYCEDC",
+  "client_type": "government",
+  "year": 2012,
+  "practice": "strategy",
+  "deck_types": [
+   "economic-development",
+   "benchmarking"
+  ],
+  "sector": "Media and entertainment",
+  "url": "https://www.nyc.gov/html/film/downloads/pdf/Media_in_NYC_2012.pdf",
+  "source_url": "https://slideworks.io/resources/54-real-bcg-presentations",
+  "publication_route": "government-published",
+  "slide_count": 42,
+  "eligibility": "core",
+  "verified": "Downloaded and opened PDF (42 pages, page size 756x540 pt); extracted title text from 16 sampled slides across the deck; rendered sample pages for visual check of selected decks.",
+  "slide_sequence": [
+   "p1: Evaluating NYC media sector development and setting the stage for future growth",
+   "p4: Defining boundaries of the Media and Entertainment sector",
+   "p7: NYC filmed entertainment industry growth impressive in face of nationwide decline",
+   "p10: NYC film production is at its highest levels supporting employment of over 12k...",
+   "p16: NYC media sector currently accounts for ~ 275k jobs and generates revenues of...",
+   "p19: Publishing revenues flat and jobs in decline as traditional advertising revenues quickly drop",
+   "p25: In particular, the past four years have shaped much of NYC's digital and...",
+   "p28: ...but also recognized some areas of concern that the city should try to...",
+   "p34: New ideas were proposed on media sector promotion, some of which could use...",
+   "p40: Traditional publishing model is facing challenges and will shed jobs in NYC; need..."
+  ],
+  "storyline_pattern": "Introduction and executive summary, sub-sector snapshots (film, TV, publishing, digital), concerns, recommendations",
+  "signature_slides": [
+   "sector job and revenue bars",
+   "agenda tracker",
+   "recommendation list"
+  ],
+  "design": {
+   "palette": "Measured dominant saturated hues (quantised): #40a080, #408060, #208060",
+   "typography": "Arial, Arial, Arial",
+   "density": "high",
+   "charts": [
+    "roadmap/timeline",
+    "maps/frameworks",
+    "survey bars",
+    "share/composition charts"
+   ]
+  },
+  "standout_moves": [
+   "Agenda tracker slide repeated per sector",
+   "Quantified direct spend and FTEs"
+  ],
+  "weaknesses": [
+   "Older template",
+   "Some slides text heavy"
+  ],
+  "design_quality": 3,
+  "caveat": "design_quality is a rubric-lite estimate from typography, colour, density and title scan, not a full visual review of every slide."
+ },
+ {
+  "title": "The Media and Entertainment Industry in NYC: Trends and Recommendations for the Future",
+  "firm": "Boston Consulting Group",
+  "firm_group": "MBB",
+  "tier": 1,
+  "client": "NYC Mayor's Office of Media and Entertainment",
+  "client_type": "government",
+  "year": 2012,
+  "practice": "strategy",
+  "deck_types": [
+   "economic-development",
+   "growth-strategy"
+  ],
+  "sector": "Media and entertainment",
+  "url": "https://www.nyc.gov/assets/mome/pdf/bcg-report-10.15.pdf",
+  "source_url": "https://slideworks.io/resources/54-real-bcg-presentations",
+  "publication_route": "government-published",
+  "slide_count": 49,
+  "eligibility": "core",
+  "verified": "Downloaded and opened PDF (49 pages, page size 792x612 pt); extracted title text from 17 sampled slides across the deck; rendered sample pages for visual check of selected decks.",
+  "slide_sequence": [
+   "p1: The Media and Entertainment Industry in NYC: NYC Trends and Recommendations for the...",
+   "p2: through its Office of Film, Theatre and Broadcasting (MOFTB) has served New York...",
+   "p3: New series typically 8-12 episodes (vs. traditional 20+ for broadcast), with increasing turnover...",
+   "p4: 2014 was a blockbuster year for funding of digital media and entertainment in...",
+   "p7: Multiple reasons productions choose to film in NYC",
+   "p10: Nationwide, we see strong shifts in filmed entertainment",
+   "p13: National trends reflected in NYC TV productions National trends reflected in NYC TV...",
+   "p16: as almost all shows stay in city where pilot was filmed pilots –...",
+   "p19: In movies, across the industry we see concentration of",
+   "p22: jobs in NYC, contributing 37K toward the total 104K FTEs jobs in NYC,...",
+   "p25: ...and NYC dominates the US documentary industry",
+   "p28: Strong growth in Broadway grosses, and steady upward",
+   "p31: New media in NYC: Digital media and entertainment companies and funding Total economic...",
+   "p34: have fueled expansion of digital media & entertainment in NYC have fueled expansion...",
+   "p37: Since 2011, NYC has generated 50% of US media sector",
+   "p40: Multiple initiatives underway to address these"
+  ],
+  "storyline_pattern": "Executive summary in two parts, drivers of production location, TV/film/theatre/digital trends, recommendations",
+  "signature_slides": [
+   "factor-importance charts",
+   "trend bars",
+   "recommendation list"
+  ],
+  "design": {
+   "palette": "Measured dominant saturated hues (quantised): #e0c060, #a08040, #208060",
+   "typography": "Arial, ArialMT, Arial",
+   "density": "high",
+   "charts": [
+    "peer benchmark charts",
+    "survey bars",
+    "share/composition charts"
+   ]
+  },
+  "standout_moves": [
+   "Executive summary split in two slides",
+   "Pilot-capture insight on TV"
+  ],
+  "weaknesses": [
+   "PDF extraction shows duplicate text layers",
+   "Dense"
+  ],
+  "design_quality": 3,
+  "caveat": "Companion/earlier edition to the May 2012 final report; title date shown as 'October'. design_quality is a rubric-lite estimate from typography, colour, density and title scan, not a full visual review of every slide."
+ },
+ {
+  "title": "Reshaping NYCHA support functions - BCG Engagement: key findings and recommendations",
+  "firm": "Boston Consulting Group",
+  "firm_group": "MBB",
+  "tier": 1,
+  "client": "New York City Housing Authority",
+  "client_type": "government",
+  "year": 2012,
+  "practice": "strategy",
+  "deck_types": [
+   "operating-model",
+   "board-update"
+  ],
+  "sector": "Public housing",
+  "url": "https://www.nyc.gov/assets/nycha/downloads/pdf/BCG-report-NYCHA-Key-Findings-and-Recommendations-8-15-12vFinal.pdf",
+  "source_url": "https://slideworks.io/resources/54-real-bcg-presentations",
+  "publication_route": "government-published",
+  "slide_count": 112,
+  "eligibility": "core",
+  "verified": "Downloaded and opened PDF (112 pages, page size 756x540 pt); extracted title text from 17 sampled slides across the deck; rendered sample pages for visual check of selected decks.",
+  "slide_sequence": [
+   "p1: Reshaping NYCHA support functions",
+   "p2: Context and objectives for this document",
+   "p4: BCG was hired to help NYCHA \"do more with less\"",
+   "p12: In addition, the project team worked with a wide range of NYCHA employees...",
+   "p20: Example : used benchmarks to determine appropriate sizing and resourcing levels",
+   "p28: PMCOs and best-in-class PHAs place more accountability at the property level and have...",
+   "p36: Key changes recommended – by function (III / IV)",
+   "p44: Financial impacts to be achieved over next 5 years",
+   "p52: Worked with teams to leave clear implementation path",
+   "p68: BCG team has worked with NYCHA on additional accomplishments that support NYCHA's success",
+   "p76: Section 8 (I/II)",
+   "p100: NYCHA's current governance structure is unique when compared to other PHAs ..."
+  ],
+  "storyline_pattern": "Context, executive summary, approach, key changes by function, financial impact ($70M run-rate), implementation tools, appendix",
+  "signature_slides": [
+   "operating-model shift table",
+   "financial impact by year",
+   "prioritisation matrix"
+  ],
+  "design": {
+   "palette": "Measured dominant saturated hues (quantised): #208060, #408060, #408080",
+   "typography": "Arial, ArialMT, Arial",
+   "density": "high",
+   "charts": [
+    "peer benchmark charts",
+    "share/composition charts"
+   ]
+  },
+  "standout_moves": [
+   "States the 'do more with less' objective in slide 1",
+   "Sizes $70M savings and $55M revenue by 2016"
+  ],
+  "weaknesses": [
+   "Operating-model more than strategy",
+   "112 pages"
+  ],
+  "design_quality": 3,
+  "caveat": "Summary for NYCHA senior team and board. design_quality is a rubric-lite estimate from typography, colour, density and title scan, not a full visual review of every slide."
+ },
+ {
+  "title": "Budgetanalyse af Forsvaret 2017 (Defence budget analysis) - Danish",
+  "firm": "Boston Consulting Group",
+  "firm_group": "MBB",
+  "tier": 1,
+  "client": "Danish Ministry of Defence",
+  "client_type": "government",
+  "year": 2017,
+  "practice": "strategy",
+  "deck_types": [
+   "benchmarking",
+   "operating-model"
+  ],
+  "sector": "Defence",
+  "url": "https://www.fmn.dk/globalassets/fmn/dokumenter/forlig/-konsulentrapport-budgetanalyser-af-forsvaret-2017-.pdf",
+  "source_url": "https://slideworks.io/resources/54-real-bcg-presentations",
+  "publication_route": "government-published",
+  "slide_count": 190,
+  "eligibility": "core",
+  "verified": "Downloaded and opened PDF (190 pages, page size 780x540 pt); extracted title text from 17 sampled slides across the deck; rendered sample pages for visual check of selected decks.",
+  "slide_sequence": [
+   "p1: Budgetanalyse af Forsvaret 2017",
+   "p3: Analysens formål og grundlag",
+   "p4: Organisering af analysen",
+   "p17: Analysen skal ses i sammenhæng med, at Forsvaret de senere år har gennemført...",
+   "p30: Det operative område: Oversigt over effektiviseringsforslag (II/VI)",
+   "p56: Reduktion af SAR-positioner",
+   "p69: Optimering af span of control på vedligeholdsområdet",
+   "p82: Hjemtagning af IT udviklingsopgaver",
+   "p95: In-sourcing af gentagne konsulenter",
+   "p108: Beskrivelse af overlap imellem effektiviseringsforslagene i budgetanalysen (2/8)",
+   "p121: Alternativ indfasningstakt hvor personaleomsætningen udnyttes fuldt ud i alle år",
+   "p134: Fuldt indfaset potentiale i 2022 fordelt på enheder og myndigheder – højt potentiale...",
+   "p147: Optimering af Operationsstaben",
+   "p160: Med et eksempel fra Thetis-klassen illustreres analysens fire trin",
+   "p173: Skaleringsoversigt for patruljefartøjer (Diana-klassen)"
+  ],
+  "storyline_pattern": "Summary, results by area (operations, support), efficiency proposals, potential 855-1,135 DKK m, discontinued proposals",
+  "signature_slides": [
+   "efficiency potential table",
+   "baseline-vs-potential bars",
+   "initiative detail cards"
+  ],
+  "design": {
+   "palette": "Measured dominant saturated hues (quantised): #006040, #208060, #60a080",
+   "typography": "Arial, ArialMT, Arial",
+   "density": "high",
+   "charts": [
+    "peer benchmark charts",
+    "maps/frameworks"
+   ]
+  },
+  "standout_moves": [
+   "Discontinued proposals are shown openly",
+   "Potential by unit and authority"
+  ],
+  "weaknesses": [
+   "Danish",
+   "Very dense"
+  ],
+  "design_quality": 3,
+  "caveat": "Danish-language consultant report published as part of the defence settlement. design_quality is a rubric-lite estimate from typography, colour, density and title scan, not a full visual review of every slide."
+ },
+ {
+  "title": "The Open Education Resources ecosystem: evaluation of the OER movement's current state and progress toward mainstream adoption",
+  "firm": "Boston Consulting Group",
+  "firm_group": "MBB",
+  "tier": 1,
+  "client": "William and Flora Hewlett Foundation",
+  "client_type": "nonprofit",
+  "year": 2012,
+  "practice": "strategy",
+  "deck_types": [
+   "market-entry",
+   "growth-strategy",
+   "benchmarking"
+  ],
+  "sector": "Education",
+  "url": "https://www.hewlett.org/wp-content/uploads/2016/08/The%20Open%20Educational%20Resources%20Ecosystem.pdf",
+  "source_url": "https://slideworks.io/resources/54-real-bcg-presentations",
+  "publication_route": "client-published",
+  "slide_count": 23,
+  "eligibility": "core",
+  "verified": "Downloaded and opened PDF (23 pages, page size 756x540 pt); extracted title text from 17 sampled slides across the deck; rendered sample pages for visual check of selected decks.",
+  "slide_sequence": [
+   "p1: The Open Education Resources ecosystem",
+   "p2: Context of the work",
+   "p3: “Mainstream” defined as in-classroom usage",
+   "p4: High quality supply, strong educator demand and supportive policies will drive a healthy,...",
+   "p5: Given ultimate goal, in-classroom adoption is the key metric",
+   "p6: Research indicates OER is showing positive green shoots, but still has ways to...",
+   "p7: Analogues provide guidance on how to identify “tipping point” towards mainstream adoption",
+   "p8: More resources exist for higher ed, K-12 math and science",
+   "p9: Educators’ perception of quality cautiously positive",
+   "p10: However, users find it challenging to discover and use existing content",
+   "p11: While general awareness of OER is >50%, K – 12 educators not sure...",
+   "p12: In higher education, while awareness among academic officers high, many professors remain unaware...",
+   "p13: Educator survey indicates that supplemental usage moving into mainstream - but primary material...",
+   "p14: Existing procurement processes favor traditional materials",
+   "p15: Lack of clarity around teacher IP complicates ability to create, remix, and share",
+   "p16: Further considerations as the ecosystem evolves"
+  ],
+  "storyline_pattern": "Context, definition of 'mainstream', diffusion curve analogues, supply, quality perception, awareness, usage, procurement barriers",
+  "signature_slides": [
+   "Rogers diffusion curve",
+   "survey bars",
+   "enabler framework"
+  ],
+  "design": {
+   "palette": "Measured dominant saturated hues (quantised): #40a080, #408060, #208060",
+   "typography": "Arial, Arial, Arial",
+   "density": "high",
+   "charts": [
+    "maps/frameworks",
+    "survey bars",
+    "share/composition charts"
+   ]
+  },
+  "standout_moves": [
+   "Defines success metric (in-classroom use) up front",
+   "Analogue-based S-curve"
+  ],
+  "weaknesses": [
+   "Foundation-style PDF, filename shows Dec 2012 deck",
+   "Light branding"
+  ],
+  "design_quality": 3,
+  "caveat": "File name indicates Dec 2012; Hewlett upload 2016; slideworks dates 2013. design_quality is a rubric-lite estimate from typography, colour, density and title scan, not a full visual review of every slide."
+ },
+ {
+  "title": "CREATES project - final report materials (Connecticut efficiency)",
+  "firm": "Boston Consulting Group",
+  "firm_group": "MBB",
+  "tier": 1,
+  "client": "State of Connecticut Office of Policy and Management",
+  "client_type": "government",
+  "year": 2021,
+  "practice": "strategy",
+  "deck_types": [
+   "operating-model",
+   "benchmarking",
+   "board-update"
+  ],
+  "sector": "State government",
+  "url": "https://portal.ct.gov/opm/-/media/opm/secr-reports/connecticut-creates-_project_material_compendium.pdf",
+  "source_url": "https://portal.ct.gov/opm/-/media/opm/secr-reports/connecticut-creates-_project_material_compendium.pdf",
+  "publication_route": "government-published",
+  "slide_count": 510,
+  "eligibility": "core",
+  "verified": "Downloaded and opened PDF (510 pages, page size 960x540 pt); extracted title text from 17 sampled slides across the deck; rendered sample pages for visual check of selected decks.",
+  "slide_sequence": [
+   "p2: These materials accompany the public report for the CREATES project",
+   "p4: CREATES project summary",
+   "p40: Department of Mental Health and Addiction Services",
+   "p76: By Agency and Eligibility | Early retirement intent typically ~30%+ below that of...",
+   "p112: 46% 479 ~27",
+   "p148: Top-down benchmarking suggests that state police numbers are low compared to peers",
+   "p184: Peer state centralization efforts indicate that strong top-down messaging, rather than a consensus-based...",
+   "p220: Automating and centralizing Affirmative Action reporting could generate significant efficiencies and reduce manual...",
+   "p292: Value-based payment | Detail, key enablers, and relevant analyses",
+   "p328: DAS | Initial view is HR Personnel and Data Processing staff are among...",
+   "p364: DOC | Opportunities identified for Department of Corrections (2 of 2)",
+   "p400: CTEC spends more on overhead than other CT districts due to decentralization",
+   "p436: Department of Labor | Agency profile",
+   "p472: DRS | Primary retirement surge risks"
+  ],
+  "storyline_pattern": "Project summary, workforce, services, digitisation, transit and agency-by-agency opportunity appendices (~200 opportunities, $600-900m)",
+  "signature_slides": [
+   "opportunity sizing tables",
+   "icon-and-number savings callouts",
+   "agency profiles"
+  ],
+  "design": {
+   "palette": "Measured dominant saturated hues (quantised): #0060a0, #004080, #006080",
+   "typography": "ArialMT, Arial, TrebuchetMS",
+   "density": "medium",
+   "charts": [
+    "CAGR-labelled columns/lines",
+    "peer benchmark charts",
+    "roadmap/timeline",
+    "maps/frameworks",
+    "survey bars",
+    "share/composition charts"
+   ]
+  },
+  "standout_moves": [
+   "Big-number savings circles",
+   "Agency-by-agency template"
+  ],
+  "weaknesses": [
+   "510-page compendium",
+   "Template repetition"
+  ],
+  "design_quality": 4,
+  "caveat": "Material compendium accompanying public CREATES report (26 Mar 2021); official landing page not verified, so source_url is the PDF itself. design_quality is a rubric-lite estimate from typography, colour, density and title scan, not a full visual review of every slide."
+ },
+ {
+  "title": "Projecting US Mail volumes to 2020 - Final Report (Detail)",
+  "firm": "Boston Consulting Group",
+  "firm_group": "MBB",
+  "tier": 1,
+  "client": "United States Postal Service",
+  "client_type": "government",
+  "year": 2010,
+  "practice": "strategy",
+  "deck_types": [
+   "market-entry",
+   "benchmarking"
+  ],
+  "sector": "Postal",
+  "url": "https://www.alexanderjarvis.com/wp-content/uploads/2021/12/BCG-Projecting-US-Mail-Volumes-to-2020.pdf",
+  "source_url": "https://slideworks.io/resources/54-real-bcg-presentations",
+  "publication_route": "aggregator-only",
+  "slide_count": 41,
+  "eligibility": "core",
+  "verified": "Downloaded and opened PDF (41 pages, page size 792x612 pt); extracted title text from 17 sampled slides across the deck; rendered sample pages for visual check of selected decks.",
+  "slide_sequence": [
+   "p1: Projecting US Mail volumes to 2020",
+   "p3: • No new revenue or cost savings initiatives beyond those already in the...",
+   "p4: • First-Class Mail: invoices, statements, ad mail, payments • 50+ Senders interviewed for...",
+   "p6: Volume forecasts were created by segment",
+   "p8: aggregating segments into major mail classes 2020 projections were then developed by",
+   "p10: Multiple drivers impacting volumes in coming",
+   "p12: 2020 forecast sees roughly flat volumes in",
+   "p14: Senders tell us that they see their use of mail",
+   "p16: What US is experiencing is not unique—other posts all seeing erosion of volumes...",
+   "p20: All reasonable scenarios suggest volume will",
+   "p22: Structural changes required for USPS",
+   "p24: These actions are profound changes to the business model – restoring Other posts...",
+   "p26: Bill and invoice volume expected to fall 44%",
+   "p28: Bank Statement volume expected to fall 47%",
+   "p30: First-Class Mail ad letter volume to fall 30%"
+  ],
+  "storyline_pattern": "Objectives and approach, results (-15% by 2020), global benchmarks, risks, segment appendix",
+  "signature_slides": [
+   "volume forecast lines by segment",
+   "benchmark countries vs broadband",
+   "revenue per delivery point"
+  ],
+  "design": {
+   "palette": "Measured dominant saturated hues (quantised): #004040, #206060, #006040",
+   "typography": "ArialMT, Arial, Arial",
+   "density": "medium",
+   "charts": [
+    "CAGR-labelled columns/lines",
+    "peer benchmark charts",
+    "scenario charts",
+    "survey bars",
+    "share/composition charts"
+   ]
+  },
+  "standout_moves": [
+   "Bottom-up segment forecast plus international posts benchmark",
+   "Names external shocks"
+  ],
+  "weaknesses": [
+   "Placeholder 'Xxxxx-xx/Footer' text visible",
+   "Aggregator host"
+  ],
+  "design_quality": 3,
+  "caveat": "Obtained via archived copy of aggregator file; original publisher likely USPS but not verified. Fetched from an Internet Archive copy because the live host returned 403/404 to scripted requests; the URL given is the original publisher URL. design_quality is a rubric-lite estimate from typography, colour, density and title scan, not a full visual review of every slide."
+ },
+ {
+  "title": "Corporate Ventures in Sweden: how to improve the connection between Swedish start-ups and corporations?",
+  "firm": "Boston Consulting Group",
+  "firm_group": "MBB",
+  "tier": 1,
+  "client": "Not stated (Swedish innovation ecosystem study)",
+  "client_type": "other",
+  "year": 2016,
+  "practice": "strategy",
+  "deck_types": [
+   "market-entry",
+   "benchmarking"
+  ],
+  "sector": "Innovation / corporate venturing",
+  "url": "http://static2.snowfire.io/accounts/14796/files/219.pdf?t=o4z026",
+  "source_url": "https://slideworks.io/resources/54-real-bcg-presentations",
+  "publication_route": "aggregator-only",
+  "slide_count": 28,
+  "eligibility": "core",
+  "verified": "Downloaded and opened PDF (28 pages, page size 780x540 pt); extracted title text from 16 sampled slides across the deck; rendered sample pages for visual check of selected decks.",
+  "slide_sequence": [
+   "p1: Corporate Ventures in Sweden",
+   "p2: Executive summary (I/II)",
+   "p3: Executive summary (II/II)",
+   "p4: Sweden ranked third most innovative country in the world",
+   "p6: However, few Swedish start-ups make the enterprise journey",
+   "p8: Corporate Venturing supports & expands existing innovation management approaches",
+   "p10: Corporations applying especially three types of venturing tools mostly dependent on industry dynamics",
+   "p12: Only ~20% of Sweden's top 50 companies have a CV set-up",
+   "p14: Several successful Swedish CV set-ups now exist",
+   "p18: But 2-year survivability of newly founded companies remains very high at 84.4% compared...",
+   "p20: M&A activities show no clear pattern for performance",
+   "p22: MTGx press clippings",
+   "p24: Volvo Group Venture Capital press clippings",
+   "p26: Medimmune Ventures and BioVentureHub press clippings"
+  ],
+  "storyline_pattern": "Executive summary (2 slides), innovation ranking, R&D vs M&A, venturing tools, CVC landscape, appendix",
+  "signature_slides": [
+   "innovation ranking bars",
+   "correlation scatter",
+   "landscape logos"
+  ],
+  "design": {
+   "palette": "Measured dominant saturated hues (quantised): #e0c060, #a08040, #c0a060",
+   "typography": "Arial, Arial, Arial",
+   "density": "medium",
+   "charts": [
+    "share/composition charts"
+   ]
+  },
+  "standout_moves": [
+   "Counter-intuitive evidence (no R&D/value correlation)",
+   "Appendix of press clippings"
+  ],
+  "weaknesses": [
+   "Commissioning body not stated",
+   "Basic styling"
+  ],
+  "design_quality": 3,
+  "caveat": "Host is a third-party account on snowfire.io; fetched via Internet Archive copy. Fetched from an Internet Archive copy because the live host returned 403/404 to scripted requests; the URL given is the original publisher URL. design_quality is a rubric-lite estimate from typography, colour, density and title scan, not a full visual review of every slide."
+ },
+ {
+  "title": "Next Generation Manufacturing: Winning through Technology and Innovation",
+  "firm": "Boston Consulting Group",
+  "firm_group": "MBB",
+  "tier": 2,
+  "client": "Confederation of Indian Industry (CII)",
+  "client_type": "nonprofit",
+  "year": 2016,
+  "practice": "strategy",
+  "deck_types": [
+   "growth-strategy",
+   "benchmarking"
+  ],
+  "sector": "Manufacturing",
+  "url": "https://www.gita.org.in/Attachments/Reports/BCG-CII-Report-Next-Gen-Mfg-Nov-2016_.PDF",
+  "source_url": "https://slideworks.io/resources/54-real-bcg-presentations",
+  "publication_route": "client-published",
+  "slide_count": 64,
+  "eligibility": "extended",
+  "verified": "Downloaded and opened PDF (64 pages, page size 779x504 pt); extracted title text from 17 sampled slides across the deck; rendered sample pages for visual check of selected decks.",
+  "slide_sequence": [
+   "p1: Confederation of Indian Industry",
+   "p2: The Boston Consulting Group (BCG) is a global management consulting firm and the...",
+   "p3: NEXT GENERATION MANUFACTURING",
+   "p8: STATE OF THE SECTOR",
+   "p12: The slowdown in global trade is exerting pressure on manufacturing economies",
+   "p16: Results visible along with increased optimism in the industry 965",
+   "p20: Seven manufacturing superstars have shown growth in exports over the past five years",
+   "p28: Three key lessons to be learnt from the manufacturing superstars",
+   "p32: We are already in the era of Industry 4.0, The Fourth Industrial Revolution",
+   "p36: Example: Autonomous robots in assembly lines",
+   "p40: Example: Multiple technologies are coming together to challenge status quo in auto manufacturing",
+   "p44: India Inc. is already adopting Industry 4.0 technologies",
+   "p52: WAY FORWARD: IMPERATIVES FOR INDIA"
+  ],
+  "storyline_pattern": "Opportunity for India, global manufacturing superstars, Industry 4.0 technologies, adoption, recommendations",
+  "signature_slides": [
+   "country comparison charts",
+   "technology adoption bars",
+   "case examples"
+  ],
+  "design": {
+   "palette": "Measured dominant saturated hues (quantised): #20c0c0, #a0c040, #008080",
+   "typography": "HendersonBCGSans, HendersonBCGSans, HendersonBCGSans",
+   "density": "medium",
+   "charts": [
+    "CAGR-labelled columns/lines",
+    "peer benchmark charts",
+    "maps/frameworks",
+    "survey bars",
+    "share/composition charts"
+   ]
+  },
+  "standout_moves": [
+   "Country archetypes (South Korea etc.)",
+   "Quotation divider before recommendations"
+  ],
+  "weaknesses": [
+   "Co-branded industry report",
+   "Generic"
+  ],
+  "design_quality": 3,
+  "caveat": "Co-published BCG-CII industry report; firm thought leadership in slide format. Fetched from an Internet Archive copy because the live host returned 403/404 to scripted requests; the URL given is the original publisher URL. design_quality is a rubric-lite estimate from typography, colour, density and title scan, not a full visual review of every slide."
+ },
+ {
+  "title": "Melbourne as a Global Cultural Destination - Final Report (summary)",
+  "firm": "Boston Consulting Group",
+  "firm_group": "MBB",
+  "tier": 1,
+  "client": "Creative Victoria (State Government of Victoria)",
+  "client_type": "government",
+  "year": 2017,
+  "practice": "strategy",
+  "deck_types": [
+   "economic-development",
+   "benchmarking",
+   "growth-strategy"
+  ],
+  "sector": "Culture / tourism",
+  "url": "https://creative.vic.gov.au/__data/assets/pdf_file/0007/2107690/BCG-Melbourne-as-a-Global-Cultural-Destination-Summary-for-CV-website.pdf",
+  "source_url": "https://slideworks.io/resources/54-real-bcg-presentations",
+  "publication_route": "government-published",
+  "slide_count": 56,
+  "eligibility": "core",
+  "verified": "Downloaded and opened PDF (56 pages, page size 842x595 pt); extracted title text from 17 sampled slides across the deck; rendered sample pages for visual check of selected decks.",
+  "slide_sequence": [
+   "p1: Melbourne as a Global Cultural Destination",
+   "p2: Note to reader",
+   "p4: Executive Summary (1/3)",
+   "p8: Creativity and culture are one part of the offer - focus of this...",
+   "p12: Creative experiences are one of top three reasons people visit",
+   "p16: The Performance Index comprises five metrics",
+   "p20: Leading cultural and creative cities share six dimensions",
+   "p24: Fewer VCE students are studying creative subjects",
+   "p28: Many large arts organisations are supporting small/mediums",
+   "p32: Benchmarks suggest Melbourne has strong infrastructure ...",
+   "p36: Greater social media following can associated with visitation",
+   "p40: Melbourne's transport infrastructure ranks highly",
+   "p48: Internationals do more cultural activities the longer they stay",
+   "p52: Five strategic priorities to improve Melbourne's cultural offer"
+  ],
+  "storyline_pattern": "Note to reader, agenda, executive summary (3 slides), performance index, strengths, risks, five strategic priorities",
+  "signature_slides": [
+   "performance index with five metrics",
+   "driver tree of cultural offer",
+   "rank tables",
+   "strategic priorities slide"
+  ],
+  "design": {
+   "palette": "Measured dominant saturated hues (quantised): #40a080, #208060, #60a080",
+   "typography": "ArialMT, Arial, Arial",
+   "density": "high",
+   "charts": [
+    "CAGR-labelled columns/lines",
+    "scenario charts",
+    "maps/frameworks",
+    "survey bars",
+    "share/composition charts"
+   ]
+  },
+  "standout_moves": [
+   "Composite index ranks Melbourne against global peers",
+   "Driver-tree slide with strength/weakness colour code"
+  ],
+  "weaknesses": [
+   "Agenda-heavy opening",
+   "Many small-text boxes"
+  ],
+  "design_quality": 4,
+  "caveat": "Summary version for Creative Victoria website. Fetched from an Internet Archive copy because the live host returned 403/404 to scripted requests; the URL given is the original publisher URL. design_quality is a rubric-lite estimate from typography, colour, density and title scan, not a full visual review of every slide."
+ },
+ {
+  "title": "Health Care System reform and short term savings opportunities - Iceland Health Care System project (short version)",
+  "firm": "Boston Consulting Group",
+  "firm_group": "MBB",
+  "tier": 1,
+  "client": "Iceland Ministry of Welfare",
+  "client_type": "government",
+  "year": 2011,
+  "practice": "strategy",
+  "deck_types": [
+   "operating-model",
+   "benchmarking",
+   "economic-development"
+  ],
+  "sector": "Healthcare",
+  "url": "https://www.ministryoffinance.is/media/velferdarraduneyti-media/media/ritogskyrslur2011/IIceland_HCS-Final_report-short_version.pdf",
+  "source_url": "https://slideworks.io/resources/54-real-bcg-presentations",
+  "publication_route": "government-published",
+  "slide_count": 47,
+  "eligibility": "core",
+  "verified": "Downloaded and opened PDF (47 pages, page size 842x595 pt); extracted title text from 17 sampled slides across the deck; rendered sample pages for visual check of selected decks.",
+  "slide_sequence": [
+   "p1: Health Care System reform and short term Health Care System reform and short...",
+   "p2: This is the final report from a 5 week effort to analyze the...",
+   "p3: on health care which is average compared to other European countries but the...",
+   "p4: The project has reviewed the current Icelandic HC system The project has reviewed...",
+   "p7: Key changes needed to secure a better system in the future",
+   "p10: Iceland's population of 318 000 is spread out in 7 regions",
+   "p13: State expenditure has increased 1.5% per year since 2008",
+   "p16: Health care costs (% of GDP 2007)",
+   "p19: Reallocation is needed within the HC budget for 2012 Reallocation is needed within...",
+   "p22: Elderly care should be equal, of high quality and efficient Elderly care should...",
+   "p25: Ambulance services covering large part of the country",
+   "p28: The whole private provision model needs to be reviewed and market rules put...",
+   "p31: Increased access likely to drive growth in specialist visits",
+   "p34: Reimbursement differences between daytime and after hours",
+   "p37: Socioeconomic factors might explain some of the difference",
+   "p40: Efforts should focus on psychoeptics and psychoanaleptics"
+  ],
+  "storyline_pattern": "Disclaimer and summary, system set-up, key changes needed, budget reallocation, specialised care, pharmaceuticals, value-based care",
+  "signature_slides": [
+   "budget reallocation bars",
+   "region comparison",
+   "reimbursement tables"
+  ],
+  "design": {
+   "palette": "Measured dominant saturated hues (quantised): #006040, #60a080, #208060",
+   "typography": "Arial, Arial, Arial",
+   "density": "high",
+   "charts": [
+    "CAGR-labelled columns/lines",
+    "peer benchmark charts",
+    "share/composition charts"
+   ]
+  },
+  "standout_moves": [
+   "Five-week sprint scoping stated up front",
+   "Short and 135-page long versions published together"
+  ],
+  "weaknesses": [
+   "Dense, small text",
+   "Duplicated title text layers"
+  ],
+  "design_quality": 3,
+  "caveat": "Five-week effort; long version (135 pp) at stjornarradid.is is a separate file. design_quality is a rubric-lite estimate from typography, colour, density and title scan, not a full visual review of every slide."
+ },
+ {
+  "title": "Skipulag heilbrigdisthjonustu og radstofun fjarmuna (BCG-based recommendations of ministerial advisory group) - Icelandic",
+  "firm": "Boston Consulting Group",
+  "firm_group": "MBB",
+  "tier": 2,
+  "client": "Iceland Ministry of Welfare (advisory group)",
+  "client_type": "government",
+  "year": 2012,
+  "practice": "strategy",
+  "deck_types": [
+   "operating-model",
+   "board-update"
+  ],
+  "sector": "Healthcare",
+  "url": "https://www.stjornarradid.is/media/velferdarraduneyti-media/media/Rit_2013/BCG-Tillogur-radgjafahops-november2012.pdf",
+  "source_url": "https://www.stjornarradid.is/",
+  "publication_route": "government-published",
+  "slide_count": 19,
+  "eligibility": "extended",
+  "verified": "Downloaded and opened PDF (19 pages, page size 720x540 pt); extracted title text from 17 sampled slides across the deck; rendered sample pages for visual check of selected decks.",
+  "slide_sequence": [
+   "p1: Skipulag heilbrigðisþjónustu og ráðstöfun fjármuna",
+   "p3: Þátttakendur í verkefninu",
+   "p4: Megintillögur ráðgjafahóps ráðherra",
+   "p5: Úr samantekt Boston Consulting Group",
+   "p6: Helsti vandi samkvæmt Boston Consulting Group",
+   "p7: Samantekt – markmið og helstu aðgerðir í kjölfar vinnu Boston Consulting Group (BCG)",
+   "p8: Verkefnahóparnir níu sem skipulagðir voru",
+   "p9: Markmið og niðurstöður vinnuhópa"
+  ],
+  "storyline_pattern": "Foreword, participants, main recommendations of advisory group, BCG-identified problems, nine work groups and outcomes",
+  "signature_slides": [
+   "work-group goals and results table"
+  ],
+  "design": {
+   "palette": "Measured dominant saturated hues (quantised): #002080, #0040a0, #004080",
+   "typography": "ArialMT, Verdana, Wingdings",
+   "density": "medium",
+   "charts": [
+    "text/table slides"
+   ]
+  },
+  "standout_moves": [
+   "Shows a client advisory group acting on consultant findings"
+  ],
+  "weaknesses": [
+   "Icelandic language",
+   "Client-authored summary of BCG work"
+  ],
+  "design_quality": 3,
+  "caveat": "Client deck presenting BCG work (Nov 2012), not a BCG-authored deck; Icelandic. design_quality is a rubric-lite estimate from typography, colour, density and title scan, not a full visual review of every slide."
+ },
+ {
+  "title": "UNC Efficiency and Effectiveness Options - Cost Diagnostic Final Report (summary)",
+  "firm": "Bain & Company",
+  "firm_group": "MBB",
+  "tier": 1,
+  "client": "University of North Carolina at Chapel Hill",
+  "client_type": "nonprofit",
+  "year": 2009,
+  "practice": "strategy",
+  "deck_types": [
+   "operating-model",
+   "portfolio-review",
+   "benchmarking"
+  ],
+  "sector": "Higher education",
+  "url": "https://bot.unc.edu/wp-content/uploads/sites/160/archives/PP%20709%20Bain%20Report.pdf",
+  "source_url": "https://slideworks.io/resources/30-real-bain-presentations",
+  "publication_route": "client-published",
+  "slide_count": 15,
+  "eligibility": "core",
+  "verified": "Downloaded and opened PDF (15 pages, page size 765x585 pt); extracted title text from 15 sampled slides across the deck; rendered sample pages for visual check of selected decks.",
+  "slide_sequence": [
+   "p1: The University of North Carolina",
+   "p2: UNC Efficiency and Effectiveness Options_SUMMARY This information was prepared solely for the use...",
+   "p3: Project objective and guiding principles",
+   "p4: and that impact the use of GISF for the 5-month included University Administration...",
+   "p5: Final report describes high potential options identified during Bain-led diagnostic",
+   "p6: Administrative expenses per student have grown Complexity and related operating issues lead to...",
+   "p7: We used a rigorous and collaborative process to identify, design, and vet options",
+   "p8: Report description and disclaimer",
+   "p9: Focused on 10 potential options",
+   "p10: High-level description of 10 potential options",
+   "p14: While financial benefits could be significant, “soft” benefits can be equally or more...",
+   "p15: Where are the next steps for Carolina?"
+  ],
+  "storyline_pattern": "Objective and principles, process, ten options with financial and soft benefits",
+  "signature_slides": [
+   "cost-per-student trend",
+   "ten-option table",
+   "benefit colour coding"
+  ],
+  "design": {
+   "palette": "Measured dominant saturated hues (quantised): #80c0e0, #0060c0, #6080a0",
+   "typography": "Verdana, Verdana, Verdana",
+   "density": "medium",
+   "charts": [
+    "share/composition charts"
+   ]
+  },
+  "standout_moves": [
+   "Soft benefits called out alongside savings",
+   "Colour-coded link between options and areas"
+  ],
+  "weaknesses": [
+   "Verdana text-heavy slides",
+   "Small chart area"
+  ],
+  "design_quality": 3,
+  "caveat": "design_quality is a rubric-lite estimate from typography, colour, density and title scan, not a full visual review of every slide."
+ },
+ {
+  "title": "Syracuse University - Diagnostic Report",
+  "firm": "Bain & Company",
+  "firm_group": "MBB",
+  "tier": 1,
+  "client": "Syracuse University",
+  "client_type": "nonprofit",
+  "year": 2014,
+  "practice": "strategy",
+  "deck_types": [
+   "operating-model",
+   "benchmarking",
+   "growth-strategy"
+  ],
+  "sector": "Higher education",
+  "url": "https://news.syr.edu/wp-content/uploads/2017/04/Innovation-and-Opportunities-Assessment-Report-April-2014.pdf",
+  "source_url": "https://slideworks.io/resources/30-real-bain-presentations",
+  "publication_route": "client-published",
+  "slide_count": 38,
+  "eligibility": "core",
+  "verified": "Downloaded and opened PDF (38 pages, page size 720x540 pt); extracted title text from 17 sampled slides across the deck; rendered sample pages for visual check of selected decks.",
+  "slide_sequence": [
+   "p2: Agenda •Report overview",
+   "p3: Purpose of this document",
+   "p4: Improvement programs typically involve three phases",
+   "p6: Representatives from both faculty and the administration provided us with input and guidance",
+   "p8: Use of benchmarks",
+   "p10: The diagnostic continues the University’s efforts to further enhance the institution",
+   "p12: However, operating expenses are outgrowing revenues",
+   "p14: Cost of attendance at Syracuse is low relative to peers",
+   "p16: Many agree the Syracuse University must change in order to be successful",
+   "p18: This diagnostic report provides a fact base and perspectives on sixteen opportunity areas",
+   "p20: Strategic planning: (2 of 2) Strategic planning process"
+  ],
+  "storyline_pattern": "Report overview, purpose, three phases of improvement programs, diagnostic, levers (strategic planning, resource allocation, retention, structure, shared services, procurement)",
+  "signature_slides": [
+   "key facts vs perspectives two-column",
+   "survey agree/disagree bars",
+   "lever-by-lever template"
+  ],
+  "design": {
+   "palette": "Measured dominant saturated hues (quantised): #c00000, #e06000, #c06060",
+   "typography": "Verdana, Verdana, Verdana",
+   "density": "medium",
+   "charts": [
+    "CAGR-labelled columns/lines",
+    "peer benchmark charts",
+    "survey bars",
+    "share/composition charts"
+   ]
+  },
+  "standout_moves": [
+   "Each lever slide pairs evidence with perspectives box",
+   "Survey of campus opinion"
+  ],
+  "weaknesses": [
+   "Dense Verdana text",
+   "Red rule/header styling dated"
+  ],
+  "design_quality": 3,
+  "caveat": "Posted by Syracuse University News (originally 2014, reposted 2017). design_quality is a rubric-lite estimate from typography, colour, density and title scan, not a full visual review of every slide."
+ },
+ {
+  "title": "Business Cost Optimization (enterprise diagnostic) - Orange & Rockland rate case exhibit AAM-1",
+  "firm": "Bain & Company",
+  "firm_group": "MBB",
+  "tier": 1,
+  "client": "Orange and Rockland Utilities / Con Edison",
+  "client_type": "corporate",
+  "year": 2018,
+  "practice": "strategy",
+  "deck_types": [
+   "operating-model",
+   "benchmarking"
+  ],
+  "sector": "Utilities",
+  "url": "https://documents.dps.ny.gov/public/Common/ViewDoc.aspx?DocRefId=%7B28377242-96DA-4009-A14C-4CEE4F0D89BE%7D",
+  "source_url": "https://slideworks.io/resources/30-real-bain-presentations",
+  "publication_route": "regulatory-filing",
+  "slide_count": 94,
+  "eligibility": "core",
+  "verified": "Downloaded and opened PDF (94 pages, page size 612x792 pt); extracted title text from 17 sampled slides across the deck; rendered sample pages for visual check of selected decks.",
+  "slide_sequence": [
+   "p1: BEFORE THE STATE OF NEW YORK PUBLIC SERVICE COMMISSION In the Matter of...",
+   "p2: Cases 18-E-0067 & 18-G-0068 Index of Exhibits Item PDF Cover Page Index of...",
+   "p3: Cases 18-E-0067 & 18-G-0068 Relied Upon Orange & Rockland Responses to Information Requests...",
+   "p10: Business Cost Optimization FAQs (1 of 2)",
+   "p16: Business Cost Optimization Developed a pipeline of savings initiatives 150+",
+   "p22: Recall of the major pain points and opportunities we identified (30 minutes) Discussion...",
+   "p28: Opportunities identified across the various stages of the work",
+   "p34: Improve the scheduling and work plan process",
+   "p40: Recall of the major pain points and opportunities we identified (20 minutes) Discussion...",
+   "p46: Exercise: Improve the scheduling and work plan process",
+   "p64: Achieved ~25-30% O&M savings from reduced spend on external labor overall quantity of...",
+   "p70: Response to IR DPS-264 Supp has been redacted as CONFIDENTIAL (Pages 63-104 redacted)",
+   "p82: Company Name: Orange and Rockland Utilities Inc. Case Description: Orange and Rockland Utilities,..."
+  ],
+  "storyline_pattern": "Index of exhibits then embedded Bain-built BCO deck: diagnostic, targets, workshops, results",
+  "signature_slides": [
+   "O&M target bridge",
+   "exercise slides",
+   "savings results"
+  ],
+  "design": {
+   "palette": "Measured dominant saturated hues (quantised): #006080, #002040, #60a080",
+   "typography": "Arial, Verdana, ArialMT",
+   "density": "high",
+   "charts": [
+    "peer benchmark charts",
+    "maps/frameworks"
+   ]
+  },
+  "standout_moves": [
+   "Public rate-case filing shows consultant deck as evidence",
+   "Flat O&M growth target to 2022"
+  ],
+  "weaknesses": [
+   "Mixed with information-request responses",
+   "Not purely strategy"
+  ],
+  "design_quality": 3,
+  "caveat": "Rate-case filing (NY PSC Cases 18-E-0067/18-G-0068); only part of the 94 pages is the Bain deck. design_quality is a rubric-lite estimate from typography, colour, density and title scan, not a full visual review of every slide."
+ },
+ {
+  "title": "Town of Tillsonburg: IT Strategic Review - Council update",
+  "firm": "Deloitte",
+  "firm_group": "Big4",
+  "tier": 1,
+  "client": "Town of Tillsonburg",
+  "client_type": "government",
+  "year": 2014,
+  "practice": "strategy",
+  "deck_types": [
+   "operating-model",
+   "board-update"
+  ],
+  "sector": "Municipal IT",
+  "url": "https://www.tillsonburg.ca/media/v3gnjreo/h21cb3ub_deloitte-it-strategic-review-2014.pdf",
+  "source_url": "https://slideworks.io/resources/750-real-consulting-presentations-from-mckinsey-deloitte-ey-and-more",
+  "publication_route": "government-published",
+  "slide_count": 20,
+  "eligibility": "core",
+  "verified": "Downloaded and opened PDF (20 pages, page size 792x612 pt); extracted title text from 17 sampled slides across the deck; rendered sample pages for visual check of selected decks.",
+  "slide_sequence": [
+   "p1: Deloitte. Town Tillsonburg",
+   "p6: Drivers the IT strategy review",
+   "p7: Current high risk areas",
+   "p9: Short term priority items",
+   "p11: 5 year roadmap",
+   "p12: Cost summary (hardware, software, and licensing)",
+   "p13: Cost summary (resourcing)",
+   "p14: Current budgetary placeholders",
+   "p15: IT operating model options",
+   "p16: IT operating model recommendation"
+  ],
+  "storyline_pattern": "Project overview, drivers, recommendations, costs, budget, operating model, conclusion",
+  "signature_slides": [
+   "recommendation summary table",
+   "cost summary",
+   "target operating model"
+  ],
+  "design": {
+   "palette": "Measured dominant saturated hues (quantised): #60a0e0, #0060c0, #60a0c0",
+   "typography": "Helvetica, Helvetica, Times",
+   "density": "high",
+   "charts": [
+    "peer benchmark charts",
+    "roadmap/timeline",
+    "maps/frameworks",
+    "share/composition charts"
+   ]
+  },
+  "standout_moves": [
+   "Cost and budget placeholders shown early",
+   "Compact council-ready length"
+  ],
+  "weaknesses": [
+   "Plain Helvetica template",
+   "Low visual interest"
+  ],
+  "design_quality": 2,
+  "caveat": "design_quality is a rubric-lite estimate from typography, colour, density and title scan, not a full visual review of every slide."
+ },
+ {
+  "title": "Port Capacity Enhancement Program - Stage Two draft CBA briefing",
+  "firm": "Deloitte (Deloitte Access Economics)",
+  "firm_group": "Big4",
+  "tier": 1,
+  "client": "Port of Melbourne",
+  "client_type": "corporate",
+  "year": 2024,
+  "practice": "strategy",
+  "deck_types": [
+   "economic-development",
+   "due-diligence"
+  ],
+  "sector": "Ports / infrastructure",
+  "url": "https://www.portofmelbourne.com/wp-content/uploads/240607_11-PCEP-StageTwo-DraftCBA-Presentation-June2024.pdf",
+  "source_url": "https://www.portofmelbourne.com/",
+  "publication_route": "client-published",
+  "slide_count": 35,
+  "eligibility": "core",
+  "verified": "Downloaded and opened PDF (35 pages, page size 960x540 pt); extracted title text from 17 sampled slides across the deck; rendered sample pages for visual check of selected decks.",
+  "slide_sequence": [
+   "p1: Port Capacity Enhancement Program",
+   "p3: Welcome – Stage Two engagement program",
+   "p4: Purpose of today’s briefing session",
+   "p6: Since the commencement of the Port Lease in 2016, PoM has conducted planning...",
+   "p10: Three major activities prior to inform development of a draft Cost Benefit Analysis",
+   "p12: Develop the base case and options for analysis",
+   "p22: Option 2 (Webb Dock West)",
+   "p28: Key points relating to Shipping Lines"
+  ],
+  "storyline_pattern": "Welcome and purpose, port development strategy, economic analysis approach, options, findings, stakeholder questions",
+  "signature_slides": [
+   "NPV/BCR table by option",
+   "cost-benefit stack",
+   "timeline window"
+  ],
+  "design": {
+   "palette": "Measured dominant saturated hues (quantised): #202060, #004080, #204080",
+   "typography": "Calibri, Calibri, Calibri",
+   "density": "medium",
+   "charts": [
+    "scenario charts",
+    "survey bars",
+    "NPV/BCR tables"
+   ]
+  },
+  "standout_moves": [
+   "Five numbered key findings",
+   "Invites stakeholders to test inputs"
+  ],
+  "weaknesses": [
+   "Light slide text, little chart variety",
+   "Co-branded engagement deck, only part is Deloitte"
+  ],
+  "design_quality": 3,
+  "caveat": "Stakeholder briefing with Deloitte Access Economics CBA section (draft); source_url is publisher home. design_quality is a rubric-lite estimate from typography, colour, density and title scan, not a full visual review of every slide."
+ },
+ {
+  "title": "Burlington & GTA Suburban Office Market Analysis",
+  "firm": "Deloitte",
+  "firm_group": "Big4",
+  "tier": 1,
+  "client": "Burlington Economic Development Corporation / City of Burlington",
+  "client_type": "government",
+  "year": 2017,
+  "practice": "strategy",
+  "deck_types": [
+   "market-entry",
+   "economic-development",
+   "growth-strategy"
+  ],
+  "sector": "Commercial real estate",
+  "url": "https://investburlington.ca/wp-content/uploads/2016/11/BEDC-Office-Analysis-June-17.pdf",
+  "source_url": "https://investburlington.ca/",
+  "publication_route": "client-published",
+  "slide_count": 98,
+  "eligibility": "core",
+  "verified": "Downloaded and opened PDF (98 pages, page size 720x540 pt); extracted title text from 17 sampled slides across the deck; rendered sample pages for visual check of selected decks.",
+  "slide_sequence": [
+   "p1: Burlington & GTA Suburban Office Market Analysis",
+   "p2: Deloitte LLP Bay Adelaide Centre East Tower 22 Adelaide Street West, Suite 200...",
+   "p3: Burlington & GTA Suburban Office Market Analysis Table of contents",
+   "p4: Scope of Services",
+   "p11: Economic & Business Environment Overview Historical Growth",
+   "p18: Economic & Business Environment Overview Corporate Tax Advantage",
+   "p25: Greater Toronto Area Office Market Historical Absorption",
+   "p32: Greater Toronto Area Office Market GTA Supply and Demand",
+   "p39: Greater Toronto Area Office Market Major employers in Burlington",
+   "p46: Workplace Transformation Canadian competitiveness & productivity are behind",
+   "p53: Workplace Transformation Millennials desire transit connected offices",
+   "p60: Growth Forecasts Immigration patterns",
+   "p67: Growth Forecasts Halton’s share of GTA growth ranges from 9% - 13%; Burlington...",
+   "p74: Planning Policy & Incentive Programming Urban Growth Plan",
+   "p81: Planning Policy & Incentive Programming Introduction",
+   "p88: Conclusions Market will favor traditional greenfield development"
+  ],
+  "storyline_pattern": "Scope, economic environment, GTA office market, Burlington inventory, workplace transformation, growth forecasts, policy, conclusions",
+  "signature_slides": [
+   "sub-market comparison",
+   "growth-allocation sensitivity",
+   "scenario forecasts"
+  ],
+  "design": {
+   "palette": "Measured dominant saturated hues (quantised): #00a0c0, #80a000, #60c0e0",
+   "typography": "ArialMT, Arial, CambriaMath",
+   "density": "high",
+   "charts": [
+    "scenario charts",
+    "survey bars",
+    "share/composition charts"
+   ]
+  },
+  "standout_moves": [
+   "Sensitivity analysis on growth share",
+   "Closing findings on greenfield preference"
+  ],
+  "weaknesses": [
+   "98 slides with long text",
+   "Mixed styling"
+  ],
+  "design_quality": 3,
+  "caveat": "Date inferred from filename (June 2017). design_quality is a rubric-lite estimate from typography, colour, density and title scan, not a full visual review of every slide."
+ },
+ {
+  "title": "Corporation of the Town of Moosonee Service Delivery Review: Potential Opportunities for Council",
+  "firm": "KPMG",
+  "firm_group": "Big4",
+  "tier": 1,
+  "client": "Town of Moosonee",
+  "client_type": "government",
+  "year": 2012,
+  "practice": "strategy",
+  "deck_types": [
+   "operating-model",
+   "board-update"
+  ],
+  "sector": "Municipal",
+  "url": "https://www.moosonee.ca/wp-content/uploads/2018/11/MSDR-Presentation-October-22-2012.pdf",
+  "source_url": "https://www.moosonee.ca/",
+  "publication_route": "government-published",
+  "slide_count": 24,
+  "eligibility": "core",
+  "verified": "Downloaded and opened PDF (24 pages, page size 720x540 pt); extracted title text from 17 sampled slides across the deck; rendered sample pages for visual check of selected decks.",
+  "slide_sequence": [
+   "p1: Corporation of the Town of Moosonee Service Delivery",
+   "p4: Financial Perspectives of the Town",
+   "p5: Historical and Projected Operating Costs",
+   "p6: Financial Perspectives on the Town of Moosonee Financial Implications of the Service Delivery...",
+   "p7: Financial Perspectives on the Town of Moosonee Financial Implications of the Service Delivery...",
+   "p8: Results of Community Consultation",
+   "p9: Linking Priorities to Opportunities",
+   "p10: Opportunities Identified by Community Members",
+   "p11: Opportunities for Corporate Services",
+   "p13: Opportunities for Protective Services",
+   "p15: Potential Opportunities for Council Consideration",
+   "p16: Opportunities for Physical Services",
+   "p17: Solid Waste Management"
+  ],
+  "storyline_pattern": "Agenda, work plan, financial perspectives, community consultation, opportunities by service area, next steps",
+  "signature_slides": [
+   "opportunity lists by service",
+   "replacement-cost chart"
+  ],
+  "design": {
+   "palette": "Measured dominant saturated hues (quantised): #002080, #0060a0, #004080",
+   "typography": "Arial, ArialMT, Arial",
+   "density": "medium",
+   "charts": [
+    "scenario charts"
+   ]
+  },
+  "standout_moves": [
+   "Frames the 'question of balance' (taxes vs services)",
+   "Council shortlisting objective stated"
+  ],
+  "weaknesses": [
+   "Text bullets, few charts",
+   "Dated template"
+  ],
+  "design_quality": 2,
+  "caveat": "design_quality is a rubric-lite estimate from typography, colour, density and title scan, not a full visual review of every slide."
+ },
+ {
+  "title": "City of Kingston - Business Case for a Municipal Services Corporation (Water and Wastewater)",
+  "firm": "KPMG",
+  "firm_group": "Big4",
+  "tier": 1,
+  "client": "City of Kingston / Utilities Kingston",
+  "client_type": "government",
+  "year": 2025,
+  "practice": "strategy",
+  "deck_types": [
+   "operating-model",
+   "due-diligence",
+   "portfolio-review"
+  ],
+  "sector": "Utilities / municipal governance",
+  "url": "https://www.cityofkingston.ca/media/ojzehueg/cao_municipalservicescorporation_waterwastewater_businesscase.pdf",
+  "source_url": "https://www.cityofkingston.ca/",
+  "publication_route": "government-published",
+  "slide_count": 18,
+  "eligibility": "core",
+  "verified": "Downloaded and opened PDF (18 pages, page size 960x540 pt); extracted title text from 17 sampled slides across the deck; rendered sample pages for visual check of selected decks.",
+  "slide_sequence": [
+   "p1: City of Kingston",
+   "p2: Municipal Services Corporation Business Case Development"
+  ],
+  "storyline_pattern": "Context, governance options, strategic advantages, financial analysis, implementation plan",
+  "signature_slides": [
+   "icon-led advantage rows",
+   "implementation roadmap table",
+   "financial summary"
+  ],
+  "design": {
+   "palette": "Measured dominant saturated hues (quantised): #002080, #0040e0, #00a0e0",
+   "typography": "KPMG, Arial, ArialMT",
+   "density": "high",
+   "charts": [
+    "peer benchmark charts",
+    "roadmap/timeline",
+    "maps/frameworks",
+    "share/composition charts"
+   ]
+  },
+  "standout_moves": [
+   "Six advantages in labelled icon rows",
+   "Phased 0-24 month roadmap"
+  ],
+  "weaknesses": [
+   "Condensed slide copy of a longer report",
+   "Header font condensed"
+  ],
+  "design_quality": 3,
+  "caveat": "Final public business case, Aug 2025 (slide extract). design_quality is a rubric-lite estimate from typography, colour, density and title scan, not a full visual review of every slide."
+ },
+ {
+  "title": "Puerto Rico tax reform - press meeting slides",
+  "firm": "KPMG",
+  "firm_group": "Big4",
+  "tier": 1,
+  "client": "Government of Puerto Rico (Hacienda)",
+  "client_type": "government",
+  "year": 2014,
+  "practice": "strategy",
+  "deck_types": [
+   "economic-development",
+   "benchmarking"
+  ],
+  "sector": "Tax / public finance",
+  "url": "https://hacienda.pr.gov/sites/default/files/documentos/pr_press_meeting_slides_1.pdf",
+  "source_url": "https://hacienda.pr.gov/",
+  "publication_route": "government-published",
+  "slide_count": 16,
+  "eligibility": "core",
+  "verified": "Downloaded and opened PDF (16 pages, page size 720x540 pt); extracted title text from 16 sampled slides across the deck; rendered sample pages for visual check of selected decks.",
+  "slide_sequence": [
+   "p2: Some Members of the KPMG Team",
+   "p6: Macroeconomic Modeling Suite",
+   "p7: High Level Structural,",
+   "p8: High Level Observa9ons",
+   "p9: Taxes as a Percentage of GDP in Puerto Rico Compared to Selected Jurisdic9ons",
+   "p10: Comparison of Puerto Rico to OECD Countries",
+   "p11: 2013 Income Tax Liability by Income Class (In Millions of USD)",
+   "p12: 2013 Sales Tax Liability By Income Class",
+   "p13: 2013 Vehicle, Gasoline, Alcohol, & Tobacco Excise Tax By Income Class",
+   "p14: 2012 Total and Capital Income Reported by Income Level (In Millions of USD)"
+  ],
+  "storyline_pattern": "Team, agenda, objectives, CGE macro model, high-level observations, tax comparisons by income class",
+  "signature_slides": [
+   "tax as % of GDP peer bars",
+   "OECD comparison",
+   "income-class liability charts"
+  ],
+  "design": {
+   "palette": "Measured dominant saturated hues (quantised): #e0c000, #c0a000, #e0e0a0",
+   "typography": "ArialMT, Helvetica, Calibri",
+   "density": "medium",
+   "charts": [
+    "survey bars",
+    "share/composition charts"
+   ]
+  },
+  "standout_moves": [
+   "Builds a Puerto Rico-specific macro model before options",
+   "Peer-jurisdiction comparisons"
+  ],
+  "weaknesses": [
+   "Year not printed on slides (inferred 2014 from 2013 data)",
+   "Extraction shows broken glyphs"
+  ],
+  "design_quality": 3,
+  "caveat": "Year inferred from data referenced (2013 income tax liability). design_quality is a rubric-lite estimate from typography, colour, density and title scan, not a full visual review of every slide."
+ },
+ {
+  "title": "The 14th Five-Year Plan: Sector Impact Outlook",
+  "firm": "KPMG",
+  "firm_group": "Big4",
+  "tier": 2,
+  "client": "None (firm publication)",
+  "client_type": "corporate",
+  "year": 2021,
+  "practice": "strategy",
+  "deck_types": [
+   "growth-strategy",
+   "economic-development"
+  ],
+  "sector": "Cross-sector (China)",
+  "url": "https://assets.kpmg.com/content/dam/kpmg/cn/pdf/en/2021/01/14th-five-year-plan-industry-impact-outlook.pdf",
+  "source_url": "https://slideworks.io/resources/750-real-consulting-presentations-from-mckinsey-deloitte-ey-and-more",
+  "publication_route": "firm-published",
+  "slide_count": 16,
+  "eligibility": "extended",
+  "verified": "Downloaded and opened PDF (16 pages, page size 858x612 pt); extracted title text from 16 sampled slides across the deck; rendered sample pages for visual check of selected decks.",
+  "slide_sequence": [
+   "p1: The 14th Five- Year Plan:",
+   "p2: China’s new development path under the 14th FYP",
+   "p3: During the 14th FYP period, China will continue to shift its focus from...",
+   "p4: Supporting the real economy and mitigating risks",
+   "p5: Deepening the reform and opening-up of capital markets, and optimising financing structures and...",
+   "p6: Accelerating the development of personal commercial pensions into a main driver to improve...",
+   "p7: Consumption has become the cornerstone of China’s economy, with new forms of consumption...",
+   "p8: Achieving technological independence and enhancing strength to become a manufacturing powerhouse",
+   "p9: The ‘four new modernisations’ wil reshape the auto industry with a shift from...",
+   "p10: Digital healthcare ushers in new opportunities for development",
+   "p11: Advancing basic research and promoting enterprise-driven innovation",
+   "p12: Adhering to the theme of ‘houses are not for speculation’ to ensure the...",
+   "p13: Promoting a green and low-carbon economy and vigorously developing renewable energy"
+  ],
+  "storyline_pattern": "Development path under the plan, then one-slide sector outlooks (finance, consumption, manufacturing, auto, healthcare, property)",
+  "signature_slides": [
+   "one-slide sector outlook template",
+   "path diagram"
+  ],
+  "design": {
+   "palette": "Measured dominant saturated hues (quantised): #002080, #402080, #80c0e0",
+   "typography": "ArialMT, KPMG, Univers",
+   "density": "high",
+   "charts": [
+    "share/composition charts"
+   ]
+  },
+  "standout_moves": [
+   "Each sector gets one dense slide with same template",
+   "Action titles state implication"
+  ],
+  "weaknesses": [
+   "Very dense slides",
+   "Low chart count"
+  ],
+  "design_quality": 3,
+  "caveat": "Firm-published thought leadership in landscape slide format. design_quality is a rubric-lite estimate from typography, colour, density and title scan, not a full visual review of every slide."
+ },
+ {
+  "title": "Town of Cobourg Organizational Review: key findings and outcomes - presentation to Council",
+  "firm": "KPMG",
+  "firm_group": "Big4",
+  "tier": 1,
+  "client": "Town of Cobourg",
+  "client_type": "government",
+  "year": 2021,
+  "practice": "strategy",
+  "deck_types": [
+   "operating-model",
+   "board-update"
+  ],
+  "sector": "Municipal",
+  "url": "https://cobourgblog.com/assets/2021/KPMG-Cobourg%20-Council-Presentation-Sep-13.pdf",
+  "source_url": "https://cobourgblog.com/",
+  "publication_route": "aggregator-only",
+  "slide_count": 19,
+  "eligibility": "core",
+  "verified": "Downloaded and opened PDF (19 pages, page size 792x612 pt); extracted title text from 17 sampled slides across the deck; rendered sample pages for visual check of selected decks.",
+  "slide_sequence": [
+   "p2: KPMG has finalized our review of the Town’s organizational structure, which review in...",
+   "p4: Town’s level of services for recreational and community programming, as well The Town’s...",
+   "p5: Position the Town to be aligned with strategic Look to the future when...",
+   "p6: We suggest that the implications of this mindset have already started to impact...",
+   "p7: The Chief Building Official is assigned by by-law enforcement duties on a development...",
+   "p8: © 2018 KPMG LLP, a Canadian limited liability partnership and a member firm...",
+   "p9: 42% 17% 41% 10% 15% 20% the Customer Service Provided by the How...",
+   "p10: employees) indicated significant concerns over training, succession planning, A survey completed by Town...",
+   "p11: Strongly Agree Agree or 57% 57% 56% 49% 55% 36% 52% 42% 28%...",
+   "p13: 10000 5000 Forecasted Growth (to 2034)",
+   "p14: staffing levels are generally consistent, with some areas having lower levels of 6....",
+   "p15: 7. The Town’s ways of working contribute towards resource demands and",
+   "p16: Distinguish between development permitting and long-range planning Distinguish between capital project engineering and..."
+  ],
+  "storyline_pattern": "Purpose, service delivery vs organisational review, key findings, six strategic issues and recommendations",
+  "signature_slides": [
+   "findings vs recommendations text slides",
+   "staffing benchmark"
+  ],
+  "design": {
+   "palette": "Measured dominant saturated hues (quantised): #002080, #6080a0, #602080",
+   "typography": "KPMG, ArialMT, Arial",
+   "density": "high",
+   "charts": [
+    "peer benchmark charts",
+    "survey bars"
+   ]
+  },
+  "standout_moves": [
+   "Contrasts SDR vs org review on one slide",
+   "Priorities at risk framed first"
+  ],
+  "weaknesses": [
+   "Text-heavy",
+   "Hosted by local blog, not town site"
+  ],
+  "design_quality": 2,
+  "caveat": "Hosted on a local news/blog site; Town council presentation of 13 Sep 2021. design_quality is a rubric-lite estimate from typography, colour, density and title scan, not a full visual review of every slide."
+ },
+ {
+  "title": "Town of Blind River Municipal Service Delivery Review - Interim Presentation to Council",
+  "firm": "KPMG",
+  "firm_group": "Big4",
+  "tier": 1,
+  "client": "Town of Blind River",
+  "client_type": "government",
+  "year": 2019,
+  "practice": "strategy",
+  "deck_types": [
+   "operating-model",
+   "benchmarking"
+  ],
+  "sector": "Municipal",
+  "url": "https://www.blindriver.ca/media/heiopdah/town-of-blind-river-sdr-kpmg-interim-presentation-apr-8-final.pdf",
+  "source_url": "https://www.blindriver.ca/",
+  "publication_route": "government-published",
+  "slide_count": 16,
+  "eligibility": "core",
+  "verified": "Downloaded and opened PDF (16 pages, page size 720x540 pt); extracted title text from 16 sampled slides across the deck; rendered sample pages for visual check of selected decks.",
+  "slide_sequence": [
+   "p1: Town of Blind River Municipal Service Delivery Review",
+   "p2: Introduction Overview of the Review Initial Perspectives",
+   "p3: Project management, change management and communication",
+   "p4: Efficiency and Service level effectiveness reductions enhancements",
+   "p5: The Concept of Municipal Discretion The rationale for the Town’s involvement in a...",
+   "p6: Municipal services appear to be consistent with municipal common practices This does not...",
+   "p7: The Concept of Municipal Discretion",
+   "p8: Municipal services appear to be consistent with municipal common practices This does not...",
+   "p9: Red Lake Espanola Marathon Residential Taxes per Household Wawa",
+   "p10: Average annual Average annual Average annual",
+   "p12: Capital Reserves per Asset",
+   "p13: Potential for non-taxation revenue growth Rationalization of traditional service expenditures Long-term financial sustainability",
+   "p14: Finalization of the service profiles Process mapping workshops Opportunity development"
+  ],
+  "storyline_pattern": "Agenda, review overview, four lever types, initial perspectives, jurisdictional comparison, next steps",
+  "signature_slides": [
+   "lever diagram",
+   "peer municipality comparison",
+   "reserves per asset bars"
+  ],
+  "design": {
+   "palette": "Measured dominant saturated hues (quantised): #002080, #0080c0, #4060a0",
+   "typography": "KPMG, ArialMT, Univers",
+   "density": "medium",
+   "charts": [
+    "maps/frameworks"
+   ]
+  },
+  "standout_moves": [
+   "Four lever types set the opportunity frame early",
+   "Early themes for change"
+  ],
+  "weaknesses": [
+   "Light, text-based",
+   "Interim"
+  ],
+  "design_quality": 2,
+  "caveat": "Interim deck dated 8 Apr 2019. design_quality is a rubric-lite estimate from typography, colour, density and title scan, not a full visual review of every slide."
+ },
+ {
+  "title": "E-mobility in India: Market paradigms and ways to play",
+  "firm": "PwC",
+  "firm_group": "Big4",
+  "tier": 2,
+  "client": "None (firm publication, hosted by ACMA)",
+  "client_type": "corporate",
+  "year": 2021,
+  "practice": "strategy",
+  "deck_types": [
+   "market-entry",
+   "growth-strategy"
+  ],
+  "sector": "Automotive / EV",
+  "url": "https://www.acma.in/uploads/docmanager/PwC_PoV_E%20Mobility%20in%20India%20_May_21.pdf",
+  "source_url": "https://slideworks.io/resources/750-real-consulting-presentations-from-mckinsey-deloitte-ey-and-more",
+  "publication_route": "firm-published",
+  "slide_count": 35,
+  "eligibility": "extended",
+  "verified": "Downloaded and opened PDF (35 pages, page size 960x540 pt); extracted title text from 17 sampled slides across the deck; rendered sample pages for visual check of selected decks.",
+  "slide_sequence": [
+   "p3: Globally, various power train technologies co-exist across xEV continuum and across vehicle segments",
+   "p4: The global xEV market was valued at ~$273 Bn in 2019; BEVs projected...",
+   "p6: Regulations play a key role for adoption and are getting increasingly supportive in...",
+   "p10: Various government organizations have provided holistic and integrated measures to transform e-mobility in...",
+   "p12: To push the e-mobility agenda further, different states are carving out their own...",
+   "p16: Batteries form a major portion of EV costs; global battery market est. at...",
+   "p18: Battery manufacturing space has seen a rush of interest and investments into India...",
+   "p20: In addition to battery cost reductions, long term cost savings must be communicated...",
+   "p22: The Indian shared mobility ecosystem is an ‘interconnected’ network",
+   "p24: Globally, various Oil and Gas companies are also making strategic investments in EV...",
+   "p26: In order to offer customers with greater options, OEMs have lined up new...",
+   "p28: … many OEMs have adopted the ‘innovator’ way of grounds-up development to gain...",
+   "p30: With increasing maturity of BEVs, we can expect an industry-wide development of a..."
+  ],
+  "storyline_pattern": "Global xEV context, India market status, policy, scenarios, batteries, shared mobility, charging, OEM strategies",
+  "signature_slides": [
+   "scenario 2x2 grid (localised vs import dependent)",
+   "market size callouts",
+   "ecosystem map"
+  ],
+  "design": {
+   "palette": "Measured dominant saturated hues (quantised): #a00000, #c00000, #a04040",
+   "typography": "ArialMT, Georgia, Arial",
+   "density": "high",
+   "charts": [
+    "CAGR-labelled columns/lines",
+    "scenario charts",
+    "survey bars",
+    "share/composition charts"
+   ]
+  },
+  "standout_moves": [
+   "Scenario matrix on cost economics, shared mobility, infrastructure",
+   "Long italic action titles"
+  ],
+  "weaknesses": [
+   "Long titles",
+   "Red palette heavy"
+  ],
+  "design_quality": 3,
+  "caveat": "PwC point of view paper in slide format hosted by ACMA. design_quality is a rubric-lite estimate from typography, colour, density and title scan, not a full visual review of every slide."
+ },
+ {
+  "title": "Copernicus Market Report (Issue 2, Feb 2019)",
+  "firm": "PwC",
+  "firm_group": "Big4",
+  "tier": 1,
+  "client": "European Commission (Copernicus programme)",
+  "client_type": "multilateral",
+  "year": 2019,
+  "practice": "strategy",
+  "deck_types": [
+   "market-entry",
+   "benchmarking",
+   "growth-strategy"
+  ],
+  "sector": "Space / earth observation",
+  "url": "https://www.copernicus.eu/sites/default/files/2019-02/PwC_Copernicus_Market_Report_2019_PDF_version.pdf",
+  "source_url": "https://slideworks.io/resources/750-real-consulting-presentations-from-mckinsey-deloitte-ey-and-more",
+  "publication_route": "client-published",
+  "slide_count": 164,
+  "eligibility": "core",
+  "verified": "Downloaded and opened PDF (164 pages, page size 960x540 pt); extracted title text from 17 sampled slides across the deck; rendered sample pages for visual check of selected decks.",
+  "slide_sequence": [
+   "p2: EUROPE DIRECT IS A SERVICE TO HELP YOU FIND ANSWERS TO YOUR QUESTIONS...",
+   "p15: THE EARTH OBSERVATION UPSTREAM AT GLOBAL SCALE",
+   "p26: EARTH OBSERVATION IN THE CONTEXT OF INTELLIGENCE",
+   "p37: COPERNICUS CONTESTABLE USER BASE",
+   "p48: Verifying agricultural subsidies SATIKAS",
+   "p59: Starling-VERIFY YOUR FOREST IMPACT Airbus Defence & Space",
+   "p70: Innovators EO4CBI space4environment",
+   "p81: COASTAL AND MARINE EXPLOITATION AND PRESERVATION",
+   "p92: OIL AND GAS",
+   "p103: MONITORING OF RENEWABLE ENERGY",
+   "p114: MONITORING OF AIR QUALITY",
+   "p125: INSURANCE FOR NATURAL DISASTERS",
+   "p136: Improving the delay for image delivery after floods The European Flood Awareness System..."
+  ],
+  "storyline_pattern": "Contents, EO downstream market in Europe, then one chapter per sector (agriculture, forestry, marine, oil and gas, air quality, disaster response, security)",
+  "signature_slides": [
+   "market-share shift charts",
+   "CAGR forecasts",
+   "sector chapter template"
+  ],
+  "design": {
+   "palette": "Measured dominant saturated hues (quantised): #206080, #204080, #004080",
+   "typography": "Arial, ArialMT, Arial",
+   "density": "high",
+   "charts": [
+    "CAGR-labelled columns/lines",
+    "scenario charts",
+    "maps/frameworks",
+    "survey bars",
+    "share/composition charts"
+   ]
+  },
+  "standout_moves": [
+   "Identical template per application sector",
+   "Quantified downstream market"
+  ],
+  "weaknesses": [
+   "Very dense; text beyond slide norms",
+   "Report-like"
+  ],
+  "design_quality": 3,
+  "caveat": "Prepared by PwC for the European Commission; landscape slide-format report. design_quality is a rubric-lite estimate from typography, colour, density and title scan, not a full visual review of every slide."
+ },
+ {
+  "title": "eReadiness 2023 Survey Report (e-mobility study, 4th edition)",
+  "firm": "PwC (Strategy&)",
+  "firm_group": "Big4",
+  "tier": 2,
+  "client": "None (firm publication)",
+  "client_type": "corporate",
+  "year": 2023,
+  "practice": "strategy",
+  "deck_types": [
+   "market-entry",
+   "benchmarking"
+  ],
+  "sector": "Automotive / EV",
+  "url": "https://www.strategyand.pwc.com/it/en/assets/pdf/ereadiness-study-2023.pdf",
+  "source_url": "https://slideworks.io/resources/750-real-consulting-presentations-from-mckinsey-deloitte-ey-and-more",
+  "publication_route": "firm-published",
+  "slide_count": 83,
+  "eligibility": "extended",
+  "verified": "Downloaded and opened PDF (83 pages, page size 960x540 pt); extracted title text from 17 sampled slides across the deck; rendered sample pages for visual check of selected decks.",
+  "slide_sequence": [
+   "p3: The 4 edition of the study provides updated perspectives on the short-term development...",
+   "p4: This year edition covers 18 countries across the globe, grouped into three regions",
+   "p9: Overall, EV owners are younger, wealthier and with greater access to private parking...",
+   "p14: EV owners show substantial differences across the globe, highlighting a different maturity in...",
+   "p19: Word of mouth is the key trigger for EV consideration – the financial...",
+   "p24: Price, charging speed and reliability are the key purchasing criteria when buying private...",
+   "p29: EV owners charge their vehicle mostly two-to-three times per week, predominantly using grey...",
+   "p34: EV owners show a high interest in bundling a maintenance plan with their...",
+   "p39: Physical stores are the preferred purchasing channel for used EVs, either from official...",
+   "p44: We have identified six personas amongst future EV customers based on four behavioural...",
+   "p49: Pragmatic tend to be more rational than emotional with their purchases, making them...",
+   "p54: Charging duration, range and battery lifetime are the key barriers stopping EV prospects...",
+   "p59: Sceptics show substantial differences across the globe requiring a localized approach to convert...",
+   "p64: In Europe, Norway is the most eReady country across all dimensions while Italy,...",
+   "p69: The Infrastructure dimension measures the availability of public charging infrastructure as well as..."
+  ],
+  "storyline_pattern": "Agenda, study scope in 18 markets, consumer viewpoints, owner satisfaction, personas, country readiness",
+  "signature_slides": [
+   "survey bar charts",
+   "persona segments",
+   "country ranking"
+  ],
+  "design": {
+   "palette": "Measured dominant saturated hues (quantised): #a02020, #c04060, #a04040",
+   "typography": "ArialMT, Arial, Georgia",
+   "density": "medium",
+   "charts": [
+    "survey bars",
+    "share/composition charts"
+   ]
+  },
+  "standout_moves": [
+   "Persona segmentation (pragmatics, sceptics)",
+   "Country readiness ranking"
+  ],
+  "weaknesses": [
+   "Survey dump feel in middle",
+   "Red/pink palette"
+  ],
+  "design_quality": 4,
+  "caveat": "Strategy&-authored, firm-published market study. design_quality is a rubric-lite estimate from typography, colour, density and title scan, not a full visual review of every slide."
+ },
+ {
+  "title": "Cheyenne Competitive Assessment: Key Findings - Presentation to Cheyenne LEADS Board",
+  "firm": "EY (EY Economic Development Advisory Services)",
+  "firm_group": "Big4",
+  "tier": 1,
+  "client": "Cheyenne LEADS (economic development organisation)",
+  "client_type": "government",
+  "year": 2021,
+  "practice": "strategy",
+  "deck_types": [
+   "economic-development",
+   "benchmarking",
+   "board-update"
+  ],
+  "sector": "Regional economic development",
+  "url": "https://assets.simpleviewinc.com/simpleview/image/upload/v1/clients/cheyenne/LEADS_EY_presentation_Board_2_17_21_b54c1d55-21ad-4f60-a597-491f37e322a6.pdf",
+  "source_url": "https://assets.simpleviewinc.com/",
+  "publication_route": "client-published",
+  "slide_count": 18,
+  "eligibility": "core",
+  "verified": "Downloaded and opened PDF (18 pages, page size 792x612 pt); extracted title text from 17 sampled slides across the deck; rendered sample pages for visual check of selected decks.",
+  "slide_sequence": [
+   "p1: Cheyenne Competitive Assessment: Key Findings",
+   "p3: Economic development advisory services",
+   "p4: Global site selection, credits and incentives",
+   "p6: Population growth – Cheyenne metro",
+   "p7: Housing – Cheyenne metro",
+   "p8: Employment and growth by industry – Cheyenne metro",
+   "p9: Industry composition – Cheyenne Metro",
+   "p14: Cost of living & doing business metrics",
+   "p16: Local degree production by cluster",
+   "p17: Academic R&D funding by field – University of Wyoming"
+  ],
+  "storyline_pattern": "Team, two-phase project, demographics, employment by industry, benchmarking assessment, cost of living, degree production",
+  "signature_slides": [
+   "benchmark scorecard vs peers",
+   "industry growth charts",
+   "SWOT in project"
+  ],
+  "design": {
+   "palette": "Measured dominant saturated hues (quantised): #6080c0, #200080, #20a040",
+   "typography": "EYInterstate, EYInterstate, EYInterstate",
+   "density": "medium",
+   "charts": [
+    "peer benchmark charts",
+    "SWOT",
+    "share/composition charts"
+   ]
+  },
+  "standout_moves": [
+   "Benchmarks vs named peer communities",
+   "Phase 1/2 project frame on slide 3"
+  ],
+  "weaknesses": [
+   "Descriptive more than prescriptive",
+   "Early firm-credentials slides"
+  ],
+  "design_quality": 3,
+  "caveat": "Phase 1 of a competitive assessment; strategy phase not in this deck. design_quality is a rubric-lite estimate from typography, colour, density and title scan, not a full visual review of every slide."
+ },
+ {
+  "title": "City of Bellevue - Data analysis and community engagement report (Economic Development Plan update)",
+  "firm": "EY (EY Economic Development Advisory Services)",
+  "firm_group": "Big4",
+  "tier": 1,
+  "client": "City of Bellevue, Washington",
+  "client_type": "government",
+  "year": 2025,
+  "practice": "strategy",
+  "deck_types": [
+   "economic-development",
+   "benchmarking"
+  ],
+  "sector": "Municipal economic development",
+  "url": "https://bellevuewa.gov/sites/default/files/media/pdf_document/2025/city-of-bellevue-data-analysis-and-community-engagement-report-final-1%29.pdf",
+  "source_url": "https://bellevuewa.gov/",
+  "publication_route": "government-published",
+  "slide_count": 58,
+  "eligibility": "core",
+  "verified": "Downloaded and opened PDF (58 pages, page size 960x540 pt); extracted title text from 17 sampled slides across the deck; rendered sample pages for visual check of selected decks.",
+  "slide_sequence": [
+   "p1: Data analysis and community engagement report",
+   "p12: Industry analysis background",
+   "p16: The Creative Economy remains a key driver of the economy in Bellevue, bolstered...",
+   "p20: Bellevue benefits from a regional economy with residents finding employment throughout the region",
+   "p24: Bellevue is a highly-educated community with a relatively low poverty rate",
+   "p28: Office Market Overview – City of Bellevue",
+   "p32: Office Market Data (Year to Date 2025)",
+   "p36: Case Study – The Bend – Plano, TX",
+   "p40: Stakeholder engagement approach",
+   "p48: Weaknesses (challenges and inhibitors)",
+   "p52: Threats (possible barriers and disruptors)"
+  ],
+  "storyline_pattern": "Executive summary and key takeaways, benchmark data analysis, real estate, stakeholder engagement, SWOT, strategic priorities",
+  "signature_slides": [
+   "employment line vs benchmarks",
+   "required-vs-actual CAGR bars",
+   "SWOT"
+  ],
+  "design": {
+   "palette": "Measured dominant saturated hues (quantised): #60a0e0, #e0e080, #e0e000",
+   "typography": "EYInterstate, EYInterstate, EYInterstate",
+   "density": "high",
+   "charts": [
+    "peer benchmark charts",
+    "SWOT",
+    "maps/frameworks",
+    "survey bars",
+    "share/composition charts"
+   ]
+  },
+  "standout_moves": [
+   "Required-vs-actual growth rate to hit job target",
+   "Five strategic priorities from SWOT"
+  ],
+  "weaknesses": [
+   "Dense paragraph under title",
+   "Light grey chart styling"
+  ],
+  "design_quality": 4,
+  "caveat": "design_quality is a rubric-lite estimate from typography, colour, density and title scan, not a full visual review of every slide."
+ },
+ {
+  "title": "Payers' price & market access policies supporting a sustainable biosimilar medicines market - Final report",
+  "firm": "Simon-Kucher & Partners",
+  "firm_group": "Other",
+  "tier": 3,
+  "client": "Medicines for Europe (industry association)",
+  "client_type": "nonprofit",
+  "year": 2016,
+  "practice": "strategy",
+  "deck_types": [
+   "benchmarking",
+   "market-entry"
+  ],
+  "sector": "Pharma / market access",
+  "url": "https://www.medicinesforeurope.com/wp-content/uploads/2016/09/Simon-Kucher-2016-Policy-requirements-for-a-sustainable-biosimilar-market-FINAL-report_for-publication2.pdf",
+  "source_url": "https://www.medicinesforeurope.com/",
+  "publication_route": "client-published",
+  "slide_count": 124,
+  "eligibility": "core",
+  "verified": "Downloaded and opened PDF (124 pages, page size 841x595 pt); extracted title text from 17 sampled slides across the deck; rendered sample pages for visual check of selected decks.",
+  "slide_sequence": [
+   "p1: Payers’ price & market access policies",
+   "p4: Overall project approach",
+   "p12: Payer policies and their influence on price development and uptake of biosimilar medicines...",
+   "p28: IMS data: Calculate average number of active biosimilar manufacturers per product and market...",
+   "p36: Simon-Kucher conducted multiple expert discussions with payers, policy makers and biosimilar manufacturers to...",
+   "p52: Following the launch of less expensive filgrastim biosimilars in the United Kingdom, NICE...",
+   "p60: Overview of high-level findings from payer and manufacturer discussions",
+   "p68: Based on the overall analysis, Simon-Kucher developed fifteen principles for a sustainable biosimilar...",
+   "p100: Different market scenarios for filgrastim biosimilars in Germany",
+   "p108: Gainsharing at hospital level is expected to support earlier and broader use of..."
+  ],
+  "storyline_pattern": "Outline tracker, objectives and approach, policy mapping by market, sustainability criteria, conclusions, principles for payers",
+  "signature_slides": [
+   "market-by-market policy mapping",
+   "sustainability criteria scorecard",
+   "principles slides"
+  ],
+  "design": {
+   "palette": "Measured dominant saturated hues (quantised): #802040, #a06060, #a04060",
+   "typography": "1, 2, Wingdings",
+   "density": "high",
+   "charts": [
+    "scenario charts",
+    "maps/frameworks",
+    "NPV/BCR tables",
+    "share/composition charts"
+   ]
+  },
+  "standout_moves": [
+   "Outline slide re-appears at each section",
+   "Criteria reflect both payer and manufacturer views"
+  ],
+  "weaknesses": [
+   "124 slides, text heavy",
+   "Advocacy-sponsored study"
+  ],
+  "design_quality": 3,
+  "caveat": "Tier 3 (other strategy/pricing firm). Commissioned by industry association; read for sponsor bias. design_quality is a rubric-lite estimate from typography, colour, density and title scan, not a full visual review of every slide."
+ },
+ {
+  "title": "Successfully Transforming a Pricing Organization",
+  "firm": "Simon-Kucher & Partners",
+  "firm_group": "Other",
+  "tier": 3,
+  "client": "None (firm publication)",
+  "client_type": "corporate",
+  "year": 2016,
+  "practice": "strategy",
+  "deck_types": [
+   "operating-model"
+  ],
+  "sector": "Pricing / pharma",
+  "url": "https://www.simon-kucher.com/sites/default/files/2017-01/Simon-Kucher%20on%20Transforming%20a%20Pricing%20Organization.pdf",
+  "source_url": "https://www.simon-kucher.com/",
+  "publication_route": "firm-published",
+  "slide_count": 18,
+  "eligibility": "extended",
+  "verified": "Downloaded and opened PDF (18 pages, page size 842x595 pt); extracted title text from 17 sampled slides across the deck; rendered sample pages for visual check of selected decks.",
+  "slide_sequence": [
+   "p3: Accelerates revenue by getting \"wanted\" products/services faster to market peak revenue incremental Raise...",
+   "p5: New business models Shareconomy Pay per use Freemium etc.",
+   "p7: precision and granularity of functional area (e.g., global the organization about the (including...",
+   "p9: Better communication Expectation setting … can help provide: Common lexicon Accountability",
+   "p10: Not too early, not too late, well planned",
+   "p11: Smooth on-boarding … can help ensure: Consistency",
+   "p12: Payer-informed Phase IIb trial design Payer-informed Phase IIb trial design Payer-informed Phase IIb...",
+   "p14: Finding those with the right expertise communication … can lead to: organization across...",
+   "p15: Brand team C-suite Public Affairs HEOR AffiliateMedical Affairs",
+   "p16: Title: Tender Manager"
+  ],
+  "storyline_pattern": "Quote, role of pricing, case study of a pharma pricing organisation, four-dimension change checklist, summary",
+  "signature_slides": [
+   "product lifecycle curve",
+   "what/how/who/when four-box",
+   "case study"
+  ],
+  "design": {
+   "palette": "Measured dominant saturated hues (quantised): #402020, #c08060, #602020",
+   "typography": "SimonKucher, SimonKucher, Wingdings",
+   "density": "medium",
+   "charts": [
+    "scenario charts",
+    "maps/frameworks",
+    "share/composition charts"
+   ]
+  },
+  "standout_moves": [
+   "Case-study based argument with a closing four-question frame"
+  ],
+  "weaknesses": [
+   "Short, promotional",
+   "Photo backgrounds"
+  ],
+  "design_quality": 3,
+  "caveat": "Tier 3 firm-published deck on pricing strategy. design_quality is a rubric-lite estimate from typography, colour, density and title scan, not a full visual review of every slide."
+ },
+ {
+  "title": "Looking over the precipice: potential impact of COVID-19 on B2C and B2B media - initial perspectives",
+  "firm": "OC&C Strategy Consultants",
+  "firm_group": "Other",
+  "tier": 3,
+  "client": "None (firm publication)",
+  "client_type": "corporate",
+  "year": 2020,
+  "practice": "strategy",
+  "deck_types": [
+   "market-entry",
+   "due-diligence",
+   "benchmarking"
+  ],
+  "sector": "Media",
+  "url": "https://www.occstrategy.com/wp-content/uploads/2023/10/looking-over-the-precipice-covid19-2.pdf",
+  "source_url": "https://www.occstrategy.com/",
+  "publication_route": "firm-published",
+  "slide_count": 42,
+  "eligibility": "extended",
+  "verified": "Downloaded and opened PDF (42 pages, page size 780x540 pt); extracted title text from 16 sampled slides across the deck; rendered sample pages for visual check of selected decks.",
+  "slide_sequence": [
+   "p1: Looking over the",
+   "p3: Many B2C and B2B media sectors face challenging times ahead but interesting investment...",
+   "p4: This paper presents some initial perspectives on the potential impact of COVID-19 on...",
+   "p7: Beyond the immediate impact of COVID-19, a number of broad investment theses are...",
+   "p10: The impact of COVID-19 on the world is unprecedented, reaching 184 countries, with...",
+   "p13: This has had knock on effects on the global stock markets; despite much...",
+   "p16: Remotely-consumed digital media has been resilient to COVID-19; content focused sub-sectors are attractive...",
+   "p19: Print media has seen significant headwinds recently following the last recession, while Gaming...",
+   "p22: Similar to the previous recession, the impact of COVID-19 will accelerate long-term structural...",
+   "p25: These findings are echoed in public announcements from media companies to date",
+   "p28: Events & Exhibitions have been massively affected by the COVID-19 lockdown although education...",
+   "p31: Business information and trade shows were hit hard in the last recession but...",
+   "p34: Most markets should not have drastic long term impacts but trade magazines could...",
+   "p37: OC&C is a sector-focused strategy consultancy with global coverage",
+   "p40: We have extensive experience across B2C Media & Entertainment globally"
+  ],
+  "storyline_pattern": "Executive summary, four key questions, B2C then B2B sector impacts, appendix about OC&C",
+  "signature_slides": [
+   "recession-analogue share-price charts",
+   "sector resilience ranking",
+   "investment thesis summary"
+  ],
+  "design": {
+   "palette": "Measured dominant saturated hues (quantised): #e04040, #40c0e0, #008080",
+   "typography": "ArialMT, Arial, Arial",
+   "density": "high",
+   "charts": [
+    "CAGR-labelled columns/lines",
+    "scenario charts",
+    "survey bars",
+    "share/composition charts"
+   ]
+  },
+  "standout_moves": [
+   "Uses 2008-09 recession as an explicit proxy",
+   "Ends with investment-thesis framing"
+  ],
+  "weaknesses": [
+   "Promotional appendix",
+   "Limited design polish"
+  ],
+  "design_quality": 3,
+  "caveat": "Tier 3 (OC&C) firm-published investor-facing deck, 17 Apr 2020. design_quality is a rubric-lite estimate from typography, colour, density and title scan, not a full visual review of every slide."
+ },
+ {
+  "title": "Global Maritime Trade Flows and New Opportunities for Middle Eastern Ports",
+  "firm": "Roland Berger",
+  "firm_group": "Other",
+  "tier": 3,
+  "client": "None (conference presentation, Trans Middle East 2022)",
+  "client_type": "corporate",
+  "year": 2022,
+  "practice": "strategy",
+  "deck_types": [
+   "market-entry",
+   "growth-strategy"
+  ],
+  "sector": "Ports / maritime",
+  "url": "https://www.transportevents.com/presentations/bahrain2022/Roland_Berger.pdf",
+  "source_url": "https://www.transportevents.com/",
+  "publication_route": "firm-published",
+  "slide_count": 22,
+  "eligibility": "extended",
+  "verified": "Downloaded and opened PDF (22 pages, page size 960x540 pt); extracted title text from 17 sampled slides across the deck; rendered sample pages for visual check of selected decks.",
+  "slide_sequence": [
+   "p1: Global Maritime Trade Flows and New Opportunities for",
+   "p2: We are looking forward to discussing maritime trade flows and new opportunities for...",
+   "p4: Thank you for participating in this session, we are looking forward to a...",
+   "p5: As a leading strategy firm, we successfully operate in all major international markets...",
+   "p6: We have a strong presence in the Middle East with offices in Bahrain,...",
+   "p7: We have deep experience and wide expertise in supporting maritime development around the...",
+   "p8: We offer an integrated approach and specialized consulting services across the entire ports...",
+   "p10: The global container trade accounts for >140 m TEU with an expected future...",
+   "p11: The global schedule reliability is still below previous years – Also the global...",
+   "p12: China's Belt and Road Initiative aims to connect China with Asia, Africa and...",
+   "p14: The Middle East market has shown a steady growth during the last decade,...",
+   "p15: Logistics performance and shipping connectivity in the Middle East still lacks behind international...",
+   "p16: The high importance of the shipping sector in the Middle East leads to...",
+   "p17: Among the many opportunities for Middle Eastern ports, we see four key areas..."
+  ],
+  "storyline_pattern": "Agenda, firm credentials, global trade-flow snapshot, Middle East opportunities",
+  "signature_slides": [
+   "trade-flow CAGR charts",
+   "Belt and Road map",
+   "opportunity summary"
+  ],
+  "design": {
+   "palette": "Measured dominant saturated hues (quantised): #00a0c0, #20a0c0, #40c0c0",
+   "typography": "Arial Nova Cond, Arial Nova Cond, Arial Nova Cond",
+   "density": "medium",
+   "charts": [
+    "CAGR-labelled columns/lines",
+    "peer benchmark charts",
+    "roadmap/timeline",
+    "maps/frameworks",
+    "share/composition charts"
+   ]
+  },
+  "standout_moves": [
+   "Action titles state the quantified takeaway (3.9% CAGR)"
+  ],
+  "weaknesses": [
+   "Credentials-heavy opening",
+   "Conference-level depth"
+  ],
+  "design_quality": 3,
+  "caveat": "Tier 3 conference deck (Bahrain, 1 Jun 2022). design_quality is a rubric-lite estimate from typography, colour, density and title scan, not a full visual review of every slide."
+ },
+ {
+  "title": "Remodelling the shipping industry through innovation and digital transformation",
+  "firm": "Roland Berger",
+  "firm_group": "Other",
+  "tier": 3,
+  "client": "None (conference presentation, 16th ASEAN Ports and Shipping Conference)",
+  "client_type": "corporate",
+  "year": 2018,
+  "practice": "strategy",
+  "deck_types": [
+   "growth-strategy",
+   "market-entry"
+  ],
+  "sector": "Shipping / ports",
+  "url": "https://www.transportevents.com/presentations/johor2018/RolandBerger.pdf",
+  "source_url": "https://www.transportevents.com/",
+  "publication_route": "firm-published",
+  "slide_count": 33,
+  "eligibility": "extended",
+  "verified": "Downloaded and opened PDF (33 pages, page size 720x540 pt); extracted title text from 17 sampled slides across the deck; rendered sample pages for visual check of selected decks.",
+  "slide_sequence": [
+   "p1: Remodelling the shipping industry",
+   "p2: Roland Berger is a leading global strategy consulting firm with European roots and...",
+   "p3: Uniquely amongst strategy consulting firms, it has a strong, fast growing and dedicated...",
+   "p4: We offer an integrated approach and specialized services for the ports sector all...",
+   "p8: Looking ahead, maritime trade is projected to grow in a (much) more even...",
+   "p12: In the maritime sector as a whole, the range of new innovations /...",
+   "p14: In ports, investments in digitalization are growing very rapidly, affecting other stakeholders in...",
+   "p16: In addition, new automation trends and technologies are emerging that bring new challenges...",
+   "p18: In logistics – including sea shipping - boundaries are changing, with new players...",
+   "p20: Industry disruption results from Innovation = Combining new or existing business model concepts...",
+   "p22: Drones are increasingly used for monitoring, inspections and ship- related deliveries",
+   "p24: Some shipping companies and ports are adding IoT solutions to their management information...",
+   "p26: With e-commerce going global, Amazon and Alibaba (and others) are starting to compete...",
+   "p28: Amazon is following a similar path, but appears to be more aggressive, more...",
+   "p30: Looking forward, the shipping industry may drastically change"
+  ],
+  "storyline_pattern": "Firm and practice credentials, trade outlook, innovation landscape, disruption model, vulnerability of container shipping",
+  "signature_slides": [
+   "innovation landscape (100+ technologies)",
+   "trade growth outlook",
+   "disruption equation"
+  ],
+  "design": {
+   "palette": "Measured dominant saturated hues (quantised): #60a0c0, #00a0c0, #006080",
+   "typography": "ArialNarrow, ArialNarrow, ArialMT",
+   "density": "medium",
+   "charts": [
+    "CAGR-labelled columns/lines",
+    "maps/frameworks",
+    "share/composition charts"
+   ]
+  },
+  "standout_moves": [
+   "Equates disruption to business model plus technology",
+   "Amazon as logistics-disruptor analogy"
+  ],
+  "weaknesses": [
+   "Credentials-heavy",
+   "Light data"
+  ],
+  "design_quality": 3,
+  "caveat": "Tier 3 conference deck (Johor Baru, Jul 2018). design_quality is a rubric-lite estimate from typography, colour, density and title scan, not a full visual review of every slide."
+ }
+]

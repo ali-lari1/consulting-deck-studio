@@ -1,0 +1,1943 @@
+[
+ {
+  "title": "BPS Operational Review - Steering Committee Working Draft",
+  "firm": "McKinsey & Company",
+  "firm_group": "MBB",
+  "client": "Boston Public Schools / City of Boston",
+  "client_type": "education",
+  "year": 2015,
+  "deck_types": [
+   "diagnostic",
+   "cost-review",
+   "business-case",
+   "org-design"
+  ],
+  "sector": "K-12 education / public sector",
+  "url": "https://cdn.alexanderjarvis.com/2023/04/March-2015-McKinsey-BPS-Operational-Review-Steering-Committee-Working-Draft.pdf",
+  "source_url": "https://www.alexanderjarvis.com/mckinsey-mckinsey-bps-operational-review-steering-committee-working-draft/",
+  "publication_route": "aggregator-only",
+  "slide_count": 221,
+  "slide_sequence": [
+   "Opening caveat: 8-week review for Mayor's office, findings preliminary",
+   "Fact base: 'SPED is ~25% of the BPS spend'",
+   "'Nearly all spending is driven by personnel at schools and central office'",
+   "ELL population growing, among highest in peer set",
+   "Parent survey: generally satisfied, specific concerns",
+   "Section contents divider repeated per workstream",
+   "Technology and support-function assessment",
+   "'In discreet areas, BPS is a mixed bag of strengths and opportunities'",
+   "Steering Committee picks four areas for deep dive",
+   "Savings consistent with other systems' experience",
+   "Transportation: 78 of 81 private-placement routes carry under 5 students",
+   "Executive summary of footprint right-sizing",
+   "Food services: costs down, revenues lag peers",
+   "Community engagement strategy needed",
+   "Case study: DC schools' compressed closure timeline",
+   "Appendix: peer districts for benchmarking"
+  ],
+  "storyline_pattern": "Fact base then opportunity areas then four deep dives, each with sized savings and implementation risks, closing on case studies and benchmarks",
+  "signature_slides": [
+   "Section-divider contents tracker",
+   "Savings-range bar charts per opportunity",
+   "Peer-district benchmark tables"
+  ],
+  "design": {
+   "palette": "White ground, mid-blue accent (#0060C0), grey tints",
+   "typography": "Arial/Helvetica",
+   "density": "high",
+   "charts": [
+    "bar",
+    "stacked bar",
+    "benchmark table",
+    "waterfall-style savings bridge"
+   ]
+  },
+  "standout_moves": [
+   "Contents slide re-shown as tracker before each section",
+   "Ranges for savings rather than point estimates",
+   "Case-study slides to pre-empt political objections"
+  ],
+  "weaknesses": [
+   "221 slides, long for a steerco",
+   "Working draft with preliminary findings",
+   "Dense footnoted pages"
+  ],
+  "design_quality": 3,
+  "caveat": "Draft obtained through public-records/press route (Boston Globe reported on it, 2016); only available via aggregator mirror, no official city URL confirmed. Review before use; treat as sensitive-provenance.",
+  "practice": "management",
+  "verified": true,
+  "eligibility": "core",
+  "tier": 1,
+  "format": "slides"
+ },
+ {
+  "title": "Reshaping NYCHA support functions - BCG key findings and recommendations",
+  "firm": "Boston Consulting Group",
+  "firm_group": "MBB",
+  "client": "New York City Housing Authority",
+  "client_type": "government",
+  "year": 2012,
+  "deck_types": [
+   "operating-model",
+   "org-design",
+   "transformation-roadmap",
+   "cost-review",
+   "change-management"
+  ],
+  "sector": "Public housing",
+  "url": "https://www.nyc.gov/assets/nycha/downloads/pdf/BCG-report-NYCHA-Key-Findings-and-Recommendations-8-15-12vFinal.pdf",
+  "source_url": "https://www.nyc.gov/assets/nycha/downloads/pdf/BCG-report-NYCHA-Key-Findings-and-Recommendations-8-15-12vFinal.pdf",
+  "publication_route": "government-published",
+  "slide_count": 112,
+  "slide_sequence": [
+   "Title: Reshaping NYCHA support functions, Aug 2012",
+   "Five phases from operating model design to execution support",
+   "Joint team worked 'shoulder-to-shoulder' with NYCHA staff",
+   "Four types of opportunities identified to deliver value",
+   "Executive summary: approach to identify opportunities",
+   "Guiding principles for operating model design",
+   "Key changes recommended by function",
+   "Executive summary: cost savings and value delivered",
+   "Several levers to pull to achieve personnel savings",
+   "Implementation and path forward",
+   "EPMO is the lynchpin of the transition",
+   "Continued success needs ongoing risks addressed",
+   "Progress on initiatives during project",
+   "Function deep dives: property management, Section 8, procurement, finance",
+   "Board engagement model and governance benchmarks",
+   "Organizational pulse check results"
+  ],
+  "storyline_pattern": "Approach, opportunities, operating-model principles, savings, implementation/EPMO, then per-function appendix deep dives",
+  "signature_slides": [
+   "Five-phase engagement roadmap",
+   "Key changes by function table",
+   "EPMO structure"
+  ],
+  "design": {
+   "palette": "White with dark green accent (#006040), grey",
+   "typography": "Arial",
+   "density": "high",
+   "charts": [
+    "org chart",
+    "bar",
+    "table",
+    "roadmap"
+   ]
+  },
+  "standout_moves": [
+   "Joint client-BCG team narrative",
+   "EPMO and tooling shown as durable asset",
+   "Function-by-function appendix"
+  ],
+  "weaknesses": [
+   "Heavy text, 200-400 words on many slides",
+   "Pre-2015"
+  ],
+  "design_quality": 3,
+  "caveat": "Pre-2015 (2012); included as strong exemplar of operating-model + EPMO storyline in the public sector.",
+  "practice": "management",
+  "verified": true,
+  "eligibility": "core",
+  "tier": 1,
+  "format": "slides"
+ },
+ {
+  "title": "Loose Dogs in Dallas: Strategic Recommendations to Improve Public Safety and Animal Welfare",
+  "firm": "Boston Consulting Group",
+  "firm_group": "MBB",
+  "client": "City of Dallas (Dallas Animal Services)",
+  "client_type": "government",
+  "year": 2016,
+  "deck_types": [
+   "diagnostic",
+   "transformation-roadmap",
+   "benchmarking",
+   "business-case"
+  ],
+  "sector": "Municipal services / animal control",
+  "url": "https://dallascityhall.com/government/Council%20Meeting%20Documents/loose-dogs-in-dallas-strategic-recommendations-to-improve-public-safety-and-animal-welfare_combined_083016.pdf",
+  "source_url": "https://dallascityhall.com/government/Council%20Meeting%20Documents/loose-dogs-in-dallas-strategic-recommendations-to-improve-public-safety-and-animal-welfare_combined_083016.pdf",
+  "publication_route": "government-published",
+  "slide_count": 406,
+  "slide_sequence": [
+   "City memo introducing BCG council briefing",
+   "Suggested next steps: divide and conquer, monitor progress",
+   "Balanced actions needed to avoid unintended consequences",
+   "Recommendation: increase DAS funding",
+   "Overview: hire additional ASOs, focus 10 on field patrol",
+   "Segment relationship management of transfer partners",
+   "Productivity metrics within DAS's control should be tracked",
+   "Code enforcement of loose dogs has low satisfaction",
+   "'On average day in 2015, 89% of general kennels in use'",
+   "Animal control perceived performance fell year over year",
+   "Rescue orgs want clearer transfer guidelines",
+   "Backup: spay/neuter targets by zip code"
+  ],
+  "storyline_pattern": "Case for change, root causes, six integrated recommendation themes with owners and metrics, next steps, large backup",
+  "signature_slides": [
+   "Recommendation overview slides with action steps",
+   "Zip-code level targeting backup"
+  ],
+  "design": {
+   "palette": "Grey/white with BCG green accent, serif body face (Henderson BCG Serif)",
+   "typography": "Arial + Henderson BCG Serif",
+   "density": "high",
+   "charts": [
+    "map",
+    "bar",
+    "table",
+    "process"
+   ]
+  },
+  "standout_moves": [
+   "Metrics and owners on each recommendation",
+   "Stakeholder voices (rescue partners, residents) quoted"
+  ],
+  "weaknesses": [
+   "PDF is 406 pages incl. memo and exhibits; hard to navigate",
+   "Operational scope narrow"
+  ],
+  "design_quality": 3,
+  "caveat": "Combined PDF mixes city memo, BCG deck and appendices; slide_count is pages.",
+  "practice": "management",
+  "verified": true,
+  "eligibility": "core",
+  "tier": 1,
+  "format": "slides"
+ },
+ {
+  "title": "New Mexico State University Staffing Study: Opportunities for Cost Reduction Report",
+  "firm": "Deloitte",
+  "firm_group": "Big4",
+  "client": "New Mexico State University",
+  "client_type": "education",
+  "year": 2015,
+  "deck_types": [
+   "cost-review",
+   "org-design",
+   "benchmarking",
+   "diagnostic"
+  ],
+  "sector": "Higher education administration",
+  "url": "https://leads2025.nmsu.edu/pdf/NMSU-Recommendations-Report-Final.pdf",
+  "source_url": "https://leads2025.nmsu.edu/pdf/NMSU-Recommendations-Report-Final.pdf",
+  "publication_route": "client-published",
+  "slide_count": 194,
+  "slide_sequence": [
+   "Title, 14 Sept 2015",
+   "Project scope and approach",
+   "Current state overview of fragmentation",
+   "Staff divisions spend time supporting work across functions",
+   "Key opportunities sized by value and timeline",
+   "How to read: labor-cost bar charts per function",
+   "HR key opportunities",
+   "IT: 344 people report IT-related activities",
+   "General administration coverage ratio 11.33:1",
+   "Student administrative services key findings",
+   "Facilities fragmentation by process",
+   "Advancement key opportunities",
+   "Research administration labor by process",
+   "Educational programs labor costs ~$3.3M in colleges",
+   "Administrative taxonomy appendix"
+  ],
+  "storyline_pattern": "Scope, current-state fragmentation, prioritized opportunities, then repeated function module (findings, opportunity, fragmentation by process)",
+  "signature_slides": [
+   "Administrative taxonomy",
+   "Fragmentation by process (labor cost)"
+  ],
+  "design": {
+   "palette": "White with maroon (#800040) and grey",
+   "typography": "Arial",
+   "density": "high",
+   "charts": [
+    "bar",
+    "stacked bar",
+    "heatmap-style table"
+   ]
+  },
+  "standout_moves": [
+   "Activity-based taxonomy to size work across units",
+   "Consistent per-function module"
+  ],
+  "weaknesses": [
+   "Repetitive; many slides over 250 words",
+   "Label-style titles on some"
+  ],
+  "design_quality": 3,
+  "caveat": "",
+  "practice": "management",
+  "verified": true,
+  "eligibility": "core",
+  "tier": 1,
+  "format": "slides"
+ },
+ {
+  "title": "Syracuse University Diagnostic - Innovation and Opportunities Assessment",
+  "firm": "Bain & Company",
+  "firm_group": "MBB",
+  "client": "Syracuse University",
+  "client_type": "education",
+  "year": 2014,
+  "deck_types": [
+   "diagnostic",
+   "cost-review",
+   "benchmarking",
+   "transformation-roadmap"
+  ],
+  "sector": "Higher education",
+  "url": "https://news.syr.edu/wp-content/uploads/2017/04/Innovation-and-Opportunities-Assessment-Report-April-2014.pdf",
+  "source_url": "https://news.syr.edu/wp-content/uploads/2017/04/Innovation-and-Opportunities-Assessment-Report-April-2014.pdf",
+  "publication_route": "client-published",
+  "slide_count": 38,
+  "slide_sequence": [
+   "Agenda: report overview, project context",
+   "Purpose of this document",
+   "Improvement programs have three phases: diagnostic, design, implementation",
+   "Faculty and administration provided input and guidance",
+   "Diagnostic process: interviews, data, campus survey",
+   "Use of benchmarks",
+   "Syracuse is building on many strengths",
+   "'However, operating expenses are outgrowing revenues'",
+   "Enrollment has grown faster than peers",
+   "Cost of attendance low relative to peers",
+   "Costs grew faster than operating revenue",
+   "'Many agree the Syracuse University must change'",
+   "Sixteen opportunity areas fact base",
+   "Organizational structure",
+   "Shared services and centers of excellence",
+   "Procurement",
+   "Next steps: design and implement change"
+  ],
+  "storyline_pattern": "Context and method, burning-platform fact base, 16 one-to-two-slide opportunity modules, next phase",
+  "signature_slides": [
+   "Three-phase improvement program chevron",
+   "Sixteen-opportunity overview"
+  ],
+  "design": {
+   "palette": "White, grey/neutral with muted accents",
+   "typography": "Verdana",
+   "density": "medium",
+   "charts": [
+    "line",
+    "bar",
+    "text-tables"
+   ]
+  },
+  "standout_moves": [
+   "Short, sparse burning-platform slides",
+   "Agenda tracker repeated per section"
+  ],
+  "weaknesses": [
+   "Opportunity modules are text-only",
+   "No sizing of savings"
+  ],
+  "design_quality": 3,
+  "caveat": "",
+  "practice": "management",
+  "verified": true,
+  "eligibility": "core",
+  "tier": 1,
+  "format": "slides"
+ },
+ {
+  "title": "KPMG Operational and Performance Review of the Fire Department (Santa Barbara County)",
+  "firm": "KPMG",
+  "firm_group": "Big4",
+  "client": "County of Santa Barbara",
+  "client_type": "government",
+  "year": 2022,
+  "deck_types": [
+   "diagnostic",
+   "operating-model",
+   "benchmarking"
+  ],
+  "sector": "Fire / emergency services",
+  "url": "https://content.civicplus.com/api/assets/368b5307-9697-46af-8d15-3e50c043dc88",
+  "source_url": "https://content.civicplus.com/api/assets/368b5307-9697-46af-8d15-3e50c043dc88",
+  "publication_route": "government-published",
+  "slide_count": 20,
+  "slide_sequence": [
+   "Title: Board of Supervisors, 1 March 2022",
+   "Today's presentation agenda",
+   "Context: Renew 22 program, KPMG selected May 2019",
+   "Scope: not a financial audit or budget cutting exercise",
+   "Organization overview: 247 FTE, $89.2M budget",
+   "Project timeline",
+   "Methodology",
+   "Commendations",
+   "Current vs recommended operating model maturity table",
+   "Recommendations by theme (six)",
+   "Data-driven deployment",
+   "Performance management",
+   "Recommendation responses with agree/target fiscal year",
+   "Digitalize paper processes",
+   "Questions"
+  ],
+  "storyline_pattern": "Program context, scope, commendations first, maturity-scored operating model, recommendations with department response and target date",
+  "signature_slides": [
+   "Maturity scale current vs recommended",
+   "Recommendation response tracker"
+  ],
+  "design": {
+   "palette": "KPMG blue/purple palette on white",
+   "typography": "Arial / Calibri",
+   "density": "medium",
+   "charts": [
+    "table",
+    "maturity grid"
+   ]
+  },
+  "standout_moves": [
+   "Commendations before critiques",
+   "Department response and FY target beside each recommendation"
+  ],
+  "weaknesses": [
+   "Light on data visuals",
+   "Titles are mostly labels"
+  ],
+  "design_quality": 3,
+  "caveat": "Combined consultant and department response deck.",
+  "practice": "management",
+  "verified": true,
+  "eligibility": "core",
+  "tier": 1,
+  "format": "slides"
+ },
+ {
+  "title": "Town of Tillsonburg IT Strategic Review - Council Update",
+  "firm": "Deloitte",
+  "firm_group": "Big4",
+  "client": "Town of Tillsonburg",
+  "client_type": "government",
+  "year": 2014,
+  "deck_types": [
+   "diagnostic",
+   "transformation-roadmap",
+   "business-case"
+  ],
+  "sector": "Municipal IT",
+  "url": "https://www.tillsonburg.ca/media/v3gnjreo/h21cb3ub_deloitte-it-strategic-review-2014.pdf",
+  "source_url": "https://www.tillsonburg.ca/media/v3gnjreo/h21cb3ub_deloitte-it-strategic-review-2014.pdf",
+  "publication_route": "client-published",
+  "slide_count": 20,
+  "slide_sequence": [
+   "Title: Council update, 13 January 2014",
+   "Table of contents",
+   "Project overview and background",
+   "Drivers of the IT strategy review",
+   "Current high-risk areas (four)",
+   "Summary recommendations by driver",
+   "Short-term priority items",
+   "5-year roadmap",
+   "Cost summary: hardware, software, licensing",
+   "Cost summary: resourcing",
+   "Current budgetary placeholders",
+   "IT operating model options",
+   "Targeted future-state maturity",
+   "Next steps"
+  ],
+  "storyline_pattern": "Drivers, risks, recommendations, roadmap, costs, operating-model decision",
+  "signature_slides": [
+   "5-year roadmap",
+   "Maturity target chart",
+   "IT operating model options"
+  ],
+  "design": {
+   "palette": "White with slate/blue-grey",
+   "typography": "Helvetica",
+   "density": "medium",
+   "charts": [
+    "roadmap",
+    "table",
+    "maturity"
+   ]
+  },
+  "standout_moves": [
+   "Explicit decision slide on operating model",
+   "Costs split capital vs resourcing"
+  ],
+  "weaknesses": [
+   "Label titles",
+   "Scanned pages with OCR layer"
+  ],
+  "design_quality": 3,
+  "caveat": "Pre-2015 (Jan 2014).",
+  "practice": "management",
+  "verified": true,
+  "eligibility": "core",
+  "tier": 1,
+  "format": "slides"
+ },
+ {
+  "title": "UNC Chapel Hill Cost Diagnostic: Final Report Summary",
+  "firm": "Bain & Company",
+  "firm_group": "MBB",
+  "client": "University of North Carolina at Chapel Hill",
+  "client_type": "education",
+  "year": 2009,
+  "deck_types": [
+   "cost-review",
+   "diagnostic",
+   "business-case"
+  ],
+  "sector": "Higher education",
+  "url": "https://bot.unc.edu/wp-content/uploads/sites/160/archives/PP%20709%20Bain%20Report.pdf",
+  "source_url": "https://bot.unc.edu/wp-content/uploads/sites/160/archives/PP%20709%20Bain%20Report.pdf",
+  "publication_route": "client-published",
+  "slide_count": 15,
+  "slide_sequence": [
+   "Project objective and guiding principles",
+   "Final report from Bain-led diagnostic, Jan-May 2009",
+   "Key findings: admin expenses per student grew faster than academic",
+   "Complex org structure with redundancy",
+   "Ten high-potential options summarized",
+   "Org structure: spans and layers, $3-12M",
+   "Procurement: $40-45M, 2-5 years",
+   "IT consolidation: $12-19M",
+   "Further options table (2 of 4, 3 of 4, 4 of 4)",
+   "Realization caveat: 40-60% of savings likely",
+   "Next steps"
+  ],
+  "storyline_pattern": "Objectives, findings, ten options with value and timing, realism haircut",
+  "signature_slides": [
+   "Option table with value/timing columns",
+   "Savings realization haircut"
+  ],
+  "design": {
+   "palette": "White, light-blue (#80C0E0) section color coding",
+   "typography": "Verdana",
+   "density": "medium",
+   "charts": [
+    "tables",
+    "timeline"
+   ]
+  },
+  "standout_moves": [
+   "Colour-coding options to areas",
+   "States expected 40-60% capture"
+  ],
+  "weaknesses": [
+   "Titles not extractable as sentences; footers dominate",
+   "2009"
+  ],
+  "design_quality": 3,
+  "caveat": "Pre-2015 (July 2009); 15-slide board summary.",
+  "practice": "management",
+  "verified": true,
+  "eligibility": "core",
+  "tier": 1,
+  "format": "slides"
+ },
+ {
+  "title": "Achieving Operational Excellence at UC Berkeley - Final Diagnostic Report",
+  "firm": "Bain & Company",
+  "firm_group": "MBB",
+  "client": "University of California, Berkeley",
+  "client_type": "education",
+  "year": 2010,
+  "deck_types": [
+   "diagnostic",
+   "cost-review",
+   "transformation-roadmap",
+   "org-design",
+   "business-case"
+  ],
+  "sector": "Higher education",
+  "url": "https://www.uh.edu/office-of-finance/budget-office/_docs/other-reference/ucb.pdf",
+  "source_url": "https://www.uh.edu/office-of-finance/budget-office/_docs/other-reference/ucb.pdf",
+  "publication_route": "client-published",
+  "slide_count": 205,
+  "slide_sequence": [
+   "Title, April 2010",
+   "OE team engaged 700+ people on campus",
+   "Opportunity summary: energy management",
+   "California fiscal outlook remains bleak",
+   "Procurement: $35-175M of $410M is managed",
+   "Central procurement time on non-sourcing activities",
+   "Spans and layers methodology",
+   "Three actions to increase spans",
+   "IT spends ~$130M",
+   "Next steps for Design stage",
+   "Six opportunity areas and two critical enablers",
+   "Grad advising illustrates productivity potential",
+   "Space management",
+   "Performance management does not incent high performance",
+   "Governance and team structure for OE",
+   "Savings methodology appendix",
+   "Survey and detailed theme appendices"
+  ],
+  "storyline_pattern": "Case for change, seven opportunity areas each with summary + diagnostic + sizing, enablers, governance, appendices",
+  "signature_slides": [
+   "Opportunity summary pages",
+   "Spans and layers analysis"
+  ],
+  "design": {
+   "palette": "White with navy (#000060), light blue and yellow highlights",
+   "typography": "Verdana",
+   "density": "high",
+   "charts": [
+    "bar",
+    "pyramid/spans",
+    "tables"
+   ]
+  },
+  "standout_moves": [
+   "Steering-committee-authored framing",
+   "Survey evidence of low confidence in org effectiveness"
+  ],
+  "weaknesses": [
+   "205 pages",
+   "Pre-2015"
+  ],
+  "design_quality": 3,
+  "caveat": "Pre-2015 (2010); co-authored by university steering committee with Bain support.",
+  "practice": "management",
+  "verified": true,
+  "eligibility": "core",
+  "tier": 1,
+  "format": "slides"
+ },
+ {
+  "title": "Municipality of Chatham-Kent Core Services Base Budget Efficiency Review - Final Report",
+  "firm": "KPMG",
+  "firm_group": "Big4",
+  "client": "Municipality of Chatham-Kent",
+  "client_type": "government",
+  "year": 2021,
+  "deck_types": [
+   "cost-review",
+   "org-design",
+   "benchmarking",
+   "diagnostic"
+  ],
+  "sector": "Municipal government",
+  "url": "https://www.chatham-kent.ca/localgovernment/Documents/Studies%20and%20Plans/Chatham-Kent%20Final%20Report_Consolidated%20Details_FINAL.pdf",
+  "source_url": "https://www.chatham-kent.ca/localgovernment/Documents/Studies%20and%20Plans/Chatham-Kent%20Final%20Report_Consolidated%20Details_FINAL.pdf",
+  "publication_route": "government-published",
+  "slide_count": 162,
+  "slide_sequence": [
+   "Title, 22 Nov 2021",
+   "Project overview",
+   "Opportunities (executive summary)",
+   "Implement a 'Citizen Centric' approach to delivering services",
+   "Stakeholder engagement",
+   "Themes from community meetings",
+   "Staff survey results",
+   "Historical staffing levels by type 2015-2019",
+   "Budget and performance services profile",
+   "Infrastructure and engineering services",
+   "Housing services",
+   "Financial perspectives",
+   "Benchmarking of services",
+   "Service-by-service benchmarking"
+  ],
+  "storyline_pattern": "Executive summary with ranked opportunities, engagement findings, then service profiles with financial, staffing and benchmark views",
+  "signature_slides": [
+   "Service profile with staffing history",
+   "Municipal benchmark charts"
+  ],
+  "design": {
+   "palette": "KPMG navy/blue on white",
+   "typography": "Arial / KPMG typeface",
+   "density": "high",
+   "charts": [
+    "bar",
+    "benchmark table",
+    "staffing trend"
+   ]
+  },
+  "standout_moves": [
+   "Uniform service-profile template",
+   "Public engagement themes included"
+  ],
+  "weaknesses": [
+   "Very long",
+   "Dense"
+  ],
+  "design_quality": 3,
+  "caveat": "",
+  "practice": "management",
+  "verified": true,
+  "eligibility": "core",
+  "tier": 1,
+  "format": "slides"
+ },
+ {
+  "title": "Organisational Review of the Cayman Islands Fire Service",
+  "firm": "PwC",
+  "firm_group": "Big4",
+  "client": "Cayman Islands Ministry of Financial Services and Home Affairs",
+  "client_type": "government",
+  "year": 2018,
+  "deck_types": [
+   "org-design",
+   "diagnostic",
+   "transformation-roadmap",
+   "change-management"
+  ],
+  "sector": "Fire / emergency services",
+  "url": "https://cnslibrary.com/wp-content/uploads/Organisational-Review-of-the-Cayman-Islands-Fire-Service-5th-Feb-2018.pdf",
+  "source_url": "https://cnslibrary.com/wp-content/uploads/Organisational-Review-of-the-Cayman-Islands-Fire-Service-5th-Feb-2018.pdf",
+  "publication_route": "government-published",
+  "slide_count": 45,
+  "slide_sequence": [
+   "Title, Feb 2018",
+   "Overview",
+   "Executive summary: key observations",
+   "High-level roadmap: short, medium term",
+   "Project overview",
+   "Stakeholder participation (>60% response)",
+   "Opportunities (3 slides)",
+   "Future-state org chart: CFO direct reports from 7 to 4",
+   "Appendix: current-state assessment",
+   "Side-by-side internal vs external themes",
+   "People observations",
+   "Equipment and facilities",
+   "Competency mapping"
+  ],
+  "storyline_pattern": "Executive summary, roadmap, method, opportunities, future-state chart, current-state evidence appendix",
+  "signature_slides": [
+   "Future-state org chart",
+   "Top 3 stakeholder themes graphic"
+  ],
+  "design": {
+   "palette": "White with orange/amber accent",
+   "typography": "PwC house fonts",
+   "density": "medium",
+   "charts": [
+    "org chart",
+    "themes graphic",
+    "roadmap"
+   ]
+  },
+  "standout_moves": [
+   "Short/medium-term sequencing",
+   "Internal vs external stakeholder side-by-side"
+  ],
+  "weaknesses": [
+   "Label titles",
+   "Report-style text"
+  ],
+  "design_quality": 3,
+  "caveat": "Report-in-landscape-slides format; marked strictly private/confidential in the original but published via a public library site.",
+  "practice": "management",
+  "verified": true,
+  "eligibility": "core",
+  "tier": 1,
+  "format": "slides"
+ },
+ {
+  "title": "UF University Faculty Excellence: Reducing administrative burden (McKinsey work product in binder)",
+  "firm": "McKinsey & Company",
+  "firm_group": "MBB",
+  "client": "University of Florida",
+  "client_type": "education",
+  "year": 2024,
+  "deck_types": [
+   "process-redesign",
+   "diagnostic",
+   "change-management",
+   "operating-model"
+  ],
+  "sector": "Higher education administration",
+  "url": "https://fora.aa.ufl.edu/docs/78/2023-2024/AdminBurdensReportSurveyRepliesToolkitCombinedBinder.pdf",
+  "source_url": "https://fora.aa.ufl.edu/docs/78/2023-2024/AdminBurdensReportSurveyRepliesToolkitCombinedBinder.pdf",
+  "publication_route": "client-published",
+  "slide_count": 208,
+  "slide_sequence": [
+   "Faculty Senate chair report: creating conditions to do best work",
+   "Survey suggestion box administered by Faculty Senate",
+   "IT burden workstream",
+   "Research lifecycle (1/7)",
+   "Travel and expenses (14/20)",
+   "Finance and purchasing section",
+   "Operating model archetypes learned elsewhere",
+   "P-card limits relative to peers",
+   "Change management actions",
+   "Training experience review principles",
+   "Long-term coordination for training course portfolio"
+  ],
+  "storyline_pattern": "Survey voice, five target areas, per-process diagnostic with peer comparison, change actions, training and coordination model",
+  "signature_slides": [
+   "Process lifecycle diagnostic",
+   "Peer comparison of P-card limits"
+  ],
+  "design": {
+   "palette": "White with blue (#0000A0) and teal highlights",
+   "typography": "Arial",
+   "density": "high",
+   "charts": [
+    "bar",
+    "process flow",
+    "peer table"
+   ]
+  },
+  "standout_moves": [
+   "Faculty comments quantified (300+) to drive priorities",
+   "Action teams plus steering committee"
+  ],
+  "weaknesses": [
+   "Binder mixes narrative memo and slides",
+   "Dense"
+  ],
+  "design_quality": 3,
+  "caveat": "Binder includes McKinsey slides plus UF-authored text; first pages are UF report.",
+  "practice": "management",
+  "verified": true,
+  "eligibility": "extended",
+  "tier": 2,
+  "format": "slides"
+ },
+ {
+  "title": "Columbia University A&S - Administrative, Organizational and Financial Review (Project Summary)",
+  "firm": "McKinsey & Company",
+  "firm_group": "MBB",
+  "client": "Columbia University (Arts & Sciences)",
+  "client_type": "education",
+  "year": 2011,
+  "deck_types": [
+   "org-design",
+   "operating-model",
+   "diagnostic"
+  ],
+  "sector": "Higher education",
+  "url": "https://www.wikicu.com/images/c/c7/88994166-McKinsey-Project-Summary%E2%80%94Columbia-Arts-Sciences-Review.pdf",
+  "source_url": "https://www.wikicu.com/images/c/c7/88994166-McKinsey-Project-Summary%E2%80%94Columbia-Arts-Sciences-Review.pdf",
+  "publication_route": "aggregator-only",
+  "slide_count": 13,
+  "slide_sequence": [
+   "Title: Project Summary, 27 July 2011",
+   "Options and recommendations informed by interviews and 3 workshops",
+   "Overview of A&S review",
+   "Key opportunities and questions on org structure",
+   "Different structure types need different enablers",
+   "'Type 2' model distributes responsibilities across schools and divisions",
+   "Design principles inform allocation of decision rights",
+   "Administrative services options",
+   "Peer review shows clear service-enhancement opportunities",
+   "Prerequisites for administrative pooling experiments"
+  ],
+  "storyline_pattern": "Options-based org design: structure types, enablers, decision rights, shared admin services, prerequisites",
+  "signature_slides": [
+   "Structure-type comparison",
+   "Decision-rights design principles"
+  ],
+  "design": {
+   "palette": "Black/grey on white, serif title face",
+   "typography": "Times / Helvetica",
+   "density": "medium",
+   "charts": [
+    "option matrix"
+   ]
+  },
+  "standout_moves": [
+   "Frames models as types with required enablers"
+  ],
+  "weaknesses": [
+   "Scanned with OCR artefacts",
+   "2011"
+  ],
+  "design_quality": 3,
+  "caveat": "Hosted on a community wiki, original source unconfirmed; pre-2015; treat provenance cautiously.",
+  "practice": "management",
+  "verified": true,
+  "eligibility": "core",
+  "tier": 1,
+  "format": "slides"
+ },
+ {
+  "title": "Township of South Glengarry Service Delivery and Process Review - Final Report",
+  "firm": "KPMG",
+  "firm_group": "Big4",
+  "client": "Township of South Glengarry",
+  "client_type": "government",
+  "year": 2022,
+  "deck_types": [
+   "process-redesign",
+   "cost-review",
+   "benchmarking",
+   "org-design"
+  ],
+  "sector": "Municipal government",
+  "url": "https://www.southglengarry.com/media/4lqdhje5/service-delivery-and-process-review-final-report.pdf",
+  "source_url": "https://www.southglengarry.com/media/4lqdhje5/service-delivery-and-process-review-final-report.pdf",
+  "publication_route": "government-published",
+  "slide_count": 132,
+  "slide_sequence": [
+   "Title, 28 Oct 2022",
+   "Project overview",
+   "Top opportunity themes",
+   "'Digitize Municipal Processes to Improve Customer Service'",
+   "Opportunities underway",
+   "Stakeholder engagement",
+   "Employee survey results",
+   "Comparative analysis rationale",
+   "Financial perspectives",
+   "Staffing perspectives",
+   "Benchmarking perspectives",
+   "Summary of process-mapping workshops",
+   "Process maps",
+   "Elected representatives profile",
+   "Customer service profile",
+   "Bylaw enforcement",
+   "Transportation"
+  ],
+  "storyline_pattern": "Opportunity themes first, engagement evidence, comparative analysis, process-mapping workshops, per-service profiles",
+  "signature_slides": [
+   "Top opportunity themes legend",
+   "Process maps"
+  ],
+  "design": {
+   "palette": "KPMG navy/blue on white",
+   "typography": "Arial / KPMG-Bold",
+   "density": "high",
+   "charts": [
+    "bar",
+    "process map",
+    "benchmark table"
+   ]
+  },
+  "standout_moves": [
+   "Process-mapping workshops embedded",
+   "Distinguishes opportunities already underway"
+  ],
+  "weaknesses": [
+   "Long",
+   "Text-heavy"
+  ],
+  "design_quality": 3,
+  "caveat": "",
+  "practice": "management",
+  "verified": true,
+  "eligibility": "core",
+  "tier": 1,
+  "format": "slides"
+ },
+ {
+  "title": "Town of Niagara-on-the-Lake Service Delivery Review - Presentation to Council",
+  "firm": "Deloitte",
+  "firm_group": "Big4",
+  "client": "Town of Niagara-on-the-Lake",
+  "client_type": "government",
+  "year": 2020,
+  "deck_types": [
+   "cost-review",
+   "diagnostic",
+   "transformation-roadmap"
+  ],
+  "sector": "Municipal government",
+  "url": "https://domino.notl.com/sites/notl/NOTLCOTW.nsf/bf5bf13826d2caa28525783e006e878e/b43851070667882e85258589006d53df/$FILE/Niagara-on-the-Lake%20-%20Service%20Delivery%20Review%20-%20Presentation%20to%20Council.pdf",
+  "source_url": "https://domino.notl.com/sites/notl/NOTLCOTW.nsf/bf5bf13826d2caa28525783e006e878e/b43851070667882e85258589006d53df/$FILE/Niagara-on-the-Lake%20-%20Service%20Delivery%20Review%20-%20Presentation%20to%20Council.pdf",
+  "publication_route": "government-published",
+  "slide_count": 19,
+  "slide_sequence": [
+   "Title: Presentation to Council",
+   "Agenda: workshop, scope, baseline, stakeholders, opportunities",
+   "Baseline: five departments plus library, $27.4M 2018 spend",
+   "Deliverables due and provided",
+   "Six common themes to guide assessment",
+   "Expenditure trending and Town activity",
+   "Service profiles: above/below standard",
+   "53 opportunities, each with financial, service or operational benefit",
+   "Net financial impact",
+   "Implementation roadmap prioritization",
+   "Appendix",
+   "About Deloitte"
+  ],
+  "storyline_pattern": "Scope and baseline, themes, service profiles, 53 opportunities, net impact, phased roadmap",
+  "signature_slides": [
+   "Service profile +/- table",
+   "Implementation roadmap"
+  ],
+  "design": {
+   "palette": "Grey on white with Deloitte green accent",
+   "typography": "Verdana / Arial",
+   "density": "medium",
+   "charts": [
+    "table",
+    "bar",
+    "roadmap"
+   ]
+  },
+  "standout_moves": [
+   "Council-friendly 19-slide compression of a full report"
+  ],
+  "weaknesses": [
+   "Some pages are label titles"
+  ],
+  "design_quality": 3,
+  "caveat": "Year from search description (final report June 2020).",
+  "practice": "management",
+  "verified": true,
+  "eligibility": "core",
+  "tier": 1,
+  "format": "slides"
+ },
+ {
+  "title": "KPMG Operational and Performance Review of the Sheriff's Office",
+  "firm": "KPMG",
+  "firm_group": "Big4",
+  "client": "County of Santa Barbara (Sheriff's Office)",
+  "client_type": "government",
+  "year": 2021,
+  "deck_types": [
+   "diagnostic",
+   "operating-model",
+   "benchmarking",
+   "cost-review"
+  ],
+  "sector": "Law enforcement and corrections",
+  "url": "https://content.civicplus.com/api/assets/7a5403dc-61a6-4594-a875-a688793f329c",
+  "source_url": "https://content.civicplus.com/api/assets/7a5403dc-61a6-4594-a875-a688793f329c",
+  "publication_route": "government-published",
+  "slide_count": 30,
+  "tier": 1,
+  "slide_sequence": [
+   "Title: KPMG review presented to Board of Supervisors",
+   "Today's presentation agenda",
+   "Context: Renew 22 program, KPMG selected May 2019",
+   "Scope: not a financial audit or budget cutting exercise",
+   "Organization overview: staff and budget",
+   "Project timeline",
+   "Methodology",
+   "Commendations before critiques",
+   "Current vs recommended operating model",
+   "Sheriff's Office recommendations",
+   "1.1 Demand-driven staffing (4 slides)",
+   "2.0 Data-driven decision-making",
+   "5.2 Response time targets",
+   "5.3 Alternative call resolution",
+   "5.4 Overtime",
+   "6.2 Jail utilization analysis (4 slides)",
+   "6.4 Custody operations staffing mix"
+  ],
+  "storyline_pattern": "Standard Renew 22 template: program context, scope, commendations, maturity-scored operating model, recommendations with department response and target dates",
+  "signature_slides": [
+   "Current vs recommended operating model maturity table",
+   "Recommendation response and implementation timeframe"
+  ],
+  "design": {
+   "palette": "KPMG navy/blue with purple accent on white",
+   "typography": "Arial / Calibri",
+   "density": "medium",
+   "charts": [
+    "maturity grid",
+    "table",
+    "timeline"
+   ]
+  },
+  "standout_moves": [
+   "Commendations first to lower defensiveness",
+   "Department response and target date beside each recommendation"
+  ],
+  "weaknesses": [
+   "Label-style titles",
+   "Sparse data visuals; template reused across departments"
+  ],
+  "design_quality": 3,
+  "caveat": "One of a family of near-identical KPMG Renew 22 county decks; dedupe on template when sampling.",
+  "practice": "management",
+  "verified": true,
+  "eligibility": "core",
+  "format": "slides"
+ },
+ {
+  "title": "KPMG Operational and Performance Review of the Human Resources Department",
+  "firm": "KPMG",
+  "firm_group": "Big4",
+  "client": "County of Santa Barbara (Human Resources)",
+  "client_type": "government",
+  "year": 2020,
+  "deck_types": [
+   "diagnostic",
+   "operating-model",
+   "org-design"
+  ],
+  "sector": "Public-sector HR",
+  "url": "https://santabarbara.legistar.com/View.ashx?GUID=A092D7D2-3D1B-41E8-A300-C1B830765C9D&ID=8438158&M=F",
+  "source_url": "https://santabarbara.legistar.com/View.ashx?GUID=A092D7D2-3D1B-41E8-A300-C1B830765C9D&ID=8438158&M=F",
+  "publication_route": "government-published",
+  "slide_count": 20,
+  "tier": 1,
+  "slide_sequence": [
+   "Title: KPMG review presented to Board of Supervisors",
+   "Today's presentation agenda",
+   "Context: Renew 22 program, KPMG selected May 2019",
+   "Scope: not a financial audit or budget cutting exercise",
+   "Organization overview: staff and budget",
+   "Project timeline",
+   "Methodology",
+   "Commendations before critiques",
+   "Current vs recommended operating model",
+   "HR enterprise enablement recommendations",
+   "HR division recommendations (2 slides)",
+   "Enterprise recommendations: implementation timeframe",
+   "Division and program recommendations: timeframe by division"
+  ],
+  "storyline_pattern": "Standard Renew 22 template: program context, scope, commendations, maturity-scored operating model, recommendations with department response and target dates",
+  "signature_slides": [
+   "Current vs recommended operating model maturity table",
+   "Recommendation response and implementation timeframe"
+  ],
+  "design": {
+   "palette": "KPMG navy/blue with purple accent on white",
+   "typography": "Arial / Calibri",
+   "density": "medium",
+   "charts": [
+    "maturity grid",
+    "table",
+    "timeline"
+   ]
+  },
+  "standout_moves": [
+   "Commendations first to lower defensiveness",
+   "Department response and target date beside each recommendation"
+  ],
+  "weaknesses": [
+   "Label-style titles",
+   "Sparse data visuals; template reused across departments"
+  ],
+  "design_quality": 3,
+  "caveat": "One of a family of near-identical KPMG Renew 22 county decks; dedupe on template when sampling.",
+  "practice": "management",
+  "verified": true,
+  "eligibility": "core",
+  "format": "slides"
+ },
+ {
+  "title": "Committee of Adjustment Service Delivery Review - Final Report",
+  "firm": "KPMG",
+  "firm_group": "Big4",
+  "client": "City of Toronto",
+  "client_type": "government",
+  "year": 2025,
+  "deck_types": [
+   "process-redesign",
+   "org-design",
+   "benchmarking"
+  ],
+  "sector": "Municipal planning approvals",
+  "url": "https://www.toronto.ca/wp-content/uploads/2025/07/915b-Service-Delivery-Review-Final-Report-20202-14-ls-7-25.pdf",
+  "source_url": "https://www.toronto.ca/wp-content/uploads/2025/07/915b-Service-Delivery-Review-Final-Report-20202-14-ls-7-25.pdf",
+  "publication_route": "government-published",
+  "slide_count": 51,
+  "tier": 1,
+  "slide_sequence": [
+   "Title: Committee of Adjustment SDR, Feb 2025",
+   "Executive summary: recommendations (6 slides)",
+   "Implementation timeline",
+   "Project background (5 slides)",
+   "Committee of Adjustment services overview",
+   "Recommendations: Organization, 1 'adopt a City-wide administrative structure'",
+   "Recommendations: Organization, draft mandate and staffing per unit",
+   "Recommendations: Process, standard operating procedures",
+   "Recommendations: Public hearings, City-wide panel structure",
+   "Context for data analysis",
+   "Public hearing lengths",
+   "Application types (minor variance)",
+   "Appendix: stakeholder register",
+   "Documents reviewed"
+  ],
+  "storyline_pattern": "Executive summary with numbered recommendations and timeline, background, 14 recommendations by organization/process/hearing, data analysis, appendices",
+  "signature_slides": [
+   "Recommendation / description / outcomes table",
+   "Implementation timeline"
+  ],
+  "design": {
+   "palette": "KPMG navy on white",
+   "typography": "Arial / KPMG Bold",
+   "density": "high",
+   "charts": [
+    "table",
+    "bar",
+    "timeline"
+   ]
+  },
+  "standout_moves": [
+   "Every recommendation carries an outcomes column",
+   "Process mapping informs SOP recommendations"
+  ],
+  "weaknesses": [
+   "Label titles with numbering",
+   "Table-heavy"
+  ],
+  "design_quality": 3,
+  "caveat": "",
+  "practice": "management",
+  "verified": true,
+  "eligibility": "core",
+  "format": "slides"
+ },
+ {
+  "title": "South Carolina School District Efficiency Review - Spartanburg 05 District Report",
+  "firm": "Alvarez & Marsal",
+  "firm_group": "Other",
+  "client": "Spartanburg School District 5 / SC Department of Education",
+  "client_type": "education",
+  "year": 2017,
+  "deck_types": [
+   "cost-review",
+   "benchmarking",
+   "diagnostic",
+   "business-case"
+  ],
+  "sector": "K-12 education operations",
+  "url": "https://spart5.schoolboard.net/sites/sc.spart5.schoolboard.net/files/Efficiency%20Review_20170616_EditDH_8%2030%20217.pdf",
+  "source_url": "https://ed.sc.gov/data/reports/infrastructure/infrastructure-reports/district-efficiency-reviews-2017/",
+  "publication_route": "client-published",
+  "slide_count": 33,
+  "tier": 3,
+  "slide_sequence": [
+   "Title: A&M School District Efficiency Review, 16 June 2017",
+   "Project overview: 79 of 82 SC districts reviewed in two phases",
+   "Key district ratios vs peers",
+   "Recommendations: modernize district operations",
+   "Collaborate across districts",
+   "KPI: key district ratios",
+   "KPI: human resources",
+   "Finance modernization recommendations",
+   "Conclusion: one-time investment vs annual savings range",
+   "Financial management observations and recommendations",
+   "Human resources: thinly staffed function",
+   "Procurement: spending by category"
+  ],
+  "storyline_pattern": "Overview, KPI benchmarks, modernize vs collaborate recommendations, savings summary, function modules (observations/recommendations)",
+  "signature_slides": [
+   "Savings vs one-time investment table",
+   "KPI vs peer-group dashboards"
+  ],
+  "design": {
+   "palette": "Navy on white",
+   "typography": "Arial",
+   "density": "high",
+   "charts": [
+    "KPI tiles",
+    "bar vs peers",
+    "table"
+   ]
+  },
+  "standout_moves": [
+   "Two-lever frame: modernize alone vs collaborate with neighbours",
+   "Same template run across 79 districts"
+  ],
+  "weaknesses": [
+   "Observation/recommendation text tables",
+   "Identical template across districts"
+  ],
+  "design_quality": 3,
+  "caveat": "Tier 3 (A&M). 79 sister reports exist on ed.sc.gov; only this one opened.",
+  "practice": "management",
+  "verified": true,
+  "eligibility": "other",
+  "format": "slides"
+ },
+ {
+  "title": "UNB Review of Administrative Services - Final Report",
+  "firm": "KPMG",
+  "firm_group": "Big4",
+  "client": "University of New Brunswick",
+  "client_type": "education",
+  "year": 2017,
+  "deck_types": [
+   "org-design",
+   "operating-model",
+   "transformation-roadmap",
+   "benchmarking"
+  ],
+  "sector": "Higher education administration",
+  "url": "https://www.aunbt.ca/wp-content/uploads/2017/09/KMPG.pdf",
+  "publication_route": "client-published",
+  "slide_count": 66,
+  "tier": 1,
+  "slide_sequence": [
+   "Title: Final Report, 4 April 2017",
+   "Disclaimer",
+   "Table of contents",
+   "Executive summary: six recommendations",
+   "Project overview and objectives",
+   "Summary of findings from consultations",
+   "Comparative analysis with Canadian universities",
+   "Shared service models section",
+   "Organizational design options",
+   "Recommendation: One Leader / One Unit shared service model",
+   "Recommendation: Provost to align academic and administrative resources",
+   "Recommendation: budget by business unit across both campuses",
+   "Recommendation: common services desk on Fredericton campus",
+   "Implementation roadmap and next steps"
+  ],
+  "storyline_pattern": "Exec summary with six recommendations, consultations and comparator evidence, shared-service and org-design options, roadmap",
+  "signature_slides": [
+   "Six-recommendation summary with benefit bullets",
+   "Shared service model options"
+  ],
+  "design": {
+   "palette": "Light grey with KPMG blue (#0080C0)",
+   "typography": "KPMG typeface / Arial",
+   "density": "medium",
+   "charts": [
+    "org chart",
+    "table"
+   ]
+  },
+  "standout_moves": [
+   "Each recommendation lists 'increased efficiency / improved control' benefits"
+  ],
+  "weaknesses": [
+   "Text-dense; titles are labels"
+  ],
+  "design_quality": 3,
+  "caveat": "Hosted on faculty-association site; original KPMG deliverable for UNB.",
+  "format": "slides",
+  "practice": "management",
+  "verified": true,
+  "eligibility": "core",
+  "source_url": "https://www.aunbt.ca/wp-content/uploads/2017/09/KMPG.pdf"
+ },
+ {
+  "title": "BC Ministry of Education and School Districts: Service Delivery Transformation - Final Report",
+  "firm": "Deloitte",
+  "firm_group": "Big4",
+  "client": "BC Ministry of Education",
+  "client_type": "government",
+  "year": 2012,
+  "deck_types": [
+   "cost-review",
+   "transformation-roadmap",
+   "business-case",
+   "operating-model"
+  ],
+  "sector": "K-12 non-instructional services",
+  "url": "https://www2.gov.bc.ca/assets/gov/education/administration/kindergarten-to-grade-12/reports-and-publications/deloitte_report_august_2012.pdf",
+  "publication_route": "government-published",
+  "slide_count": 129,
+  "tier": 1,
+  "slide_sequence": [
+   "Title: Final Report, 24 Aug 2012",
+   "Executive summary",
+   "Vision and core principles guiding transformation",
+   "'The sector can achieve M-M in recurring cost savings'",
+   "Procurement opportunities overview",
+   "Opportunity profile: strategic sourcing",
+   "Opportunity profile: fleet vehicle purchasing and fuel",
+   "Opportunity profile: capital projects future-state governance",
+   "IT opportunities: ~M-M annual savings",
+   "Network connectivity collaboration",
+   "Opportunity profile: attendance support, wellness, OHS",
+   "Summary table: opportunity, benefits, costs, timing"
+  ],
+  "storyline_pattern": "Exec summary, principles, sized savings range, one-page opportunity profiles per function (current state, potential, risks), consolidated benefits/costs/timing table",
+  "signature_slides": [
+   "Opportunity profile template",
+   "Benefits/costs/timing summary"
+  ],
+  "design": {
+   "palette": "White with navy (#002060) and grey",
+   "typography": "Arial",
+   "density": "high",
+   "charts": [
+    "bar",
+    "table",
+    "profile one-pagers"
+   ]
+  },
+  "standout_moves": [
+   "Consistent one-page opportunity profile with risk and implementation considerations",
+   "Acknowledges local autonomy as barrier"
+  ],
+  "weaknesses": [
+   "Very text-dense",
+   "2012"
+  ],
+  "design_quality": 3,
+  "caveat": "Pre-2015 (2012).",
+  "format": "slides",
+  "practice": "management",
+  "verified": true,
+  "eligibility": "core",
+  "source_url": "https://www2.gov.bc.ca/assets/gov/education/administration/kindergarten-to-grade-12/reports-and-publications/deloitte_report_august_2012.pdf"
+ },
+ {
+  "title": "Operational Review: The Insurance Corporation of British Columbia",
+  "firm": "PwC",
+  "firm_group": "Big4",
+  "client": "Ministry of Attorney General (ICBC)",
+  "client_type": "government",
+  "year": 2018,
+  "deck_types": [
+   "cost-review",
+   "diagnostic",
+   "benchmarking",
+   "business-case"
+  ],
+  "sector": "Public auto insurance",
+  "url": "https://www2.gov.bc.ca/assets/gov/british-columbians-our-governments/organizational-structure/crown-corporations/pwc-review-icbc-jan-2018.pdf",
+  "publication_route": "government-published",
+  "slide_count": 82,
+  "tier": 1,
+  "slide_sequence": [
+   "Contents, glossary, notice to reader",
+   "Operating environment and executive summary",
+   "Scope and five-phase approach",
+   "Key findings by area: claims, finance, driver training",
+   "Five claims initiatives (vendor management, injury care model, etc.)",
+   "Estimated net savings: -93M annualized by Year 3",
+   "Introduction to the review",
+   "Current-state capability assessment on maturity scale",
+   "Opportunities and cost-benefit by initiative",
+   "Implementation approach and timeline"
+  ],
+  "storyline_pattern": "Executive summary with findings and savings, approach, capability model assessment, initiatives with cost-benefit, implementation timeline",
+  "content_value": "Shows how to state a verdict up front (operations broadly efficient, claims model is the lever), use a proprietary capability maturity scale, size net savings with one-time vs ongoing costs, and group 20 opportunities into 5 initiatives with a timeline.",
+  "weaknesses": [
+   "Report prose; limited visuals"
+  ],
+  "design_quality": 3,
+  "caveat": "",
+  "format": "report",
+  "practice": "management",
+  "verified": true,
+  "eligibility": "core",
+  "source_url": "https://www2.gov.bc.ca/assets/gov/british-columbians-our-governments/organizational-structure/crown-corporations/pwc-review-icbc-jan-2018.pdf",
+  "signature_slides": [],
+  "standout_moves": [],
+  "design": {
+   "palette": "Portrait report, tables and exhibits",
+   "typography": "Serif/sans body",
+   "density": "high",
+   "charts": [
+    "table",
+    "bar",
+    "org chart"
+   ]
+  }
+ },
+ {
+  "title": "Report on the Special Advisor's Review of the Vancouver Board of Education (District 39)",
+  "firm": "EY",
+  "firm_group": "Big4",
+  "client": "BC Ministry of Education / Vancouver Board of Education",
+  "client_type": "education",
+  "year": 2015,
+  "deck_types": [
+   "cost-review",
+   "org-design",
+   "benchmarking",
+   "business-case"
+  ],
+  "sector": "K-12 school district",
+  "url": "https://www2.gov.bc.ca/assets/gov/education/administration/resource-management/reports/moe_vsb_review_report_june_2015.pdf",
+  "publication_route": "government-published",
+  "slide_count": 236,
+  "tier": 1,
+  "slide_sequence": [
+   "Contents and defined terms",
+   "1. Executive summary: 52 findings and 59 recommendations",
+   "Largest-impact recommendations with sized benefits (.5M admin, M capacity)",
+   "2. Background and context: provincial, Ministry, district overview",
+   "Budget development and forecasting",
+   "Accumulated surpluses and deficits",
+   "Administrative, support and overhead efficiencies with provincial benchmarks",
+   "Capital asset management and capacity rationalization",
+   "Board governance and fiscal management",
+   "Appendices: comparative staffing levels"
+  ],
+  "storyline_pattern": "Rationale and scope, executive summary of top-impact recommendations with dollars, then finding/recommendation pairs by theme with benchmarks",
+  "content_value": "Finding/Recommendation pairing format repeated throughout; benchmark-per-pupil comparisons vs peer districts; quantified ranges for savings and one-time proceeds; summary of previously unimplemented recommendations from prior reviews.",
+  "weaknesses": [
+   "236 pages; prose-heavy"
+  ],
+  "design_quality": 3,
+  "caveat": "Special Advisor was an EY partner appointed by the Minister.",
+  "format": "report",
+  "practice": "management",
+  "verified": true,
+  "eligibility": "core",
+  "source_url": "https://www2.gov.bc.ca/assets/gov/education/administration/resource-management/reports/moe_vsb_review_report_june_2015.pdf",
+  "signature_slides": [],
+  "standout_moves": [],
+  "design": {
+   "palette": "Portrait report, tables and exhibits",
+   "typography": "Serif/sans body",
+   "density": "high",
+   "charts": [
+    "table",
+    "bar",
+    "org chart"
+   ]
+  }
+ },
+ {
+  "title": "City of Saint John Operational Review - Final Report",
+  "firm": "EY",
+  "firm_group": "Big4",
+  "client": "City of Saint John / NB Department of Environment and Local Government",
+  "client_type": "government",
+  "year": 2020,
+  "deck_types": [
+   "cost-review",
+   "diagnostic",
+   "transformation-roadmap",
+   "business-case"
+  ],
+  "sector": "Municipal government",
+  "url": "https://saintjohn.ca/sites/default/files/2020-11/City%20of%20Saint%20John%20-%20Opertional%20Review%20Final%20Report%20March%2031%20202.._.pdf",
+  "publication_route": "government-published",
+  "slide_count": 107,
+  "tier": 1,
+  "slide_sequence": [
+   "Disclaimer and basis of report",
+   "1. Executive summary: labour relations, performance management, governance",
+   "2. Background and approach",
+   "3. Business cases: fire, police, SJ Energy, buildings, lands, procurement, water, economic development, fleet, public works, ABCs",
+   "Per business case: financial and non-financial impact",
+   "4. Sustainability enablers: labour relations, performance management",
+   "5. Roadmap",
+   "Appendices (municipal buildings, labour relations)"
+  ],
+  "storyline_pattern": "Systemic issues first, then service-by-service business cases with financial and non-financial impact, enablers, roadmap",
+  "content_value": "Business-case-per-service structure with financial/non-financial impact blocks; naming structural blockers (collective agreements, accountability) as enablers before savings; phased roadmap.",
+  "weaknesses": [
+   "Long; limited charts"
+  ],
+  "design_quality": 3,
+  "caveat": "",
+  "format": "report",
+  "practice": "management",
+  "verified": true,
+  "eligibility": "core",
+  "source_url": "https://saintjohn.ca/sites/default/files/2020-11/City%20of%20Saint%20John%20-%20Opertional%20Review%20Final%20Report%20March%2031%20202.._.pdf",
+  "signature_slides": [],
+  "standout_moves": [],
+  "design": {
+   "palette": "Portrait report, tables and exhibits",
+   "typography": "Serif/sans body",
+   "density": "high",
+   "charts": [
+    "table",
+    "bar",
+    "org chart"
+   ]
+  }
+ },
+ {
+  "title": "Independent Evaluation Findings and Action Plan for the Maryland Board of Nursing",
+  "firm": "EY",
+  "firm_group": "Big4",
+  "client": "Maryland Department of Health",
+  "client_type": "government",
+  "year": 2023,
+  "deck_types": [
+   "org-design",
+   "process-redesign",
+   "change-management",
+   "diagnostic"
+  ],
+  "sector": "Occupational licensing regulator",
+  "url": "https://dlslibrary.state.md.us/publications/Exec/MDH/BN/SB960Ch223HB611Ch222(3)(e)(2023)_2023.pdf",
+  "publication_route": "government-published",
+  "slide_count": 35,
+  "tier": 1,
+  "slide_sequence": [
+   "Cover letter to legislature",
+   "Table of contents, disclaimer, foreword",
+   "Executive summary: context, findings, recommendations",
+   "Background and context; why EY was engaged",
+   "Primary research: interviews and observations",
+   "Inefficiencies from on-site interviews (payment, pre-licensure, reporting, manual processes)",
+   "Executive Director qualifications",
+   "Office of Performance Improvement",
+   "Fee benchmarking vs peers",
+   "Action plan: people, process, technology, short and long term",
+   "Appendix: website user interface"
+  ],
+  "storyline_pattern": "Legislative mandate, findings by people/process/technology, recommendations, phased action plan",
+  "content_value": "Compact 35-page evaluation: people/process/technology tri-split of findings; a table of observed inefficiencies; 0-6 and 6-12 month action plan format suited to legislative audiences.",
+  "weaknesses": [
+   "Plain document design"
+  ],
+  "design_quality": 2,
+  "caveat": "",
+  "format": "report",
+  "practice": "management",
+  "verified": true,
+  "eligibility": "core",
+  "source_url": "https://dlslibrary.state.md.us/publications/Exec/MDH/BN/SB960Ch223HB611Ch222(3)(e)(2023)_2023.pdf",
+  "signature_slides": [],
+  "standout_moves": [],
+  "design": {
+   "palette": "Portrait report, tables and exhibits",
+   "typography": "Serif/sans body",
+   "density": "high",
+   "charts": [
+    "table",
+    "bar",
+    "org chart"
+   ]
+  }
+ },
+ {
+  "title": "Fitchburg, Wisconsin Operational and Organizational Review - Final",
+  "firm": "Baker Tilly",
+  "firm_group": "Other",
+  "client": "City of Fitchburg",
+  "client_type": "government",
+  "year": 2023,
+  "deck_types": [
+   "org-design",
+   "operating-model",
+   "benchmarking"
+  ],
+  "sector": "Municipal government",
+  "url": "https://www.fitchburgwi.gov/DocumentCenter/View/25703/Fitchburg-Final-Report-081423",
+  "publication_route": "government-published",
+  "slide_count": 63,
+  "tier": 3,
+  "slide_sequence": [
+   "Executive summary",
+   "Project scope and methodology",
+   "Recommendations 1-17 by department (administration, HR, fire, police, planning)",
+   "Emerging priorities",
+   "Recommendation 16: review fire department staffing structure",
+   "Recommendation 17: assess housing demand",
+   "Conclusion",
+   "Appendix A: police staffing needs, population estimates",
+   "Appendix B"
+  ],
+  "storyline_pattern": "Executive summary, methodology, numbered recommendations grouped by function, emerging priorities, appendices",
+  "content_value": "Numbered recommendation list with rationale; org-structure recommendations (e.g. add Deputy Administrator) tied to growth data.",
+  "weaknesses": [
+   "Prose with few exhibits"
+  ],
+  "design_quality": 3,
+  "caveat": "Tier 3 (Baker Tilly).",
+  "format": "report",
+  "practice": "management",
+  "verified": true,
+  "eligibility": "other",
+  "source_url": "https://www.fitchburgwi.gov/DocumentCenter/View/25703/Fitchburg-Final-Report-081423",
+  "signature_slides": [],
+  "standout_moves": [],
+  "design": {
+   "palette": "Portrait report, tables and exhibits",
+   "typography": "Serif/sans body",
+   "density": "high",
+   "charts": [
+    "table",
+    "bar",
+    "org chart"
+   ]
+  }
+ },
+ {
+  "title": "Citywide Innovation and Efficiency Assessment, Potential Strategies (Sacramento)",
+  "firm": "Management Partners",
+  "firm_group": "Other",
+  "client": "City of Sacramento",
+  "client_type": "government",
+  "year": 2020,
+  "deck_types": [
+   "cost-review",
+   "business-case",
+   "diagnostic"
+  ],
+  "sector": "Municipal government",
+  "url": "https://www.cityofsacramento.gov/content/dam/portal/auditor/Audit-Reports/Citywide-Innovation-and-Efficiency-Assessment.pdf",
+  "publication_route": "government-published",
+  "slide_count": 188,
+  "tier": 3,
+  "slide_sequence": [
+   "Executive summary",
+   "The fiscal model",
+   "Revenue generating and cost saving strategies",
+   "Vetting by city management; strategies not included",
+   "Project approach: document and data review",
+   "Interviews with key leaders; interview themes",
+   "Outreach to departments",
+   "Strategy-by-strategy detail"
+  ],
+  "storyline_pattern": "Fiscal model, strategy list, vetting with management, approach, detailed strategy appendices",
+  "content_value": "Shows a fiscal forecast scenario matrix feeding a strategy list and an explicit 'considered but not included' section.",
+  "weaknesses": [
+   "Long"
+  ],
+  "design_quality": 3,
+  "caveat": "Tier 3 (Management Partners); Auditor-commissioned.",
+  "format": "report",
+  "practice": "management",
+  "verified": true,
+  "eligibility": "other",
+  "source_url": "https://www.cityofsacramento.gov/content/dam/portal/auditor/Audit-Reports/Citywide-Innovation-and-Efficiency-Assessment.pdf",
+  "signature_slides": [],
+  "standout_moves": [],
+  "design": {
+   "palette": "Portrait report, tables and exhibits",
+   "typography": "Serif/sans body",
+   "density": "high",
+   "charts": [
+    "table",
+    "bar",
+    "org chart"
+   ]
+  }
+ },
+ {
+  "title": "Solid Waste Management Services Division Service Efficiency Study - Final Report to City Manager",
+  "firm": "EY",
+  "firm_group": "Big4",
+  "client": "City of Toronto",
+  "client_type": "government",
+  "year": 2011,
+  "deck_types": [
+   "cost-review",
+   "benchmarking",
+   "diagnostic"
+  ],
+  "sector": "Municipal solid waste",
+  "url": "https://www.toronto.ca/wp-content/uploads/2017/08/8f1a-swm_ses.pdf",
+  "publication_route": "government-published",
+  "slide_count": 90,
+  "tier": 1,
+  "slide_sequence": [
+   "Next-steps and implementation note",
+   "Contents",
+   "Executive summary",
+   "Efficiency assessment approach",
+   "Revenue and expense summary",
+   "Service efficiency assessment",
+   "Assessment of Division studies",
+   "Summary of potential opportunities identified",
+   "For further consideration",
+   "Appendices"
+  ],
+  "storyline_pattern": "Executive summary, approach, cost base, service assessment, opportunity summary, further considerations",
+  "content_value": "Efficiency-study skeleton used across Toronto's program: revenue/expense baseline then opportunity list with caveats on collective agreements.",
+  "weaknesses": [
+   "Pre-2015; prose"
+  ],
+  "design_quality": 3,
+  "caveat": "Pre-2015 (Sept 2011). One of Toronto's Service Efficiency Studies; sibling KPMG study listed separately.",
+  "format": "report",
+  "practice": "management",
+  "verified": true,
+  "eligibility": "core",
+  "source_url": "https://www.toronto.ca/wp-content/uploads/2017/08/8f1a-swm_ses.pdf",
+  "signature_slides": [],
+  "standout_moves": [],
+  "design": {
+   "palette": "Portrait report, tables and exhibits",
+   "typography": "Serif/sans body",
+   "density": "high",
+   "charts": [
+    "table",
+    "bar",
+    "org chart"
+   ]
+  }
+ },
+ {
+  "title": "Shared Services Efficiency Study - Final Report (City of Toronto)",
+  "firm": "KPMG",
+  "firm_group": "Big4",
+  "client": "City of Toronto",
+  "client_type": "government",
+  "year": 2013,
+  "deck_types": [
+   "operating-model",
+   "cost-review",
+   "business-case",
+   "transformation-roadmap"
+  ],
+  "sector": "Municipal shared services",
+  "url": "https://www.toronto.ca/wp-content/uploads/2017/08/96b9-shared_services_ses.pdf",
+  "publication_route": "government-published",
+  "slide_count": 346,
+  "tier": 1,
+  "slide_sequence": [
+   "Executive summary: scope and objectives",
+   "Project approach",
+   "Key findings by function",
+   "Cross-functional opportunities and recommendations",
+   "Estimated financial impact: .4M-.9M savings",
+   "Implementation strategy",
+   "How to read this report",
+   "Part I: recommended operating models",
+   "Part II: detailed operating models, Tier 1 business cases",
+   "Governance, benefits and drawbacks per model"
+  ],
+  "storyline_pattern": "Summary, tiered prioritization (Tier 1 detailed business cases, Tier 2 high-level), per-model structure (customers, providers, governance, benefits, savings, implementation)",
+  "content_value": "Excellent template for shared-services operating models: selection criteria, tiering, uniform model write-up, transition costs and sample workplans.",
+  "weaknesses": [
+   "346 pages; pre-2015"
+  ],
+  "design_quality": 3,
+  "caveat": "Pre-2015 (May 2013).",
+  "format": "report",
+  "practice": "management",
+  "verified": true,
+  "eligibility": "core",
+  "source_url": "https://www.toronto.ca/wp-content/uploads/2017/08/96b9-shared_services_ses.pdf",
+  "signature_slides": [],
+  "standout_moves": [],
+  "design": {
+   "palette": "Portrait report, tables and exhibits",
+   "typography": "Serif/sans body",
+   "density": "high",
+   "charts": [
+    "table",
+    "bar",
+    "org chart"
+   ]
+  }
+ },
+ {
+  "title": "Review of the Shared Services Model for Queensland Government",
+  "firm": "PwC",
+  "firm_group": "Big4",
+  "client": "Queensland Government (Premier)",
+  "client_type": "government",
+  "year": 2010,
+  "deck_types": [
+   "operating-model",
+   "transformation-roadmap",
+   "change-management"
+  ],
+  "sector": "Government shared services",
+  "url": "https://apps.parliament.qld.gov.au/find?id=5310T3574",
+  "publication_route": "government-published",
+  "slide_count": 107,
+  "tier": 1,
+  "slide_sequence": [
+   "Transmittal letter to Premier",
+   "About the report: objectives and scope",
+   "Response to Auditor-General's report: five proposed changes",
+   "Executive summary by objective (operating model, governance, program rollout)",
+   "Action plan with timings",
+   "Conclusion",
+   "Contents; key observations",
+   "Driving principles and critical success factors"
+  ],
+  "storyline_pattern": "Letter, scope, response to audit findings, exec summary mapped to the three review objectives, action plan",
+  "content_value": "Mapping findings to an Auditor-General's recommendations table and to review objectives; action plan with dated milestones.",
+  "weaknesses": [
+   "Pre-2015; prose"
+  ],
+  "design_quality": 3,
+  "caveat": "Pre-2015 (Sept 2010), tabled in Queensland Parliament.",
+  "format": "report",
+  "practice": "management",
+  "verified": true,
+  "eligibility": "core",
+  "source_url": "https://apps.parliament.qld.gov.au/find?id=5310T3574",
+  "signature_slides": [],
+  "standout_moves": [],
+  "design": {
+   "palette": "Portrait report, tables and exhibits",
+   "typography": "Serif/sans body",
+   "density": "high",
+   "charts": [
+    "table",
+    "bar",
+    "org chart"
+   ]
+  }
+ },
+ {
+  "title": "Operational Review of the Winnipeg Police Service",
+  "firm": "Matrix Consulting Group",
+  "firm_group": "Other",
+  "client": "City of Winnipeg",
+  "client_type": "government",
+  "year": 2022,
+  "deck_types": [
+   "org-design",
+   "benchmarking",
+   "diagnostic"
+  ],
+  "sector": "Policing",
+  "url": "https://www.winnipeg.ca/sites/default/files/2022-06/OperationalReview_WPSFinalReport.pdf",
+  "publication_route": "government-published",
+  "slide_count": 347,
+  "tier": 3,
+  "slide_sequence": [
+   "Introduction and executive summary",
+   "Organization and management of the Winnipeg Police Service",
+   "Analysis of uniform operations",
+   "Appendix A: patrol calls for service and response times by district",
+   "Analysis of operations support"
+  ],
+  "storyline_pattern": "Executive summary, organization and management, operations analysis chapters each with findings and recommendations, data appendices",
+  "content_value": "Workload-driven staffing analysis with calls-for-service data and chapter-level recommendation lists.",
+  "weaknesses": [
+   "347 pages"
+  ],
+  "design_quality": 3,
+  "caveat": "Tier 3 (Matrix); year inferred from file path 2022-06.",
+  "format": "report",
+  "practice": "management",
+  "verified": true,
+  "eligibility": "other",
+  "source_url": "https://www.winnipeg.ca/sites/default/files/2022-06/OperationalReview_WPSFinalReport.pdf",
+  "signature_slides": [],
+  "standout_moves": [],
+  "design": {
+   "palette": "Portrait report, tables and exhibits",
+   "typography": "Serif/sans body",
+   "density": "high",
+   "charts": [
+    "table",
+    "bar",
+    "org chart"
+   ]
+  }
+ },
+ {
+  "title": "City of Richmond Police Department Operational Analysis",
+  "firm": "Matrix Consulting Group",
+  "firm_group": "Other",
+  "client": "City of Richmond, Virginia",
+  "client_type": "government",
+  "year": 2010,
+  "deck_types": [
+   "org-design",
+   "benchmarking",
+   "diagnostic"
+  ],
+  "sector": "Policing",
+  "url": "https://rva.gov/sites/default/files/Auditor/documents/2011/11-02_PoliceOperationalAnalysis.pdf",
+  "publication_route": "government-published",
+  "slide_count": 409,
+  "tier": 3,
+  "slide_sequence": [
+   "Introduction and executive summary",
+   "Office of the Chief",
+   "Patrol precincts",
+   "Support services",
+   "Community, youth and intervention services",
+   "Administrative support bureau"
+  ],
+  "storyline_pattern": "Executive summary then bureau-by-bureau analysis with recommendations",
+  "content_value": "Bureau-by-bureau chapter format; staffing-need analysis.",
+  "weaknesses": [
+   "Pre-2015; 409 pages"
+  ],
+  "design_quality": 3,
+  "caveat": "Tier 3; pre-2015 (July 2010).",
+  "format": "report",
+  "practice": "management",
+  "verified": true,
+  "eligibility": "other",
+  "source_url": "https://rva.gov/sites/default/files/Auditor/documents/2011/11-02_PoliceOperationalAnalysis.pdf",
+  "signature_slides": [],
+  "standout_moves": [],
+  "design": {
+   "palette": "Portrait report, tables and exhibits",
+   "typography": "Serif/sans body",
+   "density": "high",
+   "charts": [
+    "table",
+    "bar",
+    "org chart"
+   ]
+  }
+ }
+]

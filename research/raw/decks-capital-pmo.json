@@ -1,0 +1,3063 @@
+[
+ {
+  "title": "California High-Speed Rail Merced to Bakersfield Business Case Study",
+  "firm": "KPMG",
+  "firm_group": "Big4",
+  "client": "California High-Speed Rail Authority",
+  "client_type": "state rail authority",
+  "year": 2020,
+  "practice": "capital-projects",
+  "deck_types": [
+   "stage-gate",
+   "delivery-model",
+   "benefits-realisation"
+  ],
+  "sector": "transit/rail",
+  "url": "https://hsr-test.hsr.ca.gov/wp-content/uploads/docs/brdmeetings/2020/brdmtg_021820_Item3_KPMG_Business_Case_Presentation.pdf",
+  "source_url": "https://hsr-test.hsr.ca.gov/wp-content/uploads/docs/brdmeetings/2020/brdmtg_021820_Item3_KPMG_Business_Case_Presentation.pdf",
+  "publication_route": "government-published",
+  "slide_count": 12,
+  "verified": true,
+  "slide_sequence": [
+   "Cover: Business Case Study, KPMG LLP, 18 Feb 2020",
+   "Scope: requested by Finance and Audit Committee, standalone assessment",
+   "Context: 119-mile Central Valley Segment, proposed extension to Merced",
+   "Conclusions: interim service uses and maintains Authority assets",
+   "Ridership/revenue depend on cross-platform connection at Merced",
+   "Partners must complete additional capital investments (ACE, CalSTA)",
+   "Potential interim service business model: single train operating company",
+   "Long-term contracts constrain a potential interim operator",
+   "Socio-economic benefits: $37.9bn economic activity modelled",
+   "Recommendations: implement interim service, interagency agreement",
+   "Recommendations: secure Prop 1A funding, align design-build contracts",
+   "Discussion"
+  ],
+  "storyline_pattern": "Board-requested standalone study: conclusions-first, one conclusion per slide, ending in five recommendations",
+  "signature_slides": [
+   "conclusion headline slides",
+   "operating model diagram",
+   "recommendation chevrons"
+  ],
+  "design": {
+   "palette": "KPMG blue/white with grey",
+   "typography": "Univers-style sans",
+   "density": "medium",
+   "charts": [
+    "business model diagram",
+    "funding bar"
+   ]
+  },
+  "standout_moves": [
+   "Conclusion-as-title on every content slide",
+   "Explicit 'standalone assessment' framing for independence"
+  ],
+  "weaknesses": [
+   "Light on quantified exhibits",
+   "Text-heavy callouts"
+  ],
+  "design_quality": 3,
+  "caveat": "Opened via hsr-test host (official hsr.ca.gov host returned bot-block page to curl). Business-case study rather than status report.",
+  "eligibility": "core",
+  "tier": 1,
+  "format": "slides"
+ },
+ {
+  "title": "City of Adelaide Project Health Check Internal Audit",
+  "firm": "KPMG",
+  "firm_group": "Big4",
+  "client": "City of Adelaide",
+  "client_type": "local government",
+  "year": 2024,
+  "practice": "capital-projects",
+  "deck_types": [
+   "independent-review",
+   "pmo-dashboard",
+   "lessons-learned"
+  ],
+  "sector": "public buildings / public realm capital works",
+  "url": "https://meetings.cityofadelaide.com.au/documents/s18969/Attachment A for Project Health Check Internal Audit.pdf",
+  "source_url": "https://meetings.cityofadelaide.com.au/documents/s18968/Project Health Check Internal Audit.pdf",
+  "publication_route": "client-published",
+  "slide_count": 25,
+  "verified": true,
+  "slide_sequence": [
+   "Cover: Project Health Check Internal Audit, Apr 2024, draft",
+   "Acknowledgement of Country",
+   "Contents: exec summary, background, findings, appendices",
+   "Executive summary: objective, scope of PMO-led capital works health check",
+   "Background: centralised PMO approach to capital projects",
+   "Project profiles: Paxton's Walk and Vaughan Place",
+   "Findings summary: two moderate, one low, two improvement opportunities",
+   "Finding 1: more rigour needed in project budgets",
+   "Finding 1 continued: budget certainty tied to design definition",
+   "Finding 2: align PMO framework to project risk and complexity",
+   "Finding 3: clarity of roles and responsibilities",
+   "PIO 1: consider capital works at portfolio level",
+   "PIO 2: standard external stakeholder management template",
+   "Appendix 1: project profiling by risk and complexity",
+   "Appendix 2: scope and approach",
+   "Appendix 4: classification of findings, disclaimers"
+  ],
+  "storyline_pattern": "Internal-audit finding cards: observation, risk rating, management response, repeated per finding",
+  "signature_slides": [
+   "risk-rated finding cards",
+   "project profiling matrix"
+  ],
+  "design": {
+   "palette": "KPMG blue, white, grey",
+   "typography": "sans serif",
+   "density": "high",
+   "charts": [
+    "rating tables",
+    "profiling matrix"
+   ]
+  },
+  "standout_moves": [
+   "Persistent breadcrumb nav (Executive Summary/Background/Findings/Appendices) on every slide",
+   "Risk-rating chips per finding"
+  ],
+  "weaknesses": [
+   "Text-dense finding slides",
+   "Draft watermark/classification footers"
+  ],
+  "design_quality": 3,
+  "caveat": "Draft report dated April 2024 attached to council committee agenda. Small-scale civic projects, not megaproject.",
+  "eligibility": "core",
+  "tier": 1,
+  "format": "slides"
+ },
+ {
+  "title": "Project Telford: Silvertown Tunnel Business Case and Value for Money Review",
+  "firm": "EY",
+  "firm_group": "Big4",
+  "client": "Transport for London",
+  "client_type": "transport authority",
+  "year": 2021,
+  "practice": "capital-projects",
+  "deck_types": [
+   "independent-review",
+   "stage-gate",
+   "delivery-model"
+  ],
+  "sector": "roads/tunnel (PPP)",
+  "url": "https://content.tfl.gov.uk/project-telford-final-report.pdf",
+  "source_url": "https://content.tfl.gov.uk/project-telford-final-report.pdf",
+  "publication_route": "client-published",
+  "slide_count": 67,
+  "verified": true,
+  "slide_sequence": [
+   "Cover: Project Telford, Corporate Finance assistance to TfL Audit team, 26 Apr 2021",
+   "Table of contents: 8 sections",
+   "Executive summary divider",
+   "Executive summary: VfM assessment summary and contractual termination findings",
+   "Background divider",
+   "Overview of the Silvertown Tunnel scheme with maps",
+   "Business case process: lifecycle and approvals timeline 2011-2020",
+   "TfL internal governance and assurance gates",
+   "Planning Inspectorate examination steps",
+   "Business case review divider",
+   "Green Book five-case review",
+   "Value for money assessment",
+   "Appendix A: business case",
+   "Appendix B: project termination",
+   "Appendix C: termination conditions",
+   "Scope and limitations slides 16-17",
+   "Back page: About EY"
+  ],
+  "storyline_pattern": "Objection-driven review: background, process timeline, business case review against Green Book, VfM, termination appendix",
+  "signature_slides": [
+   "approvals lifecycle timeline",
+   "governance swimlane",
+   "VfM bridge tables"
+  ],
+  "design": {
+   "palette": "EY yellow and grey with black text",
+   "typography": "Arial-style sans",
+   "density": "high",
+   "charts": [
+    "timeline",
+    "maps",
+    "tables"
+   ]
+  },
+  "standout_moves": [
+   "Grey header band with yellow action-title strapline",
+   "Methodology callout box in blue on slides"
+  ],
+  "weaknesses": [
+   "Very text-dense",
+   "Page flattened to image layer so text not searchable"
+  ],
+  "design_quality": 3,
+  "caveat": "Marked 'Private and Confidential - Reliance Restricted' but published by TfL; text layer empty so reviewed visually (6 pages sampled).",
+  "eligibility": "core",
+  "tier": 1,
+  "format": "slides"
+ },
+ {
+  "title": "McKinsey to CalPERS: Digital and Innovation in Engineering and Construction",
+  "firm": "McKinsey",
+  "firm_group": "MBB",
+  "client": "CalPERS Board of Administration",
+  "client_type": "pension investor",
+  "year": 2018,
+  "practice": "capital-projects",
+  "deck_types": [
+   "delivery-model",
+   "lessons-learned"
+  ],
+  "sector": "infrastructure/construction (cross-sector)",
+  "url": "https://www.calpers.ca.gov/sites/default/files/spf/docs/board-agendas/201807/full/day1/03core-economy-mckinsey-ppt_a.pdf",
+  "source_url": "https://www.calpers.ca.gov/sites/default/files/spf/docs/board-agendas/201807/full/day1/03core-economy-mckinsey-ppt_a.pdf",
+  "publication_route": "client-published",
+  "slide_count": 10,
+  "verified": true,
+  "slide_sequence": [
+   "Cover: CalPERS Board discussion, 16 July 2018",
+   "Opening thoughts: 20-45% cost reduction possible in major projects",
+   "Lagging labor productivity has hurt major project outcomes",
+   "Technology most promising avenue for productivity improvement",
+   "E&C among least digitized industries",
+   "Leaders deploy innovations for up to ~45% cost improvement",
+   "Scanning and VR create multiple sources of value",
+   "Field automation: labor availability, productivity, rework avoidance",
+   "Automation in predictable and ad-hoc tasks",
+   "Final thoughts: digital basics differentiate"
+  ],
+  "storyline_pattern": "Action-title argument: problem (productivity), lever (technology), proof (cases), implication for investors",
+  "signature_slides": [
+   "productivity index line chart",
+   "cumulative impact waterfall",
+   "innovation landscape"
+  ],
+  "design": {
+   "palette": "McKinsey blue and cyan on white",
+   "typography": "Bower/Georgia-style titles with sans body",
+   "density": "medium",
+   "charts": [
+    "line",
+    "waterfall",
+    "icon landscape"
+   ]
+  },
+  "standout_moves": [
+   "Full-sentence action titles",
+   "Source line on every exhibit"
+  ],
+  "weaknesses": [
+   "Strategic thought-leadership rather than project-level data"
+  ],
+  "design_quality": 4,
+  "caveat": "Board discussion deck from CalPERS public agenda; strategy-level, not a project review. File shows 'CONFIDENTIAL AND PROPRIETARY' header yet is public on CalPERS site.",
+  "eligibility": "core",
+  "tier": 1,
+  "format": "slides"
+ },
+ {
+  "title": "Independent Programme Assurance Update: Project Trident (UK Link replacement)",
+  "firm": "PwC",
+  "firm_group": "Big4",
+  "client": "Xoserve Limited",
+  "client_type": "gas data utility",
+  "year": 2025,
+  "practice": "pmo",
+  "deck_types": [
+   "independent-review",
+   "stage-gate"
+  ],
+  "sector": "energy/utilities IT programme",
+  "url": "https://www.gasgovernance.co.uk/sites/default/files/related-files/2025-08/3.4%20Project%20Trident%20Preferred%20Hypothesis%20CoMC%20v1.0_0.pdf",
+  "source_url": "https://www.gasgovernance.co.uk/sites/default/files/related-files/2025-08/3.4%20Project%20Trident%20Preferred%20Hypothesis%20CoMC%20v1.0_0.pdf",
+  "publication_route": "client-published",
+  "slide_count": 14,
+  "verified": true,
+  "slide_sequence": [
+   "Cover: Preferred Hypothesis and Independent Programme Assurance Update",
+   "Objectives of the update",
+   "HMT Green Book approach",
+   "Preferred hypothesis: hybrid two-step approach",
+   "Request for customer feedback",
+   "Divider: Independent Programme Assurance Update, Aug 2025",
+   "PwC approach: baseline assurance, milestone reviews, stage-gate reporting",
+   "Milestone Review 1: solution selection approach, key messages",
+   "Six recommendations with target dates",
+   "Thank you / PwC legal footer",
+   "Questions",
+   "Shortlist options and preferred hypothesis",
+   "Indicative analysis: two-step vs hybrid"
+  ],
+  "storyline_pattern": "Assurance-in-industry-forum: approach, review scope, key messages, dated recommendations",
+  "signature_slides": [
+   "three-layer assurance model",
+   "recommendation table with target dates"
+  ],
+  "design": {
+   "palette": "PwC orange/red accent on white",
+   "typography": "sans",
+   "density": "medium",
+   "charts": [
+    "tables"
+   ]
+  },
+  "standout_moves": [
+   "Key exam questions listed before findings",
+   "Recommendations carry target dates"
+  ],
+  "weaknesses": [
+   "PwC section only 3 slides inside client deck"
+  ],
+  "design_quality": 3,
+  "caveat": "PwC pages are 7-9 of a client deck; programme is IT/data (capital-programme style). Closest to PMO/assurance.",
+  "eligibility": "extended",
+  "tier": 2,
+  "format": "slides"
+ },
+ {
+  "title": "Capital Project Governance and Stage Gate Framework (embedding KPMG independent review)",
+  "firm": "KPMG",
+  "firm_group": "Big4",
+  "client": "Metro Vancouver (Finance and Intergovernment Committee)",
+  "client_type": "regional government / utility",
+  "year": 2021,
+  "practice": "capital-projects",
+  "deck_types": [
+   "stage-gate",
+   "independent-review",
+   "programme-prioritisation"
+  ],
+  "sector": "water/wastewater",
+  "url": "https://metrovancouver.org/boards/IntergovernmentFinance/FIC_2021-May-12_PPT.pdf",
+  "source_url": "https://metrovancouver.org/about-us/Documents/capital-projects-project-delivery-presentation-2020-Apr15.pdf",
+  "publication_route": "client-published",
+  "slide_count": 37,
+  "verified": true,
+  "slide_sequence": [
+   "Cover: Capital Project Governance and Stage Gate Framework",
+   "Context: review of project delivery practices since Feb 2020",
+   "Continuous improvement updates: KPMG review, Deloitte estimating",
+   "Defining stage gate: go/no-go decision points",
+   "Independent expert advisors",
+   "Governance frameworks compared across jurisdictions",
+   "Key themes of interjurisdictional review",
+   "Recommendations for Metro Vancouver",
+   "Iona WWTP application",
+   "Stage gate process, budget and financial plan alignment",
+   "Decision at each gate: endorse, terminate, other",
+   "Evaluate and assess at each stage gate",
+   "Upcoming stage gates",
+   "Next steps"
+  ],
+  "storyline_pattern": "Client deck: context, comparison of peers, recommendation, application to flagship plants",
+  "signature_slides": [
+   "stage-gate flow",
+   "jurisdiction comparison table"
+  ],
+  "design": {
+   "palette": "Metro Vancouver blue/teal",
+   "typography": "sans",
+   "density": "medium",
+   "charts": [
+    "flow diagram",
+    "tables"
+   ]
+  },
+  "standout_moves": [
+   "Stage-gate tied to budget and financial plan phases"
+  ],
+  "weaknesses": [
+   "Client-authored; KPMG content only in the April 2020 companion deck (slides 19-21: 5 Pillar Framework)"
+  ],
+  "design_quality": 3,
+  "caveat": "NOT firm-authored: client deck summarising KPMG and Deloitte reviews. The companion April 2020 deck (24 slides, source_url) contains KPMG framework slides. Include only as reference.",
+  "eligibility": "extended",
+  "tier": 2,
+  "format": "slides"
+ },
+ {
+  "title": "Project delivery confidence: realising value of capital projects through enhanced project controls",
+  "firm": "KPMG",
+  "firm_group": "Big4",
+  "client": "n/a (thought leadership)",
+  "client_type": "n/a",
+  "year": 2021,
+  "practice": "pmo",
+  "deck_types": [
+   "pmo-dashboard",
+   "lessons-learned"
+  ],
+  "sector": "cross-sector capital projects",
+  "url": "https://assets.kpmg.com/content/dam/kpmgsites/uk/pdf/2021/06/kpmg-capex-project-control.pdf",
+  "source_url": "https://assets.kpmg.com/content/dam/kpmgsites/uk/pdf/2021/06/kpmg-capex-project-control.pdf",
+  "publication_route": "firm-published",
+  "slide_count": 12,
+  "verified": true,
+  "slide_sequence": [
+   "Cover",
+   "Contents: case, enablers, barriers, achieving success",
+   "Case for controls: 40-45% of projects miss time or budget",
+   "Using project controls to enable success",
+   "Barriers to effective project controls",
+   "Frantic acceleration from weak early attention",
+   "Tool usability for project staff",
+   "Controls should be process-led, not IT-led",
+   "KPMG approach to build delivery confidence",
+   "Controls framework: 6 core processes, ~40 sub-processes, ~200 criteria",
+   "References",
+   "Legal back page"
+  ],
+  "storyline_pattern": "Landscape A4 brochure: problem statistics, enablers, barriers, KPMG framework",
+  "signature_slides": [
+   "controls framework taxonomy"
+  ],
+  "design": {
+   "palette": "KPMG blue",
+   "typography": "sans",
+   "density": "medium",
+   "charts": [
+    "framework diagram"
+   ]
+  },
+  "standout_moves": [
+   "Quantified cost of poor delivery per $1bn"
+  ],
+  "weaknesses": [
+   "Brochure style, prose-heavy"
+  ],
+  "design_quality": 3,
+  "caveat": "Landscape A4 brochure, not a project deck; included as firm-published exemplar.",
+  "eligibility": "core",
+  "tier": 1,
+  "format": "slides"
+ },
+ {
+  "title": "Powering the future: EY capital and infrastructure services for power and utilities",
+  "firm": "EY",
+  "firm_group": "Big4",
+  "client": "n/a (thought leadership)",
+  "client_type": "n/a",
+  "year": 2015,
+  "practice": "capital-projects",
+  "deck_types": [
+   "independent-review",
+   "stage-gate",
+   "lessons-learned"
+  ],
+  "sector": "energy/utilities",
+  "url": "https://pdfs.semanticscholar.org/6fcf/c9e9d4d956432853c196c4061fb109a6e738.pdf",
+  "source_url": "https://pdfs.semanticscholar.org/6fcf/c9e9d4d956432853c196c4061fb109a6e738.pdf",
+  "publication_route": "aggregator-only",
+  "slide_count": 7,
+  "verified": true,
+  "slide_sequence": [
+   "Cover",
+   "The pressure to perform: overspending and delays",
+   "Key questions for your business",
+   "Where EY can help: early-phase foundations",
+   "Lifecycle table: concept to decommission, issue and EY response",
+   "Capital and infrastructure contact page",
+   "About EY"
+  ],
+  "storyline_pattern": "Pain, questions, offer, lifecycle issue matrix",
+  "signature_slides": [
+   "six-phase lifecycle issue matrix"
+  ],
+  "design": {
+   "palette": "EY yellow/grey",
+   "typography": "sans",
+   "density": "medium",
+   "charts": [
+    "lifecycle matrix"
+   ]
+  },
+  "standout_moves": [
+   "Phase-by-phase issue and response grid"
+  ],
+  "weaknesses": [
+   "Marketing content"
+  ],
+  "design_quality": 3,
+  "caveat": "Hosted on semanticscholar mirror; original ey.com URL not confirmed. Year approximate.",
+  "eligibility": "core",
+  "tier": 1,
+  "format": "slides"
+ },
+ {
+  "title": "Muskrat Falls Project: Request for EY to Review Project Cost, Schedule and Associated Risk",
+  "firm": "EY",
+  "firm_group": "Big4",
+  "client": "Government of Newfoundland and Labrador",
+  "client_type": "provincial government",
+  "year": 2015,
+  "practice": "capital-projects",
+  "deck_types": [
+   "independent-review",
+   "cost-review",
+   "schedule-review"
+  ],
+  "sector": "energy/hydro",
+  "url": "https://www.gov.nl.ca/exec/files/mfoversight-pdf-ey-review-scope-and-objectives.pdf",
+  "source_url": "https://www.gov.nl.ca/exec/files/mfoversight-pdf-ey-review-scope-and-objectives.pdf",
+  "publication_route": "government-published",
+  "slide_count": 5,
+  "verified": true,
+  "slide_sequence": [
+   "Cover: request for EY review",
+   "Objectives and scope",
+   "Scope and activities",
+   "Potential focus areas",
+   "About EY"
+  ],
+  "storyline_pattern": "Terms-of-reference slides for oversight review",
+  "signature_slides": [],
+  "design": {
+   "palette": "EY",
+   "typography": "sans",
+   "density": "low",
+   "charts": []
+  },
+  "standout_moves": [],
+  "weaknesses": [
+   "Short scoping deck"
+  ],
+  "design_quality": 2,
+  "caveat": "Scope deck only; EY findings reports on same site (interim report Apr 2016, 20pp; implementation assessment Aug 2017, 30pp) are portrait prose reports: https://www.gov.nl.ca/exec/files/mfoversight-pdf-eycostschedulerisks-apr.pdf",
+  "eligibility": "core",
+  "tier": 1,
+  "format": "slides"
+ },
+ {
+  "title": "EY Infrastructure Advisors: PPPs and Inland Rivers, Ports and Terminals",
+  "firm": "EY",
+  "firm_group": "Big4",
+  "client": "Conference audience (US ports/waterways)",
+  "client_type": "industry forum",
+  "year": 2014,
+  "practice": "capital-projects",
+  "deck_types": [
+   "delivery-model"
+  ],
+  "sector": "ports/transport PPP",
+  "url": "https://slideum.com/doc/21388/ey-infrastructure-advisors--llc-ppp-structure-overview-pu...",
+  "source_url": "https://slideum.com/doc/21388/ey-infrastructure-advisors--llc-ppp-structure-overview-pu...",
+  "publication_route": "aggregator-only",
+  "slide_count": 13,
+  "verified": true,
+  "slide_sequence": [
+   "Growing market for PPPs, US examples",
+   "Seagirt Marine Terminal concession",
+   "Port of Miami Tunnel",
+   "Methods of project delivery DBB to DBFOM",
+   "Conventional delivery roles diagram",
+   "Alternative delivery roles diagram",
+   "PPP is more than financing",
+   "Public expenditure profiles DBB vs DBFOM chart",
+   "Understanding equity and coverage",
+   "Understanding debt, TIFIA, WIFIA",
+   "Structuring a PPP",
+   "Contact",
+   "About EY"
+  ],
+  "storyline_pattern": "Educational primer: examples, delivery menu, risk, finance, structuring",
+  "signature_slides": [
+   "expenditure profile chart",
+   "delivery role diagrams"
+  ],
+  "design": {
+   "palette": "EY grey/yellow",
+   "typography": "sans",
+   "density": "medium",
+   "charts": [
+    "bar",
+    "role diagrams"
+   ]
+  },
+  "standout_moves": [
+   "Role diagrams per delivery method"
+  ],
+  "weaknesses": [
+   "Layout lost on aggregator; truncated URL"
+  ],
+  "design_quality": 3,
+  "caveat": "Aggregator text version read; original EY file source not found; URL truncated by aggregator.",
+  "eligibility": "core",
+  "tier": 1,
+  "format": "slides"
+ },
+ {
+  "title": "Time for change: Complex Project Ecosystem Assurance (CPEA)",
+  "firm": "KPMG",
+  "firm_group": "Big4",
+  "client": "n/a (firm offering)",
+  "client_type": "n/a",
+  "year": 2022,
+  "practice": "capital-projects",
+  "deck_types": [
+   "independent-review",
+   "stage-gate"
+  ],
+  "sector": "cross-sector capital projects",
+  "url": "https://assets.kpmg.com/content/dam/kpmgsites/uk/pdf/2022/06/project-assurance.pdf",
+  "source_url": "https://assets.kpmg.com/content/dam/kpmgsites/uk/pdf/2022/06/project-assurance.pdf",
+  "publication_route": "firm-published",
+  "slide_count": 3,
+  "verified": true,
+  "slide_sequence": [
+   "Case: GBP114m wasted per GBP1bn of UK construction spend",
+   "How CPEA works: lifecycle stage, ecosystem components, assurance tools",
+   "CPEA model: system health, feedback loop, A-B-C process",
+   "Progressive, targeted and gate assurance tools"
+  ],
+  "storyline_pattern": "Pain statistics, three-lens assurance model, tool taxonomy",
+  "signature_slides": [
+   "lifecycle-by-component assurance matrix"
+  ],
+  "design": {
+   "palette": "KPMG blue",
+   "typography": "sans",
+   "density": "medium",
+   "charts": [
+    "model diagram"
+   ]
+  },
+  "standout_moves": [
+   "Gate/progressive/targeted assurance taxonomy"
+  ],
+  "weaknesses": [
+   "Only 3 slides, marketing"
+  ],
+  "design_quality": 3,
+  "caveat": "Short firm brochure in 16:9 slide format.",
+  "eligibility": "core",
+  "tier": 1,
+  "format": "slides"
+ },
+ {
+  "title": "From push to pull: the role of assurance in delivering capital programme outcomes",
+  "firm": "EY",
+  "firm_group": "Big4",
+  "client": "Association for Project Management (conference audience)",
+  "client_type": "professional body",
+  "year": 2015,
+  "practice": "capital-projects",
+  "deck_types": [
+   "independent-review",
+   "lessons-learned"
+  ],
+  "sector": "cross-sector megaprojects",
+  "url": "https://www.slideshare.net/slideshow/the-role-of-assurance-in-delivering-capital-program-outcomesneal-argent-ernstyoung/48794495",
+  "source_url": "https://www.slideshare.net/slideshow/from-push-to-pull-the-role-of-assurance-by-neal-argent-and-matt-henderson/49257869",
+  "publication_route": "aggregator-only",
+  "slide_count": null,
+  "verified": "partial (slide text read; page count not confirmed)",
+  "slide_sequence": [
+   "Cover: APM presentation, 15 May 2015",
+   "Role of assurance and three lines of defence",
+   "Coordinating assurance across the three lines",
+   "Assurance maturity: basic, moderate, comprehensive",
+   "Wrap-up: 64% of 365 megaprojects face cost overruns"
+  ],
+  "storyline_pattern": "Misconceptions, three lines of defence, maturity ladder, call to action",
+  "signature_slides": [
+   "three-lines-of-defence diagram",
+   "assurance maturity table"
+  ],
+  "design": {
+   "palette": "EY",
+   "typography": "sans",
+   "density": "medium",
+   "charts": [
+    "diagram",
+    "maturity table"
+   ]
+  },
+  "standout_moves": [
+   "Push-to-pull framing"
+  ],
+  "weaknesses": [
+   "Aggregator only"
+  ],
+  "design_quality": 3,
+  "caveat": "Two SlideShare copies of the same EY/APM talk; original host not found.",
+  "eligibility": "extended",
+  "tier": 2,
+  "format": "slides"
+ },
+ {
+  "title": "Reinforcing the NSW Southern Shared Network (HumeLink) PADR: EY Market Modelling",
+  "firm": "EY",
+  "firm_group": "Big4",
+  "client": "TransGrid",
+  "client_type": "transmission utility",
+  "year": 2020,
+  "practice": "capital-projects",
+  "deck_types": [
+   "stage-gate",
+   "programme-prioritisation"
+  ],
+  "sector": "energy/transmission",
+  "url": "https://www.transgrid.com.au/media/aqck4baw/humelink-padr-ey-market-modelling-presentation.pdf",
+  "source_url": "https://www.transgrid.com.au/media/aqck4baw/humelink-padr-ey-market-modelling-presentation.pdf",
+  "publication_route": "client-published",
+  "slide_count": 17,
+  "verified": true,
+  "slide_sequence": [
+   "Cover: EY Market Modelling for TransGrid, 12 Feb 2020",
+   "Disclaimer",
+   "Contents: methodology, scenarios, inputs, outcomes",
+   "Methodology: linear-programming market dispatch",
+   "Scenario assumptions: key drivers",
+   "Input data: supply",
+   "Input data: renewable supply",
+   "Input data: demand",
+   "Input data: transmission options",
+   "Snowy 2.0 operation assumptions",
+   "Forecast gross market benefit outcomes",
+   "Benefit outcomes by scenario",
+   "Option outcomes by scenario (central, step, fast, slow)",
+   "Option 3C outcomes with Snowy 2.0",
+   "Sensitivities",
+   "About EY"
+  ],
+  "storyline_pattern": "Regulatory investment test support: method, scenarios, inputs, option benefit outcomes, sensitivities",
+  "signature_slides": [
+   "scenario-by-option benefit tables",
+   "assumption tables"
+  ],
+  "design": {
+   "palette": "EY grey/yellow",
+   "typography": "sans",
+   "density": "high",
+   "charts": [
+    "tables",
+    "bar charts"
+   ]
+  },
+  "standout_moves": [
+   "Scenario x option matrix"
+  ],
+  "weaknesses": [
+   "Text and table heavy"
+  ],
+  "design_quality": 3,
+  "caveat": "Investment-decision modelling (RIT-T PADR) rather than delivery review; energy capital programme.",
+  "eligibility": "core",
+  "tier": 1,
+  "format": "slides"
+ },
+ {
+  "title": "Advancing Innovative Program Controls on a Mega Program",
+  "firm": "WSP",
+  "firm_group": "Specialist",
+  "client": "Metra (Chicago)",
+  "client_type": "public body / conference case study",
+  "year": 2023,
+  "practice": "capital-projects",
+  "deck_types": [
+   "pmo-dashboard",
+   "stage-gate"
+  ],
+  "sector": "commuter rail",
+  "url": "https://projectcontrolexpo.s3.eu-west-1.amazonaws.com/assets/user_assets/usa/past_event2023/I1-PCE%20USA%202023-Drew%2C%20Hans%20and%20Maria%20(WSP)(1).pdf",
+  "source_url": "https://projectcontrolexpo.s3.eu-west-1.amazonaws.com/assets/user_assets/usa/past_event2023/I1-PCE%20USA%202023-Drew%2C%20Hans%20and%20Maria%20(WSP)(1).pdf",
+  "publication_route": "firm-published",
+  "slide_count": 24,
+  "verified": true,
+  "slide_sequence": [
+   "Context: 125 active projects, $5bn",
+   "PMO contract 2021-2031, 80 FTEs",
+   "Initial state and gap analysis",
+   "PMIS tool selection",
+   "Data flows and synchronised reporting cadence",
+   "Dashboards",
+   "Key results",
+   "Stage gate assurance framework"
+  ],
+  "storyline_pattern": "Conference case study: context, problem, approach, results",
+  "signature_slides": [
+   "portfolio dashboards",
+   "stage-gate chevrons"
+  ],
+  "design": {
+   "palette": "firm brand",
+   "typography": "sans",
+   "density": "medium",
+   "charts": []
+  },
+  "standout_moves": [],
+  "weaknesses": [
+   "Conference deck, reduced detail"
+  ],
+  "design_quality": 3,
+  "caveat": "",
+  "eligibility": "tier3",
+  "tier": 3,
+  "format": "slides"
+ },
+ {
+  "title": "Driving Global Consistency in Capital Project Delivery",
+  "firm": "Turner & Townsend",
+  "firm_group": "Specialist",
+  "client": "Global life sciences client",
+  "client_type": "public body / conference case study",
+  "year": 2025,
+  "practice": "capital-projects",
+  "deck_types": [
+   "pmo-dashboard",
+   "mobilisation"
+  ],
+  "sector": "life sciences capital",
+  "url": "https://rpc.uk.com/images/media/turnerandtownsendpresentation-020726104457.pdf",
+  "source_url": "https://rpc.uk.com/images/media/turnerandtownsendpresentation-020726104457.pdf",
+  "publication_route": "firm-published",
+  "slide_count": 9,
+  "verified": true,
+  "slide_sequence": [
+   "The ask",
+   "Hosting, migration and configuration",
+   "Behavioural change",
+   "Quick guides and procedures",
+   "Performance transparency via Primavera",
+   "Protecting delivery"
+  ],
+  "storyline_pattern": "Conference case study: context, problem, approach, results",
+  "signature_slides": [
+   "PMO operating model"
+  ],
+  "design": {
+   "palette": "firm brand",
+   "typography": "sans",
+   "density": "medium",
+   "charts": []
+  },
+  "standout_moves": [],
+  "weaknesses": [
+   "Conference deck, reduced detail"
+  ],
+  "design_quality": 3,
+  "caveat": "Year inferred from file name.",
+  "eligibility": "tier3",
+  "tier": 3,
+  "format": "slides"
+ },
+ {
+  "title": "The application of project controls to change the way we work",
+  "firm": "Arcadis",
+  "firm_group": "Specialist",
+  "client": "Manchester Airport, Digital Railway, Lower Thames Crossing",
+  "client_type": "public body / conference case study",
+  "year": 2019,
+  "practice": "capital-projects",
+  "deck_types": [
+   "pmo-dashboard",
+   "schedule-review"
+  ],
+  "sector": "airports/rail/highways",
+  "url": "https://projectcontrolexpo.com/uploads/events/uk/images/pictures/schedulefile-353-PPT-%20C1-%20Ammar%20Hajiya-%20Arcadis.pdf",
+  "source_url": "https://projectcontrolexpo.com/uploads/events/uk/images/pictures/schedulefile-353-PPT-%20C1-%20Ammar%20Hajiya-%20Arcadis.pdf",
+  "publication_route": "firm-published",
+  "slide_count": 39,
+  "verified": true,
+  "slide_sequence": [
+   "Arcadis intro",
+   "Aviation: MAN-TP",
+   "Problem: unconsumable data",
+   "Schedule management",
+   "Rail: Digital Railway Programme",
+   "Standard operating procedures",
+   "Highways: Lower Thames Crossing",
+   "Digital solutions effects"
+  ],
+  "storyline_pattern": "Conference case study: context, problem, approach, results",
+  "signature_slides": [
+   "controls strategy diagram"
+  ],
+  "design": {
+   "palette": "firm brand",
+   "typography": "sans",
+   "density": "medium",
+   "charts": []
+  },
+  "standout_moves": [],
+  "weaknesses": [
+   "Conference deck, reduced detail"
+  ],
+  "design_quality": 3,
+  "caveat": "Small page size (511x288).",
+  "eligibility": "tier3",
+  "tier": 3,
+  "format": "slides"
+ },
+ {
+  "title": "Tideway: Jacobs risk-based reporting in an integrated PMO",
+  "firm": "Jacobs",
+  "firm_group": "Specialist",
+  "client": "Tideway (Thames Tideway Tunnel)",
+  "client_type": "public body / conference case study",
+  "year": 2023,
+  "practice": "capital-projects",
+  "deck_types": [
+   "schedule-review",
+   "risk-register",
+   "pmo-dashboard"
+  ],
+  "sector": "water/wastewater tunnel",
+  "url": "https://d1qdbrmug4ejuo.cloudfront.net/assets/user_assets/uk/uk-2023-pastevent/day%202/megaproject-zone/P4-PCE%20UK%202023.pdf",
+  "source_url": "https://d1qdbrmug4ejuo.cloudfront.net/assets/user_assets/uk/uk-2023-pastevent/day%202/megaproject-zone/P4-PCE%20UK%202023.pdf",
+  "publication_route": "firm-published",
+  "slide_count": 26,
+  "verified": true,
+  "slide_sequence": [
+   "Tideway scope",
+   "Timeline",
+   "Jacobs delivery-partner role",
+   "Pre-2018 non-risk-based reporting",
+   "Post-2018 risk-based reporting",
+   "Quarterly P50 with ranges",
+   "Reporting cadence",
+   "Conclusions: forecast acceptance end-2026"
+  ],
+  "storyline_pattern": "Conference case study: context, problem, approach, results",
+  "signature_slides": [
+   "QSRA burn-rate tool",
+   "critical path dashboard"
+  ],
+  "design": {
+   "palette": "firm brand",
+   "typography": "sans",
+   "density": "medium",
+   "charts": []
+  },
+  "standout_moves": [],
+  "weaknesses": [
+   "Conference deck, reduced detail"
+  ],
+  "design_quality": 4,
+  "caveat": "",
+  "eligibility": "tier3",
+  "tier": 3,
+  "format": "slides"
+ },
+ {
+  "title": "Program Controls Engine case study",
+  "firm": "AECOM",
+  "firm_group": "Specialist",
+  "client": "Major capital programme (unnamed)",
+  "client_type": "public body / conference case study",
+  "year": 2023,
+  "practice": "capital-projects",
+  "deck_types": [
+   "pmo-dashboard",
+   "mobilisation"
+  ],
+  "sector": "cross-sector programme",
+  "url": "https://d1qdbrmug4ejuo.cloudfront.net/assets/user_assets/uk/uk-2023-pastevent/day%202/case-study-zone-d2/C9-PCE%20UK%202023.pdf",
+  "source_url": "https://d1qdbrmug4ejuo.cloudfront.net/assets/user_assets/uk/uk-2023-pastevent/day%202/case-study-zone-d2/C9-PCE%20UK%202023.pdf",
+  "publication_route": "firm-published",
+  "slide_count": 34,
+  "verified": true,
+  "slide_sequence": [
+   "Presenter background",
+   "PgCE introduction",
+   "Integrated controls and digital framework",
+   "Case programme overview",
+   "Implementation: discovery, gap analysis, roadmap",
+   "Data setup",
+   "Power BI dashboards: budget, schedule, change, risk"
+  ],
+  "storyline_pattern": "Conference case study: context, problem, approach, results",
+  "signature_slides": [
+   "Power BI control dashboards"
+  ],
+  "design": {
+   "palette": "firm brand",
+   "typography": "sans",
+   "density": "medium",
+   "charts": []
+  },
+  "standout_moves": [],
+  "weaknesses": [
+   "Conference deck, reduced detail"
+  ],
+  "design_quality": 3,
+  "caveat": "",
+  "eligibility": "tier3",
+  "tier": 3,
+  "format": "slides"
+ },
+ {
+  "title": "21st Century Battle of Waterloo",
+  "firm": "Mott MacDonald",
+  "firm_group": "Specialist",
+  "client": "Network Rail Wessex Capacity Alliance",
+  "client_type": "public body / conference case study",
+  "year": 2018,
+  "practice": "capital-projects",
+  "deck_types": [
+   "risk-register",
+   "cost-review"
+  ],
+  "sector": "rail station capacity",
+  "url": "https://projectcontrolexpo.com/uploads/events/uk/images/pictures/schedulefile-280-C1%20-%20Maryna.pdf",
+  "source_url": "https://projectcontrolexpo.com/uploads/events/uk/images/pictures/schedulefile-280-C1%20-%20Maryna.pdf",
+  "publication_route": "firm-published",
+  "slide_count": 21,
+  "verified": true,
+  "slide_sequence": [
+   "Speaker and topic",
+   "WCA and WCP structures",
+   "Programme interfaces",
+   "Risk management framework",
+   "Cost risk exposure dashboard",
+   "Risk categorisation by RBS/WBS",
+   "Top risks",
+   "Summary"
+  ],
+  "storyline_pattern": "Conference case study: context, problem, approach, results",
+  "signature_slides": [
+   "risk dashboard",
+   "QCRA/QSRA"
+  ],
+  "design": {
+   "palette": "firm brand",
+   "typography": "sans",
+   "density": "medium",
+   "charts": []
+  },
+  "standout_moves": [],
+  "weaknesses": [
+   "Conference deck, reduced detail"
+  ],
+  "design_quality": 3,
+  "caveat": "",
+  "eligibility": "tier3",
+  "tier": 3,
+  "format": "slides"
+ },
+ {
+  "title": "Contingency Drawdown Methods",
+  "firm": "Turner & Townsend",
+  "firm_group": "Specialist",
+  "client": "Industry audience (owners' capital projects)",
+  "client_type": "conference case study",
+  "year": 2022,
+  "practice": "capital-projects",
+  "deck_types": [
+   "cost-review",
+   "risk-register",
+   "benchmarking"
+  ],
+  "sector": "cross-sector capital projects",
+  "url": "https://projectcontrolexpo.s3.eu-west-1.amazonaws.com/assets/user_assets/virtual/past-event/presentations-2022/M1-10%20-%20PCEV2022%20-%20Mike%20Younger.pdf",
+  "source_url": "https://projectcontrolexpo.s3.eu-west-1.amazonaws.com/assets/user_assets/virtual/past-event/presentations-2022/M1-10%20-%20PCEV2022%20-%20Mike%20Younger.pdf",
+  "publication_route": "firm-published",
+  "slide_count": 19,
+  "verified": true,
+  "slide_sequence": [
+   "Speaker background",
+   "Agenda: contingency and drawdown",
+   "Definitions of contingency",
+   "Contingency politics: not a savings scheme",
+   "Survey: half of owners have no drawdown requirement",
+   "The contingency drawdown curve",
+   "Five recognised drawdown methods",
+   "Run down with forecast and scope increases",
+   "Split into phases",
+   "Run down with progress achieved",
+   "Plan against milestones",
+   "Link to the risk register",
+   "Risk register versus QCRA separation",
+   "How to use the drawdown curve",
+   "Five top tips"
+  ],
+  "storyline_pattern": "Method taxonomy then tips",
+  "signature_slides": [
+   "contingency drawdown curve"
+  ],
+  "design": {
+   "palette": "firm brand",
+   "typography": "sans",
+   "density": "medium",
+   "charts": []
+  },
+  "standout_moves": [],
+  "weaknesses": [
+   "Conference deck, reduced detail"
+  ],
+  "design_quality": 4,
+  "caveat": "Project Controls Expo conference deck.",
+  "eligibility": "tier3",
+  "tier": 3,
+  "format": "slides"
+ },
+ {
+  "title": "Proven Success Stories at Airport Capital Programs",
+  "firm": "Arcadis",
+  "firm_group": "Specialist",
+  "client": "Airport owners (multi-prime programmes)",
+  "client_type": "conference case study",
+  "year": 2022,
+  "practice": "capital-projects",
+  "deck_types": [
+   "schedule-review",
+   "lessons-learned",
+   "pmo-dashboard"
+  ],
+  "sector": "airports",
+  "url": "https://projectcontrolexpo.s3.eu-west-1.amazonaws.com/assets/user_assets/usa/past_event/P5%20-%20PCE%20USA%202022%20-%20Chris%20Carson.pdf",
+  "source_url": "https://projectcontrolexpo.s3.eu-west-1.amazonaws.com/assets/user_assets/usa/past_event/P5%20-%20PCE%20USA%202022%20-%20Chris%20Carson.pdf",
+  "publication_route": "firm-published",
+  "slide_count": 56,
+  "verified": true,
+  "slide_sequence": [
+   "Introduction: coordination failures in airport programmes",
+   "Megaproject definition",
+   "Integrated Program Schedule approach",
+   "Scheduling differences between projects",
+   "Standard contract schedule requirements",
+   "Size of integrated schedule",
+   "Schedule updating cadence",
+   "Coordination with contractors",
+   "Contractor mitigation negotiations",
+   "Programme reports",
+   "Performance dashboard",
+   "Lessons learned on airport megaprojects"
+  ],
+  "storyline_pattern": "Structured scheduling method, then lessons",
+  "signature_slides": [
+   "integrated programme schedule",
+   "performance dashboard"
+  ],
+  "design": {
+   "palette": "firm brand",
+   "typography": "sans",
+   "density": "medium",
+   "charts": []
+  },
+  "standout_moves": [],
+  "weaknesses": [
+   "Conference deck, reduced detail"
+  ],
+  "design_quality": 3,
+  "caveat": "Project Controls Expo conference deck.",
+  "eligibility": "tier3",
+  "tier": 3,
+  "format": "slides"
+ },
+ {
+  "title": "Managing Mega-Program Baselines: Delivery over decades (Tideway)",
+  "firm": "AECOM",
+  "firm_group": "Specialist",
+  "client": "Tideway (Thames Tideway Tunnel)",
+  "client_type": "conference case study",
+  "year": 2024,
+  "practice": "capital-projects",
+  "deck_types": [
+   "cost-review",
+   "schedule-review",
+   "lessons-learned"
+  ],
+  "sector": "water/wastewater tunnel",
+  "url": "https://projectcontrolexpo.s3.eu-west-1.amazonaws.com/assets/user_assets/aus/pdf/2024/past_event/C11.pdf",
+  "source_url": "https://projectcontrolexpo.s3.eu-west-1.amazonaws.com/assets/user_assets/aus/pdf/2024/past_event/C11.pdf",
+  "publication_route": "firm-published",
+  "slide_count": 10,
+  "verified": true,
+  "slide_sequence": [
+   "Speaker background",
+   "Tideway scheme facts",
+   "Timeline 2008 to operations",
+   "How much did it cost: 4.5bn or 5.0bn",
+   "Importance of an integrated baseline",
+   "Importance of logistics",
+   "Importance of risk: P80 baseline",
+   "Delivering to baseline includes benefits"
+  ],
+  "storyline_pattern": "Case study around baseline integrity",
+  "signature_slides": [
+   "baseline timeline",
+   "cost vs risk allowance bars"
+  ],
+  "design": {
+   "palette": "firm brand",
+   "typography": "sans",
+   "density": "medium",
+   "charts": []
+  },
+  "standout_moves": [],
+  "weaknesses": [
+   "Conference deck, reduced detail"
+  ],
+  "design_quality": 3,
+  "caveat": "Project Controls Expo conference deck.",
+  "eligibility": "tier3",
+  "tier": 3,
+  "format": "slides"
+ },
+ {
+  "title": "Project Controls (as we know it) will be obsolete",
+  "firm": "PwC",
+  "firm_group": "Big4",
+  "client": "conference audience (case study)",
+  "client_type": "industry forum",
+  "year": 2019,
+  "practice": "capital-projects",
+  "deck_types": [
+   "schedule-review",
+   "lessons-learned"
+  ],
+  "sector": "capital projects",
+  "url": "https://projectcontrolexpo.com/uploads/events/uk/images/pictures/schedulefile-340-M2 - Camilo David- PwC 2019.pdf",
+  "source_url": "https://projectcontrolexpo.com/uploads/events/uk/images/pictures/schedulefile-340-M2 - Camilo David- PwC 2019.pdf",
+  "publication_route": "firm-published",
+  "slide_count": 27,
+  "verified": true,
+  "slide_sequence": [
+   "Title: why project controls as we know it will end",
+   "Agenda: today, the future, how industry is adopting it",
+   "Speaker background in capital projects",
+   "Controls today: organisation, technology, process, information",
+   "Fourth Industrial Revolution framing",
+   "Ecosystem of sensors, neural networks and data flows",
+   "Example 1: design and 3D printing",
+   "Example 2: real-time stakeholder management",
+   "Example 3: data as a commodity",
+   "Industry adoption of the concept",
+   "Claim that 80 percent of PM tasks automate by 2030",
+   "Megatrends from PwC research",
+   "AI basics",
+   "Augmented reality and drones",
+   "Enablers to make it real",
+   "Q and A"
+  ],
+  "storyline_pattern": "Future-of-controls thesis: today's practice, technology megatrends, worked examples, enablers",
+  "signature_slides": [
+   "technology megatrend slides",
+   "worked example vignettes"
+  ],
+  "design": {
+   "palette": "not assessed",
+   "typography": "not assessed",
+   "density": "not assessed",
+   "charts": []
+  },
+  "standout_moves": [],
+  "weaknesses": [],
+  "design_quality": null,
+  "caveat": "Project Controls Expo conference deck (year from event path/slide text; not stated on slides where noted null). Summary paraphrased from extracted text; design not viewed.",
+  "eligibility": "tier2",
+  "tier": 2,
+  "format": "slides"
+ },
+ {
+  "title": "We're all human: how we can enhance project decision making by integrating a behavioural focus into project ma",
+  "firm": "KPMG",
+  "firm_group": "Big4",
+  "client": "conference audience (case study)",
+  "client_type": "industry forum",
+  "year": 2023,
+  "practice": "capital-projects",
+  "deck_types": [
+   "lessons-learned",
+   "risk-register"
+  ],
+  "sector": "capital projects",
+  "url": "https://projectcontrolexpo.s3.eu-west-1.amazonaws.com/assets/user_assets/uk/uk-2023-pastevent/day%201/master-class-zone/M6-PCE%20UK%202023-Liam%20Hewitt%20(KPMG).pdf",
+  "source_url": "https://projectcontrolexpo.s3.eu-west-1.amazonaws.com/assets/user_assets/uk/uk-2023-pastevent/day%201/master-class-zone/M6-PCE%20UK%202023-Liam%20Hewitt%20(KPMG).pdf",
+  "publication_route": "firm-published",
+  "slide_count": 18,
+  "verified": true,
+  "slide_sequence": [
+   "Title: behavioural focus in project decision making",
+   "Logic puzzle showing people reason badly",
+   "Puzzle resolution diagram",
+   "Controls assume rational users",
+   "RAG status relies on human judgement",
+   "Session purpose",
+   "Anchoring, confirmation, availability biases",
+   "Anchoring behaviours: fixating on first estimates",
+   "Confirmation behaviours: selective attention",
+   "Availability behaviours: over-relying on memorable cases",
+   "Behavioural assessment framework",
+   "Targeted interventions to counter bias",
+   "Why it matters"
+  ],
+  "storyline_pattern": "Behavioural lens on controls: puzzle hook, biases, assessment framework, interventions",
+  "signature_slides": [
+   "bias catalogue",
+   "behavioural assessment framework"
+  ],
+  "design": {
+   "palette": "not assessed",
+   "typography": "not assessed",
+   "density": "not assessed",
+   "charts": []
+  },
+  "standout_moves": [],
+  "weaknesses": [],
+  "design_quality": null,
+  "caveat": "Project Controls Expo conference deck (year from event path/slide text; not stated on slides where noted null). Summary paraphrased from extracted text; design not viewed.",
+  "eligibility": "tier2",
+  "tier": 2,
+  "format": "slides"
+ },
+ {
+  "title": "Are Your Megaproject Schedules and Costs Under or Out of Control? Loretta Hudson Loretta Hudson Victorian Port",
+  "firm": "EY",
+  "firm_group": "Big4",
+  "client": "conference audience (case study)",
+  "client_type": "industry forum",
+  "year": 2018,
+  "practice": "capital-projects",
+  "deck_types": [
+   "benchmarking",
+   "cost-review",
+   "risk-register"
+  ],
+  "sector": "capital projects",
+  "url": "https://projectcontrolexpo.com/uploads/events/aus/images/pictures/schedulefile-281-C2- EY.pdf",
+  "source_url": "https://projectcontrolexpo.com/uploads/events/aus/images/pictures/schedulefile-281-C2- EY.pdf",
+  "publication_route": "firm-published",
+  "slide_count": 17,
+  "verified": true,
+  "slide_sequence": [
+   "Title: are megaproject schedules and costs out of control",
+   "Agenda",
+   "Why capital projects need study",
+   "Funding, planning and delivery risk framing",
+   "Study of 108 global mining and metals megaprojects",
+   "Results: 69 percent over budget, 62 percent average overrun",
+   "Causes: many factors in groups",
+   "Causal factor groupings",
+   "Critical enablers",
+   "Three enablers needing focus now",
+   "Governance with lead and lag indicators",
+   "Adequate time and cost contingency",
+   "Align contingency with scenario plans",
+   "Where to from here",
+   "Self-check questions",
+   "Close"
+  ],
+  "storyline_pattern": "Study findings, causes, enablers, forward questions",
+  "signature_slides": [
+   "overrun statistics",
+   "contingency build-up"
+  ],
+  "design": {
+   "palette": "not assessed",
+   "typography": "not assessed",
+   "density": "not assessed",
+   "charts": []
+  },
+  "standout_moves": [],
+  "weaknesses": [],
+  "design_quality": null,
+  "caveat": "Project Controls Expo conference deck (year from event path/slide text; not stated on slides where noted null). Summary paraphrased from extracted text; design not viewed.",
+  "eligibility": "tier2",
+  "tier": 2,
+  "format": "slides"
+ },
+ {
+  "title": "Lessons Learned in Megaprojects",
+  "firm": "Mott MacDonald",
+  "firm_group": "Specialist",
+  "client": "conference audience (case study)",
+  "client_type": "industry forum",
+  "year": 2025,
+  "practice": "capital-projects",
+  "deck_types": [
+   "lessons-learned"
+  ],
+  "sector": "capital projects",
+  "url": "https://projectcontrolexpo.s3.eu-west-1.amazonaws.com/assets/user_assets/uk/2025/past-events/sessions-pdf/day3/Megaprojects-Zone/P3-Andrew-Wain.pdf",
+  "source_url": "https://projectcontrolexpo.s3.eu-west-1.amazonaws.com/assets/user_assets/uk/2025/past-events/sessions-pdf/day3/Megaprojects-Zone/P3-Andrew-Wain.pdf",
+  "publication_route": "firm-published",
+  "slide_count": 16,
+  "verified": true,
+  "slide_sequence": [
+   "Title: are lessons learned used on megaprojects",
+   "Speaker background",
+   "Are lessons learned actually useful",
+   "Megaproject definition",
+   "Definitions of lessons learned",
+   "Knowledge management and post-project reviews",
+   "Where leaders find lessons",
+   "Senior leaders and advice taking",
+   "Heuristics and instinct",
+   "Research objective and interviews",
+   "Findings: everyone says useful",
+   "Findings: leaders ask people, not systems",
+   "Conclusion",
+   "Recommendations: single knowledge point",
+   "Thanks",
+   "References"
+  ],
+  "storyline_pattern": "Research question, theory, interviews, findings, recommendations",
+  "signature_slides": [
+   "interview findings"
+  ],
+  "design": {
+   "palette": "not assessed",
+   "typography": "not assessed",
+   "density": "not assessed",
+   "charts": []
+  },
+  "standout_moves": [],
+  "weaknesses": [],
+  "design_quality": null,
+  "caveat": "Project Controls Expo conference deck (year from event path/slide text; not stated on slides where noted null). Summary paraphrased from extracted text; design not viewed.",
+  "eligibility": "tier3",
+  "tier": 3,
+  "format": "slides"
+ },
+ {
+  "title": "Driving Project Control Excellence through Maturity Models: Practical Approaches for Sustainable Improvement B",
+  "firm": "Arcadis",
+  "firm_group": "Specialist",
+  "client": "conference audience (case study)",
+  "client_type": "industry forum",
+  "year": 2025,
+  "practice": "capital-projects",
+  "deck_types": [
+   "benchmarking",
+   "independent-review"
+  ],
+  "sector": "capital projects",
+  "url": "https://projectcontrolexpo.s3.eu-west-1.amazonaws.com/assets/user_assets/uk/2025/past-events/sessions-pdf/day3/Contract-Commercial-Management/CC11-Baker-Rickaby-Sachio-Baig.pdf",
+  "source_url": "https://projectcontrolexpo.s3.eu-west-1.amazonaws.com/assets/user_assets/uk/2025/past-events/sessions-pdf/day3/Contract-Commercial-Management/CC11-Baker-Rickaby-Sachio-Baig.pdf",
+  "publication_route": "firm-published",
+  "slide_count": 14,
+  "verified": true,
+  "slide_sequence": [
+   "Title: turning maturity insight into controls excellence",
+   "Seeing the challenge",
+   "Why maturity matters",
+   "Siloed controls disciplines",
+   "What maturity means: assess, insight, action, learning",
+   "Turning insight into action",
+   "Homes England national maturity review context",
+   "Approach: adapted P3M3 across five control areas",
+   "Impact: authorities moving up levels",
+   "From improvement to confidence",
+   "Lessons learned",
+   "Broader impact",
+   "Key takeaways",
+   "Q and A"
+  ],
+  "storyline_pattern": "Challenge, maturity concept, Homes England case, impact, takeaways",
+  "signature_slides": [
+   "maturity assessment scale"
+  ],
+  "design": {
+   "palette": "not assessed",
+   "typography": "not assessed",
+   "density": "not assessed",
+   "charts": []
+  },
+  "standout_moves": [],
+  "weaknesses": [],
+  "design_quality": null,
+  "caveat": "Project Controls Expo conference deck (year from event path/slide text; not stated on slides where noted null). Summary paraphrased from extracted text; design not viewed.",
+  "eligibility": "tier3",
+  "tier": 3,
+  "format": "slides"
+ },
+ {
+  "title": "International Airports: Avoiding and Mitigating Delays",
+  "firm": "Arcadis",
+  "firm_group": "Specialist",
+  "client": "conference audience (case study)",
+  "client_type": "industry forum",
+  "year": 2018,
+  "practice": "capital-projects",
+  "deck_types": [
+   "schedule-review",
+   "lessons-learned"
+  ],
+  "sector": "capital projects",
+  "url": "https://projectcontrolexpo.com/uploads/events/uk/images/pictures/schedulefile-285-P2 - Arcadis.pdf",
+  "source_url": "https://projectcontrolexpo.com/uploads/events/uk/images/pictures/schedulefile-285-P2 - Arcadis.pdf",
+  "publication_route": "firm-published",
+  "slide_count": 41,
+  "verified": true,
+  "slide_sequence": [
+   "Title: airports, avoiding and mitigating delays",
+   "What is different about airports",
+   "Airport facility mix",
+   "Middle East airports track record",
+   "Common causes of delay",
+   "Muscat airport scope change case",
+   "Abu Dhabi Midfield Terminal roof delay case",
+   "Summary: delay is almost inevitable",
+   "Prevention is better than cure",
+   "Goals often not achieved",
+   "Why delay is poorly managed",
+   "Four inhibitors of effective delay management",
+   "Rigid governance",
+   "Adversarial contract structures",
+   "Lack of programme coordination",
+   "Mitigating delay effectively"
+  ],
+  "storyline_pattern": "Sector problem, Middle East case studies, delay causes, prevention and mitigation",
+  "signature_slides": [
+   "delay case studies",
+   "delay-management model"
+  ],
+  "design": {
+   "palette": "not assessed",
+   "typography": "not assessed",
+   "density": "not assessed",
+   "charts": []
+  },
+  "standout_moves": [],
+  "weaknesses": [],
+  "design_quality": null,
+  "caveat": "Project Controls Expo conference deck (year from event path/slide text; not stated on slides where noted null). Summary paraphrased from extracted text; design not viewed.",
+  "eligibility": "tier3",
+  "tier": 3,
+  "format": "slides"
+ },
+ {
+  "title": "Benefits of Program Controls? Controls role in delivering outcomes.",
+  "firm": "AECOM",
+  "firm_group": "Specialist",
+  "client": "conference audience (case study)",
+  "client_type": "industry forum",
+  "year": 2022,
+  "practice": "capital-projects",
+  "deck_types": [
+   "benefits-realisation",
+   "delivery-model"
+  ],
+  "sector": "capital projects",
+  "url": "https://projectcontrolexpo.s3.eu-west-1.amazonaws.com/assets/user_assets/aus/pdf/past%20event/megaproject/P3%20-%20PCE%20AUS%202022%20-%20Chris%20Reynolds.pdf",
+  "source_url": "https://projectcontrolexpo.s3.eu-west-1.amazonaws.com/assets/user_assets/aus/pdf/past%20event/megaproject/P3%20-%20PCE%20AUS%202022%20-%20Chris%20Reynolds.pdf",
+  "publication_route": "firm-published",
+  "slide_count": 21,
+  "verified": true,
+  "slide_sequence": [
+   "Title: beyond the golden triangle",
+   "Speaker background",
+   "Terminology matters",
+   "Project versus programme management",
+   "Programme controls integrate data and stakeholders",
+   "Keys to programme delivery",
+   "Leadership and capable teams",
+   "Supply chain and stakeholder integration",
+   "Measuring success through outcomes",
+   "Client needs and desired outcomes",
+   "Examples of outcomes",
+   "Programme visions: Moving London Forward, HS2",
+   "Benefits as measurable improvements",
+   "Wide range of outcomes to measure"
+  ],
+  "storyline_pattern": "Definitions, success factors, outcome measurement, vision examples",
+  "signature_slides": [
+   "outcome hierarchy"
+  ],
+  "design": {
+   "palette": "not assessed",
+   "typography": "not assessed",
+   "density": "not assessed",
+   "charts": []
+  },
+  "standout_moves": [],
+  "weaknesses": [],
+  "design_quality": null,
+  "caveat": "Project Controls Expo conference deck (year from event path/slide text; not stated on slides where noted null). Summary paraphrased from extracted text; design not viewed.",
+  "eligibility": "tier3",
+  "tier": 3,
+  "format": "slides"
+ },
+ {
+  "title": "Benchmarking: Data Collection to Analytics",
+  "firm": "AECOM",
+  "firm_group": "Specialist",
+  "client": "conference audience (case study)",
+  "client_type": "industry forum",
+  "year": 2019,
+  "practice": "capital-projects",
+  "deck_types": [
+   "benchmarking",
+   "cost-review"
+  ],
+  "sector": "capital projects",
+  "url": "https://projectcontrolexpo.com/uploads/events/uk/images/pictures/schedulefile-374-V1 - Lance Stephenson-AECOM.pdf",
+  "source_url": "https://projectcontrolexpo.com/uploads/events/uk/images/pictures/schedulefile-374-V1 - Lance Stephenson-AECOM.pdf",
+  "publication_route": "firm-published",
+  "slide_count": 51,
+  "verified": true,
+  "slide_sequence": [
+   "Title: benchmarking from data collection to analytics",
+   "Background",
+   "Why projects fail: 39 percent of large projects fail",
+   "What benchmarking is",
+   "Key benchmarking metrics",
+   "Strategic asset history database",
+   "Project controls history database",
+   "Requirements for benchmarking",
+   "Coding structures",
+   "Categories",
+   "Collection forms",
+   "Standard summary estimate",
+   "Final project report contents",
+   "Portfolio analysis",
+   "Trend analysis chart",
+   "Conclusion"
+  ],
+  "storyline_pattern": "Why projects fail, benchmarking basics, data requirements, collection, analysis",
+  "signature_slides": [
+   "coding structure",
+   "trend analysis chart"
+  ],
+  "design": {
+   "palette": "not assessed",
+   "typography": "not assessed",
+   "density": "not assessed",
+   "charts": []
+  },
+  "standout_moves": [],
+  "weaknesses": [],
+  "design_quality": null,
+  "caveat": "Project Controls Expo conference deck (year from event path/slide text; not stated on slides where noted null). Summary paraphrased from extracted text; design not viewed.",
+  "eligibility": "tier3",
+  "tier": 3,
+  "format": "slides"
+ },
+ {
+  "title": "Risk-Integrated Target Pricing for Railway Network Upgrade Programs",
+  "firm": "Accenture",
+  "firm_group": "Specialist",
+  "client": "conference audience (case study)",
+  "client_type": "industry forum",
+  "year": 2026,
+  "practice": "capital-projects",
+  "deck_types": [
+   "risk-register",
+   "delivery-model",
+   "schedule-review"
+  ],
+  "sector": "capital projects",
+  "url": "https://projectcontrolexpo.s3.eu-west-1.amazonaws.com/assets/user_assets/usa/2026/past-events/day-2-presentation/ppt-day2/Owners-Govt-Zone/O2.+Ali+Montaser+%26+Laya+Parvizs/USAProject_Controls_Expo_Oct_2026_Final.pdf",
+  "source_url": "https://projectcontrolexpo.s3.eu-west-1.amazonaws.com/assets/user_assets/usa/2026/past-events/day-2-presentation/ppt-day2/Owners-Govt-Zone/O2.+Ali+Montaser+%26+Laya+Parvizs/USAProject_Controls_Expo_Oct_2026_Final.pdf",
+  "publication_route": "firm-published",
+  "slide_count": 19,
+  "verified": true,
+  "slide_sequence": [
+   "Title: beyond deterministic project controls",
+   "Project level framing",
+   "Why deterministic controls struggle on live railways",
+   "Risk-integrated control framework",
+   "Development phase: turn uncertainty into target price",
+   "Anatomy of a risk-adjusted target price",
+   "Programme level framing",
+   "Bundle integration is not enough",
+   "Interfaces as risk-bearing dependencies",
+   "Worked give/get interface example",
+   "Quantify and aggregate interface exposure",
+   "Confidence-based exposure by Monte Carlo",
+   "One late interface propagates",
+   "Local optimisation raises programme cost",
+   "Dynamic risk profile",
+   "Controls as intervention system"
+  ],
+  "storyline_pattern": "Problem with deterministic controls, risk-integrated target price, interface exposure, intervention system",
+  "signature_slides": [
+   "risk-adjusted target price anatomy",
+   "interface Monte Carlo"
+  ],
+  "design": {
+   "palette": "not assessed",
+   "typography": "not assessed",
+   "density": "not assessed",
+   "charts": []
+  },
+  "standout_moves": [],
+  "weaknesses": [],
+  "design_quality": null,
+  "caveat": "Project Controls Expo conference deck (year from event path/slide text; not stated on slides where noted null). Summary paraphrased from extracted text; design not viewed.",
+  "eligibility": "tier3",
+  "tier": 3,
+  "format": "slides"
+ },
+ {
+  "title": "Scheduling",
+  "firm": "Turner & Townsend",
+  "firm_group": "Specialist",
+  "client": "conference audience (case study)",
+  "client_type": "industry forum",
+  "year": 2026,
+  "practice": "capital-projects",
+  "deck_types": [
+   "pmo-dashboard",
+   "lessons-learned"
+  ],
+  "sector": "capital projects",
+  "url": "https://projectcontrolexpo.s3.eu-west-1.amazonaws.com/assets/user_assets/usa/2026/past-events/day-2-presentation/ppt-day2/Project-Controls-Organisation/PC5.+Dave+Youell/Expo+USA+Speaker+Presentation+Slides+-+Final.pdf",
+  "source_url": "https://projectcontrolexpo.s3.eu-west-1.amazonaws.com/assets/user_assets/usa/2026/past-events/day-2-presentation/ppt-day2/Project-Controls-Organisation/PC5.+Dave+Youell/Expo+USA+Speaker+Presentation+Slides+-+Final.pdf",
+  "publication_route": "firm-published",
+  "slide_count": 18,
+  "verified": true,
+  "slide_sequence": [
+   "Title: what separates high-performing scheduling organisations",
+   "Speaker background",
+   "Agenda",
+   "Controls in high performers",
+   "How outcomes are achieved",
+   "Matrix organisation explained",
+   "Matrix structure diagram",
+   "Project-based structure",
+   "Business-unit and service-line objectives",
+   "Conflicting priorities",
+   "Impact on service delivery",
+   "Who is in charge",
+   "Does structure support controls",
+   "Project-based structure variant",
+   "Matrix variant"
+  ],
+  "storyline_pattern": "Organisation structure diagnosis for high-performing controls teams",
+  "signature_slides": [
+   "matrix organisation diagrams"
+  ],
+  "design": {
+   "palette": "not assessed",
+   "typography": "not assessed",
+   "density": "not assessed",
+   "charts": []
+  },
+  "standout_moves": [],
+  "weaknesses": [],
+  "design_quality": null,
+  "caveat": "Project Controls Expo conference deck (year from event path/slide text; not stated on slides where noted null). Summary paraphrased from extracted text; design not viewed.",
+  "eligibility": "tier3",
+  "tier": 3,
+  "format": "slides"
+ },
+ {
+  "title": "Risk-Driven Project Controls: Why Risk Should Drive Forecasts, Not Sit in a Register",
+  "firm": "Turner & Townsend",
+  "firm_group": "Specialist",
+  "client": "conference audience (case study)",
+  "client_type": "industry forum",
+  "year": 2026,
+  "practice": "capital-projects",
+  "deck_types": [
+   "risk-register",
+   "cost-review",
+   "schedule-review"
+  ],
+  "sector": "capital projects",
+  "url": "https://projectcontrolexpo.s3.eu-west-1.amazonaws.com/assets/user_assets/usa/2026/past-events/day3ppt/day3ppt/3.+Risk+%26+Resilience/R2.+Dathan+%26+Asma/Beasley_Lala_Risk-Driven_Project_Controls_2026_FINAL_issued.pdf",
+  "source_url": "https://projectcontrolexpo.s3.eu-west-1.amazonaws.com/assets/user_assets/usa/2026/past-events/day3ppt/day3ppt/3.+Risk+%26+Resilience/R2.+Dathan+%26+Asma/Beasley_Lala_Risk-Driven_Project_Controls_2026_FINAL_issued.pdf",
+  "publication_route": "firm-published",
+  "slide_count": 23,
+  "verified": true,
+  "slide_sequence": [
+   "Title: risk-driven project controls",
+   "Speaker introductions",
+   "Why risk should drive forecasts",
+   "Moment of truth: reported green, but is it real",
+   "Why projects are harder now",
+   "Not a forecasting but a risk-integration problem",
+   "Disconnect between risk, cost and schedule",
+   "Why forecasts drift",
+   "If risk does not change the forecast",
+   "What risk should be",
+   "Why integration fails: behaviour, process, structure",
+   "Shift from theory to application",
+   "Risk-driven controls overview",
+   "Risk plus cost",
+   "Risk plus schedule",
+   "Risk plus governance: one meeting, one forecast"
+  ],
+  "storyline_pattern": "Hook, diagnosis, integration model, application",
+  "signature_slides": [
+   "risk-adjusted EAC",
+   "risk-cost-schedule integration"
+  ],
+  "design": {
+   "palette": "not assessed",
+   "typography": "not assessed",
+   "density": "not assessed",
+   "charts": []
+  },
+  "standout_moves": [],
+  "weaknesses": [],
+  "design_quality": null,
+  "caveat": "Project Controls Expo conference deck (year from event path/slide text; not stated on slides where noted null). Summary paraphrased from extracted text; design not viewed.",
+  "eligibility": "tier3",
+  "tier": 3,
+  "format": "slides"
+ },
+ {
+  "title": "Integrating Risk Management and Value Engineering Through a Phase-Gate Project Controls Framework",
+  "firm": "Arcadis",
+  "firm_group": "Specialist",
+  "client": "conference audience (case study)",
+  "client_type": "industry forum",
+  "year": 2026,
+  "practice": "capital-projects",
+  "deck_types": [
+   "stage-gate",
+   "risk-register",
+   "cost-review"
+  ],
+  "sector": "capital projects",
+  "url": "https://projectcontrolexpo.s3.eu-west-1.amazonaws.com/assets/user_assets/usa/2026/past-events/day3ppt/day3ppt/5.+Back+To+Basics/BB1.+Andrew%2C+Mera%2C+Anthony+%26+Swapnil/Risk+and+Value+Engineering+Benefits+2026.pdf",
+  "source_url": "https://projectcontrolexpo.s3.eu-west-1.amazonaws.com/assets/user_assets/usa/2026/past-events/day3ppt/day3ppt/5.+Back+To+Basics/BB1.+Andrew%2C+Mera%2C+Anthony+%26+Swapnil/Risk+and+Value+Engineering+Benefits+2026.pdf",
+  "publication_route": "firm-published",
+  "slide_count": 32,
+  "verified": true,
+  "slide_sequence": [
+   "Title: risk and value engineering in a phase-gate",
+   "Learning objectives",
+   "What an integrated phase-gate process is",
+   "Value engineering is not a one-off workshop",
+   "VE plus risk management",
+   "Schematic design VE",
+   "Construction constructability review",
+   "Recap objectives",
+   "Benefits of integration"
+  ],
+  "storyline_pattern": "Learning objectives, integrated phase-gate, VE and risk by phase",
+  "signature_slides": [
+   "phase-gate diagram",
+   "value engineering cost-function"
+  ],
+  "design": {
+   "palette": "not assessed",
+   "typography": "not assessed",
+   "density": "not assessed",
+   "charts": []
+  },
+  "standout_moves": [],
+  "weaknesses": [],
+  "design_quality": null,
+  "caveat": "Project Controls Expo conference deck (year from event path/slide text; not stated on slides where noted null). Summary paraphrased from extracted text; design not viewed.",
+  "eligibility": "tier3",
+  "tier": 3,
+  "format": "slides"
+ },
+ {
+  "title": "A practical guide to the use of portfolio management to drive on time delivery",
+  "firm": "Turner & Townsend",
+  "firm_group": "Specialist",
+  "client": "conference audience (case study)",
+  "client_type": "industry forum",
+  "year": 2016,
+  "practice": "capital-projects",
+  "deck_types": [
+   "programme-prioritisation",
+   "pmo-dashboard"
+  ],
+  "sector": "capital projects",
+  "url": "https://projectcontrolexpo.com/images/events/londonexpo2016/M6.pdf",
+  "source_url": "https://projectcontrolexpo.com/images/events/londonexpo2016/M6.pdf",
+  "publication_route": "firm-published",
+  "slide_count": 32,
+  "verified": true,
+  "slide_sequence": [
+   "Title: portfolio management and coding",
+   "Portfolio management definition",
+   "Putting projects into a portfolio plan",
+   "Coding questions for project controls",
+   "WBS: where",
+   "Multiple coding structures as a matrix",
+   "Resilience and consistency of structure",
+   "Other codes to consider",
+   "Wrap-up"
+  ],
+  "storyline_pattern": "Portfolio concepts, coding structures, resilience",
+  "signature_slides": [
+   "WBS/CBS coding matrix"
+  ],
+  "design": {
+   "palette": "not assessed",
+   "typography": "not assessed",
+   "density": "not assessed",
+   "charts": []
+  },
+  "standout_moves": [],
+  "weaknesses": [],
+  "design_quality": null,
+  "caveat": "Project Controls Expo conference deck (year from event path/slide text; not stated on slides where noted null). Summary paraphrased from extracted text; design not viewed.",
+  "eligibility": "tier3",
+  "tier": 3,
+  "format": "slides"
+ },
+ {
+  "title": "C3",
+  "firm": "Arcadis",
+  "firm_group": "Specialist",
+  "client": "conference audience (case study)",
+  "client_type": "industry forum",
+  "year": 2016,
+  "practice": "capital-projects",
+  "deck_types": [
+   "schedule-review",
+   "delivery-model",
+   "lessons-learned"
+  ],
+  "sector": "capital projects",
+  "url": "https://projectcontrolexpo.com/images/events/londonexpo2016/C3-Tideway.pdf",
+  "source_url": "https://projectcontrolexpo.com/images/events/londonexpo2016/C3-Tideway.pdf",
+  "publication_route": "firm-published",
+  "slide_count": 23,
+  "verified": true,
+  "slide_sequence": [
+   "Title: Tideway project controls challenges and solutions",
+   "History of London sewers",
+   "Tunnelling challenges",
+   "Blackfriars site before",
+   "Below-ground works",
+   "Challenge: developing a robust delivery baseline",
+   "Alliance agreement and delivery model",
+   "Challenge: finding a realistic level of control",
+   "Solutions and lessons"
+  ],
+  "storyline_pattern": "Project introduction, challenges and solutions",
+  "signature_slides": [
+   "tunnel programme visuals"
+  ],
+  "design": {
+   "palette": "not assessed",
+   "typography": "not assessed",
+   "density": "not assessed",
+   "charts": []
+  },
+  "standout_moves": [],
+  "weaknesses": [],
+  "design_quality": null,
+  "caveat": "Project Controls Expo conference deck (year from event path/slide text; not stated on slides where noted null). Summary paraphrased from extracted text; design not viewed.",
+  "eligibility": "tier3",
+  "tier": 3,
+  "format": "slides"
+ },
+ {
+  "title": "Driving effective decision making at governance forums for capital projects",
+  "firm": "Turner & Townsend",
+  "firm_group": "Specialist",
+  "client": "conference audience (case study)",
+  "client_type": "industry forum",
+  "year": 2024,
+  "practice": "capital-projects",
+  "deck_types": [
+   "stage-gate",
+   "pmo-dashboard"
+  ],
+  "sector": "capital projects",
+  "url": "https://projectcontrolexpo.s3.eu-west-1.amazonaws.com/assets/user_assets/aus/pdf/2024/past_event/C1.pdf",
+  "source_url": "https://projectcontrolexpo.s3.eu-west-1.amazonaws.com/assets/user_assets/aus/pdf/2024/past_event/C1.pdf",
+  "publication_route": "firm-published",
+  "slide_count": 18,
+  "verified": true,
+  "slide_sequence": [
+   "Title: decision making at governance forums",
+   "Speaker context",
+   "Reflections on data",
+   "Strategic considerations",
+   "Data consistency basics",
+   "Decision dilemma 1: controls process",
+   "Decision dilemma 3: where to focus",
+   "Decision dilemma 5: politics versus reality",
+   "Close"
+  ],
+  "storyline_pattern": "Reflection on data, strategic considerations, decision dilemmas",
+  "signature_slides": [
+   "decision dilemma slides"
+  ],
+  "design": {
+   "palette": "not assessed",
+   "typography": "not assessed",
+   "density": "not assessed",
+   "charts": []
+  },
+  "standout_moves": [],
+  "weaknesses": [],
+  "design_quality": null,
+  "caveat": "Project Controls Expo conference deck (year from event path/slide text; not stated on slides where noted null). Summary paraphrased from extracted text; design not viewed.",
+  "eligibility": "tier3",
+  "tier": 3,
+  "format": "slides"
+ },
+ {
+  "title": "Adding Value through the Lower Thames Crossing project",
+  "firm": "Arcadis",
+  "firm_group": "Specialist",
+  "client": "conference audience (case study)",
+  "client_type": "industry forum",
+  "year": 2017,
+  "practice": "capital-projects",
+  "deck_types": [
+   "delivery-model",
+   "lessons-learned"
+  ],
+  "sector": "capital projects",
+  "url": "https://projectcontrolexpo.com/uploads/events/uk/images/pictures/schedulefile-101-P2-LTC project controls expo Iain Minns 16NOV17.pdf",
+  "source_url": "https://projectcontrolexpo.com/uploads/events/uk/images/pictures/schedulefile-101-P2-LTC project controls expo Iain Minns 16NOV17.pdf",
+  "publication_route": "firm-published",
+  "slide_count": 15,
+  "verified": true,
+  "slide_sequence": [
+   "Title: adding value through Lower Thames Crossing",
+   "Quote on big decisions for Britain",
+   "Regional map of connected places",
+   "Supporting the economy",
+   "Key challenges: complexity and scale",
+   "Key steps from engagement to application",
+   "17m tunnel boring machine",
+   "Contact"
+  ],
+  "storyline_pattern": "Scheme context, challenges, key steps",
+  "signature_slides": [
+   "scheme map"
+  ],
+  "design": {
+   "palette": "not assessed",
+   "typography": "not assessed",
+   "density": "not assessed",
+   "charts": []
+  },
+  "standout_moves": [],
+  "weaknesses": [],
+  "design_quality": null,
+  "caveat": "Project Controls Expo conference deck (year from event path/slide text; not stated on slides where noted null). Summary paraphrased from extracted text; design not viewed.",
+  "eligibility": "tier3",
+  "tier": 3,
+  "format": "slides"
+ },
+ {
+  "title": "Governance: An Enabler?",
+  "firm": "WSP",
+  "firm_group": "Specialist",
+  "client": "conference audience (case study)",
+  "client_type": "industry forum",
+  "year": 2017,
+  "practice": "capital-projects",
+  "deck_types": [
+   "stage-gate",
+   "lessons-learned"
+  ],
+  "sector": "capital projects",
+  "url": "https://projectcontrolexpo.com/uploads/events/uk/images/pictures/schedulefile-105-P5 - Project Controls Expo Presentation Governance v6.pdf",
+  "source_url": "https://projectcontrolexpo.com/uploads/events/uk/images/pictures/schedulefile-105-P5 - Project Controls Expo Presentation Governance v6.pdf",
+  "publication_route": "firm-published",
+  "slide_count": 29,
+  "verified": true,
+  "slide_sequence": [
+   "Title: governance, an enabler",
+   "About the topic",
+   "Governance approval process",
+   "What governance adds",
+   "Robust governance versus efficiency",
+   "Challenge: unclear project goals",
+   "Challenge: insufficient accountability",
+   "Challenge: slow decisions",
+   "Conclusions"
+  ],
+  "storyline_pattern": "Question, governance process, value, challenges",
+  "signature_slides": [
+   "governance approvals flow"
+  ],
+  "design": {
+   "palette": "not assessed",
+   "typography": "not assessed",
+   "density": "not assessed",
+   "charts": []
+  },
+  "standout_moves": [],
+  "weaknesses": [],
+  "design_quality": null,
+  "caveat": "Project Controls Expo conference deck (year from event path/slide text; not stated on slides where noted null). Summary paraphrased from extracted text; design not viewed.",
+  "eligibility": "tier3",
+  "tier": 3,
+  "format": "slides"
+ },
+ {
+  "title": "Productive Forecasting",
+  "firm": "Jacobs",
+  "firm_group": "Specialist",
+  "client": "conference audience (case study)",
+  "client_type": "industry forum",
+  "year": 2014,
+  "practice": "capital-projects",
+  "deck_types": [
+   "cost-review",
+   "schedule-review"
+  ],
+  "sector": "capital projects",
+  "url": "https://projectcontrolexpo.com/images/events/londonexpo2014/M7_Project_Controls_Expo_Presentation_final_issued.pdf",
+  "source_url": "https://projectcontrolexpo.com/images/events/londonexpo2014/M7_Project_Controls_Expo_Presentation_final_issued.pdf",
+  "publication_route": "firm-published",
+  "slide_count": 41,
+  "verified": true,
+  "slide_sequence": [
+   "Title: productive forecasting",
+   "Do not dwell on the past",
+   "Share forecasts",
+   "When is a wall half complete",
+   "What the productivity factor says",
+   "How to use PF to forecast",
+   "Can PF stay at 1",
+   "Quantity forecasting",
+   "Summary"
+  ],
+  "storyline_pattern": "Forecasting principles, productivity factor, quantity forecasting",
+  "signature_slides": [
+   "productivity factor chart"
+  ],
+  "design": {
+   "palette": "not assessed",
+   "typography": "not assessed",
+   "density": "not assessed",
+   "charts": []
+  },
+  "standout_moves": [],
+  "weaknesses": [],
+  "design_quality": null,
+  "caveat": "Project Controls Expo conference deck (year from event path/slide text; not stated on slides where noted null). Summary paraphrased from extracted text; design not viewed.",
+  "eligibility": "tier3",
+  "tier": 3,
+  "format": "slides"
+ },
+ {
+  "title": "Capturing the full performance potential of mega-projects \u2013 Refocus from Control to Performance Guy Turner And",
+  "firm": "Turner & Townsend",
+  "firm_group": "Specialist",
+  "client": "conference audience (case study)",
+  "client_type": "industry forum",
+  "year": 2022,
+  "practice": "capital-projects",
+  "deck_types": [
+   "delivery-model",
+   "lessons-learned",
+   "benchmarking"
+  ],
+  "sector": "capital projects",
+  "url": "https://projectcontrolexpo.s3.eu-west-1.amazonaws.com/assets/user_assets/uk/uk%20testimonial%202022/pdf%20day%202/Megaproject%20day%202/P4%20-%20PCE%20UK%202022%20-%20Guy%20Turner.pdf",
+  "source_url": "https://projectcontrolexpo.s3.eu-west-1.amazonaws.com/assets/user_assets/uk/uk%20testimonial%202022/pdf%20day%202/Megaproject%20day%202/P4%20-%20PCE%20UK%202022%20-%20Guy%20Turner.pdf",
+  "publication_route": "firm-published",
+  "slide_count": 17,
+  "verified": true,
+  "slide_sequence": [
+   "Title: capturing mega-project performance, shifting from control to performance",
+   "Project value of 1m per day",
+   "Teams look backwards too much",
+   "Six key changes",
+   "Talked about but get lost",
+   "Does every team know its date",
+   "Empower the frontline",
+   "Collaborate for mutual success",
+   "Close"
+  ],
+  "storyline_pattern": "Prize at stake, six changes, frontline empowerment, collaboration",
+  "signature_slides": [
+   "six-change framework"
+  ],
+  "design": {
+   "palette": "not assessed",
+   "typography": "not assessed",
+   "density": "not assessed",
+   "charts": []
+  },
+  "standout_moves": [],
+  "weaknesses": [],
+  "design_quality": null,
+  "caveat": "Project Controls Expo conference deck (year from event path/slide text; not stated on slides where noted null). Summary paraphrased from extracted text; design not viewed.",
+  "eligibility": "tier3",
+  "tier": 3,
+  "format": "slides"
+ },
+ {
+  "title": "Experience on mega projects outside the nuclear industry",
+  "firm": "Gleeds",
+  "firm_group": "Specialist",
+  "client": "conference audience (case study)",
+  "client_type": "industry forum",
+  "year": 2022,
+  "practice": "capital-projects",
+  "deck_types": [
+   "cost-review",
+   "delivery-model"
+  ],
+  "sector": "capital projects",
+  "url": "https://projectcontrolexpo.s3.eu-west-1.amazonaws.com/assets/user_assets/uk/uk%20testimonial%202022/pdf%20day%202/Megaproject%20day%202/P6%20-%20PCE%20UK%202022%20-%20Russell.pdf",
+  "source_url": "https://projectcontrolexpo.s3.eu-west-1.amazonaws.com/assets/user_assets/uk/uk%20testimonial%202022/pdf%20day%202/Megaproject%20day%202/P6%20-%20PCE%20UK%202022%20-%20Russell.pdf",
+  "publication_route": "firm-published",
+  "slide_count": 17,
+  "verified": true,
+  "slide_sequence": [
+   "Title: avoiding false cost data on at-risk work",
+   "Speaker background",
+   "Change timing challenges",
+   "Collecting cost on early work",
+   "Authorised unpriced work defined",
+   "Employer scope change instruction flow",
+   "Contract change",
+   "Benefits and future"
+  ],
+  "storyline_pattern": "Problem, solution, benefits, future",
+  "signature_slides": [
+   "change flow diagram"
+  ],
+  "design": {
+   "palette": "not assessed",
+   "typography": "not assessed",
+   "density": "not assessed",
+   "charts": []
+  },
+  "standout_moves": [],
+  "weaknesses": [],
+  "design_quality": null,
+  "caveat": "Project Controls Expo conference deck (year from event path/slide text; not stated on slides where noted null). Summary paraphrased from extracted text; design not viewed.",
+  "eligibility": "tier3",
+  "tier": 3,
+  "format": "slides"
+ },
+ {
+  "title": "Inflation Management on Mega Projects",
+  "firm": "Jacobs",
+  "firm_group": "Specialist",
+  "client": "conference audience (case study)",
+  "client_type": "industry forum",
+  "year": 2024,
+  "practice": "capital-projects",
+  "deck_types": [
+   "cost-review",
+   "risk-register"
+  ],
+  "sector": "capital projects",
+  "url": "https://projectcontrolexpo.s3.eu-west-1.amazonaws.com/assets/user_assets/uk/2024/past-event-24/day-1-sessions/I7.pdf",
+  "source_url": "https://projectcontrolexpo.s3.eu-west-1.amazonaws.com/assets/user_assets/uk/2024/past-event-24/day-1-sessions/I7.pdf",
+  "publication_route": "firm-published",
+  "slide_count": 41,
+  "verified": true,
+  "slide_sequence": [
+   "Title: monitoring inflation on mega projects",
+   "Why monitor it",
+   "What we know about inflation",
+   "Introduction: how inflation feels",
+   "Recap",
+   "Change normalisation",
+   "Track, afford, normalise",
+   "Engine design",
+   "Build logic",
+   "Wrap-up"
+  ],
+  "storyline_pattern": "Why monitor, what we know, normalise, engine design",
+  "signature_slides": [
+   "inflation index model"
+  ],
+  "design": {
+   "palette": "not assessed",
+   "typography": "not assessed",
+   "density": "not assessed",
+   "charts": []
+  },
+  "standout_moves": [],
+  "weaknesses": [],
+  "design_quality": null,
+  "caveat": "Project Controls Expo conference deck (year from event path/slide text; not stated on slides where noted null). Summary paraphrased from extracted text; design not viewed.",
+  "eligibility": "tier3",
+  "tier": 3,
+  "format": "slides"
+ },
+ {
+  "title": "The numbers are wrong and that is OK",
+  "firm": "AECOM",
+  "firm_group": "Specialist",
+  "client": "conference audience (case study)",
+  "client_type": "industry forum",
+  "year": 2024,
+  "practice": "capital-projects",
+  "deck_types": [
+   "cost-review",
+   "risk-register"
+  ],
+  "sector": "capital projects",
+  "url": "https://projectcontrolexpo.s3.eu-west-1.amazonaws.com/assets/user_assets/uk/2024/past-event-24/DAY-2-SESSION/M6.pdf",
+  "source_url": "https://projectcontrolexpo.s3.eu-west-1.amazonaws.com/assets/user_assets/uk/2024/past-event-24/DAY-2-SESSION/M6.pdf",
+  "publication_route": "firm-published",
+  "slide_count": 28,
+  "verified": true,
+  "slide_sequence": [
+   "Title: the numbers are wrong and that is OK",
+   "Best IEAC formula",
+   "Seven secrets to a better forecast",
+   "About the firm",
+   "Disclaimer",
+   "Roles: estimator, planner, controller, risk",
+   "Part 1: where did it go wrong",
+   "The estimate",
+   "The risk",
+   "The actuals",
+   "Fixes and close"
+  ],
+  "storyline_pattern": "Where it went wrong in estimate, risk, actuals; fixes",
+  "signature_slides": [
+   "IEAC formula comparison"
+  ],
+  "design": {
+   "palette": "not assessed",
+   "typography": "not assessed",
+   "density": "not assessed",
+   "charts": []
+  },
+  "standout_moves": [],
+  "weaknesses": [],
+  "design_quality": null,
+  "caveat": "Project Controls Expo conference deck (year from event path/slide text; not stated on slides where noted null). Summary paraphrased from extracted text; design not viewed.",
+  "eligibility": "tier3",
+  "tier": 3,
+  "format": "slides"
+ },
+ {
+  "title": "The Art of Underestimating : A Guide to Budget Bloopers in Mega Projects",
+  "firm": "Mott MacDonald",
+  "firm_group": "Specialist",
+  "client": "conference audience (case study)",
+  "client_type": "industry forum",
+  "year": 2024,
+  "practice": "capital-projects",
+  "deck_types": [
+   "cost-review",
+   "lessons-learned"
+  ],
+  "sector": "capital projects",
+  "url": "https://projectcontrolexpo.s3.eu-west-1.amazonaws.com/assets/user_assets/usa/2024/pdf/Files/P3%2B-%2BPCE%2BUSA%2B2024%2B-%2BTonja%2BStradley%2B%26%2BALex%2BTodorova.pdf",
+  "source_url": "https://projectcontrolexpo.s3.eu-west-1.amazonaws.com/assets/user_assets/usa/2024/pdf/Files/P3%2B-%2BPCE%2BUSA%2B2024%2B-%2BTonja%2BStradley%2B%26%2BALex%2BTodorova.pdf",
+  "publication_route": "firm-published",
+  "slide_count": 23,
+  "verified": true,
+  "slide_sequence": [
+   "Title: the art of underestimating",
+   "The problem",
+   "HS2 case",
+   "Findings",
+   "Contributing factors from McKinsey research",
+   "Lack of transparency and accurate data",
+   "Lack of sufficient planning",
+   "Mitigation strategies",
+   "Close"
+  ],
+  "storyline_pattern": "Problem, HS2 example, findings, contributing factors, mitigations",
+  "signature_slides": [
+   "overrun case slide",
+   "factor list"
+  ],
+  "design": {
+   "palette": "not assessed",
+   "typography": "not assessed",
+   "density": "not assessed",
+   "charts": []
+  },
+  "standout_moves": [],
+  "weaknesses": [],
+  "design_quality": null,
+  "caveat": "Project Controls Expo conference deck (year from event path/slide text; not stated on slides where noted null). Summary paraphrased from extracted text; design not viewed.",
+  "eligibility": "tier3",
+  "tier": 3,
+  "format": "slides"
+ },
+ {
+  "title": "The Master",
+  "firm": "AtkinsRealis",
+  "firm_group": "Specialist",
+  "client": "conference audience (case study)",
+  "client_type": "industry forum",
+  "year": 2025,
+  "practice": "capital-projects",
+  "deck_types": [
+   "cost-review",
+   "risk-register"
+  ],
+  "sector": "capital projects",
+  "url": "https://projectcontrolexpo.s3.eu-west-1.amazonaws.com/assets/user_assets/uk/2025/past-events/sessions-pdf/day2/technology/T7-Phil-De-Lisa+Silander.pdf",
+  "source_url": "https://projectcontrolexpo.s3.eu-west-1.amazonaws.com/assets/user_assets/uk/2025/past-events/sessions-pdf/day2/technology/T7-Phil-De-Lisa+Silander.pdf",
+  "publication_route": "firm-published",
+  "slide_count": 23,
+  "verified": true,
+  "slide_sequence": [
+   "Title: master assumptions register",
+   "Benefits and context",
+   "Register across tender and contract phases",
+   "Assumptions fill gaps in facts",
+   "Optimistic and pessimistic assumptions",
+   "Current versus future state",
+   "Basis of risk and estimate link",
+   "Worked example: backfilling a turbine hall",
+   "Close"
+  ],
+  "storyline_pattern": "Benefits, context, assumptions, register concept, worked example",
+  "signature_slides": [
+   "master assumptions register"
+  ],
+  "design": {
+   "palette": "not assessed",
+   "typography": "not assessed",
+   "density": "not assessed",
+   "charts": []
+  },
+  "standout_moves": [],
+  "weaknesses": [],
+  "design_quality": null,
+  "caveat": "Project Controls Expo conference deck (year from event path/slide text; not stated on slides where noted null). Summary paraphrased from extracted text; design not viewed.",
+  "eligibility": "tier3",
+  "tier": 3,
+  "format": "slides"
+ },
+ {
+  "title": "Successful Implementation of an Integrated Schedule/Cost Control System",
+  "firm": "AECOM",
+  "firm_group": "Specialist",
+  "client": "conference audience (case study)",
+  "client_type": "industry forum",
+  "year": 2022,
+  "practice": "capital-projects",
+  "deck_types": [
+   "cost-review",
+   "schedule-review",
+   "pmo-dashboard"
+  ],
+  "sector": "capital projects",
+  "url": "https://projectcontrolexpo.s3.eu-west-1.amazonaws.com/assets/user_assets/usa/past_event/C7%20-%20PCE%20USA%202022%20-%20Rohan%20Mutha.pdf",
+  "source_url": "https://projectcontrolexpo.s3.eu-west-1.amazonaws.com/assets/user_assets/usa/past_event/C7%20-%20PCE%20USA%202022%20-%20Rohan%20Mutha.pdf",
+  "publication_route": "firm-published",
+  "slide_count": 41,
+  "verified": true,
+  "slide_sequence": [
+   "Title: integrated schedule and cost control system",
+   "Earned value terms",
+   "Enterprise project structure",
+   "Master CPM schedule layout",
+   "Actual cost analysis",
+   "Program cost curve",
+   "Program outline",
+   "Project layout",
+   "Results and lessons"
+  ],
+  "storyline_pattern": "Case study of integrated schedule and cost system",
+  "signature_slides": [
+   "program cost curve",
+   "master CPM schedule",
+   "enterprise project structure"
+  ],
+  "design": {
+   "palette": "not assessed",
+   "typography": "not assessed",
+   "density": "not assessed",
+   "charts": []
+  },
+  "standout_moves": [],
+  "weaknesses": [],
+  "design_quality": null,
+  "caveat": "Project Controls Expo conference deck (year from event path/slide text; not stated on slides where noted null). Summary paraphrased from extracted text; design not viewed.",
+  "eligibility": "tier3",
+  "tier": 3,
+  "format": "slides"
+ },
+ {
+  "title": "PMO as a vehicle for strategic outcomes",
+  "firm": "Turner & Townsend",
+  "firm_group": "Specialist",
+  "client": "conference audience (case study)",
+  "client_type": "industry forum",
+  "year": 2018,
+  "practice": "capital-projects",
+  "deck_types": [
+   "pmo-dashboard",
+   "delivery-model",
+   "mobilisation"
+  ],
+  "sector": "capital projects",
+  "url": "https://projectcontrolexpo.com/uploads/events/uk/images/pictures/schedulefile-301-P6- Chris.pdf",
+  "source_url": "https://projectcontrolexpo.com/uploads/events/uk/images/pictures/schedulefile-301-P6- Chris.pdf",
+  "publication_route": "firm-published",
+  "slide_count": 13,
+  "verified": true,
+  "slide_sequence": [
+   "Title: PMO as a vehicle for strategic outcomes",
+   "About the topic",
+   "Four client types: lazy",
+   "Four client types: enlightened",
+   "Critical design factors",
+   "Doing things differently",
+   "Thanks"
+  ],
+  "storyline_pattern": "Client types and PMO design",
+  "signature_slides": [
+   "client archetypes"
+  ],
+  "design": {
+   "palette": "not assessed",
+   "typography": "not assessed",
+   "density": "not assessed",
+   "charts": []
+  },
+  "standout_moves": [],
+  "weaknesses": [],
+  "design_quality": null,
+  "caveat": "Project Controls Expo conference deck (year from event path/slide text; not stated on slides where noted null). Summary paraphrased from extracted text; design not viewed.",
+  "eligibility": "tier3",
+  "tier": 3,
+  "format": "slides"
+ },
+ {
+  "title": "The Role of Risk Management in Success / Failure of Megaprojects",
+  "firm": "Jacobs",
+  "firm_group": "Specialist",
+  "client": "conference audience (case study)",
+  "client_type": "industry forum",
+  "year": null,
+  "practice": "capital-projects",
+  "deck_types": [
+   "risk-register",
+   "lessons-learned"
+  ],
+  "sector": "capital projects",
+  "url": "https://projectcontrolexpo.com/uploads/events/aus/images/pictures/schedulefile-366-P3 - Santhosh Therakam - Project Controls  -  Presentation_FINAL 2.pdf",
+  "source_url": "https://projectcontrolexpo.com/uploads/events/aus/images/pictures/schedulefile-366-P3 - Santhosh Therakam - Project Controls  -  Presentation_FINAL 2.pdf",
+  "publication_route": "firm-published",
+  "slide_count": 35,
+  "verified": true,
+  "slide_sequence": [
+   "Title: role of risk management in megaproject failure",
+   "Defining the problem",
+   "Complicated versus complex",
+   "Insanity: repeating the same practice",
+   "Optimism bias and road overruns",
+   "Lack of rigour with Sydney Metro example",
+   "Low innovation and productivity",
+   "ISO 31000 process",
+   "Recommendations"
+  ],
+  "storyline_pattern": "Problem definition, failure modes, optimism bias, rigour, standards",
+  "signature_slides": [
+   "failure-mode list"
+  ],
+  "design": {
+   "palette": "not assessed",
+   "typography": "not assessed",
+   "density": "not assessed",
+   "charts": []
+  },
+  "standout_moves": [],
+  "weaknesses": [],
+  "design_quality": null,
+  "caveat": "Project Controls Expo conference deck (year from event path/slide text; not stated on slides where noted null). Summary paraphrased from extracted text; design not viewed.",
+  "eligibility": "tier3",
+  "tier": 3,
+  "format": "slides"
+ },
+ {
+  "title": "The digitalisation of Project Controls",
+  "firm": "Jacobs",
+  "firm_group": "Specialist",
+  "client": "conference audience (case study)",
+  "client_type": "industry forum",
+  "year": 2020,
+  "practice": "capital-projects",
+  "deck_types": [
+   "pmo-dashboard"
+  ],
+  "sector": "capital projects",
+  "url": "https://projectcontrolexpo.s3.eu-west-1.amazonaws.com/assets/user_assets/aus/pdf/past%20event/masterclass/M3%20-%20PCE%20AUS%202022%20-%20Simon%20and%20Michael.pdf",
+  "source_url": "https://projectcontrolexpo.s3.eu-west-1.amazonaws.com/assets/user_assets/aus/pdf/past%20event/masterclass/M3%20-%20PCE%20AUS%202022%20-%20Simon%20and%20Michael.pdf",
+  "publication_route": "firm-published",
+  "slide_count": 14,
+  "verified": true,
+  "slide_sequence": [
+   "Title: digitalisation of project controls",
+   "Experience of the firm",
+   "Promise of digital",
+   "Construction lags other sectors",
+   "Scheduling, cost and change tools",
+   "Staff capability needs",
+   "Capabilities, models and tools",
+   "Close"
+  ],
+  "storyline_pattern": "Promise of digital, operating conditions, capability",
+  "signature_slides": [
+   "tool landscape"
+  ],
+  "design": {
+   "palette": "not assessed",
+   "typography": "not assessed",
+   "density": "not assessed",
+   "charts": []
+  },
+  "standout_moves": [],
+  "weaknesses": [],
+  "design_quality": null,
+  "caveat": "Project Controls Expo conference deck (year from event path/slide text; not stated on slides where noted null). Summary paraphrased from extracted text; design not viewed.",
+  "eligibility": "tier3",
+  "tier": 3,
+  "format": "slides"
+ },
+ {
+  "title": "Project",
+  "firm": "Jacobs",
+  "firm_group": "Specialist",
+  "client": "conference audience (case study)",
+  "client_type": "industry forum",
+  "year": 2022,
+  "practice": "capital-projects",
+  "deck_types": [
+   "pmo-dashboard",
+   "lessons-learned"
+  ],
+  "sector": "capital projects",
+  "url": "https://projectcontrolexpo.s3.eu-west-1.amazonaws.com/assets/user_assets/aus/pdf/past%20event/case%20study/C5%20-%20PCE%20AUS%202022%20-%20Jonathan%20J.pdf",
+  "source_url": "https://projectcontrolexpo.s3.eu-west-1.amazonaws.com/assets/user_assets/aus/pdf/past%20event/case%20study/C5%20-%20PCE%20AUS%202022%20-%20Jonathan%20J.pdf",
+  "publication_route": "firm-published",
+  "slide_count": 17,
+  "verified": true,
+  "slide_sequence": [
+   "Title: project controls systems integration lessons",
+   "What great integrated controls look like",
+   "Implementing the right solution",
+   "Scalability, usability, integration criteria",
+   "Lessons learned",
+   "Interfaces and data",
+   "Case 1: cost and contracts system",
+   "Which one succeeded"
+  ],
+  "storyline_pattern": "What good looks like, selection, lessons, two case studies",
+  "signature_slides": [
+   "selection criteria",
+   "case comparison"
+  ],
+  "design": {
+   "palette": "not assessed",
+   "typography": "not assessed",
+   "density": "not assessed",
+   "charts": []
+  },
+  "standout_moves": [],
+  "weaknesses": [],
+  "design_quality": null,
+  "caveat": "Project Controls Expo conference deck (year from event path/slide text; not stated on slides where noted null). Summary paraphrased from extracted text; design not viewed.",
+  "eligibility": "tier3",
+  "tier": 3,
+  "format": "slides"
+ },
+ {
+  "title": "Infra projects in rail, aviation and highways case studies and what Arcadis brings the application of project",
+  "firm": "Arcadis",
+  "firm_group": "Specialist",
+  "client": "conference audience (case study)",
+  "client_type": "industry forum",
+  "year": 2019,
+  "practice": "capital-projects",
+  "deck_types": [
+   "pmo-dashboard",
+   "schedule-review"
+  ],
+  "sector": "capital projects",
+  "url": "https://projectcontrolexpo.com/uploads/events/uk/images/pictures/schedulefile-353-PPT- C1- Ammar Hajiya- Arcadis.pdf",
+  "source_url": "https://projectcontrolexpo.com/uploads/events/uk/images/pictures/schedulefile-353-PPT- C1- Ammar Hajiya- Arcadis.pdf",
+  "publication_route": "firm-published",
+  "slide_count": 39,
+  "verified": true,
+  "slide_sequence": [
+   "Title: infrastructure project controls case studies",
+   "Manchester Airport Transformation Programme",
+   "Problem: unconsumable data",
+   "Better access to information",
+   "Adaptable approach",
+   "Digital Railway Programme readiness for CP6",
+   "Standard operating procedures",
+   "Lower Thames Crossing digital solutions",
+   "Effects across the project"
+  ],
+  "storyline_pattern": "Airport, rail and highway case studies",
+  "signature_slides": [
+   "programme data dashboards"
+  ],
+  "design": {
+   "palette": "not assessed",
+   "typography": "not assessed",
+   "density": "not assessed",
+   "charts": []
+  },
+  "standout_moves": [],
+  "weaknesses": [],
+  "design_quality": null,
+  "caveat": "Project Controls Expo conference deck (year from event path/slide text; not stated on slides where noted null). Summary paraphrased from extracted text; design not viewed.",
+  "eligibility": "tier3",
+  "tier": 3,
+  "format": "slides"
+ },
+ {
+  "title": "Data-driven decision making and its effectiveness on Capital projects",
+  "firm": "Turner & Townsend",
+  "firm_group": "Specialist",
+  "client": "conference audience (case study)",
+  "client_type": "industry forum",
+  "year": 2023,
+  "practice": "capital-projects",
+  "deck_types": [
+   "pmo-dashboard",
+   "stage-gate"
+  ],
+  "sector": "capital projects",
+  "url": "https://projectcontrolexpo.s3.eu-west-1.amazonaws.com/assets/user_assets/aus/pdf/past%20event/2023/M3_PCE%20AUS%202023_Abhi%20Datta%20.pdf",
+  "source_url": "https://projectcontrolexpo.s3.eu-west-1.amazonaws.com/assets/user_assets/aus/pdf/past%20event/2023/M3_PCE%20AUS%202023_Abhi%20Datta%20.pdf",
+  "publication_route": "firm-published",
+  "slide_count": 28,
+  "verified": true,
+  "slide_sequence": [
+   "Title: data-driven decision making in project organisations",
+   "Speaker",
+   "How data drives outcomes",
+   "Landscape and culture drivers",
+   "Reporting current-state assessment",
+   "Findings and recommendations",
+   "Metrics and status reporting",
+   "Change management gets ignored",
+   "Close"
+  ],
+  "storyline_pattern": "Data-to-outcomes framing, reporting current-state assessment, metrics, change management",
+  "signature_slides": [
+   "reporting landscape assessment"
+  ],
+  "design": {
+   "palette": "not assessed",
+   "typography": "not assessed",
+   "density": "not assessed",
+   "charts": []
+  },
+  "standout_moves": [],
+  "weaknesses": [],
+  "design_quality": null,
+  "caveat": "Project Controls Expo conference deck (year from event path/slide text; not stated on slides where noted null). Summary paraphrased from extracted text; design not viewed.",
+  "eligibility": "tier3",
+  "tier": 3,
+  "format": "slides"
+ },
+ {
+  "title": "Delay",
+  "firm": "Hill International",
+  "firm_group": "Specialist",
+  "client": "conference audience (case study)",
+  "client_type": "industry forum",
+  "year": 2012,
+  "practice": "capital-projects",
+  "deck_types": [
+   "schedule-review",
+   "lessons-learned"
+  ],
+  "sector": "capital projects",
+  "url": "https://projectcontrolexpo.com/images/events/londonexpo2012/B1-Expo_Presentation_Keith_Tregunna_Knowles_31-10-12.pdf",
+  "source_url": "https://projectcontrolexpo.com/images/events/londonexpo2012/B1-Expo_Presentation_Keith_Tregunna_Knowles_31-10-12.pdf",
+  "publication_route": "firm-published",
+  "slide_count": 29,
+  "verified": true,
+  "slide_sequence": [
+   "Title: delay analysis, letting the evidence speak",
+   "Speaker",
+   "Critical path terms",
+   "Free float and total float",
+   "Task table with floats",
+   "As-built analysis of approach roads",
+   "Collapsed as-built",
+   "Time-slice window analysis",
+   "Conclusions"
+  ],
+  "storyline_pattern": "Critical path terms, as-built, collapsed as-built, time-slice",
+  "signature_slides": [
+   "delay analysis bar charts"
+  ],
+  "design": {
+   "palette": "not assessed",
+   "typography": "not assessed",
+   "density": "not assessed",
+   "charts": []
+  },
+  "standout_moves": [],
+  "weaknesses": [],
+  "design_quality": null,
+  "caveat": "Project Controls Expo conference deck (year from event path/slide text; not stated on slides where noted null). Summary paraphrased from extracted text; design not viewed.",
+  "eligibility": "tier3",
+  "tier": 3,
+  "format": "slides"
+ },
+ {
+  "title": "The Art of successfully integrating supplier information into Baselines",
+  "firm": "Turner & Townsend",
+  "firm_group": "Specialist",
+  "client": "conference audience (case study)",
+  "client_type": "industry forum",
+  "year": 2023,
+  "practice": "capital-projects",
+  "deck_types": [
+   "delivery-model",
+   "pmo-dashboard"
+  ],
+  "sector": "capital projects",
+  "url": "https://projectcontrolexpo.s3.eu-west-1.amazonaws.com/assets/user_assets/uk/uk-2023-pastevent/day%201/master-class-zone/M1-PCE.pdf",
+  "source_url": "https://projectcontrolexpo.s3.eu-west-1.amazonaws.com/assets/user_assets/uk/uk-2023-pastevent/day%201/master-class-zone/M1-PCE.pdf",
+  "publication_route": "firm-published",
+  "slide_count": 24,
+  "verified": true,
+  "slide_sequence": [
+   "Title: integrating supplier information into baselines",
+   "Contents",
+   "DE&S strategy",
+   "Beginnings of integration",
+   "Published desk instructions",
+   "Industrial tailoring guide steps",
+   "Contract type and value heat map",
+   "Principles of integration",
+   "Close"
+  ],
+  "storyline_pattern": "Organisation context, transformation, tailoring guide, heat map, principles",
+  "signature_slides": [
+   "contract value heat map"
+  ],
+  "design": {
+   "palette": "not assessed",
+   "typography": "not assessed",
+   "density": "not assessed",
+   "charts": []
+  },
+  "standout_moves": [],
+  "weaknesses": [],
+  "design_quality": null,
+  "caveat": "Project Controls Expo conference deck (year from event path/slide text; not stated on slides where noted null). Summary paraphrased from extracted text; design not viewed.",
+  "eligibility": "tier3",
+  "tier": 3,
+  "format": "slides"
+ },
+ {
+  "title": "Risk Maturity Model for Risk Professionals : Have you got the skills for the next wave of innovation? Charlott",
+  "firm": "AECOM",
+  "firm_group": "Specialist",
+  "client": "conference audience (case study)",
+  "client_type": "industry forum",
+  "year": 2023,
+  "practice": "capital-projects",
+  "deck_types": [
+   "risk-register",
+   "benchmarking"
+  ],
+  "sector": "capital projects",
+  "url": "https://projectcontrolexpo.s3.eu-west-1.amazonaws.com/assets/user_assets/uk/uk-2023-pastevent/day%202/innovation-zone/I7-PCE%20UK%202023-Charlotte%20Candy%20(AECOM).pdf",
+  "source_url": "https://projectcontrolexpo.s3.eu-west-1.amazonaws.com/assets/user_assets/uk/uk-2023-pastevent/day%202/innovation-zone/I7-PCE%20UK%202023-Charlotte%20Candy%20(AECOM).pdf",
+  "publication_route": "firm-published",
+  "slide_count": 14,
+  "verified": true,
+  "slide_sequence": [
+   "Title: risk maturity model for risk professionals",
+   "About the firm",
+   "History of the risk manager",
+   "Maturity model: beginner to expert",
+   "Reasons for the shift",
+   "Organisation with problematic schemes",
+   "Health warning",
+   "Close"
+  ],
+  "storyline_pattern": "History, maturity model, shift drivers",
+  "signature_slides": [
+   "risk manager maturity ladder"
+  ],
+  "design": {
+   "palette": "not assessed",
+   "typography": "not assessed",
+   "density": "not assessed",
+   "charts": []
+  },
+  "standout_moves": [],
+  "weaknesses": [],
+  "design_quality": null,
+  "caveat": "Project Controls Expo conference deck (year from event path/slide text; not stated on slides where noted null). Summary paraphrased from extracted text; design not viewed.",
+  "eligibility": "tier3",
+  "tier": 3,
+  "format": "slides"
+ },
+ {
+  "title": "Integrated project controls emphasizing cost as a key competency",
+  "firm": "Turner & Townsend",
+  "firm_group": "Specialist",
+  "client": "conference audience (case study)",
+  "client_type": "industry forum",
+  "year": 2024,
+  "practice": "capital-projects",
+  "deck_types": [
+   "cost-review"
+  ],
+  "sector": "capital projects",
+  "url": "https://projectcontrolexpo.s3.eu-west-1.amazonaws.com/assets/user_assets/aus/pdf/2024/past_event/B1.pdf",
+  "source_url": "https://projectcontrolexpo.s3.eu-west-1.amazonaws.com/assets/user_assets/aus/pdf/2024/past_event/B1.pdf",
+  "publication_route": "firm-published",
+  "slide_count": 30,
+  "verified": true,
+  "slide_sequence": [
+   "Title: integrated controls with cost as key competency",
+   "Controls disciplines",
+   "Cost estimating components",
+   "Why estimate",
+   "AACE estimate classes",
+   "Scope to cost plan",
+   "Rate build-ups",
+   "Close"
+  ],
+  "storyline_pattern": "Controls disciplines, estimating components, estimate classes, rate build-ups",
+  "signature_slides": [
+   "estimate class table"
+  ],
+  "design": {
+   "palette": "not assessed",
+   "typography": "not assessed",
+   "density": "not assessed",
+   "charts": []
+  },
+  "standout_moves": [],
+  "weaknesses": [],
+  "design_quality": null,
+  "caveat": "Project Controls Expo conference deck (year from event path/slide text; not stated on slides where noted null). Summary paraphrased from extracted text; design not viewed.",
+  "eligibility": "tier3",
+  "tier": 3,
+  "format": "slides"
+ },
+ {
+  "title": "Implementing Risk Management in an",
+  "firm": "Arcadis",
+  "firm_group": "Specialist",
+  "client": "conference audience (case study)",
+  "client_type": "industry forum",
+  "year": 2023,
+  "practice": "capital-projects",
+  "deck_types": [
+   "stage-gate",
+   "risk-register"
+  ],
+  "sector": "capital projects",
+  "url": "https://projectcontrolexpo.s3.eu-west-1.amazonaws.com/assets/user_assets/usa/past_event2023/I5-PCE%20USA%202023-Richard%20and%20%20Andrew.pdf",
+  "source_url": "https://projectcontrolexpo.s3.eu-west-1.amazonaws.com/assets/user_assets/usa/past_event2023/I5-PCE%20USA%202023-Richard%20and%20%20Andrew.pdf",
+  "publication_route": "firm-published",
+  "slide_count": 40,
+  "verified": true,
+  "slide_sequence": [
+   "Title: risk management in integrated phased controls",
+   "What integrated phased controls means",
+   "Return on investment and engaged teams",
+   "Pre-design stage 0",
+   "Schematic design stage 1a",
+   "Stakeholder constraints example",
+   "Detailed design",
+   "Construction",
+   "Close"
+  ],
+  "storyline_pattern": "Phased environment definition then stage-by-stage risk activities",
+  "signature_slides": [
+   "FEL stage grid"
+  ],
+  "design": {
+   "palette": "not assessed",
+   "typography": "not assessed",
+   "density": "not assessed",
+   "charts": []
+  },
+  "standout_moves": [],
+  "weaknesses": [],
+  "design_quality": null,
+  "caveat": "Project Controls Expo conference deck (year from event path/slide text; not stated on slides where noted null). Summary paraphrased from extracted text; design not viewed.",
+  "eligibility": "tier3",
+  "tier": 3,
+  "format": "slides"
+ },
+ {
+  "title": "A fresh and innovative approach to Forensic Delay Analysis",
+  "firm": "AtkinsRealis",
+  "firm_group": "Specialist",
+  "client": "conference audience (case study)",
+  "client_type": "industry forum",
+  "year": 2024,
+  "practice": "capital-projects",
+  "deck_types": [
+   "schedule-review",
+   "lessons-learned"
+  ],
+  "sector": "capital projects",
+  "url": "https://projectcontrolexpo.s3.eu-west-1.amazonaws.com/assets/user_assets/uk/2024/past-event-24/day-1-sessions/B4.pdf",
+  "source_url": "https://projectcontrolexpo.s3.eu-west-1.amazonaws.com/assets/user_assets/uk/2024/past-event-24/day-1-sessions/B4.pdf",
+  "publication_route": "firm-published",
+  "slide_count": 19,
+  "verified": true,
+  "slide_sequence": [
+   "Title: new approach to forensic delay analysis",
+   "Agenda",
+   "Overview of forensic delay analysis",
+   "Extension of time claims",
+   "Analysis types and methods",
+   "Top causes of claims in UK",
+   "Do not wait and see",
+   "Challenges identified",
+   "New approach proposal"
+  ],
+  "storyline_pattern": "Overview of delay analysis, claims causes, challenges, new approach",
+  "signature_slides": [
+   "delay analysis method table"
+  ],
+  "design": {
+   "palette": "not assessed",
+   "typography": "not assessed",
+   "density": "not assessed",
+   "charts": []
+  },
+  "standout_moves": [],
+  "weaknesses": [],
+  "design_quality": null,
+  "caveat": "Project Controls Expo conference deck (year from event path/slide text; not stated on slides where noted null). Summary paraphrased from extracted text; design not viewed.",
+  "eligibility": "tier3",
+  "tier": 3,
+  "format": "slides"
+ },
+ {
+  "title": "How to create and manage a successful project schedule",
+  "firm": "Turner & Townsend",
+  "firm_group": "Specialist",
+  "client": "conference audience (case study)",
+  "client_type": "industry forum",
+  "year": 2024,
+  "practice": "capital-projects",
+  "deck_types": [
+   "schedule-review",
+   "pmo-dashboard"
+  ],
+  "sector": "capital projects",
+  "url": "https://projectcontrolexpo.s3.eu-west-1.amazonaws.com/assets/user_assets/usa/2024/pdf/Files/M3-PCE%2BUSA%2B2024-Louise%2BBenwell.pdf",
+  "source_url": "https://projectcontrolexpo.s3.eu-west-1.amazonaws.com/assets/user_assets/usa/2024/pdf/Files/M3-PCE%2BUSA%2B2024-Louise%2BBenwell.pdf",
+  "publication_route": "firm-published",
+  "slide_count": 21,
+  "verified": true,
+  "slide_sequence": [
+   "Title: create and manage a successful project schedule",
+   "Speaker",
+   "Why schedules matter",
+   "Robust, realistic, reliable",
+   "Setting the baseline",
+   "Contingency and float ownership",
+   "Give and get milestones",
+   "Document basis of schedule, interfaces, quality",
+   "Close"
+  ],
+  "storyline_pattern": "Why schedule, baseline, contingency, milestones, documentation",
+  "signature_slides": [
+   "give-get milestones"
+  ],
+  "design": {
+   "palette": "not assessed",
+   "typography": "not assessed",
+   "density": "not assessed",
+   "charts": []
+  },
+  "standout_moves": [],
+  "weaknesses": [],
+  "design_quality": null,
+  "caveat": "Project Controls Expo conference deck (year from event path/slide text; not stated on slides where noted null). Summary paraphrased from extracted text; design not viewed.",
+  "eligibility": "tier3",
+  "tier": 3,
+  "format": "slides"
+ }
+]

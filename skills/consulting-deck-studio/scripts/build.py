@@ -20,7 +20,7 @@ import sys
 HERE = os.path.dirname(os.path.abspath(__file__))
 sys.path.insert(0, HERE)
 from cdslib import components as C  # noqa: E402
-from cdslib import deckmd, fonts, lint, parity, render, write_html, write_pptx  # noqa: E402
+from cdslib import calibrate, deckmd, fonts, lint, parity, render, write_html, write_pptx  # noqa: E402
 from cdslib import layouts_pmo  # noqa: E402,F401  (registers PMO layouts)
 from cdslib import scene as S  # noqa: E402
 from cdslib.components import T, r  # noqa: E402
@@ -52,6 +52,13 @@ def load_brand(project):
     b = json.load(open(p, encoding="utf-8"))
     C.apply_brand(b)
     tpl = None
+    if b.get("logo") and b.get("mode") != "template":
+        lp = os.path.join(project, b["logo"]["path"])
+        mime = "jpeg" if lp.lower().endswith((".jpg", ".jpeg")) else "png"
+        h = 20.0
+        w = h * b["logo"]["aspect"]
+        C.G.logo = {"src": "data:image/%s;base64,%s" % (mime, base64.b64encode(open(lp, "rb").read()).decode()), "w": w, "h": h}
+        C.G.keepout = [[C.G.R - w, C.G.tracker_y - 4, w, h]]
     if b.get("mode") == "template":
         C.set_grid(C.Grid(scale=b["scale"], **b["grid"]))
         tpl = {"path": os.path.join(project, b["template"]), "layouts": b["layouts"], "scale": b["scale"]}
@@ -70,6 +77,14 @@ def build(project, pdf=False, do_parity=False, do_sheet=False, final=False, outl
     src = os.path.join(project, "deck.md")
     meta, slides = deckmd.parse(open(src, encoding="utf-8").read())
     brand, tpl = load_brand(project)
+    cal_cache = os.path.join(project, ".cds", "calibration.json")
+    write_pptx._cal = None
+    write_pptx.load_extra_calibration(cal_cache)
+    fams = {T["font"], T["title_font"]}
+    if (do_parity or os.environ.get("CDS_CALIBRATE")) and render.find_soffice():
+        done = calibrate.fit(sorted(fams), cal_cache)
+        if done:
+            print("calibrated baseline for: %s" % ", ".join(done))
     if outline:
         print("%-3s %-16s %s" % ("#", "layout", "action title"))
         for n, s in enumerate(slides, 1):

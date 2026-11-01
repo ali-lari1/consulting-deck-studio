@@ -35,6 +35,7 @@ class Grid:
         self.chrome = True                         # draw context line, tracker, confidential mark
         self.scale = 1.0                           # canvas pt -> output pt (template slide size / 960)
         self.keepout = []                          # [x, y, w, h] boxes the template's own graphics occupy
+        self.logo = None                           # brand mode: {"src": data URI or path, "w", "h"} drawn top-right
         self.__dict__.update(kw)
 
 
@@ -87,9 +88,14 @@ def frame(title, page, tracker=None, active=None, context=None, sticker=None, so
     sw = S.line_width([r(sticker, 8)]) + 14 if sticker else 0
     if G.chrome and context:
         els.append(S.text(L, G.context_y, 520, r(context, 8, color=T["grey"]), max_lines=1))
+    if G.logo:
+        lg = G.logo
+        els.append({"t": "image", "x": R_ - lg["w"], "y": G.tracker_y - 4, "w": lg["w"], "h": lg["h"], "src": lg["src"],
+                    "name": "Logo"})
     if G.chrome and tracker:
         widths = [S.line_width([r(t, 8, True)]) for t in tracker]
-        x = R_ - sum(widths) - 14 * (len(tracker) - 1) - (sw + 16 if sticker else 0)
+        tw = sum(widths) + 14 * (len(tracker) - 1)
+        x, _ = free_x(R_ - tw - (sw + 16 if sticker else 0), G.tracker_y, tw + (sw + 16 if sticker else 0), 12)
         for t, w in zip(tracker, widths):
             on = t == active
             els.append(S.text(x, G.tracker_y, w + 1, r(t, 8, on, T["navy"] if on else T["mid"])))

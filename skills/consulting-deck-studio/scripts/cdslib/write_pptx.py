@@ -34,6 +34,12 @@ def calibration():
     return _cal
 
 
+def load_extra_calibration(path):
+    """Merge a project's auto-calibration cache (.cds/calibration.json) over the bundled one."""
+    if os.path.exists(path):
+        calibration().update(json.load(open(path, encoding="utf-8")))
+
+
 def html_baseline(font, size, lh, bold=False, italic=False):
     """Where Chromium puts the first baseline below the line-box top: half-leading model, hhea metrics."""
     m = fonts.metrics(font, bold, italic)
@@ -73,6 +79,25 @@ class Writer:
     def __init__(self, tmode=False):
         self.next_id = 2
         self.tmode = tmode
+        self.media = []   # (rId, ext, bytes)
+
+    def image(self, el):
+        import base64
+        src = el["src"]
+        if src.startswith("data:"):
+            head, b64 = src.split(",", 1)
+            ext = "jpeg" if "jpeg" in head or "jpg" in head else "png"
+            data = base64.b64decode(b64)
+        else:
+            ext = "jpeg" if src.lower().endswith((".jpg", ".jpeg")) else "png"
+            data = open(src, "rb").read()
+        rid = "rIdImg%d" % (len(self.media) + 1)
+        self.media.append((rid, ext, data))
+        i = self.nid()
+        return ('<p:pic><p:nvPicPr><p:cNvPr id="%d" name="%s"/><p:cNvPicPr><a:picLocks noChangeAspect="1"/></p:cNvPicPr><p:nvPr/>'
+                '</p:nvPicPr><p:blipFill><a:blip r:embed="%s"/><a:stretch><a:fillRect/></a:stretch></p:blipFill><p:spPr>%s'
+                '<a:prstGeom prst="rect"><a:avLst/></a:prstGeom></p:spPr></p:pic>') % (
+            i, escape(el.get("name") or "Picture %d" % i), rid, self.xfrm(el["x"], el["y"], el["w"], el["h"]))
 
     def nid(self):
         self.next_id += 1
@@ -140,6 +165,8 @@ class Writer:
             return self.text(el)
         if t == "icon":
             return self.icon(el)
+        if t == "image":
+            return self.image(el)
         if t == "poly":
             return self.poly(el)
         raise ValueError("unsupported element for pptx: " + t)
@@ -240,11 +267,13 @@ def _bbox(els):
     return min(xs), min(ys), max(xe), max(ye)
 
 
-def slide_xml(slide, tmode=False):
+def slide_xml(slide, tmode=False, media_out=None):
     w = Writer(tmode)
     shapes = "".join(w.el(x) for x in slide["els"])
     bg = slide.get("bg", None if tmode else "#FFFFFF")
     bgxml = '<p:bg><p:bgPr>%s<a:effectLst/></p:bgPr></p:bg>' % _clr(bg) if bg else ""
+    if media_out is not None:
+        media_out.extend(w.media)
     return ('<?xml version="1.0" encoding="UTF-8" standalone="yes"?>'
             '<p:sld %s %s %s><p:cSld>%s<p:spTree>'
             '<p:nvGrpSpPr><p:cNvPr id="1" name=""/><p:cNvGrpSpPr/><p:nvPr/></p:nvGrpSpPr>'
@@ -375,13 +404,25 @@ def write(slides, path, title="Deck", font_major="Arial", font_minor="Arial"):
         z.writestr("ppt/notesMasters/notesMaster1.xml", NOTES_MASTER % (A, R, P))
         z.writestr("ppt/notesMasters/_rels/notesMaster1.xml.rels", rels([("rId1", "theme", "../theme/theme2.xml")]))
         for i, s in enumerate(slides, 1):
-            z.writestr("ppt/slides/slide%d.xml" % i, slide_xml(s))
+            media = []
+            z.writestr("ppt/slides/slide%d.xml" % i, slide_xml(s, media_out=media))
             z.writestr("ppt/slides/_rels/slide%d.xml.rels" % i, rels([("rId1", "slideLayout", "../slideLayouts/slideLayout1.xml"),
-                                                                       ("rId2", "notesSlide", "../notesSlides/notesSlide%d.xml" % i)]))
+                                                                       ("rId2", "notesSlide", "../notesSlides/notesSlide%d.xml" % i)] +
+                                                                      _media(z, media, i)))
             z.writestr("ppt/notesSlides/notesSlide%d.xml" % i, notes_xml(s.get("notes", ""), i))
             z.writestr("ppt/notesSlides/_rels/notesSlide%d.xml.rels" % i, rels([("rId1", "notesMaster", "../notesMasters/notesMaster1.xml"),
                                                                                  ("rId2", "slide", "../slides/slide%d.xml" % i)]))
     return path
+
+
+def _media(z, media, slide_no):
+    """Write a slide's images to ppt/media and return their relationship tuples."""
+    out = []
+    for rid, ext, data in media:
+        name = "cds_s%d_%s.%s" % (slide_no, rid[5:], ext)
+        z.writestr("ppt/media/" + name, data)
+        out.append((rid, "image", "../media/" + name))
+    return out
 
 
 SCALE_KEYS = ("x", "y", "w", "h", "x1", "y1", "x2", "y2", "lw", "lh", "tracking", "need", "radius")
@@ -454,6 +495,8 @@ def write_template(slides, path, tpl, title="Deck"):
                 '<Override PartName="/ppt/theme/themeCdsNotes.xml" ContentType="application/vnd.openxmlformats-officedocument.theme+xml"/>')
     if 'Extension="png"' not in ct:
         add += '<Default Extension="png" ContentType="image/png"/>'
+    if 'Extension="jpeg"' not in ct:
+        add += '<Default Extension="jpeg" ContentType="image/jpeg"/>'
     ct = ct.replace("</Types>", add + "</Types>")
     nm_target = "../notesMasters/notesMaster1.xml"
     if has_nm:
@@ -478,9 +521,11 @@ def write_template(slides, path, tpl, title="Deck"):
         for i, s_ in enumerate(slides, 1):
             part = tpl["layouts"].get(s_.get("kind", "content")) or tpl["layouts"]["content"]
             scaled = dict(s_, els=scale_els(s_["els"], f))
-            z.writestr("ppt/slides/slide%d.xml" % i, slide_xml(scaled, tmode=True))
+            media = []
+            z.writestr("ppt/slides/slide%d.xml" % i, slide_xml(scaled, tmode=True, media_out=media))
             z.writestr("ppt/slides/_rels/slide%d.xml.rels" % i, rels([("rId1", "slideLayout", "../" + part[4:]),
-                                                                       ("rId2", "notesSlide", "../notesSlides/notesSlide%d.xml" % i)]))
+                                                                       ("rId2", "notesSlide", "../notesSlides/notesSlide%d.xml" % i)] +
+                                                                      _media(z, media, i)))
             z.writestr("ppt/notesSlides/notesSlide%d.xml" % i, notes_xml(s_.get("notes", ""), i))
             z.writestr("ppt/notesSlides/_rels/notesSlide%d.xml.rels" % i, rels([("rId1", "notesMaster", nm_target),
                                                                                  ("rId2", "slide", "../slides/slide%d.xml" % i)]))

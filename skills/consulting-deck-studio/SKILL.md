@@ -81,7 +81,9 @@ Confirm the brand with the user. Do this before writing slides: the template's c
 
 ### 4. Storyline and ghost deck: the one approval gate
 Read `references/storyline.md` and the deck-type playbook for this practice in `references/deck-types/`, which gives
-the default slide sequence and mandatory content. Write `brief.md`: the decision, the audience, the governing
+the default slide sequence and mandatory content. Pull 3-6 real comparables with
+`python3 SKILL_DIR/scripts/find_decks.py --practice <p> --type <type>` and note how their best slides open and argue
+(`references/library.md`). Use them for patterns only. Write `brief.md`: the decision, the audience, the governing
 thought, the arc (SCQA or answer-first), the sections, and the questions the audience will ask. Then write
 `deck.md` with **titles and layouts only**, run `python3 SKILL_DIR/scripts/build.py <project> --outline`, and show the
 table to the user.

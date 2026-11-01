@@ -38,6 +38,16 @@ doc = open(os.path.join(SK, "references", "layouts.md"), encoding="utf-8").read(
 for lay in layouts.LAYOUTS:
     check("`%s`" % lay in doc, "layout '%s' is not documented in references/layouts.md" % lay)
 
+import json as _json  # noqa: E402
+lib = _json.load(open(os.path.join(SK, "data", "decks.json"), encoding="utf-8"))
+ids = [d.get("id") for d in lib["decks"]]
+check(len(ids) == len(set(ids)), "data/decks.json: duplicate ids")
+for d in lib["decks"]:
+    for k in ("id", "title", "url", "tier", "practice", "format", "verified"):
+        check(d.get(k) not in (None, ""), "data/decks.json: %s missing %s" % (d.get("id"), k))
+    check(d.get("practice") in ("pmo", "capital", "strategy", "management"), "data/decks.json: %s bad practice" % d.get("id"))
+    check(d.get("tier") in (1, 2, 3), "data/decks.json: %s bad tier" % d.get("id"))
+
 for shipped, src in [("status-report-from-files.md", "northline-monthly"), ("steerco-pack.md", "northline-rail-steerco"),
                      ("diagnostic-and-capital.md", "meridian-cost-review")]:
     a = os.path.join(SK, "assets", "examples", shipped)

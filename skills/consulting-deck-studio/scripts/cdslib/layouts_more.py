@@ -175,7 +175,11 @@ def roadmap(slide, ctx):
             if it.get("type") == "milestone":
                 mx = x0 + it["at"] * pw
                 els.append(C.diamond(mx, ly + lane_h - 10, 9, T["R"] if it.get("rag") == "R" else T["navy"]))
-                els.append(S.text(mx + 7, ly + lane_h - 16, 150, r(it["label"], 8, True), max_lines=1))
+                lw_ = S.line_width([r(it["label"], 8, True)]) + 2
+                if mx + 7 + lw_ > right:
+                    els.append(S.text(mx - 7 - lw_, ly + lane_h - 16, lw_, r(it["label"], 8, True), align="r", max_lines=1))
+                else:
+                    els.append(S.text(mx + 7, ly + lane_h - 16, lw_, r(it["label"], 8, True), max_lines=1))
                 continue
             bx, bw = x0 + it["start"] * pw + 1, (it["end"] - it["start"]) * pw - 2
             by = ly + 4 + k * bh

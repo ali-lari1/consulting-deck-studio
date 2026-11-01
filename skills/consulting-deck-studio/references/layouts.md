@@ -73,9 +73,9 @@ October 2026"). Number formatting is set with `prefix` ("£"), `suffix` ("%") an
 |---|---|
 | `bar` | `categories`, `series: [{name, values}]`, `orientation`: `column` (default) or `bar` (horizontal, for long labels and rankings), `highlight` (index of the bar to emphasise; the others go grey), `stacked`, `cagr: {from, to, label}`, `label_width` |
 | `line` | `x`, `series: [{name, values, highlight?, color?, forecast? (dashed), markers?}]`, `axis_min`, `axis_max`. Lines are labelled at their ends, with no legend. |
-| `waterfall` | `start: {label, value}`, `steps: [{label, value}]`, `end: {label, value?}`, `axis_min`, `callouts`: step indices to number, `increase_is`: `bad` (default, increases red) or `good`, `show_total_change`. **If `end.value` doesn't equal start + steps, the build fails.** |
+| `waterfall` | `start: {label, value}`, `steps: [{label, value}]`, `end: {label, value?}`, `axis_min`, `callouts`: bar positions to number (0 = the start total, 1 = the first step, and so on), numbered 1, 2, 3 in the order given, `increase_is`: `bad` (default, increases red) or `good`, `show_total_change`. **If `end.value` doesn't equal start + steps, the build fails.** |
 | `matrix-2x2` | `x: {label, low, high}`, `y: {...}`, `quadrants`: [top-left, top-right, bottom-left, bottom-right] labels, `highlight_quadrant` (0-3), `items: [{label, x 0-1, y 0-1, size?, highlight?}]` |
-| `table` | `columns: [{name, width (fraction or pt), kind: text, bold, number, rag or trend, align?, good?: up or down}]`, `rows: [[...]]`. Adds a RAG or trend legend when those columns exist. |
+| `table` | `columns: [{name, width (fraction or pt), kind: text, bold, number, rag, trend or progress, align?, good?: up or down}]`, `rows: [[...]]`. Adds a RAG or trend legend when those columns exist. Relabel it with `rag_labels: {"G": "Low", "A": "Medium", "R": "High"}` (for severity or status columns), or remove it with `legend: false`. |
 
 ## PMO and capital-project layouts
 
@@ -83,7 +83,7 @@ October 2026"). Number formatting is set with `prefix` ("£"), `suffix` ("%") an
 |---|---|
 | `status-summary` | `rows: [{area, icon?, rag: R, A, G or N (not assessed), trend?: up, flat or down, text}]` (omit `trend` when there is no previous period to compare), `decisions: [{what, owner, due}]`, `decisions_title`, `lookahead: {title, rows: [{milestone, baseline, forecast, variance, rag}]}` |
 | `rag-dashboard` | `kpis: [{value, label, note, rag}]` (a number strip; 3-5 work best), `rows: [{workstream, lead, schedule, cost, risk, trend, comment}]`; `columns` and `keys` override the default table |
-| `gantt` | `start`, `end`, `today` (ISO dates), `rows: [{name, rag?, critical?, baseline: [s, e], forecast: [s, e], float_to?, float_label?, callout?}]`, `milestones: [{name, baseline, forecast, callout?}]`, plus side panels |
+| `gantt` | `start`, `end`, `today` (ISO dates). Long horizons switch automatically to quarter, half-year or year headers. `legend_labels: {baseline, critical, other, milestone}` relabels the legend, for example "Project forecast" against "Review view". Also `rows: [{name, rag?, critical?, baseline: [s, e], forecast: [s, e], float_to?, float_label?, callout?}]`, `milestones: [{name, baseline, forecast, callout?}]`, plus side panels |
 | `risk-heatmap` | `risks: [{id, title, owner, l 1-5, i 1-5, prev?: [l, i], mitigation, trend?}]`, `red_from` (default 15), `amber_from` (default 8). Movement arrows come from `prev`. |
 | `options-matrix` | `criteria: [{name, weight: "30%"}]` (weights must total 100%), `options: [{key, name, scores 0-4}]`, `recommended`, `stages` + `stage` (chevron funnel), `rationale` (bullets) |
 

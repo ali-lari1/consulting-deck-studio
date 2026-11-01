@@ -166,6 +166,8 @@ def group(children, name=None):
 
 def icon(name, x, y, size=16, color="#1A1A1A", stroke=2.0):
     """A Lucide line icon (24-unit box) scaled to `size` pt. Drawn as editable vector paths."""
+    from . import icons as _icons
+    _icons.get(name)  # unknown names raise LayoutError here, inside the layout, so the build reports them
     return {"t": "icon", "name": name, "x": x, "y": y, "w": size, "h": size, "color": color, "stroke": stroke}
 
 

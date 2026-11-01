@@ -472,8 +472,10 @@ def waterfall(slide, ctx):
     els.append(S.hline(G.L + 10, base_y, x - (slot - bw) + 10, T["ink"], 0.75))
     if d.get("show_total_change", True):
         delta = end_v - start["value"]
-        pct = delta / start["value"] * 100 if start["value"] else 0
-        txt = "%s%s (%s%.1f%%)" % ("+" if delta >= 0 else "", fmt(delta, dp, pre, suf), "+" if pct >= 0 else "", pct)
+        txt = "%s%s" % ("+" if delta >= 0 else "", fmt(delta, dp, pre, suf))
+        if start["value"]:
+            pct = delta / start["value"] * 100
+            txt += " (%s%.1f%%)" % ("+" if pct >= 0 else "", pct)
         yb_ = y + 20
         a, b = centers[0][0], centers[-1][0]
         els += [S.line(a, yb_, b, yb_, T["navy"], 0.75), S.line(a, yb_, a, centers[0][1] - 18, T["navy"], 0.75),
@@ -496,7 +498,7 @@ def matrix_2x2(slide, ctx):
     side = default_side(slide)
     right = G.main_r if side else G.R
     x0, x1 = G.L + 40, right - 20
-    y0, y1 = G.top + 10, bottom - 34
+    y0, y1 = G.top + 22, bottom - 34
     mx, my = (x0 + x1) / 2, (y0 + y1) / 2
     ql = d.get("quadrants", ["", "", "", ""])  # TL, TR, BL, BR
     hq = d.get("highlight_quadrant")
@@ -513,8 +515,9 @@ def matrix_2x2(slide, ctx):
     els.append(S.text(x0, y1 + 6, x1 - x0, r(xa["label"], 9.5, True), align="c"))
     els.append(S.text(x0, y1 + 6, 120, r(xa.get("low", "Low"), 8.5, color=T["grey"])))
     els.append(S.text(x1 - 120, y1 + 6, 120, r(xa.get("high", "High"), 8.5, color=T["grey"]), align="r"))
-    els.append(S.text(G.L - 6, y0 - 2, 44, r(ya["label"], 9.5, True), lh=1.15))
-    els.append(S.text(G.L - 6, y1 - 14, 44, r(ya.get("low", "Low"), 8.5, color=T["grey"])))
+    els.append(S.text(x0, y0 - 18, 300, r(ya["label"], 9.5, True)))
+    els.append(S.text(G.L - 6, y0 + 2, 40, r(ya.get("high", "High"), 8.5, color=T["grey"]), align="r"))
+    els.append(S.text(G.L - 6, y1 - 14, 40, r(ya.get("low", "Low"), 8.5, color=T["grey"]), align="r"))
     for it in d["items"]:
         px, py = x0 + it["x"] * (x1 - x0), y1 - it["y"] * (y1 - y0)
         rad = it.get("size", 1.0) * 7
@@ -599,10 +602,13 @@ def table_slide(slide, ctx):
     els += t
     kinds = {c.get("kind") for c in d["columns"]}
     leg = []
+    rl = d.get("rag_labels", {})
     if "rag" in kinds:
-        leg += [("dot", "G", "On track"), ("dot", "A", "At risk"), ("dot", "R", "Off track")]
+        leg += [("dot", k, rl.get(k, v)) for k, v in (("G", "On track"), ("A", "At risk"), ("R", "Off track")) if rl.get(k, v)]
     if "trend" in kinds:
         leg += [("up", T["G"], "Improving"), ("flat", T["grey"], "Stable"), ("down", T["R"], "Worsening")]
+    if d.get("legend") is False:
+        leg = []
     if leg:
         els += C.legend(G.L, yy + 8, leg)
     if side:

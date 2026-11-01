@@ -7,7 +7,7 @@
       "name": "consulting-deck-studio",
       "source": "./",
       "description": "Status reports, SteerCo packs, gate papers, diagnostics and strategy decks from your notes, schedules and registers, on your own template. Editable PPTX + matching HTML/PDF.",
-      "version": "1.0.0",
+      "version": "1.0.1",
       "license": "MIT",
       "keywords": ["consulting", "pmo", "steerco", "status-report", "capital-projects", "strategy", "slides", "pptx", "presentation"]
     }

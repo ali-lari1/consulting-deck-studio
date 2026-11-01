@@ -1,5 +1,18 @@
 # Changelog
 
+## 1.0.1 (2026-11-02)
+- **Gallery:** 8 new example decks (gate paper, independent review, assurance/IV&V, risk review, market entry, growth
+  strategy, operating model, post-merger integration), giving 12 deck types with screenshots in `docs/gallery.md`.
+  The 8 decks were written by agents following the skill.
+- **Fixes they found:**
+  - Gantt charts over about 18 months switch to quarter, half-year or year headers.
+  - Gantt and table legends can be relabelled (`legend_labels`, `rag_labels`, `legend: false`).
+  - Unknown icons are reported as layout errors with suggestions.
+  - A waterfall starting at 0 no longer divides by zero.
+  - The 2x2 shows its "High" y-axis label, and long axis labels fit.
+  - Roadmap milestone labels near the right edge flip left.
+  - Waterfall callout numbering is documented.
+
 ## 1.0.0 (2026-11-02)
 First public release.
 - **Engine:** one scene drawn to editable PPTX (raw OOXML) and HTML/PDF with identical line breaks. Calibrated

@@ -57,6 +57,20 @@ ask and common pitfalls:
 
 ![More layouts (fictional example)](docs/images/layouts.png)
 
+## Gallery: one deck per type
+
+**[See all 12 example decks →](docs/gallery.md).** Each one has its PPTX, PDF and `deck.md` source. They cover a
+monthly status report built from project files, a SteerCo pack, an IV&V assurance review, a risk review, a Gate 3
+paper, an independent cost and schedule review, market entry, a growth strategy, a diagnostic plus capital programme,
+an operating model, a post-merger integration plan, and the same pack on a client template.
+
+| | |
+|---|---|
+| ![Gate 3 paper](docs/images/gallery/gate-paper.png) | ![Assurance review](docs/images/gallery/assurance-review.png) |
+| **Capital:** Gate 3 investment decision paper | **PMO:** independent assurance / IV&V review |
+| ![Market entry](docs/images/gallery/market-entry.png) | ![Operating model](docs/images/gallery/operating-model.png) |
+| **Strategy:** market entry | **Management:** operating model and org design |
+
 ## Your template, your brand
 
 ![House style vs a client template, same slide](docs/images/template.png)
@@ -228,7 +242,7 @@ skills/consulting-deck-studio/
 │   └── cdslib/         #   layout engine, HTML/PPTX writers, readers, emitters, lint, parity
 ├── assets/             # font metrics, calibration, Lucide icons, worked example decks
 └── data/decks.json     # the 164-record library
-examples/               # four fictional decks (source + PPTX/HTML/PDF)
+examples/               # twelve fictional decks, one per deck type (source + PPTX/HTML/PDF); see docs/gallery.md
 tests/fixtures/         # fictional P6/MSP/XLSX/CSV/VTT/DOCX inputs and a test template
 research/               # the research behind the library and standards
 tools/                  # validate, merge_library, gen_metrics, gen_icons, fixture generators
@@ -246,7 +260,8 @@ Library additions (with a verifiable public source), deck-type playbooks, layout
 welcome. See [CONTRIBUTING.md](CONTRIBUTING.md), and run `python3 tools/validate.py` before opening a PR.
 
 ## Disclaimer
-The example programmes, organisations and numbers (Northline, Meridian, Acme) are fictional. The library links to
+All example programmes, organisations and numbers (Northline, Meridian, Acme and the rest of the gallery) are
+fictional. The library links to
 material that its authors, clients or governments published, and all rights stay with their owners. This project
 offers no legal, financial or engineering advice. Check every deck before it goes to a client.
 

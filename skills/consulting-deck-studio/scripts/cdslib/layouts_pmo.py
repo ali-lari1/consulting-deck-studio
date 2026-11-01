@@ -166,11 +166,18 @@ def gantt(slide, ctx):
     def X(s):
         return x0 + _months_between(start, _date(s)) * mw
 
-    for i in range(nm_int):
+    step = 1 if mw >= 34 else 3 if mw * 3 >= 34 else 6 if mw * 6 >= 34 else 12   # month, quarter, half-year or year cells
+    for i in range(0, nm_int, step):
         mdate = datetime.date(start.year + (start.month - 1 + i) // 12, (start.month - 1 + i) % 12 + 1, 1)
-        lab = MON[mdate.month - 1] + (" %s" % str(mdate.year)[2:] if mdate.month == 1 or i == 0 else "")
-        els.append(S.rect(x0 + i * mw, y, mw - 1, 14, fill=T["tint"]))
-        els.append(S.text(x0 + i * mw, y + 3, mw, r(lab, 7.5 if mw < 40 else 8, True, T["grey"]), align="c", max_lines=1))
+        span = min(step, nm_int - i)
+        if step == 1:
+            lab = MON[mdate.month - 1] + (" %s" % str(mdate.year)[2:] if mdate.month == 1 or i == 0 else "")
+        elif step == 12:
+            lab = str(mdate.year)
+        else:
+            lab = "%s %s" % (MON[mdate.month - 1], str(mdate.year)[2:])
+        els.append(S.rect(x0 + i * mw, y, span * mw - 1, 14, fill=T["tint"]))
+        els.append(S.text(x0 + i * mw, y + 3, span * mw, r(lab, 7.5 if span * mw < 40 else 8, True, T["grey"]), align="c", max_lines=1))
     gy0 = y + 18
     rows = d["rows"]
     ms = d.get("milestones", [])
@@ -198,7 +205,7 @@ def gantt(slide, ctx):
             els += C.callout(f1 + 10, yy + rh * 0.61, row["callout"])
         els.append(S.hline(G.L, yy + rh, x1, T["rule"], 0.4))
     my = gy0 + len(rows) * rh + 4
-    for i in range(1, nm_int):
+    for i in range(step, nm_int, step):
         els.append(S.line(x0 + i * mw, gy0, x0 + i * mw, my + len(ms) * 26, T["rule"], 0.4, dash="dot"))
     for m in ms:
         els.append(S.text(G.L + 16, my, lab_w - 20, r(m["name"], 9, True), va="m", h=24, lh=1.1, max_lines=2))
@@ -221,8 +228,11 @@ def gantt(slide, ctx):
     if d.get("today"):
         tx = X(d["today"])
         els.append(S.line(tx, gy0 - 4, tx, my + 4, T["R"], 1, dash="dash"))
-    els += C.legend(G.L, my + 8, [("outline", T["mid"], "Baseline"), ("bar", T["navy"], "Forecast, critical path"),
-                                     ("bar", T["navy_l"], "Forecast, other"), ("diamond", T["navy"], "Milestone")] +
+    ll = d.get("legend_labels", {})
+    els += C.legend(G.L, my + 8, [("outline", T["mid"], ll.get("baseline", "Baseline")),
+                                     ("bar", T["navy"], ll.get("critical", "Forecast, critical path")),
+                                     ("bar", T["navy_l"], ll.get("other", "Forecast, other")),
+                                     ("diamond", T["navy"], ll.get("milestone", "Milestone"))] +
                     ([("dash", T["R"], "Today")] if d.get("today") else []))
     if side:
         els += side_panels(bottom, side)

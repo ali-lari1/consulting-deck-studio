@@ -264,3 +264,35 @@ section: Capital
   {"type": "Assumption", "id": "A01", "description": "Inflation of 4% a year on construction costs", "owner": "Finance", "due": "Jan 27", "rag": "A", "status": "Recheck against index at Gate 3"},
   {"type": "Dependency", "id": "D03", "description": "Regional funding for equipment (£22m)", "owner": "CFO", "due": "Mar 27", "rag": "G", "status": "Bid submitted; decision expected March"}]}
 ```
+
+# Ground conditions and construction inflation drive most of the uncertainty in the wing's cost
+layout: tornado
+section: Capital
+footnote: Each bar varies one input across its range with all others at base case.
+
+```json
+{"exhibit": "Outturn cost of the surgical wing under low and high cases", "unit": "£m, nominal", "prefix": "£", "base": 437,
+ "drivers": [{"name": "Ground conditions", "range": "Survey vs worst borehole", "low": 431, "high": 452},
+             {"name": "Construction inflation", "range": "2% to 6% a year", "low": 429, "high": 446},
+             {"name": "M&E package price", "range": "Tender range", "low": 432, "high": 444},
+             {"name": "Programme duration", "range": "-2 to +4 months", "low": 435, "high": 443},
+             {"name": "Design changes", "range": "None to 3% of works", "low": 437, "high": 441}],
+ "takeaways_title": "Implication", "takeaways": ["Resolving ground conditions before Gate 3 removes the largest single uncertainty."]}
+```
+
+# Two of the group's six capital projects are both late and over budget
+layout: scatter
+section: Capital
+footnote: Bubble size is approved budget.
+
+```json
+{"exhibit": "Capital portfolio: schedule vs cost performance", "unit": "October 2026",
+ "x_label": "Schedule performance index (SPI)", "y_label": "Cost performance index (CPI)", "bubbles": true,
+ "x_format": {"decimals": 2}, "y_format": {"decimals": 2},
+ "reference": [{"x": 1.0, "label": "On schedule"}, {"y": 1.0, "label": "On budget"}],
+ "points": [{"label": "Surgical wing", "x": 0.81, "y": 0.89, "size": 430, "rag": "R", "highlight": true},
+            {"label": "Car park", "x": 1.02, "y": 0.98, "size": 18}, {"label": "Pathology lab", "x": 0.88, "y": 0.92, "size": 64, "rag": "R"},
+            {"label": "EPR upgrade", "x": 0.95, "y": 1.04, "size": 41}, {"label": "Energy retrofit", "x": 1.05, "y": 1.01, "size": 27},
+            {"label": "Day surgery unit", "x": 0.97, "y": 1.01, "size": 52}],
+ "takeaways_title": "Implication", "takeaways": ["The surgical wing and pathology lab need recovery plans before the next Board."]}
+```

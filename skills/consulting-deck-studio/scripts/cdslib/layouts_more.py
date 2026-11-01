@@ -724,3 +724,88 @@ def raid_log(slide, ctx):
     els += t
     els += C.legend(G.L, yy + 8, [("dot", "G", "On track"), ("dot", "A", "At risk"), ("dot", "R", "Off track or overdue")])
     return els
+
+
+@layout("tornado")
+def tornado(slide, ctx):
+    """Sensitivity: each driver's low/high case effect on an output around the base case, sorted by swing."""
+    d = slide["data"]
+    els, bottom = chrome(slide, ctx)
+    right = _right(slide)
+    hdr, y = C.exhibit_header(G.L, G.top, right - G.L, d.get("exhibit", ""), d.get("unit"))
+    els += hdr
+    pre, suf, dp = d.get("prefix", ""), d.get("suffix", ""), d.get("decimals")
+    base = d["base"]
+    drivers = sorted(d["drivers"], key=lambda x: -abs(x["high"] - x["low"]))
+    lo = min(min(x["low"], x["high"]) for x in drivers + [{"low": base, "high": base}])
+    hi = max(max(x["low"], x["high"]) for x in drivers + [{"low": base, "high": base}])
+    lab_w = d.get("label_width", 170)
+    x0, x1 = G.L + lab_w + 50, right - 60
+    sc = (x1 - x0) / (hi - lo or 1)
+    bx = x0 + (base - lo) * sc
+    rh = min(32.0, (bottom - y - 40) / len(drivers))
+    els.append(S.text(G.L + lab_w, y + 2, 300, [r("Low case", 8.5, True, T["navy_l"]), r("   |   ", 8.5, color=T["grey"]),
+                                                 r("High case", 8.5, True, T["navy"])]))
+    y += 18
+    for i, dr in enumerate(drivers):
+        yy = y + i * rh
+        els.append(S.text(G.L, yy, lab_w - 8, [r(dr["name"] + "\n", 9.5, True), r(dr.get("range", ""), 8, color=T["grey"])],
+                          align="r", va="m", h=rh - 4, lh=1.15, max_lines=2))
+        for v, col in ((dr["low"], T["navy_l"]), (dr["high"], T["navy"])):
+            xa, xb = sorted((bx, x0 + (v - lo) * sc))
+            els.append(S.rect(xa, yy + 4, max(xb - xa, 0.75), rh - 12, fill=col))
+            right_side = x0 + (v - lo) * sc >= bx
+            lx = xb + 4 if right_side else xa - 64
+            els.append(S.text(lx, yy + 4, 60, r(fmt(v, dp, pre, suf), 8.5), align="l" if right_side else "r", va="m", h=rh - 12))
+    els.append(S.line(bx, y - 4, bx, y + len(drivers) * rh, T["ink"], 1))
+    els.append(S.text(bx - 60, y + len(drivers) * rh + 2, 120, r("Base case %s" % fmt(base, dp, pre, suf), 8.5, True), align="c"))
+    return _finish(els, slide, bottom)
+
+
+@layout("scatter")
+def scatter(slide, ctx):
+    """Scatter or bubble chart with labelled points and optional reference lines (e.g. portfolio of projects)."""
+    d = slide["data"]
+    els, bottom = chrome(slide, ctx)
+    right = _right(slide)
+    hdr, y = C.exhibit_header(G.L, G.top, right - G.L, d.get("exhibit", ""), d.get("unit"))
+    els += hdr
+    pts = d["points"]
+    from .layouts import nice_ticks
+    xs_, ys_ = [p["x"] for p in pts], [p["y"] for p in pts]
+    px_, py_ = (max(xs_) - min(xs_)) * 0.08 or 1, (max(ys_) - min(ys_)) * 0.08 or 1
+    xt = nice_ticks(d.get("x_min", min(xs_) - px_), d.get("x_max", max(xs_) + px_))
+    yt = nice_ticks(d.get("y_min", min(ys_) - py_), d.get("y_max", max(ys_) + py_))
+    x0, x1 = G.L + 50, right - 20
+    base, top = bottom - 40, y + 22
+
+    def X(v):
+        return x0 + (v - xt[0]) / (xt[-1] - xt[0]) * (x1 - x0)
+
+    def Y(v):
+        return base - (v - yt[0]) / (yt[-1] - yt[0]) * (base - top)
+    xf, yf = d.get("x_format", {}), d.get("y_format", {})
+    for t_ in yt:
+        els.append(S.text(x0 - 46, Y(t_) - 6, 40, r(fmt(t_, yf.get("decimals"), yf.get("prefix", ""), yf.get("suffix", "")), 8.5, color=T["grey"]), align="r"))
+        els.append(S.hline(x0, Y(t_), x1, T["rule"], 0.4))
+    for t_ in xt:
+        els.append(S.text(X(t_) - 30, base + 4, 60, r(fmt(t_, xf.get("decimals"), xf.get("prefix", ""), xf.get("suffix", "")), 8.5, color=T["grey"]), align="c"))
+    els.append(S.line(x0, base, x1, base, T["ink"], 0.75))
+    els.append(S.line(x0, base, x0, top, T["ink"], 0.75))
+    els.append(S.text(x0, base + 18, x1 - x0, r(d["x_label"], 9, True), align="c"))
+    els.append(S.text(G.L, top - 20, 260, r(d["y_label"], 9, True)))
+    for ref in d.get("reference", []):
+        if ref.get("x") is not None:
+            els.append(S.line(X(ref["x"]), top, X(ref["x"]), base, T["R"], 0.75, dash="dash"))
+            els.append(S.text(X(ref["x"]) + 3, top, 150, r(ref.get("label", ""), 8, True, T["R"])))
+        if ref.get("y") is not None:
+            els.append(S.line(x0, Y(ref["y"]), x1, Y(ref["y"]), T["R"], 0.75, dash="dash"))
+            els.append(S.text(x0 + 4, Y(ref["y"]) - 13, 150, r(ref.get("label", ""), 8, True, T["R"])))
+    smax = max([p.get("size", 1) for p in pts])
+    for p in pts:
+        rad = 4 + 10 * (p.get("size", 1) / float(smax)) ** 0.5 if d.get("bubbles") else 4.5
+        hl = p.get("highlight")
+        col = T["R"] if p.get("rag") == "R" else T["navy"] if hl else T["navy_l"]
+        els.append(S.rect(X(p["x"]) - rad, Y(p["y"]) - rad, 2 * rad, 2 * rad, fill=col, shape="ellipse", line=T["white"], lw=0.75))
+        els.append(S.text(X(p["x"]) + rad + 3, Y(p["y"]) - 6, 140, r(p["label"], 8.5, hl), max_lines=1))
+    return _finish(els, slide, bottom)

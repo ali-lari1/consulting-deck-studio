@@ -107,6 +107,8 @@ October 2026"). Number formatting is set with `prefix` ("£"), `suffix` ("%") an
 | `marimekko` | `columns: [{label, width_value, width_label, segments: [{label, value}]}]`, `highlight` (segment label). Shares are computed. |
 | `benchmark` | `items: [{label, value, highlight?}]`, `better`: `high` or `low`. The median is computed. |
 | `key-numbers` | `numbers: [{value, label, note?, rag?}]` (2-6) |
+| `tornado` | `base`, `drivers: [{name, range, low, high}]` (output value in the low and high case). Sorted by swing automatically. |
+| `scatter` | `points: [{label, x, y, size?, rag?, highlight?}]`, `x_label`, `y_label`, `bubbles` (size = area), `reference: [{x or y, label}]`, `x_format` and `y_format` ({prefix, suffix, decimals}) |
 | `quotes` | `quotes: [{text, who (role, not name), theme?}]`. **Quotes must be real and attributed by role.** Never invent them. |
 
 ## Conventions the layouts enforce
